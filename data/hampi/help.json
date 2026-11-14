@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T19:37",
+ "fetched": "2026-11-14T23:44",
  "data": {
   "spots": {
    "Virupaksha Temple": {
@@ -27,99 +27,132 @@
    "Virupaksha Temple": {
     "hospital": [
      {
-      "name": "Railway Hospital",
-      "phone": "+918362344670",
-      "km": 9.8
+      "name": "Governmental Hospital",
+      "phone": null,
+      "km": 3.8,
+      "src": "OpenStreetMap node/1802646087"
      },
      {
-      "name": "Chirayu hospital hosapete",
-      "phone": "+916362567055",
-      "km": 10.4
+      "name": "Srikarii Hospital",
+      "phone": null,
+      "km": 9.4,
+      "src": "OpenStreetMap node/8188037356"
      }
     ],
     "police": [
      {
-      "name": "Town Police Station",
+      "name": "Hampi Police Station",
       "phone": null,
-      "km": 10.4
+      "km": 0.3,
+      "src": "OpenStreetMap node/977478701"
      },
      {
-      "name": "Chithabadgi Police Station Hospet",
-      "phone": "+918394230233",
-      "km": 10.7
+      "name": "Hampi Traffic Police",
+      "phone": null,
+      "km": 0.4,
+      "src": "OpenStreetMap node/977478679"
      }
     ],
     "pharmacy": [
      {
-      "name": "Ramdev Medical and General Stores",
-      "phone": "+919886095972",
-      "km": 11.1
+      "name": "Medplus",
+      "phone": "08394226936",
+      "km": 9.2,
+      "src": "Overture"
+     },
+     {
+      "name": "Apollo Pharmacy Bellary Road Hosapete",
+      "phone": "08394297088",
+      "km": 10.2,
+      "src": "Overture"
      }
     ]
    },
    "Vittala Temple": {
     "hospital": [
      {
-      "name": "Railway Hospital",
-      "phone": "+918362344670",
-      "km": 11.5
+      "name": "Governmental Hospital",
+      "phone": null,
+      "km": 2.2,
+      "src": "OpenStreetMap node/1802646087"
      },
      {
-      "name": "Chirayu hospital hosapete",
-      "phone": "+916362567055",
-      "km": 12.0
+      "name": "Sandeep Naturopathy And Yoga Health Clinic #SNC",
+      "phone": "+919611395936",
+      "km": 9.0,
+      "src": "Overture"
      }
     ],
     "police": [
      {
-      "name": "Town Police Station",
+      "name": "Hampi Traffic Police",
       "phone": null,
-      "km": 12.0
+      "km": 1.3,
+      "src": "OpenStreetMap node/977478679"
      },
      {
-      "name": "Chithabadgi Police Station Hospet",
-      "phone": "+918394230233",
-      "km": 12.3
+      "name": "Hampi Police Station",
+      "phone": null,
+      "km": 1.3,
+      "src": "OpenStreetMap node/977478701"
      }
     ],
     "pharmacy": [
      {
-      "name": "Ramdev Medical and General Stores",
-      "phone": "+919886095972",
-      "km": 12.7
+      "name": "Medplus",
+      "phone": "08394226936",
+      "km": 10.8,
+      "src": "Overture"
+     },
+     {
+      "name": "Apollo Pharmacy",
+      "phone": "08533231060",
+      "km": 10.9,
+      "src": "Overture"
      }
     ]
    },
    "Matanga Hill": {
     "hospital": [
      {
-      "name": "Railway Hospital",
-      "phone": "+918362344670",
-      "km": 10.2
+      "name": "Governmental Hospital",
+      "phone": null,
+      "km": 3.5,
+      "src": "OpenStreetMap node/1802646087"
      },
      {
-      "name": "Chirayu hospital hosapete",
-      "phone": "+916362567055",
-      "km": 10.7
+      "name": "Srikarii Hospital",
+      "phone": null,
+      "km": 9.7,
+      "src": "OpenStreetMap node/8188037356"
      }
     ],
     "police": [
      {
-      "name": "Town Police Station",
+      "name": "Hampi Traffic Police",
       "phone": null,
-      "km": 10.7
+      "km": 0.3,
+      "src": "OpenStreetMap node/977478679"
      },
      {
-      "name": "Chithabadgi Police Station Hospet",
-      "phone": "+918394230233",
-      "km": 11.0
+      "name": "Hampi Police Station",
+      "phone": null,
+      "km": 0.4,
+      "src": "OpenStreetMap node/977478701"
      }
     ],
     "pharmacy": [
      {
-      "name": "Ramdev Medical and General Stores",
-      "phone": "+919886095972",
-      "km": 11.4
+      "name": "Medplus",
+      "phone": "08394226936",
+      "km": 9.4,
+      "src": "Overture"
+     },
+     {
+      "name": "Apollo Pharmacy Bellary Road Hosapete",
+      "phone": "08394297088",
+      "km": 10.4,
+      "src": "Overture"
      }
     ]
    },
@@ -128,77 +161,99 @@
      {
       "name": "Railway Hospital",
       "phone": "+918362344670",
-      "km": 0.2
+      "km": 0.2,
+      "src": "Overture"
      },
      {
-      "name": "DrPremalatha,Malligi Hospital,Hospet.",
-      "phone": "+919483164683",
-      "km": 1.2
+      "name": "Shekar Hospital",
+      "phone": null,
+      "km": 1.1,
+      "src": "OpenStreetMap node/3169885931"
      }
     ],
     "police": [
      {
       "name": "Chithabadgi Police Station Hospet",
       "phone": "+918394230233",
-      "km": 1.2
+      "km": 1.2,
+      "src": "Overture"
      },
      {
       "name": "Town Police Station",
       "phone": null,
-      "km": 1.4
+      "km": 1.4,
+      "src": "Overture"
      }
     ],
     "pharmacy": [
      {
-      "name": "Ramdev Medical and General Stores",
-      "phone": "+919886095972",
-      "km": 2.3
+      "name": "Popular Medicals",
+      "phone": null,
+      "km": 1.2,
+      "src": "OpenStreetMap node/9925995821"
+     },
+     {
+      "name": "Arun Medicals",
+      "phone": null,
+      "km": 1.2,
+      "src": "OpenStreetMap node/14110012877"
      }
     ]
    },
    "Sanapur Lake": {
     "hospital": [
      {
-      "name": "Railway Hospital",
-      "phone": "+918362344670",
-      "km": 9.1
+      "name": "Governmental Hospital",
+      "phone": null,
+      "km": 6.4,
+      "src": "OpenStreetMap node/1802646087"
      },
      {
-      "name": "Chirayu hospital hosapete",
-      "phone": "+916362567055",
-      "km": 10.1
+      "name": "Railway Hospital",
+      "phone": "+918362344670",
+      "km": 9.1,
+      "src": "Overture"
      }
     ],
     "police": [
      {
-      "name": "Town Police Station",
+      "name": "Hampi Police Station",
       "phone": null,
-      "km": 10.2
+      "km": 4.3,
+      "src": "OpenStreetMap node/977478701"
      },
      {
-      "name": "Chithabadgi Police Station Hospet",
-      "phone": "+918394230233",
-      "km": 10.2
+      "name": "Hampi Traffic Police",
+      "phone": null,
+      "km": 4.4,
+      "src": "OpenStreetMap node/977478679"
      }
     ],
     "pharmacy": [
      {
-      "name": "Ramdev Medical and General Stores",
-      "phone": "+919886095972",
-      "km": 11.1
+      "name": "Medplus",
+      "phone": "08394226936",
+      "km": 9.7,
+      "src": "Overture"
+     },
+     {
+      "name": "Arun Medicals",
+      "phone": null,
+      "km": 9.9,
+      "src": "OpenStreetMap node/14110012877"
      }
     ]
    }
   },
   "counts": {
-   "train_station": 1,
-   "police_station": 2,
-   "lake": 1,
-   "parking": 1,
-   "hospital": 17,
+   "hospital": 127,
    "hindu_place_of_worship": 1,
-   "pharmacy_and_drug_store": 16,
-   "historic_site": 1
+   "pharmacy_and_drug_store": 45,
+   "historic_site": 1,
+   "police_station": 20,
+   "train_station": 1,
+   "lake": 1,
+   "parking": 1
   },
   "missing_spots": [],
   "candidates": {}

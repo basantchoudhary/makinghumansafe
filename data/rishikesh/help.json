@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T19:35",
+ "fetched": "2026-11-14T23:42",
  "data": {
   "spots": {
    "Laxman Jhula": {
@@ -32,76 +32,88 @@
    "Laxman Jhula": {
     "hospital": [
      {
-      "name": "Nirmal Ashram Hospital",
-      "phone": "+918077763702",
-      "km": 3.5
+      "name": "Laxman Jhula Governement Hospital",
+      "phone": null,
+      "km": 0.3,
+      "src": "OpenStreetMap way/276374940"
      },
      {
-      "name": "Puri Sanjivani Hospital",
-      "phone": "+911352430641",
-      "km": 3.8
+      "name": "Ayushwaan Multi Speciality Hospital",
+      "phone": null,
+      "km": 0.9,
+      "src": "OpenStreetMap node/13152055855"
      }
     ],
     "police": [
      {
       "name": "Police Station-Laxman Jhula",
       "phone": null,
-      "km": 0.5
+      "km": 0.5,
+      "src": "Overture"
      },
      {
-      "name": "Police Chowki Tapowan",
+      "name": "Laxman Jhula police station",
       "phone": null,
-      "km": 0.7
+      "km": 0.5,
+      "src": "OpenStreetMap way/102683530"
      }
     ],
     "pharmacy": [
      {
       "name": "Kandari Medical Store",
       "phone": "+918077520359",
-      "km": 0.6
+      "km": 0.6,
+      "src": "Overture"
      },
      {
       "name": "Pooja medical store",
       "phone": "+911352436635",
-      "km": 1.9
+      "km": 1.9,
+      "src": "Overture"
      }
     ]
    },
    "Ram Jhula": {
     "hospital": [
      {
-      "name": "Nirmal Ashram Hospital",
-      "phone": "+918077763702",
-      "km": 2.1
+      "name": "Ayushwaan Multi Speciality Hospital",
+      "phone": null,
+      "km": 1.0,
+      "src": "OpenStreetMap node/13152055855"
      },
      {
-      "name": "Panacea Hospital",
-      "phone": "+917895551369",
-      "km": 2.3
+      "name": "Laxman Jhula Governement Hospital",
+      "phone": null,
+      "km": 1.8,
+      "src": "OpenStreetMap way/276374940"
      }
     ],
     "police": [
      {
       "name": "Reporting Police Post Chowki, Ram Jhula",
       "phone": "+911352430228",
-      "km": 0.4
+      "km": 0.4,
+      "src": "Overture"
      },
      {
-      "name": "Police Station",
-      "phone": "+919411112842",
-      "km": 0.7
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 0.4,
+      "src": "OpenStreetMap node/3812555176"
      }
     ],
     "pharmacy": [
      {
       "name": "Pooja medical store",
       "phone": "+911352436635",
-      "km": 0.4
+      "km": 0.4,
+      "src": "Overture"
      },
      {
       "name": "Kandari Medical Store",
       "phone": "+918077520359",
-      "km": 1.4
+      "km": 1.4,
+      "src": "Overture"
      }
     ]
    },
@@ -110,74 +122,86 @@
      {
       "name": "Nirmal Ashram Hospital",
       "phone": "+918077763702",
-      "km": 0.4
+      "km": 0.4,
+      "src": "Overture"
      },
      {
       "name": "KMC Hospital Meerut",
       "phone": null,
-      "km": 0.5
+      "km": 0.5,
+      "src": "Overture"
      }
     ],
     "police": [
      {
       "name": "Police Chowki",
       "phone": "+911352430100",
-      "km": 0.1
+      "km": 0.1,
+      "src": "Overture"
      },
      {
       "name": "Police Station Rishikesh",
       "phone": "+911352430100",
-      "km": 0.7
+      "km": 0.7,
+      "src": "Overture"
      }
     ],
     "pharmacy": [
      {
       "name": "Doon medical store, rishikesh",
       "phone": "+919411331141",
-      "km": 0.4
+      "km": 0.4,
+      "src": "Overture"
      },
      {
-      "name": "Tayal Medical Store",
-      "phone": "+919997921532",
-      "km": 0.9
+      "name": "davaindia Generic Pharmacy",
+      "phone": "07861866031",
+      "km": 0.6,
+      "src": "Overture"
      }
     ]
    },
    "Parmarth Niketan": {
     "hospital": [
      {
-      "name": "Nirmal Ashram Hospital",
-      "phone": "+918077763702",
-      "km": 1.8
+      "name": "Ayushwaan Multi Speciality Hospital",
+      "phone": null,
+      "km": 1.3,
+      "src": "OpenStreetMap node/13152055855"
      },
      {
-      "name": "Puri Sanjivani Hospital",
-      "phone": "+911352430641",
-      "km": 1.9
+      "name": "Sri Krishna Sewa Ashram Hospital",
+      "phone": null,
+      "km": 1.7,
+      "src": "OpenStreetMap way/743251353"
      }
     ],
     "police": [
      {
       "name": "Police Station",
       "phone": "+919411112842",
-      "km": 0.5
+      "km": 0.5,
+      "src": "Overture"
      },
      {
       "name": "Reporting Police Post Chowki, Ram Jhula",
       "phone": "+911352430228",
-      "km": 0.5
+      "km": 0.5,
+      "src": "Overture"
      }
     ],
     "pharmacy": [
      {
       "name": "Pooja medical store",
       "phone": "+911352436635",
-      "km": 0.3
+      "km": 0.3,
+      "src": "Overture"
      },
      {
-      "name": "Kandari Medical Store",
-      "phone": "+918077520359",
-      "km": 1.7
+      "name": "davaindia GENERIC PHARMACY",
+      "phone": "07861864939",
+      "km": 1.1,
+      "src": "Overture"
      }
     ]
    },
@@ -186,94 +210,93 @@
      {
       "name": "Holy Care Hospital",
       "phone": "+911353161803",
-      "km": 1.2
+      "km": 1.2,
+      "src": "Overture"
      },
      {
       "name": "AIIMS Trauma Center",
       "phone": "+911352462940",
-      "km": 1.9
+      "km": 1.9,
+      "src": "Overture"
      }
     ],
     "police": [
      {
       "name": "Police Chowki",
       "phone": "+911352430100",
-      "km": 3.6
+      "km": 3.6,
+      "src": "Overture"
      },
      {
       "name": "Police Station Rishikesh",
       "phone": "+911352430100",
-      "km": 3.7
+      "km": 3.7,
+      "src": "Overture"
      }
     ],
     "pharmacy": [
      {
       "name": "Goyal Pharmacy",
       "phone": "+917534900025",
-      "km": 1.5
+      "km": 1.5,
+      "src": "Overture"
      },
      {
       "name": "Goyal Pharmacy 24x7",
       "phone": "+917535035500",
-      "km": 1.5
+      "km": 1.5,
+      "src": "Overture"
      }
     ]
    },
    "Jolly Grant Airport": {
     "hospital": [
      {
-      "name": "Himalayan Hospital",
-      "phone": "+911352471200",
-      "km": 1.5
+      "name": "Himalayan Institute Hospital Trust",
+      "phone": null,
+      "km": 1.4,
+      "src": "OpenStreetMap way/981252583"
      },
      {
-      "name": "Ms hospital",
-      "phone": "+917895551369",
-      "km": 13.0
+      "name": "Himalayan Hospital",
+      "phone": "+911352471200",
+      "km": 1.5,
+      "src": "Overture"
      }
     ],
     "police": [
      {
-      "name": "Bhadrakali Police Chowki",
-      "phone": "+911352430041",
-      "km": 13.0
+      "name": "Police Station Doiwala",
+      "phone": "+911352716230",
+      "km": 5.5,
+      "src": "Overture"
      },
      {
-      "name": "Police Station Rishikesh",
-      "phone": "+911352430100",
-      "km": 14.3
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 12.9,
+      "src": "OpenStreetMap node/3869767158"
      }
     ],
     "pharmacy": [
      {
-      "name": "RB Pharma",
-      "phone": "+919761213178",
-      "km": 3.2
+      "name": "Apollo Pharmacy Dehradun Airport Departures",
+      "phone": "07455001988",
+      "km": 1.6,
+      "src": "Overture"
      },
      {
-      "name": "Yash Medical Store",
-      "phone": "+919412435938",
-      "km": 12.5
+      "name": "Apollo Pharmacy - Jauligrant Airport",
+      "phone": "07455001988",
+      "km": 1.6,
+      "src": "Overture"
      }
     ]
    }
   },
   "counts": {
-   "recreational_equipment_rental": 3,
-   "pharmacy_and_drug_store": 26,
-   "restaurant": 1,
-   "airport": 2,
-   "fire_station": 1,
-   "historic_site": 2,
-   "place_of_learning": 1,
-   "campground": 6,
-   "police_station": 8,
-   "lodging": 2,
-   "christian_place_of_worship": 1,
-   "civic_organization": 1,
-   "corporate_or_business_office": 2,
+   "hospital": 476,
    "resort": 5,
-   "hospital": 32,
    "travel_service": 6,
    "religious_organization": 3,
    "beach": 1,
@@ -281,6 +304,20 @@
    "hindu_place_of_worship": 1,
    "auto_dealer": 1,
    "cafe": 1,
+   "emergency_or_urgent_care_facility": 1,
+   "police_station": 68,
+   "campground": 6,
+   "lodging": 2,
+   "christian_place_of_worship": 1,
+   "civic_organization": 1,
+   "corporate_or_business_office": 2,
+   "pharmacy_and_drug_store": 195,
+   "recreational_equipment_rental": 3,
+   "restaurant": 1,
+   "airport": 2,
+   "fire_station": 4,
+   "historic_site": 2,
+   "place_of_learning": 1,
    "arts_and_entertainment": 2,
    "null": 4
   },

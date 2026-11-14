@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T13:10",
+ "fetched": "2026-11-14T19:10",
  "data": {
   "articles": [
    {
@@ -40,6 +40,20 @@
    {
     "title": "Goa Police bust inter State cyber ring; 24 arrested across 16 States",
     "url": "https://www.heraldgoa.in/goa/goa-police-bust-inter-state-cyber-ring-24-arrested-across-16-states/495562/",
+    "domain": "Herald Goa",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "Olencio Simoes Slams Goa Government Over Rising Crimes Against Women and Minors, Demands Police Reforms",
+    "url": "https://www.heraldgoa.in/goa/olencio-simoes-slams-goa-government-over-rising-crimes-against-women-and-minors-demands-police-reforms/495614/",
+    "domain": "Herald Goa",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "St Cruz Teenager Succumbs to Injuries Five Days After Activa Crashes Into Coconut Tree",
+    "url": "https://www.heraldgoa.in/goa/st-cruz-teenager-succumbs-to-injuries-five-days-after-activa-crashes-into-coconut-tree/495593/",
     "domain": "Herald Goa",
     "date": "20261114",
     "query": "feed"
@@ -291,6 +305,8 @@
    "2026-11-13 gdelt \"baga\": FAILED",
    "2026-11-14 Times of India, Goa: 4 relevant",
    "2026-11-14 Herald Goa: 3 relevant",
+   "2026-11-14 Times of India, Goa: 4 relevant",
+   "2026-11-14 Herald Goa: 2 relevant",
    "2026-11-14 Times of India, Goa: 4 relevant",
    "2026-11-14 Herald Goa: 2 relevant"
   ]

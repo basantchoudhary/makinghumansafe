@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T19:30",
+ "fetched": "2026-11-14T23:34",
  "data": {
   "spots": {
    "Calangute Beach": {
@@ -45,36 +45,42 @@
      {
       "name": "Mathew Braganza Hospital",
       "phone": "+918326716666",
-      "km": 0.7
+      "km": 0.7,
+      "src": "Overture"
      },
      {
-      "name": "Dr. Dukle's Hospital and Research Center",
-      "phone": "+919552489333",
-      "km": 2.0
+      "name": "Shri Ram Hospital",
+      "phone": null,
+      "km": 0.8,
+      "src": "OpenStreetMap node/4298569692"
      }
     ],
     "police": [
      {
-      "name": "Calangute Police Station.",
-      "phone": "+918322278284",
-      "km": 2.4
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 0.6,
+      "src": "OpenStreetMap node/5459740022"
      },
      {
-      "name": "Goa Police Station",
-      "phone": null,
-      "km": 3.8
+      "name": "Calangute Police Station.",
+      "phone": "+918322278284",
+      "km": 2.4,
+      "src": "Overture"
      }
     ],
     "pharmacy": [
      {
-      "name": "Atlas Medical Store",
-      "phone": "+917038985776",
-      "km": 1.3
+      "name": "Apollo Pharmacy Calangute",
+      "phone": "07942845496",
+      "km": 0.9,
+      "src": "Overture"
      },
      {
-      "name": "Siddheshwar Chemist and Druggist Medical Stores",
-      "phone": "+919822127482",
-      "km": 6.5
+      "name": "Atlas Medical Store",
+      "phone": "+917038985776",
+      "km": 1.3,
+      "src": "Overture"
      }
     ]
    },
@@ -83,36 +89,42 @@
      {
       "name": "Mathew Braganza Hospital",
       "phone": "+918326716666",
-      "km": 0.3
+      "km": 0.3,
+      "src": "Overture"
      },
      {
-      "name": "Dr. Dukle's Hospital and Research Center",
-      "phone": "+919552489333",
-      "km": 2.0
+      "name": "Shri Ram Hospital",
+      "phone": null,
+      "km": 0.4,
+      "src": "OpenStreetMap node/4298569692"
      }
     ],
     "police": [
      {
-      "name": "Calangute Police Station.",
-      "phone": "+918322278284",
-      "km": 2.0
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 0.5,
+      "src": "OpenStreetMap node/1688110368"
      },
      {
-      "name": "Goa Police Station",
-      "phone": null,
-      "km": 3.8
+      "name": "Calangute Police Station.",
+      "phone": "+918322278284",
+      "km": 2.0,
+      "src": "Overture"
      }
     ],
     "pharmacy": [
      {
-      "name": "Atlas Medical Store",
-      "phone": "+917038985776",
-      "km": 0.9
+      "name": "Apollo Pharmacy Calangute",
+      "phone": "07942845496",
+      "km": 0.5,
+      "src": "Overture"
      },
      {
-      "name": "Siddheshwar Chemist and Druggist Medical Stores",
-      "phone": "+919822127482",
-      "km": 6.5
+      "name": "Atlas Medical Store",
+      "phone": "+917038985776",
+      "km": 0.9,
+      "src": "Overture"
      }
     ]
    },
@@ -121,74 +133,86 @@
      {
       "name": "St. Anthony's Hospital",
       "phone": "+918322274308",
-      "km": 2.9
+      "km": 2.9,
+      "src": "Overture"
      },
      {
       "name": "Mathew Braganza Hospital",
       "phone": "+918326716666",
-      "km": 4.3
+      "km": 4.3,
+      "src": "Overture"
      }
     ],
     "police": [
      {
       "name": "Anjuna Police Station",
       "phone": "+918322273233",
-      "km": 1.6
+      "km": 1.6,
+      "src": "Overture"
      },
      {
-      "name": "Calangute Police Station.",
-      "phone": "+918322278284",
-      "km": 5.6
+      "name": "Chapora Coastal Security Police Station",
+      "phone": null,
+      "km": 3.3,
+      "src": "OpenStreetMap way/1349939200"
      }
     ],
     "pharmacy": [
      {
       "name": "Siddheshwar Chemist and Druggist Medical Stores",
       "phone": "+919822127482",
-      "km": 2.9
+      "km": 2.9,
+      "src": "Overture"
      },
      {
-      "name": "Atlas Medical Store",
-      "phone": "+917038985776",
-      "km": 4.9
+      "name": "Siddheshwar Medical Store",
+      "phone": null,
+      "km": 2.9,
+      "src": "OpenStreetMap node/2084208091"
      }
     ]
    },
    "Palolem Beach, Goa": {
     "hospital": [
      {
-      "name": "Government Hospital",
-      "phone": "+918322643422",
-      "km": 2.7
+      "name": "Victor Hospital",
+      "phone": null,
+      "km": 0.9,
+      "src": "OpenStreetMap way/430544182"
      },
      {
-      "name": "Shri Damodar Nursing Home",
-      "phone": "+918322860333",
-      "km": 25.6
+      "name": "Government Hospital",
+      "phone": "+918322643422",
+      "km": 2.7,
+      "src": "Overture"
      }
     ],
     "police": [
      {
       "name": "Police Station-Canacona",
       "phone": "+918322633357",
-      "km": 3.4
+      "km": 3.4,
+      "src": "Overture"
      },
      {
-      "name": "Betul Coastal Security Police Station",
+      "name": "Canacona Police Station",
       "phone": null,
-      "km": 17.2
+      "km": 3.4,
+      "src": "OpenStreetMap way/430545520"
      }
     ],
     "pharmacy": [
      {
-      "name": "Yeshwant Medical Stores",
-      "phone": "+917020683655",
-      "km": 2.2
+      "name": "Desai Chemist and Drugist",
+      "phone": null,
+      "km": 0.8,
+      "src": "OpenStreetMap node/4347571289"
      },
      {
-      "name": "Yeshwant Chemist and Druggist",
-      "phone": "+917517536505",
-      "km": 2.4
+      "name": "Yeshwant Medical Stores",
+      "phone": "+917020683655",
+      "km": 2.2,
+      "src": "Overture"
      }
     ]
    },
@@ -197,112 +221,130 @@
      {
       "name": "Trimurti General Hospital",
       "phone": "+918530460933",
-      "km": 1.0
+      "km": 1.0,
+      "src": "Overture"
      },
      {
-      "name": "Imperial hospital ",
-      "phone": "+917620654215",
-      "km": 4.3
+      "name": "Dr. Correia Afonso Hospital",
+      "phone": null,
+      "km": 4.0,
+      "src": "OpenStreetMap node/4298328692"
      }
     ],
     "police": [
      {
       "name": "Police Station Colva",
       "phone": "+918322703698",
-      "km": 1.4
+      "km": 1.4,
+      "src": "Overture"
      },
      {
-      "name": "Margao Police Station",
-      "phone": "+918322714450",
-      "km": 4.6
+      "name": "Colva police station",
+      "phone": null,
+      "km": 1.4,
+      "src": "OpenStreetMap node/5289047122"
      }
     ],
     "pharmacy": [
      {
-      "name": "Shree Damodar Medical Stores",
-      "phone": "+918322771333",
-      "km": 3.9
+      "name": "Sunshine Medical Store",
+      "phone": null,
+      "km": 1.0,
+      "src": "OpenStreetMap node/4329378090"
      },
      {
-      "name": "Hindu Pharmacy",
-      "phone": "+918322726383",
-      "km": 4.9
+      "name": "Apollo Pharmacy Seraulim Goa",
+      "phone": "08956751409",
+      "km": 2.0,
+      "src": "Overture"
      }
     ]
    },
    "Arambol Beach": {
     "hospital": [
      {
-      "name": "St. Anthony's Hospital",
-      "phone": "+918322274308",
-      "km": 10.6
+      "name": "Hospital Sawant",
+      "phone": null,
+      "km": 5.9,
+      "src": "OpenStreetMap node/7643338070"
      },
      {
-      "name": "Redkar Hospital and Research Center",
-      "phone": "+919146885522",
-      "km": 13.7
+      "name": "CHC, Tuem Pernem",
+      "phone": null,
+      "km": 9.6,
+      "src": "OpenStreetMap way/1158138145"
      }
     ],
     "police": [
      {
       "name": "Arambol Police Out Post",
       "phone": "+918322242914",
-      "km": 0.4
+      "km": 0.4,
+      "src": "Overture"
      },
      {
-      "name": "Pernem Police Station",
-      "phone": "+918322201233",
-      "km": 10.6
+      "name": "Police Outpost Arambol",
+      "phone": "+91 832 2242914",
+      "km": 0.4,
+      "src": "OpenStreetMap way/1157573046"
      }
     ],
     "pharmacy": [
      {
-      "name": "Siddheshwar Chemist and Druggist Medical Stores",
-      "phone": "+919822127482",
-      "km": 10.1
+      "name": "Satpurush Medical Store",
+      "phone": null,
+      "km": 0.9,
+      "src": "OpenStreetMap node/1592216592"
      },
      {
-      "name": "iCare Medical Store",
-      "phone": "+919822387833",
-      "km": 15.2
+      "name": "Medical store",
+      "phone": null,
+      "km": 0.9,
+      "src": "OpenStreetMap node/7146660186"
      }
     ]
    },
    "Dudhsagar Falls": {
     "hospital": [
      {
-      "name": "Primary Health Centre Sanguem",
-      "phone": "+919011025042",
-      "km": 14.9
+      "name": "Government Hospital, Castlerock",
+      "phone": "8383251508",
+      "km": 9.1,
+      "src": "OpenStreetMap node/7205430808"
      },
      {
-      "name": "Community Health Center",
-      "phone": "+918322650566",
-      "km": 22.9
+      "name": "Primary Health Centre Sanguem",
+      "phone": "+919011025042",
+      "km": 14.9,
+      "src": "Overture"
      }
     ],
     "police": [
      {
       "name": "Mollem Police Out Post",
       "phone": null,
-      "km": 11.5
+      "km": 11.5,
+      "src": "Overture"
      },
      {
-      "name": "Police Station-Quepem",
+      "name": "Sanguem Police Station",
       "phone": null,
-      "km": 28.8
+      "km": 19.6,
+      "src": "OpenStreetMap way/777386804"
      }
     ],
     "pharmacy": [
      {
-      "name": "shirodkar medicals chemist and druggist",
-      "phone": "+918669062879",
-      "km": 23.0
+      "name": "Apollo Pharmacy Curchorem II Goa",
+      "phone": "08956751407",
+      "km": 22.7,
+      "src": "Overture"
      },
      {
-      "name": "OM Medical STORE",
-      "phone": "+918322652835",
-      "km": 24.1
+      "name": "Apollo",
+      "phone": null,
+      "km": 22.8,
+      "src": "OpenStreetMap node/4269341290"
      }
     ]
    },
@@ -311,99 +353,111 @@
      {
       "name": "Redkar Hospital and Research Center",
       "phone": "+919146885522",
-      "km": 6.9
+      "km": 6.9,
+      "src": "Overture"
      },
      {
       "name": "Dr Lele's streerog prasuti hospital",
       "phone": "+919765910766",
-      "km": 8.6
+      "km": 8.6,
+      "src": "Overture"
      }
     ],
     "police": [
      {
-      "name": "Pernem Police Station",
-      "phone": "+918322201233",
-      "km": 7.5
+      "name": "Manohar International Airport Police Station",
+      "phone": null,
+      "km": 1.5,
+      "src": "OpenStreetMap way/1178488195"
      },
      {
-      "name": "Mapusa Police Station",
-      "phone": "+918322262231",
-      "km": 17.6
+      "name": "Pernem Police Station",
+      "phone": "+918322201233",
+      "km": 7.5,
+      "src": "Overture"
      }
     ],
     "pharmacy": [
      {
-      "name": "iCare Medical Store",
-      "phone": "+919822387833",
-      "km": 17.7
+      "name": "Apollo Pharmacy",
+      "phone": null,
+      "km": 1.2,
+      "src": "OpenStreetMap node/10960994652"
      },
      {
-      "name": "Union Pharmacy",
-      "phone": "+918322252557",
-      "km": 17.7
+      "name": "Apollo Pharmacy Bicholim II",
+      "phone": "08799917175",
+      "km": 13.1,
+      "src": "Overture"
      }
     ]
    },
    "Goa International Airport": {
     "hospital": [
      {
-      "name": "Pai Hospital",
-      "phone": "+918322513641",
-      "km": 1.6
+      "name": "VM Salgaoncar Hospital",
+      "phone": null,
+      "km": 1.1,
+      "src": "OpenStreetMap way/1550629880"
      },
      {
-      "name": "Rampyari Hospital",
-      "phone": "+917798973345",
-      "km": 2.3
+      "name": "Pai Hospital",
+      "phone": "+918322513641",
+      "km": 1.6,
+      "src": "Overture"
      }
     ],
     "police": [
      {
-      "name": "Police Station",
+      "name": "Mormugao Police Station",
       "phone": null,
-      "km": 8.0
+      "km": 4.3,
+      "src": "OpenStreetMap way/1338898152"
      },
      {
-      "name": "Goa Police",
+      "name": "Sada Police Station",
       "phone": null,
-      "km": 8.8
+      "km": 4.9,
+      "src": "OpenStreetMap node/4272882590"
      }
     ],
     "pharmacy": [
      {
       "name": "Vedh Medical Stores",
       "phone": "+919823986260",
-      "km": 0.8
+      "km": 0.8,
+      "src": "Overture"
      },
      {
       "name": "Gaia Pharmacy- Online Medical Store Goa (Chemist & Druggist)",
       "phone": "+917775058199",
-      "km": 1.0
+      "km": 1.0,
+      "src": "Overture"
      }
     ]
    }
   },
   "counts": {
-   "police_station": 30,
-   "private_lodging": 5,
-   "lodging": 5,
-   "bed_and_breakfast": 1,
-   "pharmacy_and_drug_store": 115,
-   "airport": 7,
-   "park": 2,
-   "fire_station": 4,
-   "restaurant": 4,
-   "recreational_equipment_rental": 1,
-   "null": 10,
-   "hospital": 150,
+   "hospital": 585,
+   "public_transit_facility_or_service": 1,
+   "hotel": 40,
    "beach": 48,
    "resort": 27,
-   "taxi_or_ride_share_service": 1,
-   "hotel": 40,
-   "public_transit_facility_or_service": 1,
    "travel_service": 4,
    "bar": 1,
-   "emergency_or_urgent_care_facility": 1
+   "emergency_or_urgent_care_facility": 1,
+   "taxi_or_ride_share_service": 1,
+   "null": 10,
+   "pharmacy_and_drug_store": 389,
+   "airport": 7,
+   "restaurant": 4,
+   "recreational_equipment_rental": 1,
+   "fire_station": 5,
+   "park": 2,
+   "police_station": 121,
+   "lodging": 5,
+   "bed_and_breakfast": 1,
+   "private_lodging": 5
   },
   "missing_spots": [],
   "candidates": {}

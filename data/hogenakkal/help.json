@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T19:37",
+ "fetched": "2026-11-14T23:45",
  "data": {
   "spots": {
    "Hogenakkal Falls": {
@@ -21,36 +21,42 @@
      {
       "name": "Sivam Siddha Hospital",
       "phone": "+919385537483",
-      "km": 13.4
+      "km": 13.4,
+      "src": "Overture"
      },
      {
-      "name": "Bandahalli Village General Hospital",
+      "name": "Government Hospital, Pennagaram",
       "phone": null,
-      "km": 24.6
+      "km": 13.8,
+      "src": "OpenStreetMap node/7262595349"
      }
     ],
     "police": [
      {
       "name": "Hogenakkal Police Station-Dharmapuri",
       "phone": null,
-      "km": 0.3
+      "km": 0.3,
+      "src": "Overture"
      },
      {
       "name": "Eriyur Police Station",
       "phone": "+919494101063",
-      "km": 12.7
+      "km": 12.7,
+      "src": "Overture"
      }
     ],
     "pharmacy": [
      {
       "name": "PMBJK Medicals Pennagaram",
       "phone": "+919788779920",
-      "km": 11.9
+      "km": 11.9,
+      "src": "Overture"
      },
      {
-      "name": "Jersey Medicals",
-      "phone": "+918489089058",
-      "km": 42.3
+      "name": "Apollo Pharmacy Sampalli Mettur",
+      "phone": "04298223130",
+      "km": 34.7,
+      "src": "Overture"
      }
     ]
    },
@@ -59,81 +65,93 @@
      {
       "name": "Sivam Siddha Hospital",
       "phone": "+919385537483",
-      "km": 0.3
+      "km": 0.3,
+      "src": "Overture"
      },
      {
-      "name": "Bandahalli Village General Hospital",
+      "name": "Government Hospital, Pennagaram",
       "phone": null,
-      "km": 12.0
+      "km": 0.9,
+      "src": "OpenStreetMap node/7262595349"
      }
     ],
     "police": [
      {
       "name": "Hogenakkal Police Station-Dharmapuri",
       "phone": null,
-      "km": 12.9
+      "km": 12.9,
+      "src": "Overture"
      },
      {
       "name": "Eriyur Police Station",
       "phone": "+919494101063",
-      "km": 17.4
+      "km": 17.4,
+      "src": "Overture"
      }
     ],
     "pharmacy": [
      {
       "name": "PMBJK Medicals Pennagaram",
       "phone": "+919788779920",
-      "km": 16.7
+      "km": 16.7,
+      "src": "Overture"
      },
      {
-      "name": "Jersey Medicals",
-      "phone": "+918489089058",
-      "km": 29.2
+      "name": "Apollo Pharmacy",
+      "phone": "04348223368",
+      "km": 25.1,
+      "src": "Overture"
      }
     ]
    },
    "Dharmapuri": {
     "hospital": [
      {
-      "name": "S D Hospital",
-      "phone": "+916380299499",
-      "km": 0.3
+      "name": "Navina Hospital",
+      "phone": null,
+      "km": 0.1,
+      "src": "OpenStreetMap node/7838884163"
      },
      {
-      "name": "Sri Priya Hospital",
-      "phone": "+914342267700",
-      "km": 0.3
+      "name": "D.N.V Hospital",
+      "phone": null,
+      "km": 0.2,
+      "src": "OpenStreetMap node/7838884135"
      }
     ],
     "police": [
      {
       "name": "District Police Office",
       "phone": null,
-      "km": 3.5
+      "km": 3.5,
+      "src": "Overture"
      },
      {
-      "name": "B2 Police Station",
+      "name": "Police station (name not on map)",
       "phone": null,
-      "km": 7.9
+      "km": 7.0,
+      "src": "OpenStreetMap node/13774340101"
      }
     ],
     "pharmacy": [
      {
-      "name": "Jersey Medicals",
-      "phone": "+918489089058",
-      "km": 1.1
+      "name": "Apollo Pharmacy Dharmapuri 3",
+      "phone": "04342266368",
+      "km": 0.1,
+      "src": "Overture"
      },
      {
-      "name": "Sugam Pharmacy",
-      "phone": "+914342266223",
-      "km": 2.7
+      "name": "Jersey Medicals",
+      "phone": "+918489089058",
+      "km": 1.1,
+      "src": "Overture"
      }
     ]
    }
   },
   "counts": {
+   "hospital": 219,
    "fashion_and_apparel_store": 5,
-   "hospital": 44,
    "preschool": 2,
    "waterfall": 1,
    "public_transit_facility_or_service": 2,
@@ -152,7 +170,18 @@
    "shipping_or_delivery_service": 1,
    "social_or_community_service": 1,
    "auto_dealer": 1,
-   "police_station": 4,
+   "mountain": 1,
+   "null": 4,
+   "community_and_government": 2,
+   "medical_service": 1,
+   "elementary_school": 1,
+   "automotive_service": 2,
+   "manufacturer": 2,
+   "specialty_school": 3,
+   "natural_gas_utility_provider": 1,
+   "home_service": 1,
+   "travel_and_transportation": 1,
+   "police_station": 27,
    "youth_organization": 1,
    "parking": 1,
    "train_station": 2,
@@ -165,18 +194,7 @@
    "lodging": 1,
    "sporting_goods_store": 1,
    "lake": 1,
-   "mountain": 1,
-   "null": 4,
-   "community_and_government": 2,
-   "medical_service": 1,
-   "elementary_school": 1,
-   "automotive_service": 2,
-   "manufacturer": 2,
-   "specialty_school": 3,
-   "natural_gas_utility_provider": 1,
-   "home_service": 1,
-   "travel_and_transportation": 1,
-   "pharmacy_and_drug_store": 9,
+   "pharmacy_and_drug_store": 40,
    "shopping": 3,
    "place_of_learning": 11,
    "agricultural_service": 1,

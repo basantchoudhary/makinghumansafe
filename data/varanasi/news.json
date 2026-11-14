@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T13:10",
+ "fetched": "2026-11-14T19:10",
  "data": {
   "articles": [
    {
@@ -69,6 +69,7 @@
   "log": [
    "2026-11-13 Times of India, Varanasi: 6 relevant",
    "2026-11-13 Times of India, Varanasi: FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)",
+   "2026-11-14 Times of India, Varanasi: 5 relevant",
    "2026-11-14 Times of India, Varanasi: 5 relevant",
    "2026-11-14 Times of India, Varanasi: 5 relevant"
   ]
