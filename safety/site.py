@@ -78,7 +78,7 @@ def page(title, body, desc, path="/"):
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{SITE_URL}{path}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">{FONT}<style>{CSS}</style></head><body><div class="wrap">
 <header class="top"><a class="brand" href="/">{doodles.logo(38)}Making Human Safe</a>
-<nav><a href="/#places">Places</a><a href="/pictures/">Stay safe, in pictures</a><a href="/about/">About</a></nav>
+<nav><a href="/#places">Places</a><a href="/insights/drowning-india/">Insights</a><a href="/pictures/">Stay safe, in pictures</a><a href="/about/">About</a></nav>
 <a class="mus" href="/make-us-safe/">MakeUsSafe</a></header>
 {body}
 <footer><p class="sos"><b>In danger? Call your emergency number.</b> {EMERGENCY}</p>
@@ -376,6 +376,14 @@ def main():
         (SITE / path).mkdir(exist_ok=True)
         (SITE / path / "index.html").write_text(fn())
     (SITE / "favicon.svg").write_text(favicon())
+    from safety import insights
+    body, csv_text = insights.drowning_india()
+    d = SITE / "insights" / "drowning-india"
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "index.html").write_text(page("Where and when people drown in India: checked incidents, months, places | Making Human Safe", body,
+        "When and where people drown in India, from checked incidents: May and June are worst, most victims are groups of young friends, and most drownings happen on calm days. Open data.",
+        "/insights/drowning-india/"))
+    (d / "water-incidents-india.csv").write_text(csv_text)
     print(f"built {len(places)} place page(s) into {SITE}")
 
 

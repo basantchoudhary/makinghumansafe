@@ -1,0 +1,76 @@
+date,state,district,spot,water_type,incident_type,deaths,warning_ignored,source_name,source_url
+2022-03-01,Andhra Pradesh,Visakhapatnam,RK Beach,sea_beach,drowning,2,,The Hans India,https://thehansindia.com/andhra-pradesh/andhra-pradesh-two-drowned-to-death-and-one-rescued-at-rk-beach-in-visakhapatnam-731577
+2022-04-07,Karnataka,Udupi,St Mary's Island (Malpe),sea_beach,drowning,3,True,Deccan Herald,https://www.deccanherald.com/india/karnataka/3-engineering-students-from-kerala-drown-while-taking-selfie-at-st-mary-s-island-1098622.html
+2022-04-18,Karnataka,Udupi,St Mary's Island (Malpe),sea_beach,drowning,2,,Deccan Herald,https://www.deccanherald.com/india/karnataka/2-bengaluru-students-drown-in-st-marys-island-1101761.html
+2022-05-24,Maharashtra,Sindhudurg,Tarkarli (Malvan),sea_boat,boat_capsize,2,,Devdiscourse (PTI),https://www.devdiscourse.com/article/business/2048492-maha-2-tourists-dead-as-boat-capsizes-off-sindhudurg-coast
+2022-06-11,Kerala,Alappuzha,Alappuzha houseboats,backwater,boat_capsize,1,,Onmanorama,https://www.onmanorama.com/news/kerala/2022/06/11/one-missing-after-houseboat-sinks-in-alappuzha.html
+2022-06-14,Goa,North Goa,Sinquerim (Aguada),sea_beach,drowning,1,,Free Press Journal,https://www.freepressjournal.in/goa/goa-another-tourist-drowns-off-sinquerim
+2022-06-14,Maharashtra,Mumbai Suburban,Juhu Beach,sea_beach,drowning,3,True,Free Press Journal,https://www.freepressjournal.in/mumbai/mumbai-3-boys-drown-1-rescued-at-juhu-beach
+2022-06-16,Kerala,Alappuzha,Alappuzha houseboats,backwater,drowning,1,,Onmanorama,https://www.onmanorama.com/news/kerala/2022/06/16/tourist-drowns-after-falling-into-lake-alappuzha.html
+2022-07-29,Andhra Pradesh,Anakapalli,Seetapalem Beach (Pudimadaka),sea_beach,drowning,1,,The News Minute,https://www.thenewsminute.com/article/one-student-killed-five-missing-beach-tragedy-near-vizag-166347
+2022-10-11,Uttarakhand,Tehri Garhwal,Rishikesh rafting stretch (Ganga),river,rafting,1,,ETV Bharat,https://www.etvbharat.com/amp/english/state/west-bengal/west-bengal-tourist-died-after-raft-capsizes-in-ganga-at-rishikesh/na20221011165404032032172
+2022-12-29,Kerala,Alappuzha,Alappuzha houseboats,backwater,boat_capsize,1,,Onmanorama,https://www.onmanorama.com/news/kerala/2022/12/29/andhra-native-drowns-houseboat.html
+2023-05-03,Odisha,Puri,Puri Beach,sea_beach,drowning,2,,Sambad English,https://sambadenglish.com/two-west-bengal-tourists-meet-watery-grave-while-bathing-in-sea-in-odishas-puri
+2023-05-07,Kerala,Malappuram,Tanur (Thooval Theeram),backwater,boat_capsize,22,,Al Jazeera,https://www.aljazeera.com/news/2023/5/8/many-dead-as-tourist-boat-capsizes-in-indias-kerala-state
+2023-06-12,Maharashtra,Mumbai Suburban,Juhu Beach,sea_beach,drowning,4,True,Deccan Herald,https://www.deccanherald.com/india/juhu-beach-drowning-bodies-of-two-minors-recovered-1227485.html
+2023-07-09,Goa,South Goa,Mainapi Waterfall (Netravali),waterfall,drowning,2,,Deccan Herald,https://www.deccanherald.com/india/amid-spate-of-drownings-goa-waterfalls-off-limits-for-tourists-locals-1236472.html
+2023-09-03,Tamil Nadu,Kanyakumari,Kanyakumari Beach,sea_beach,drowning,2,,ETV Bharat,https://etvbharat.com/english/state/tamil-nadu/tamil-nadu-two-bengaluru-tourists-swept-away-in-kanyakumari/na20230903210247000000276
+2023-10-23,Karnataka,Uttara Kannada,Murudeshwar Beach,sea_beach,drowning,2,,Sahil Online,https://sahilonline.org/bhatkal-tragedy-strikes-as-two-tourists-drown-in-murdeshwar-beach
+2024-01-18,Gujarat,Vadodara,Harni Lake,lake,boat_capsize,14,,Deccan Herald,https://www.deccanherald.com/india/gujarat/at-least-nine-students-two-teachers-drown-after-boat-capsizes-in-vadodara-2854823
+2024-02-06,Kerala,Thiruvananthapuram,Papanasam Beach (Varkala),sea_beach,drowning,1,,Onmanorama,https://www.onmanorama.com/news/kerala/2024/02/07/college-lecturer-drowns-papanasam-beach.html
+2024-02-21,Kerala,Thiruvananthapuram,"Vettakada Beach (Edava, Varkala)",sea_beach,drowning,1,,Onmanorama,https://www.onmanorama.com/news/kerala/2024/02/21/russian-woman-drowns-sea-varkala.html
+2024-03-03,Tamil Nadu,Chengalpattu,Mahabalipuram Beach,sea_beach,drowning,2,,India Today NE,https://indiatodayne.in/national/story/tamil-nadu-two-students-drown-three-missing-in-mahaballipuram-beach-919207-2024-03-04
+2024-04-05,Kerala,Thiruvananthapuram,Papanasam Beach (Varkala),sea_beach,other,1,,Free Press Journal,https://www.freepressjournal.in/amp/india/tragic-55-year-old-british-citizen-dies-while-surfing-at-varkala-beach-in-keralas-thiruvananthapuram
+2024-04-16,Jammu and Kashmir,Srinagar,Jhelum River (Srinagar),river,boat_capsize,6,,Deccan Herald (PTI),https://www.deccanherald.com/india/jammu-and-kashmir/kashmir-boat-tragedy-search-underway-for-the-missing-2982026
+2024-04-21,Karnataka,Uttara Kannada,Kali River (Dandeli),river,drowning,6,,Deccan Herald,https://www.deccanherald.com/india/karnataka/six-of-family-drown-in-backwaters-of-kali-river-2988218
+2024-04-28,Uttarakhand,Pauri Garhwal,Rishikesh Ganga ghats,river,drowning,,,Hindustan Times,https://www.hindustantimes.com/cities/dehradun-news/2-tourists-washed-away-in-ganga-in-rishikesh-sdrf-launches-search-101714306393063.html
+2024-05-06,Tamil Nadu,Kanyakumari,Lemur Beach (Kanyakumari),sea_beach,drowning,5,True,Onmanorama,https://www.onmanorama.com/news/india/2024/05/06/medical-students-drown-kanyakumari.html
+2024-05-12,Gujarat,Navsari,Dandi Beach,sea_beach,drowning,4,,Free Press Journal,https://www.freepressjournal.in/india/gujarat-tragedy-4-drown-at-dandi-beach-in-navsari-search-yields-bodies-after-14-hours
+2024-05-17,Gujarat,Kutch,Mandvi Beach,sea_beach,parasailing,1,,Outlook India (PTI),https://www.outlookindia.com/national/tourist-dies-in-jeep-parasailing-accident-on-gujarat-beach-two-held
+2024-05-17,Tamil Nadu,Tenkasi,Courtallam Falls,waterfall,flash_flood,1,,The News Minute,https://www.thenewsminute.com/tamil-nadu/tn-17-year-old-gets-swept-away-in-flash-flood-at-old-courtallam-waterfalls
+2024-05-26,Himachal Pradesh,Kullu,"Beas River, Manali",river,drowning,2,,Deccan Herald (PTI),https://www.deccanherald.com/india/himachal-pradesh/tourist-washed-away-in-beas-river-near-manali-another-missing-3039504
+2024-06-03,Himachal Pradesh,Kullu,"Beas River, Manali",river,drowning,2,,The Tribune,https://www.tribuneindia.com/news/himachal/2-up-women-drown-in-beas-in-himachal-pradeshs-manali-627518
+2024-06-29,Maharashtra,Pune/Raigad border,Tamhini Ghat (Plus Valley) waterfall,waterfall,cliff_jump,1,,Free Press Journal,https://www.freepressjournal.in/amp/pune/shocking-video-man-jumps-into-tamhini-ghat-waterfall-body-recovered-after-2-days
+2024-06-30,Kerala,Thiruvananthapuram,Kappil Beach (Varkala),sea_beach,drowning,2,True,Onmanorama,https://www.onmanorama.com/news/kerala/2024/06/30/two-relatives-drown-kappil-beach-varkala.html
+2024-06-30,Maharashtra,Pune,Bhushi Dam waterfall (Lonavala),waterfall,flash_flood,3,,Deccan Herald,https://www.deccanherald.com/india/maharashtra/picnic-on-rainy-day-turns-tragic-three-of-family-drown-in-lonavala-search-on-for-two-missing-kids-3087466
+2024-08-30,Tamil Nadu,Chengalpattu,Mahabalipuram Beach,sea_beach,drowning,3,,DT Next,https://www.dtnext.in/news/chennai/three-college-students-on-trip-drown-in-mahabalipuram-beach-801840
+2024-10-06,Karnataka,Uttara Kannada,Murudeshwar Beach,sea_beach,drowning,1,,Public TV English,https://english.publictv.in/?p=863445
+2024-10-17,Tamil Nadu,Chennai,Marina Beach,sea_beach,drowning,1,,DT Next,https://www.dtnext.in/news/chennai/chennai-college-student-drowns-in-sea-off-marina-beach-807804
+2024-12-10,Karnataka,Uttara Kannada,Murudeshwar Beach,sea_beach,drowning,4,,Deccan Herald,https://www.deccanherald.com/india/karnataka/four-school-students-drown-at-beach-in-murudeshwar-3313167
+2024-12-18,Maharashtra,Mumbai,Elephanta ferry route (Gateway of India),sea_boat,boat_collision,13,,Scroll.in,https://scroll.in/latest/1076973/13-dead-101-rescued-after-navy-speedboat-crashes-into-ferry-off-mumbai-coast
+2024-12-21,Karnataka,Udupi,Trasi Beach,sea_beach,jetski,1,,Deccan Herald,https://www.deccanherald.com/india/karnataka/jet-ski-rider-feared-drowned-in-udupi-3328521
+2024-12-21,Kerala,Idukki,Aruvikuthu Waterfall,waterfall,drowning,2,,Onmanorama,https://www.onmanorama.com/news/kerala/2024/12/21/two-students-fall-aruvikuthu-waterfall-die-idukki.html
+2024-12-27,Maharashtra,Raigad,Kashid Beach,sea_beach,drowning,1,,Free Press Journal (PTI),https://www.freepressjournal.in/amp/pune/pune-based-school-principal-loses-life-in-drowning-incident-at-kashid-beach
+2025-01-08,Karnataka,Dakshina Kannada,Kulai Jetty (Surathkal),sea_beach,drowning,3,,Deccan Herald,https://www.deccanherald.com/india/karnataka/karnataka-3-friends-drown-off-surathkal-beach-one-rescued-3346571
+2025-01-26,Kerala,Kozhikode,Kallakath Beach (Thikkodi),sea_beach,drowning,4,,Onmanorama,https://www.onmanorama.com/news/kerala/2025/01/26/four-wayanad-natives-drown-beach-kozhikode.html
+2025-02-09,Uttarakhand,Pauri Garhwal,Rishikesh Ganga ghats,river,drowning,1,,Dinamalar (PTI),https://www.dinamalar.com/news/kalvimalar-news-en/-uttarakhand-engineering-student-drown-in-ganga-river-while-bathing-in-rishikesh/54014
+2025-02-15,Kerala,Thiruvananthapuram,Kovalam Beach,sea_beach,drowning,1,,ETV Bharat,https://etvbharat.com/amp/en/!state/elderly-american-woman-drowns-at-keralas-kovalam-beach-enn25021504961
+2025-02-22,Maharashtra,Sindhudurg,Tarkarli (Malvan),sea_beach,drowning,2,,Free Press Journal (PTI),https://www.freepressjournal.in/amp/pune/two-pune-tourists-drown-one-rescued-at-tarkarli-beach-in-malvan
+2025-03-29,Uttarakhand,Dehradun,Rishikesh Ganga ghats,river,drowning,1,,NewsDrum (PTI),https://www.newsdrum.in/national/tourist-drowns-in-ganga-river-in-uttarakhands-rishikesh-8907443
+2025-04-18,Kerala,Kozhikode,Pathankayam Waterfalls,waterfall,drowning,1,,Onmanorama,https://www.onmanorama.com/news/kerala/2025/04/18/nit-student-drowns-pathankayam-waterfalls.html
+2025-04-24,Karnataka,Uttara Kannada,Kudle Beach (Gokarna),sea_beach,drowning,2,,Deccan Chronicle,https://deccanchronicle.com/tamil-nadu-mbbs-students-drown-off-gokarna-coast-during-tour
+2025-05-04,Goa,North Goa,Baga Beach,sea_beach,drowning,1,,The Goan,https://www.thegoan.net/goa-news/6yearold-tourist-girl-drowns-off-baga-beach/129843.html
+2025-05-05,Tamil Nadu,Dharmapuri,Hogenakkal,river,drowning,2,,DT Next,https://www.dtnext.in/news/tamilnadu/two-from-panruti-drown-while-bathing-near-hogenakkal-832579
+2025-05-07,Kerala,Kozhikode,Pathankayam Waterfalls,waterfall,drowning,1,,Onmanorama,https://www.onmanorama.com/news/kerala/2025/05/07/youth-drowns-waterfall-kozhikode.html
+2025-06-15,Maharashtra,Pune,Kundamala (Indrayani river),river,other,2,,Business Standard (PTI),https://www.business-standard.com/india-news/pune-iron-bridge-collapse-indrayani-river-tourists-dead-injured-125061500438_1.html
+2025-06-18,West Bengal,Purba Medinipur,Mandarmani Beach,sea_beach,drowning,1,True,OrissaPOST,https://www.orissapost.com/tourist-drowns-another-missing-at-mandarmani
+2025-08-01,Maharashtra,Mumbai Suburban,Juhu Beach,sea_beach,drowning,,,Free Press Journal,https://www.freepressjournal.in/amp/mumbai/mumbai-tragedy-2-young-boys-drown-while-swimming-at-juhus-silver-beach-1-rescued-massive-search-underway-to-locate-another
+2025-08-16,Puducherry,Puducherry,Chinna Veerampattinam Beach,sea_beach,drowning,3,,The Indian Awaaz,https://theindianawaaz.com/?p=312446
+2025-09-07,Karnataka,Udupi,Charkikadu Beach (Kundapura),sea_beach,drowning,3,,Deccan Herald,https://www.deccanherald.com/india/karnataka/bengaluru/three-b-luru-students-drown-in-arabian-sea-near-kundapur-3716487
+2025-10-03,Maharashtra,Sindhudurg,Shiroda-Velagar Beach,sea_beach,drowning,7,,Deccan Herald,https://www.deccanherald.com/india/karnataka/8-tourists-from-karnatakas-belagavi-drown-in-shiroda-velagar-beach-3-bodies-found-3751987
+2025-10-19,Andhra Pradesh,Visakhapatnam,Yarada Beach,sea_beach,drowning,2,True,Deccan Chronicle,https://www.deccanchronicle.com/southern-states/andhra-pradesh/two-youths-drown-at-yarada-beach-1911354
+2025-11-02,Kerala,Kannur,Payyambalam Beach,sea_beach,drowning,3,,Deccan Herald,https://www.deccanherald.com/india/kerala/three-bengaluru-medical-students-drown-in-kannur-beach-3783919
+2026-01-26,Karnataka,Udupi,"Delta Beach, Kodi Bengre (Malpe)",sea_boat,boat_capsize,2,,Deccan Herald,https://www.deccanherald.com/india/karnataka/2-tourists-lost-lives-in-boat-tragedy-at-malpe-coast-3875072
+2026-03-30,Odisha,Puri,Puri Beach,sea_beach,drowning,2,,OdishaBytes,https://odishabytes.com/two-tourists-drown-while-bathing-at-sector-14-puri-sea-beach-in-odisha/amp/
+2026-04-01,West Bengal,Purba Medinipur,Tajpur Beach,sea_beach,drowning,2,True,Medical Dialogues,https://medicaldialogues.in/news/health/doctors/tragic-doctor-couple-drowns-at-east-midnapore-beach-167905
+2026-04-30,Madhya Pradesh,Jabalpur,Bargi Dam,dam,boat_capsize,9,,Outlook India,https://www.outlookindia.com/national/jabalpur-cruise-tragedy-latest-in-a-series-of-mishaps-at-tourist-hubs
+2026-05-31,Karnataka,Udupi,"Delta Beach, Kodi Bengre (Malpe)",sea_beach,drowning,1,,Deccan Herald,https://www.deccanherald.com/india/karnataka/bengaluru-tourist-swept-away-by-sea-in-udupi-dies-4024031
+2026-06-13,Goa,South Goa,Dudhsagar Falls,waterfall,drowning,4,,Oneindia,https://www.oneindia.com/india/goa-dudhsagar-waterfall-tragedy-four-students-drown-during-picnic-one-survives-8117381.html
+2026-06-24,Goa,North Goa,Baga Beach,sea_beach,drowning,1,True,Deccan Chronicle,https://www.deccanchronicle.com/nation/tourist-drowns-after-being-swept-away-by-waves-at-goas-baga-beach-1965956
+2026-06-27,Kerala,Kozhikode,Pathankayam Waterfalls,waterfall,flash_flood,1,,Onmanorama,https://www.onmanorama.com/news/kerala/2026/06/29/pathankayam-waterfalls-mishap-body-of-tourist-guide-swept-away-in-flash-flood-recovered.html
+2026-07-12,Maharashtra,Raigad,Devkund Waterfall,waterfall,drowning,2,True,Free Press Journal,https://www.freepressjournal.in/pune/pune-two-men-drown-at-raigads-devkund-waterfall-after-allegedly-ignoring-police-warning
+2026-07-25,Maharashtra,Pune,Kalu Waterfall (Malshej Ghat),river,flash_flood,2,,Punekar News,https://www.punekarnews.in/?p=240787
+2026-10-01,Maharashtra,Raigad,Diveagar Beach,sea_beach,drowning,8,,Deccan Herald,https://www.deccanherald.com/india/maharashtra/eight-students-from-maharashtras-alandi-die-in-arabian-sea-drowning-tragedy-4167319
+2026-10-02,Andhra Pradesh,Visakhapatnam,Rushikonda Beach,sea_beach,drowning,1,,Deccan Chronicle,https://www.deccanchronicle.com/southern-states/andhra-pradesh/rushikonda-beach-tragedy-dubai-based-father-seeks-help-to-return-to-india-1992716
+2026-11-01,Karnataka,Uttara Kannada,Dubbanashasi Beach (Gokarna),sea_beach,drowning,3,,UNI India,https://www.uniindia.com/south-india/karnataka-it-employees-drown/233117
+2026-11-09,Odisha,Puri,Puri Beach,sea_beach,drowning,2,,UNI India,https://www.uniindia.com/east-india/accident-odisha-drowned/240454
