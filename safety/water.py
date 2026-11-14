@@ -199,6 +199,19 @@ def block(key, cfg, alerts, helpd, incois=None, notices=None):
             f'<span class="src">{e(n["date"])}, <a href="{e(n["link"])}">{e(n["source"])}</a></span><br><span class="small">{e(n["text"][:300])}</span></div>'
             for n in nts[:5]))
 
+    # 3b2. Lifeguarded beaches (hand-collected lists, e.g. Drishti in Goa)
+    lg_p = ROOT / "lifeguards" / f"{key}.json"
+    if lg_p.exists():
+        lg = json.loads(lg_p.read_text())
+        names = lg.get("north_goa", []) + lg.get("south_goa", []) + lg.get("beaches", [])
+        spots = (((helpd or {}).get("data") or {}).get("near") or {}).keys()
+        mark = [(sp, any(n.lower().split()[0] in sp.lower().replace(",", " ").split() for n in names)) for sp in spots if any(w in sp.lower() for w in ("beach", "falls"))]
+        out.append(f'<h3>Lifeguards</h3><p>{len(names)} beaches and waterfalls here have lifesavers ({e(lg["source"].split(",")[0])}). '
+                   f'Swim only near them, between their flags. Lifesaver helpline: <b>{e(lg.get("helpline", ""))}</b>.</p>'
+                   + ("<ul>" + "".join(f'<li>{e(sp)}: ' + ("<b>lifesavers present</b>" if ok else "not on the lifesaver list") + "</li>" for sp, ok in mark) + "</ul>" if mark else "")
+                   + f'<details><summary>All {len(names)} lifeguarded places</summary><p class="small">{e(", ".join(names))}</p></details>'
+                   f'<p class="src">Source: <a href="{e(lg["source_url"])}">{e(lg["source"])}</a>, checked {e(lg["checked"])}. {e(lg["note"])}</p>')
+
     # 3c. Certified beaches nearby (Blue Flag: lifeguards and safety signs in season)
     bfs = blue_flags_near(cfg) if cfg.get("coastal", True) else []
     if bfs:
