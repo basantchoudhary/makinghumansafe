@@ -33,6 +33,32 @@ LENS_TIPS = {
 }
 
 
+def in_season(season, today=None):
+    """'1st of October to 31st of May' style; True if today is inside (seasons can wrap the year end)."""
+    import re
+    today = today or datetime.date.today()
+    m = re.findall(r"(\d{1,2})(?:st|nd|rd|th)?(?: of)? ([A-Z][a-z]+)", season)
+    if len(m) != 2:
+        return None
+    md = [(datetime.datetime.strptime(mon[:3], "%b").month, int(day)) for day, mon in m]
+    t = (today.month, today.day)
+    return md[0] <= t <= md[1] if md[0] <= md[1] else (t >= md[0] or t <= md[1])
+
+
+def blue_flags_near(cfg, km=60):
+    import math
+    p = ROOT / "data" / "_global" / f"blueflag_{cfg.get('country', 'IN')}.json"
+    if not p.exists():
+        return []
+    w, s, e_, n = cfg["bbox"]; lat0, lon0 = (s + n) / 2, (w + e_) / 2
+    out = []
+    for b in json.loads(p.read_text())["data"]:
+        d = 6371 * 2 * math.asin(math.sqrt(math.sin(math.radians(b["lat"] - lat0) / 2) ** 2 + math.cos(math.radians(lat0)) * math.cos(math.radians(b["lat"])) * math.sin(math.radians(b["lon"] - lon0) / 2) ** 2))
+        if d <= km:
+            out.append({**b, "km": round(d)})
+    return sorted(out, key=lambda b: b["km"])
+
+
 def incidents_for(cfg):
     """Checked water incidents for this place from the researched list."""
     if not CORPUS.exists():
@@ -163,6 +189,15 @@ def block(key, cfg, alerts, helpd, incois=None, notices=None):
             f'<div class="{notice_status(n)[1]}"><b>{e(n["title"])}</b> <span class="badge">{e(notice_status(n)[0])}</span> '
             f'<span class="src">{e(n["date"])}, <a href="{e(n["link"])}">{e(n["source"])}</a></span><br><span class="small">{e(n["text"][:300])}</span></div>'
             for n in nts[:5]))
+
+    # 3c. Certified beaches nearby (Blue Flag: lifeguards and safety signs in season)
+    bfs = blue_flags_near(cfg) if cfg.get("coastal", True) else []
+    if bfs:
+        out.append('<h3>Want a beach with lifeguards?</h3><p>Blue Flag beaches are certified for safety: lifeguards, warning signs and first aid during their season.</p><ul>'
+                   + "".join(f'<li><b>{e(b["name"])}</b>, about {b["km"]} km away. Season {e(b["season"])}: '
+                             + ("<b>in season now</b>" if in_season(b["season"]) else "out of season now (no lifeguard guarantee)")
+                             + f'. <a href="{e(b["url"])}">Blue Flag page</a></li>' for b in bfs[:3])
+                   + '</ul><p class="src">Source: Foundation for Environmental Education (Blue Flag) site map. Lifeguards are not guaranteed outside the season.</p>')
 
     # 4. Who's going (filters advice in the browser; nothing is sent anywhere)
     chips = "".join(f'<button type="button" data-lens="{k}">{e(v[0])}</button>' for k, v in LENS_TIPS.items())

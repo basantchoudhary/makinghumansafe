@@ -351,7 +351,22 @@ def notices(place, cfg):
     return save(place, "notices", sorted(uniq.values(), key=lambda r: r["date"], reverse=True))
 
 
-FETCHERS = {"wikivoyage": wikivoyage, "alerts": sachet, "incois": incois, "notices": notices, "help": help_nearby, "feeds": local_news, "news": news}
+
+# ---------- Blue Flag beaches (certified: lifeguards, safety signs, first aid in season) ----------
+# FEE's public map layer; the layer name changes with each update (look it up from web map 8c7e31ef77184d81bf19f425972525f3).
+BLUEFLAG = "https://services-eu1.arcgis.com/im1MHnODAF3NSHfy/arcgis/rest/services/BF_Website_Map_Sites_24_09_2026/FeatureServer/0/query"
+
+
+def blueflag(place, cfg):
+    """Global file (data/_global/blueflag.json), refreshed when any place asks; place pages pick the nearest."""
+    country = {"IN": "India"}.get(cfg.get("country", "IN"), cfg.get("country"))
+    d = json.loads(get(BLUEFLAG + "?" + urllib.parse.urlencode({"where": f"Country='{country}'", "outFields": "*", "f": "json"})))
+    rows = [{"name": a["Site_Name"], "manager": a["Management_Body"], "season": f'{a["Season_Start"]} to {a["Season_End"]}',
+             "lat": a["Latitude"], "lon": a["Longitude"], "url": a["BF_Website_url"]} for a in (f["attributes"] for f in d["features"])]
+    return save("_global", f"blueflag_{cfg.get('country', 'IN')}", rows)
+
+
+FETCHERS = {"wikivoyage": wikivoyage, "alerts": sachet, "incois": incois, "notices": notices, "blueflag": blueflag, "help": help_nearby, "feeds": local_news, "news": news}
 
 if __name__ == "__main__":
     place = sys.argv[1]
