@@ -101,7 +101,7 @@ def place_page(key, cfg):
            'Many incidents go unreported, so an absence of reports is not proof of safety.</div>']
     if water:
         from safety import water as wmod
-        out.append(wmod.block(key, cfg, alerts, helpd))
+        out.append(wmod.block(key, cfg, alerts, helpd, load(key, "incois"), load(key, "notices")))
         out.append('<h2 id="more">More about ' + e(name) + ': help nearby, scams and fares</h2>')
 
     # Before you go

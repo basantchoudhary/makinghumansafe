@@ -280,7 +280,78 @@ def news(place, cfg):
     return {"added": add_articles(place, list(arts.values()), log), "log": log}
 
 
-FETCHERS = {"wikivoyage": wikivoyage, "alerts": sachet, "help": help_nearby, "feeds": local_news, "news": news}
+
+# ---------- INCOIS ocean alerts (high waves, swell surges, ocean currents) ----------
+# Undocumented JSON behind INCOIS's own map. Only coast segments with an active alert are listed, so an empty
+# result means "no alert", not missing data. Commercial reuse needs INCOIS's written permission (requested before launch).
+INCOIS = [("https://sarat.incois.gov.in/incoismobileappdata/rest/incois/hwassalatestdata", ("HWAJson", "SSAJson")),
+          ("https://samudra.incois.gov.in/incoismobileappdata/rest/incois/currentslatestdata", ("CurrentsJson",))]
+
+
+def incois(place, cfg):
+    want = {d.upper() for d in cfg.get("incois_districts", [])}
+    if not want:
+        return save(place, "incois", [])
+    out = []
+    for url, keys in INCOIS:
+        import gzip
+        raw = urllib.request.urlopen(urllib.request.Request(url, headers={**UA, "Accept-Encoding": "gzip"}), timeout=60).read()
+        d = json.loads(gzip.decompress(raw) if raw[:2] == b"\x1f\x8b" else raw)
+        for k in keys:
+            rows = d.get(k) or []
+            rows = json.loads(rows) if isinstance(rows, str) else rows
+            for r in rows:
+                segs = {x.strip().upper() for x in str(r.get("District", "")).split(",")}
+                if segs & want:
+                    out.append({"title": f'{r.get("Alert", "").title()}: {r.get("District", "").title()}', "description": r.get("Message", ""),
+                                "date": r.get("Issue Date", ""), "color": r.get("Color", ""), "alert": r.get("Alert", ""),
+                                "source": "INCOIS", "source_url": "https://incois.gov.in/portal/osf/osf.jsp"})
+    return save(place, "incois", out)
+
+
+
+# ---------- Official notices (government press releases: swimming bans, closures, advisories) ----------
+NOTICE_WORDS = ("swim", "waterfall", "drown", "beach", "sea ", "water bodies", "lifeguard", "bathing", "river", "quarry", "dam ")
+NOTICE_SAFETY = ("prohibit", "closure", "closed", "advisory", "drown", "ban", "warning", "lifeguard", "restrict")
+
+
+def ban_window(text):
+    """Find 'from <date> ... period of N days' in an order; return (start, end) ISO dates or (None, None)."""
+    import datetime as dt
+    m = re.search(r"(?:from|w\.?e\.?f\.?)\s+([A-Z][a-z]+ \d{1,2},? \d{4})", text)
+    n = re.search(r"period of (\d+) days", text)
+    if not m:
+        return None, None
+    try:
+        start = dt.datetime.strptime(m.group(1).replace(",", ""), "%B %d %Y").date()
+    except ValueError:
+        return None, None
+    end = start + dt.timedelta(days=int(n.group(1))) if n else None
+    return start.isoformat(), end.isoformat() if end else None
+
+
+def notices(place, cfg):
+    """Search each notice feed (WordPress ?s=<term>&feed=rss2) and keep water-related notices with date and link."""
+    found = {}
+    for name, base in cfg.get("notice_feeds", []):
+        for term in ("swimming", "waterfall", "drowning", "beach", "water bodies"):
+            x = get(f"{base}?s={urllib.parse.quote(term)}&feed=rss2", timeout=40)
+            for it in re.findall(r"<item>(.*?)</item>", x, re.S):
+                title = html.unescape(re.search(r"<title>(.*?)</title>", it, re.S).group(1)).strip()
+                link = re.search(r"<link>(.*?)</link>", it, re.S).group(1).strip()
+                date = rss_date(re.search(r"<pubDate>(.*?)</pubDate>", it).group(1))
+                body = clean_html(html.unescape((re.search(r"<content:encoded>(.*?)</content:encoded>", it, re.S) or re.search(r"<description>(.*?)</description>", it, re.S)).group(1).replace("<![CDATA[", "").replace("]]>", "")))
+                body = " ".join(body) if isinstance(body, list) else body
+                tl = (title + " ").lower()
+                if any(w in tl for w in NOTICE_WORDS) and any(w in tl for w in NOTICE_SAFETY) and link not in found:
+                    start, end = ban_window(body)
+                    found[link] = {"title": title.capitalize(), "date": f"{date[:4]}-{date[4:6]}-{date[6:8]}" if date else "",
+                                   "text": body[:700], "link": link, "source": name, "in_force_from": start, "in_force_until": end}
+    uniq = {(r["title"], r["date"]): r for r in found.values()}  # the same notice is often posted twice
+    return save(place, "notices", sorted(uniq.values(), key=lambda r: r["date"], reverse=True))
+
+
+FETCHERS = {"wikivoyage": wikivoyage, "alerts": sachet, "incois": incois, "notices": notices, "help": help_nearby, "feeds": local_news, "news": news}
 
 if __name__ == "__main__":
     place = sys.argv[1]

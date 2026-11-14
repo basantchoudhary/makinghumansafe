@@ -1,0 +1,23 @@
+{
+ "fetched": "2026-11-14T23:34",
+ "data": [
+  {
+   "title": "Swell Surge Watch: South Goa",
+   "description": "Swell Surge Watch for the coast of SOUTH GOA,GOA from Santerem Pt (Vasco) To Kolamb. Swell waves in the range of 14.0 - 17.0 sec period with 0.4 - 0.5 m height are forecasted during  20:30 hours on 14-11-2026 to 23:30 hours on 16-11-2026. It advised that no immediate action is required. Check for updates.",
+   "date": "14-11-2026",
+   "color": "Yellow",
+   "alert": "SWELL SURGE WATCH",
+   "source": "INCOIS",
+   "source_url": "https://incois.gov.in/portal/osf/osf.jsp"
+  },
+  {
+   "title": "Swell Surge Watch: North Goa",
+   "description": "Swell Surge Watch for the coast of NORTH GOA,GOA from Chapora To Panaji (Malim). Swell waves in the range of 14.0 - 16.0 sec period with 0.5 - 0.6 m height are forecasted during  20:30 hours on 14-11-2026 to 23:30 hours on 16-11-2026. It advised that no immediate action is required. Check for updates.",
+   "date": "14-11-2026",
+   "color": "Yellow",
+   "alert": "SWELL SURGE WATCH",
+   "source": "INCOIS",
+   "source_url": "https://incois.gov.in/portal/osf/osf.jsp"
+  }
+ ]
+}

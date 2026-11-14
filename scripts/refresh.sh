@@ -6,7 +6,7 @@
 cd "$(dirname "$0")/.." || exit 1
 echo "=== $(date '+%F %T')"
 for p in $(python3 -c "import tomllib;print(' '.join(tomllib.load(open('places.toml','rb'))))"); do
-  python3 -m safety.fetch "$p" feeds alerts
+  python3 -m safety.fetch "$p" feeds alerts incois notices
   python3 -m safety.extract "$p" 30 | tail -1
   python3 -m safety.verify "$p"
 done

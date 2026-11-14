@@ -60,10 +60,25 @@ def live_alerts(alerts):
     return keep
 
 
-def risk_today(cfg, incs, alerts, today=None):
+def notice_status(n, today=None):
+    today = (today or datetime.date.today()).isoformat()
+    f, u = n.get("in_force_from"), n.get("in_force_until")
+    if f and u:
+        return ("in force", "alert") if f <= today <= u else (("ended " + u, "muted-box") if u < today else ("starts " + f, "note"))
+    return ("no end date given", "note") if f else ("advisory", "muted-box")
+
+
+def risk_today(cfg, incs, alerts, today=None, ocean=(), notices=()):
     """Risk level v1 (published rules). Returns (level, css class, reasons)."""
     today = today or datetime.date.today()
     reasons, level = [], 0
+    for n in notices:
+        if notice_status(n, today)[0] == "in force":
+            level = max(level, 2); reasons.append(f"Official ban in force until {e(n['in_force_until'])}: {e(n['title'])}.")
+    for a in ocean:  # INCOIS: red Warning = Danger, orange Alert = High, yellow Watch = Take care
+        lv = {"red": 3, "orange": 2, "yellow": 1}.get((a.get("color") or "").lower(), 1)
+        level = max(level, lv)
+        reasons.append(f"INCOIS {e(a['alert'].title())} for this coast (issued {e(a['date'])}): {e(a['description'].split('. It advised')[0])}.")
     sea = [a for a in alerts if any(w in (a.get("title", "") + a.get("description", "")).lower() for w in SEA_WORDS)]
     rain = [a for a in alerts if a not in sea]
     if sea:
@@ -98,17 +113,21 @@ def nearest(helpd, kind):
     return best
 
 
-def block(key, cfg, alerts, helpd):
+def block(key, cfg, alerts, helpd, incois=None, notices=None):
     from safety import doodles
     incs = incidents_for(cfg)
     al = live_alerts(alerts)
-    level, cls, reasons = risk_today(cfg, incs, al)
+    ocean = (incois or {}).get("data") or []
+    nts = (notices or {}).get("data") or []
+    level, cls, reasons = risk_today(cfg, incs, al, ocean=ocean, notices=nts)
     name = cfg["name"]
     hosp = nearest(helpd, "hospital")
     deaths = sum(r.get("deaths") or 0 for r in incs)
 
     # 1. Summary: plain sentences built only from the facts above.
     s = [f"<b>{e(name)}, water safety today:</b> {level.lower()}."]
+    if ocean:
+        s.append(f"Official ocean alert now: {e(ocean[0]['alert'].title())} (INCOIS).")
     if al:
         s.append(f"An official warning is in force: {e(al[0].get('title', ''))}.")
     if incs:
@@ -124,17 +143,26 @@ def block(key, cfg, alerts, helpd):
     # 2. Risk today with reasons
     out.append(f'<h2 id="risk">Risk today</h2><div class="risk {cls}"><span class="lvl">{level}</span><ul>'
                + "".join(f"<li>{r}</li>" for r in reasons) + "</ul></div>"
-               '<p class="src">How this is decided: Danger if an official sea warning is in force; High in the monsoon or with a weather warning; '
-               'Take care if there are past incidents here or in May; otherwise Low. We never say "safe".</p>')
+               '<p class="src">How this is decided: Danger if an official sea warning or an INCOIS red warning is in force; High in the monsoon, with a weather warning or an INCOIS orange alert; High also when an official swimming ban is in force; Take care with an INCOIS yellow watch, '
+               'past incidents here, or in May; otherwise Low. We never say "safe".</p>')
 
     # 3. Live alerts
     out.append('<h2 id="live">Live now</h2>')
+    colors = {"red": "alert", "orange": "alert", "yellow": "note"}
+    out.append("".join(f'<div class="{colors.get((a.get("color") or "").lower(), "note")}"><b>{e(a["title"])}</b> <span class="src">INCOIS, issued {e(a["date"])}</span><br>{e(a["description"])}</div>' for a in ocean[:4]))
     if al:
         out.append("".join(f'<div class="alert"><b>{e(a.get("title", ""))}</b> <span class="src">{e(a.get("date") or "")}</span><br>{e(a.get("description", ""))}</div>' for a in al[:4]))
-    else:
+    elif not ocean:
         out.append('<div class="ok">No official sea or weather warning mentions this area right now.</div>')
     checked = ((alerts or {}).get("fetched") or "")[:16].replace("T", " ")
-    out.append(f'<p class="src">Source: NDMA SACHET, India\'s official alert feed (includes IMD weather and INCOIS ocean warnings){", checked " + e(checked) if checked else ""}. Refreshed 4 times a day.</p>')
+    out.append(f'<p class="src">Source: NDMA SACHET, India\'s official alert feed (includes IMD weather and INCOIS ocean warnings){", checked " + e(checked) if checked else ""}. Ocean alerts: INCOIS (Indian National Centre for Ocean Information Services). Refreshed 4 times a day.</p>')
+
+    # 3b. Official notices: bans, closures, advisories (with the period each one is in force)
+    if nts:
+        out.append('<h3>Official notices</h3>' + "".join(
+            f'<div class="{notice_status(n)[1]}"><b>{e(n["title"])}</b> <span class="badge">{e(notice_status(n)[0])}</span> '
+            f'<span class="src">{e(n["date"])}, <a href="{e(n["link"])}">{e(n["source"])}</a></span><br><span class="small">{e(n["text"][:300])}</span></div>'
+            for n in nts[:5]))
 
     # 4. Who's going (filters advice in the browser; nothing is sent anywhere)
     chips = "".join(f'<button type="button" data-lens="{k}">{e(v[0])}</button>' for k, v in LENS_TIPS.items())
@@ -179,6 +207,7 @@ CSS = """
 .risk ul{margin:4px 0 0;padding-left:18px}
 .lvl-low{background:var(--green-soft)}.lvl-care{background:var(--amber-soft)}.lvl-high{background:#ffe1c2}.lvl-danger{background:var(--red-soft)}
 .lvl-danger .lvl{color:var(--red)}
+.muted-box{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;color:var(--muted)}
 .lenses{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
 .lenses button{border:1.5px solid var(--ink);border-radius:999px;padding:5px 14px;background:#fff;font:inherit;font-weight:600;cursor:pointer}
 .lenses button.on{background:var(--ink);color:#fff}
