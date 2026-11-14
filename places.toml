@@ -67,6 +67,7 @@ spot_alias = {"Jaipur Junction" = "Jaipur Junction Train Station"}
 
 [varanasi]
 name = "Varanasi"
+coastal = false
 activities = ["swimming", "water_sports", "road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
 country = "IN"
 state = "Uttar Pradesh"
@@ -82,6 +83,7 @@ spot_alias = {"Varanasi Junction" = "Varanasi Junction railway station"}
 
 [rishikesh]
 name = "Rishikesh"
+coastal = false
 activities = ["swimming", "water_sports", "waterfall", "road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
 country = "IN"
 state = "Uttarakhand"
@@ -97,6 +99,7 @@ spots = ["Laxman Jhula", "Ram Jhula", "Triveni Ghat", "Parmarth Niketan", "Shivp
 
 [manali]
 name = "Manali"
+coastal = false
 activities = ["water_sports", "waterfall", "road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
 country = "IN"
 state = "Himachal Pradesh"
@@ -113,6 +116,7 @@ spot_alias = {"Mall Road" = "The Mall Road Manali", "Vashisht" = "Vashisht templ
 
 [hampi]
 name = "Hampi"
+coastal = false
 activities = ["swimming", "water_sports", "waterfall", "road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
 country = "IN"
 state = "Karnataka"
@@ -129,6 +133,7 @@ spot_alias = {"Virupaksha Temple" = "Virupaksha Temple Hampi", "Vittala Temple" 
 
 [hogenakkal]
 name = "Hogenakkal"
+coastal = false
 activities = ["swimming", "water_sports", "waterfall", "crime", "scam"]            # activity cards shown (keys of activities.toml)
 country = "IN"
 state = "Tamil Nadu"
@@ -142,3 +147,59 @@ news_feeds = [["Times of India, Salem", "https://timesofindia.indiatimes.com/rss
 news_require = ["hogenakkal", "dharmapuri", "pennagaram", "cauvery", "coracle"]
 spots = ["Hogenakkal Falls", "Pennagaram", "Dharmapuri"]
 spot_alias = {"Pennagaram" = "Pennagaram Bus Station"}
+
+# ---- West-coast water-safety launch slice (14 Nov 2026) ----
+[gokarna]
+name = "Gokarna"
+activities = ["swimming", "water_sports", "road", "nightlife", "scam"]
+country = "IN"
+state = "Karnataka"
+districts = ["Uttara Kannada"]
+bbox = [74.25, 14.45, 74.42, 14.62]
+wikivoyage_page = "Gokarna"
+wikivoyage_sections = ["Beaches", "Get around", "Respect"]
+alert_keywords = ["uttara kannada", "karwar", "gokarna", "kumta"]
+news_queries = ['"gokarna" drowned', '"gokarna" beach', '"om beach"', '"kudle beach"']
+news_feeds = [["The Hindu, Mangaluru", "https://www.thehindu.com/news/cities/Mangalore/feeder/default.rss"],
+              ["The Hindu, Karnataka", "https://www.thehindu.com/news/national/karnataka/feeder/default.rss"]]
+news_require = ["gokarna", "kumta", "om beach", "kudle", "karwar", "uttara kannada", "honnavar", "ankola"]
+spots = ["Om Beach", "Kudle Beach", "Gokarna Beach", "Half Moon Beach", "Paradise Beach", "Mahabaleshwara Temple"]
+spot_coords = { "Kudle Beach" = [14.52845, 74.31586, "OpenStreetMap relation/5934584"], "Mahabaleshwara Temple" = [14.54358, 74.31655, "OpenStreetMap way/124339896"] }
+corpus_spots = ["gokarna", "om beach", "kudle", "dubbanashasi", "dubbanshashi", "half moon", "paradise beach"]
+
+[murudeshwar]
+name = "Murudeshwar"
+activities = ["swimming", "water_sports", "road", "scam"]
+country = "IN"
+state = "Karnataka"
+districts = ["Uttara Kannada"]
+bbox = [74.42, 14.02, 74.56, 14.16]
+wikivoyage_page = "Murdeshwar"
+wikivoyage_sections = ["Stay safe", "Get around", "Do"]
+alert_keywords = ["uttara kannada", "bhatkal", "murudeshwar", "murdeshwar", "honnavar"]
+news_queries = ['"murudeshwar" drowned', '"murudeshwar" beach', '"netrani"']
+news_feeds = [["The Hindu, Mangaluru", "https://www.thehindu.com/news/cities/Mangalore/feeder/default.rss"],
+              ["The Hindu, Karnataka", "https://www.thehindu.com/news/national/karnataka/feeder/default.rss"]]
+news_require = ["murudeshwar", "murdeshwar", "bhatkal", "netrani", "honnavar"]
+spots = ["Murudeshwar Beach", "Murudeshwar Temple", "Netrani Island"]
+spot_coords = { "Murudeshwar Beach" = [14.09718, 74.48665, "OpenStreetMap way/178486254"], "Murudeshwar Temple" = [14.09349, 74.48475, "OpenStreetMap way/178482057"], "Netrani Island" = [14.01723, 74.32714, "OpenStreetMap way/19854333"] }
+corpus_spots = ["murudeshwar", "murdeshwar", "netrani", "bhatkal"]
+
+[udupi]
+name = "Udupi and Malpe"
+activities = ["swimming", "water_sports", "road", "scam"]
+country = "IN"
+state = "Karnataka"
+districts = ["Udupi"]
+bbox = [74.62, 13.25, 74.82, 13.45]
+wikivoyage_page = "Udupi"
+wikivoyage_sections = ["Get around", "Do", "Tourist information"]
+alert_keywords = ["udupi", "malpe", "kaup"]
+news_queries = ['"malpe" drowned', "\"st mary's island\"", '"udupi" beach drowned', '"kaup beach"']
+news_feeds = [["The Hindu, Mangaluru", "https://www.thehindu.com/news/cities/Mangalore/feeder/default.rss"],
+              ["The Hindu, Karnataka", "https://www.thehindu.com/news/national/karnataka/feeder/default.rss"]]
+news_require = ["udupi", "malpe", "kaup", "st mary", "kodi bengre", "delta beach", "kundapur", "padubidri"]
+spots = ["Malpe Beach", "St. Mary's Island", "Kaup Beach", "Delta Beach", "Sri Krishna Matha"]
+spot_alias = { "Sri Krishna Matha" = "Sri Krishna Matha Udupi - Paryaya Sri Puthige Math" }
+spot_coords = { "St. Mary's Island" = [13.3795, 74.673, "Wikidata Q4254076"], "Delta Beach" = [13.4458, 74.6939, "OpenStreetMap (Delta Beach, Kodibengre)"] }
+corpus_spots = ["malpe", "st mary", "kaup", "kodi bengre", "delta beach", "udupi", "kundapur", "charkikadu", "trasi", "padubidri", "maravanthe"]

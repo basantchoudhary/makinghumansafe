@@ -63,6 +63,7 @@ svg.doodle{width:100%;height:auto;display:block;margin:8px 0;font-family:var(--h
 footer{margin-top:56px;border-top:2px solid var(--ink);padding-top:14px;font-size:.88rem;color:var(--muted)}
 footer .sos{font-size:1rem;color:var(--ink)}
 footer a{color:var(--muted)}
+""" + __import__("safety.water", fromlist=["CSS"]).CSS + """
 @media (max-width:640px){h1{font-size:1.7rem}.brand{font-size:1.45rem}header nav{order:3;flex-basis:100%}}
 """
 
@@ -93,10 +94,15 @@ def place_page(key, cfg):
     fares_p = ROOT / "fares" / f"{key}.toml"
     fares = tomllib.loads(fares_p.read_text()) if fares_p.exists() else None
     name = cfg["name"]
-    out = [f"<h1>{e(name)}: safety, scams and fair fares</h1>",
-           f'<p class="muted">What to watch out for, what taxis should cost, and where help is, with a source for every fact.</p>',
+    water = any(a in cfg.get("activities", []) for a in ("swimming", "waterfall"))
+    out = [f"<h1>{e(name)}: {'water safety, incidents and help' if water else 'safety, scams and fair fares'}</h1>",
+           f'<p class="muted">{"What has happened in the water here, what is happening now, and what to do, with a source for every fact." if water else "What to watch out for, what taxis should cost, and where help is, with a source for every fact."}</p>',
            '<div class="note"><b>Coverage:</b> built from open sources (travel guides, news, official alerts, open maps). '
            'Many incidents go unreported, so an absence of reports is not proof of safety.</div>']
+    if water:
+        from safety import water as wmod
+        out.append(wmod.block(key, cfg, alerts, helpd))
+        out.append('<h2 id="more">More about ' + e(name) + ': help nearby, scams and fares</h2>')
 
     # Before you go
     out.append('<h2 id="quick">Before you go</h2><div class="cards">')
@@ -258,7 +264,7 @@ def place_page(key, cfg):
                '<li>NDMA SACHET alert feed</li>'
                f'<li>News links: {e(", ".join(f[0] for f in cfg.get("news_feeds", [])))} RSS feeds, GDELT Project</li>'
                '<li>Fare figures: the news and government sources linked in the fares table</li></ul>')
-    return page(f"{name}: safety, scams and fair fares", "\n".join(out),
+    return page(f"Is {name} safe to swim? Incidents, sea alerts and help nearby" if water else f"{name}: safety, scams and fair fares", "\n".join(out),
                 f"Is {name} safe? Known scams, fair taxi fares, nearest hospitals and police, official alerts, with sources.", path=f"/{key}/")
 
 

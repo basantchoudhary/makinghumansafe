@@ -17,7 +17,7 @@ OVERTURE = "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=places/type=p
 
 
 def get(url, timeout=60):
-    """GET with polite retries: on 429 (rate limited) wait 15s, 30s, 60s, then give up."""
+    """GET with polite retries: on 429 (rate limited) or 502/503/504 (server busy) wait 15s, 30s, 60s, then give up."""
     for wait in (15, 30, 60, None):
         try:
             req = urllib.request.Request(url, headers=UA)
@@ -26,7 +26,7 @@ def get(url, timeout=60):
                 time.sleep(2)  # Wikimedia asks bots to go slowly
             return out
         except urllib.error.HTTPError as ex:
-            if ex.code != 429 or wait is None:
+            if ex.code not in (429, 502, 503, 504) or wait is None:
                 raise
             time.sleep(wait)
 
@@ -104,7 +104,10 @@ def plausible(label, name, phone, country="IN"):
     n = (name or "").lower()
     if not n or any(ord(ch) > 0x2FF and not 0x900 <= ord(ch) <= 0xDFF for ch in n):  # Latin or Indian scripts only
         return False
-    if phone and DIAL.get(country) and not phone.replace(" ", "").startswith(DIAL[country]):
+    # Spam check: a foreign dialling code means a fake listing. Local formats (0 + area code, or 10 digits) are fine.
+    ph = re.sub(r"[\s\-()]", "", phone or "").split(";")[0]
+    if ph and DIAL.get(country) and not (ph.startswith(DIAL[country]) or (ph.startswith("0") and not ph.startswith("00"))
+                                          or (ph.isdigit() and len(ph) == 10)):
         return False
     if any(w in n for w in NAME_NOT + NAME_NOT_BY_LABEL.get(label, ())):
         return False
@@ -116,15 +119,36 @@ def help_nearby(place, cfg):
     con.sql("LOAD httpfs; LOAD spatial; SET s3_region='us-west-2'; SET memory_limit='2GB'; SET threads=4;"
             "SET enable_progress_bar=false; SET geometry_always_xy=true")
     w, s, e, n = cfg["bbox"]
+    # Help (hospitals, police, pharmacies) is searched in a wider box than the place itself: the nearest hospital
+    # for a remote beach is often in the next town. 0.25 degrees is about 27 km.
+    pad = cfg.get("help_pad_deg", 0.25)
     # spot_alias maps the label we show to the exact Overture name, picked by a human from the candidates list.
     lookup = {sp: cfg.get("spot_alias", {}).get(sp, sp) for sp in cfg["spots"]}
     con.execute(f"""CREATE TABLE p AS SELECT names.primary AS name, basic_category AS cat, taxonomy.primary AS tax,
                     confidence AS conf, ST_X(geometry) AS x, ST_Y(geometry) AS y,
                     phones[1] AS phone, websites[1] AS web
                     FROM read_parquet('{OVERTURE}')
-                    WHERE bbox.xmin BETWEEN {w} AND {e} AND bbox.ymin BETWEEN {s} AND {n}
-                      AND (basic_category IN ('hospital','emergency_or_urgent_care_facility','police_station','pharmacy_and_drug_store','fire_station')
-                           OR regexp_matches(lower(names.primary), '{"|".join(re.escape(x.lower()).replace("'", "''") for x in lookup.values())}'))""")
+                    WHERE bbox.xmin BETWEEN {w - pad} AND {e + pad} AND bbox.ymin BETWEEN {s - pad} AND {n + pad}
+                      AND ((basic_category IN ('hospital','emergency_or_urgent_care_facility','police_station','pharmacy_and_drug_store','fire_station'))
+                           OR (bbox.xmin BETWEEN {w} AND {e} AND bbox.ymin BETWEEN {s} AND {n}
+                               AND regexp_matches(lower(names.primary), '{"|".join(re.escape(x.lower()).replace("'", "''") for x in lookup.values())}')))""")
+    # Second source: OpenStreetMap (Overpass API, ODbL). Overture misses many small-town hospitals and police
+    # stations (Gokarna's government hospital was missing). OSM rows join the same table, tagged by source.
+    con.execute("ALTER TABLE p ADD COLUMN src VARCHAR DEFAULT 'Overture'")
+    q = (f'[out:json][timeout:60];(nwr["amenity"~"^(hospital|police|pharmacy)$"]({s - pad},{w - pad},{n + pad},{e + pad}););out center tags;')
+    try:
+        osm = json.loads(get("https://overpass-api.de/api/interpreter?" + urllib.parse.urlencode({"data": q}), timeout=90))
+        cat = {"hospital": "hospital", "police": "police_station", "pharmacy": "pharmacy_and_drug_store"}
+        for el in osm.get("elements", []):
+            tg = el.get("tags", {}); nm = tg.get("name:en") or tg.get("name")
+            if not nm and tg.get("amenity") == "police":
+                nm = "Police station (name not on map)"  # knowing one is 2 km away beats a named one 15 km away
+            lat = el.get("lat") or el.get("center", {}).get("lat"); lon = el.get("lon") or el.get("center", {}).get("lon")
+            if nm and lat and lon:
+                con.execute("INSERT INTO p (name, cat, conf, x, y, phone, src) VALUES (?, ?, 0.9, ?, ?, ?, ?)",
+                            [nm, cat[tg["amenity"]], lon, lat, tg.get("phone") or tg.get("contact:phone"), f"OpenStreetMap {el['type']}/{el['id']}"])
+    except Exception as ex:  # OSM is a bonus source; Overture alone still works
+        print("  OSM help lookup failed:", ex)
     spots = {}
     for name in cfg["spots"]:
         # Skip placeholder points with rounded coordinates (e.g. 15.4, 73.8): they are vague geocodes, not the place.
@@ -138,6 +162,11 @@ def help_nearby(place, cfg):
     for name, c in (json.loads(fix_p.read_text()) if fix_p.exists() else {}).items():
         if c.get("verdict") == "far" and "lat" in c and name in lookup:
             spots[name] = {"x": c["lon"], "y": c["lat"], "located_by": f"Wikidata {c['wikidata']}"}
+    # Spots missing from Overture can be located from OpenStreetMap or Wikidata (places.toml spot_coords,
+    # each with its source id, e.g. "OSM relation/5934584"), never typed in by guess.
+    for name, (lat, lon, src) in cfg.get("spot_coords", {}).items():
+        if name in lookup and name not in spots:
+            spots[name] = {"x": lon, "y": lat, "located_by": src}
     # For spots with no exact match, list close names so a human can fix places.toml (never auto-picked).
     candidates = {name: con.execute("""SELECT DISTINCT name FROM p WHERE contains(lower(name), lower(?)) AND name IS NOT NULL
                                        ORDER BY length(name) LIMIT 6""", [lookup[name]]).fetchall()
@@ -148,12 +177,14 @@ def help_nearby(place, cfg):
         for label, cats, minc in (("hospital", ("hospital", "emergency_or_urgent_care_facility"), 0.6),
                                   ("police", ("police_station",), 0.5),
                                   ("pharmacy", ("pharmacy_and_drug_store",), 0.6)):
-            rows = con.execute(f"""SELECT name, phone, round(ST_Distance_Spheroid(ST_Point(x, y), ST_Point(?, ?)) / 1000, 1) km
+            rows = con.execute(f"""SELECT name, phone, round(ST_Distance_Spheroid(ST_Point(x, y), ST_Point(?, ?)) / 1000, 1) km, src
                                    FROM p WHERE cat IN ({",".join("'" + c + "'" for c in cats)}) AND conf >= {minc}
                                    AND name IS NOT NULL
                                    AND NOT regexp_matches(lower(name), 'homoeo|homeo|ayur|dental|dent |skin|hair|eye care|physio|veterinary|pet |clinic$')
                                    ORDER BY km LIMIT 15""", [pt["x"], pt["y"]]).fetchall()
-            near[name][label] = [{"name": r[0], "phone": r[1], "km": r[2]} for r in rows
+            seen = set()  # the same hospital can come from both sources; keep the nearer record once
+            rows = [r for r in rows if not (r[0].lower()[:18] in seen or seen.add(r[0].lower()[:18]))]
+            near[name][label] = [{"name": r[0], "phone": r[1], "km": r[2], "src": r[3]} for r in rows
                                  if plausible(label, r[0], r[1], cfg.get("country", "IN"))][:2]
     counts = dict(con.execute("SELECT cat, count(*) FROM p WHERE conf >= 0.5 GROUP BY 1").fetchall())
     return save(place, "help", {"spots": spots, "near": near, "counts": counts,

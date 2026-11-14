@@ -48,7 +48,8 @@
    "lifeguard_present": true,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2023-05-07",
@@ -123,7 +124,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2025-04-24",
@@ -223,7 +225,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2025-01-08",
@@ -248,7 +251,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2025-11-02",
@@ -273,7 +277,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2025-10-03",
@@ -298,7 +303,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2026-05-31",
@@ -323,7 +329,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2026-10-01",
@@ -348,7 +355,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2024-06-30",
@@ -498,7 +506,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2022-07-29",
@@ -573,7 +582,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2024-05-06",
@@ -673,7 +683,8 @@
    "lifeguard_present": null,
    "warning_ignored": true,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2025-08-16",
@@ -798,7 +809,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2025-07-19",
@@ -1073,7 +1085,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2024-05-17",
@@ -1148,7 +1161,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2024-12-17",
@@ -1173,7 +1187,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2023-04-24",
@@ -1298,7 +1313,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2026-07-12",
@@ -1623,7 +1639,8 @@
    "lifeguard_present": true,
    "warning_ignored": true,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2024-05-26",
@@ -1648,7 +1665,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2024-06-03",
@@ -1698,7 +1716,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2026-01-26",
@@ -1723,7 +1742,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2026-01-11",
@@ -1948,7 +1968,8 @@
    "lifeguard_present": null,
    "warning_ignored": true,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2022-04-18",
@@ -1973,7 +1994,8 @@
    "lifeguard_present": null,
    "warning_ignored": null,
    "alcohol_mentioned": null,
-   "evidence": "headline-only: page body loads by JavaScript; confirm quote with a browser fetch before publishing"
+   "evidence": "checked",
+   "evidence_method": "browser fetch (JavaScript page), 14 Nov 2026"
   },
   {
    "date": "2026-04-30",

@@ -1,0 +1,261 @@
+{
+ "fetched": "2026-11-14T23:27",
+ "data": {
+  "spots": {
+   "Malpe Beach": {
+    "x": 74.69838096,
+    "y": 13.36178508
+   },
+   "Kaup Beach": {
+    "x": 74.74962,
+    "y": 13.365967
+   },
+   "Sri Krishna Matha": {
+    "x": 74.747200012207,
+    "y": 13.337041664783
+   },
+   "St. Mary's Island": {
+    "x": 74.673,
+    "y": 13.3795,
+    "located_by": "Wikidata Q4254076"
+   },
+   "Delta Beach": {
+    "x": 74.6939,
+    "y": 13.4458,
+    "located_by": "OpenStreetMap (Delta Beach, Kodibengre)"
+   }
+  },
+  "near": {
+   "Malpe Beach": {
+    "hospital": [
+     {
+      "name": "Goretti Hospital",
+      "phone": null,
+      "km": 5.1,
+      "src": "OpenStreetMap node/1530684154"
+     },
+     {
+      "name": "City Hospital",
+      "phone": null,
+      "km": 5.7,
+      "src": "Overture"
+     }
+    ],
+    "police": [
+     {
+      "name": "Malpe Police Station",
+      "phone": null,
+      "km": 0.6,
+      "src": "OpenStreetMap node/11882976875"
+     },
+     {
+      "name": "Traffic Police Station Udupi",
+      "phone": null,
+      "km": 6.3,
+      "src": "OpenStreetMap node/1466678862"
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Apollo Pharmacy Santhekatte Udupi",
+      "phone": "07949290334",
+      "km": 5.0,
+      "src": "Overture"
+     },
+     {
+      "name": "Apollo Pharmacy Ajjarakadu Udupi",
+      "phone": "07949290331",
+      "km": 5.3,
+      "src": "Overture"
+     }
+    ]
+   },
+   "Kaup Beach": {
+    "hospital": [
+     {
+      "name": "Dr. A. V. Baliga Memorial Hospital",
+      "phone": "+918202535299",
+      "km": 1.6,
+      "src": "Overture"
+     },
+     {
+      "name": "Dr.A.V.Baliga Memorial Hospital",
+      "phone": null,
+      "km": 1.6,
+      "src": "OpenStreetMap node/6939067858"
+     }
+    ],
+    "police": [
+     {
+      "name": "Traffic Police Station Udupi",
+      "phone": null,
+      "km": 3.7,
+      "src": "OpenStreetMap node/1466678862"
+     },
+     {
+      "name": "Udupi Town Police Station",
+      "phone": "+918202520444",
+      "km": 3.9,
+      "src": "Overture"
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Medplus",
+      "phone": "08202521760",
+      "km": 2.4,
+      "src": "Overture"
+     },
+     {
+      "name": "Apollo Pharmacy Udupi Kunjibettu",
+      "phone": "08204290546",
+      "km": 2.4,
+      "src": "Overture"
+     }
+    ]
+   },
+   "Sri Krishna Matha": {
+    "hospital": [
+     {
+      "name": "J M J Diagnova Hospital",
+      "phone": null,
+      "km": 0.2,
+      "src": "OpenStreetMap node/6939052533"
+     },
+     {
+      "name": "City Hospital",
+      "phone": null,
+      "km": 0.3,
+      "src": "Overture"
+     }
+    ],
+    "police": [
+     {
+      "name": "Traffic Police Station Udupi",
+      "phone": null,
+      "km": 0.5,
+      "src": "OpenStreetMap node/1466678862"
+     },
+     {
+      "name": "Udupi Town Police Station",
+      "phone": "+918202520444",
+      "km": 0.7,
+      "src": "Overture"
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Radha Medicals",
+      "phone": null,
+      "km": 0.2,
+      "src": "OpenStreetMap node/1474305069"
+     },
+     {
+      "name": "Apollo Pharmacy",
+      "phone": "08204293423",
+      "km": 0.3,
+      "src": "Overture"
+     }
+    ]
+   },
+   "St. Mary's Island": {
+    "hospital": [
+     {
+      "name": "Goretti Hospital",
+      "phone": null,
+      "km": 7.0,
+      "src": "OpenStreetMap node/1530684154"
+     },
+     {
+      "name": "District Hospital",
+      "phone": null,
+      "km": 9.0,
+      "src": "OpenStreetMap node/1603383345"
+     }
+    ],
+    "police": [
+     {
+      "name": "Malpe Police Station",
+      "phone": null,
+      "km": 3.9,
+      "src": "OpenStreetMap node/11882976875"
+     },
+     {
+      "name": "Traffic Police Station Udupi",
+      "phone": null,
+      "km": 9.7,
+      "src": "OpenStreetMap node/1466678862"
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Apollo Pharmacy Santhekatte Udupi",
+      "phone": "07949290334",
+      "km": 7.1,
+      "src": "Overture"
+     },
+     {
+      "name": "Apollo Pharmacy Ajjarakadu Udupi",
+      "phone": "07949290331",
+      "km": 8.7,
+      "src": "Overture"
+     }
+    ]
+   },
+   "Delta Beach": {
+    "hospital": [
+     {
+      "name": "Pranav Hospital, Udupi",
+      "phone": null,
+      "km": 5.3,
+      "src": "OpenStreetMap node/6944419003"
+     },
+     {
+      "name": "Mahesh Hospital",
+      "phone": "+918202562056",
+      "km": 5.5,
+      "src": "Overture"
+     }
+    ],
+    "police": [
+     {
+      "name": "Brahmavara Police Station",
+      "phone": "+918202561044",
+      "km": 5.5,
+      "src": "Overture"
+     },
+     {
+      "name": "Kota Police Station",
+      "phone": null,
+      "km": 9.2,
+      "src": "Overture"
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Apollo Pharmacy Santhekatte Udupi",
+      "phone": "07949290334",
+      "km": 8.3,
+      "src": "Overture"
+     },
+     {
+      "name": "Radha Medicals",
+      "phone": "+918204292599",
+      "km": 12.7,
+      "src": "Overture"
+     }
+    ]
+   }
+  },
+  "counts": {
+   "hospital": 128,
+   "beach": 8,
+   "police_station": 22,
+   "pharmacy_and_drug_store": 55,
+   "personal_or_beauty_service": 1,
+   "college_university": 1
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

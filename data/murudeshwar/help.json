@@ -1,0 +1,146 @@
+{
+ "fetched": "2026-11-14T23:26",
+ "data": {
+  "spots": {
+   "Murudeshwar Beach": {
+    "x": 74.48665,
+    "y": 14.09718,
+    "located_by": "OpenStreetMap way/178486254"
+   },
+   "Murudeshwar Temple": {
+    "x": 74.48475,
+    "y": 14.09349,
+    "located_by": "OpenStreetMap way/178482057"
+   },
+   "Netrani Island": {
+    "x": 74.32714,
+    "y": 14.01723,
+    "located_by": "OpenStreetMap way/19854333"
+   }
+  },
+  "near": {
+   "Murudeshwar Beach": {
+    "hospital": [
+     {
+      "name": "Rns Hospital",
+      "phone": null,
+      "km": 1.9,
+      "src": "OpenStreetMap node/6944426636"
+     },
+     {
+      "name": "Government Hospital, Shirali",
+      "phone": null,
+      "km": 8.2,
+      "src": "OpenStreetMap node/7202876261"
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station",
+      "phone": null,
+      "km": 20.8,
+      "src": "OpenStreetMap node/4376816582"
+     },
+     {
+      "name": "Byndoor Police Station.",
+      "phone": null,
+      "km": 29.6,
+      "src": "OpenStreetMap node/6398561009"
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Apollo Pharmacy Bhatkal",
+      "phone": "07942814626",
+      "km": 14.3,
+      "src": "Overture"
+     }
+    ]
+   },
+   "Murudeshwar Temple": {
+    "hospital": [
+     {
+      "name": "Rns Hospital",
+      "phone": null,
+      "km": 2.1,
+      "src": "OpenStreetMap node/6944426636"
+     },
+     {
+      "name": "Government Hospital, Shirali",
+      "phone": null,
+      "km": 8.0,
+      "src": "OpenStreetMap node/7202876261"
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station",
+      "phone": null,
+      "km": 21.2,
+      "src": "OpenStreetMap node/4376816582"
+     },
+     {
+      "name": "Byndoor Police Station.",
+      "phone": null,
+      "km": 29.4,
+      "src": "OpenStreetMap node/6398561009"
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Apollo Pharmacy Bhatkal",
+      "phone": "07942814626",
+      "km": 14.0,
+      "src": "Overture"
+     }
+    ]
+   },
+   "Netrani Island": {
+    "hospital": [
+     {
+      "name": "Rns Hospital",
+      "phone": null,
+      "km": 21.0,
+      "src": "OpenStreetMap node/6944426636"
+     },
+     {
+      "name": "Government Hospital, Shirali",
+      "phone": null,
+      "km": 21.9,
+      "src": "OpenStreetMap node/7202876261"
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station",
+      "phone": null,
+      "km": 32.2,
+      "src": "OpenStreetMap node/4376816582"
+     },
+     {
+      "name": "Byndoor Police Station.",
+      "phone": null,
+      "km": 36.4,
+      "src": "OpenStreetMap node/6398561009"
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Apollo Pharmacy Bhatkal",
+      "phone": "07942814626",
+      "km": 24.9,
+      "src": "Overture"
+     }
+    ]
+   }
+  },
+  "counts": {
+   "hospital": 17,
+   "pharmacy_and_drug_store": 1,
+   "parking": 1,
+   "police_station": 4
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}
