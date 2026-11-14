@@ -11,3 +11,5 @@ for p in $(python3 -c "import tomllib;print(' '.join(tomllib.load(open('places.t
   python3 -m safety.verify "$p"
 done
 python3 -m safety.site
+# Publish: upload site/ to Cloudflare Pages (project makinghumansafe). Needs a one-time `npx wrangler login` on this machine.
+npx -y wrangler@3.114.0 pages deploy site --project-name makinghumansafe --branch main --commit-dirty=true 2>&1 | grep -E "Deployment complete|Success|ERROR|error" | tail -2
