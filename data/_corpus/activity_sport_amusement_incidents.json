@@ -1142,7 +1142,7 @@
    "warning_ignored": null,
    "alcohol_mentioned": null,
    "operator_licensed": null,
-   "evidence": "checked"
+   "evidence": "headline-only: quote not found by plain fetch; confirm with a browser fetch before publishing"
   },
   {
    "date": "2024-02-22",
