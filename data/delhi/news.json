@@ -1,13 +1,22 @@
 {
- "fetched": "2026-11-14T19:10",
+ "fetched": "2026-11-15T01:30",
  "data": {
-  "articles": [],
+  "articles": [
+   {
+    "title": "Red Fort blast: Two accused deny role in procuring vehicle used in attack",
+    "url": "https://timesofindia.indiatimes.com/city/delhi/red-fort-blast-two-accused-deny-role-in-procuring-vehicle-used-in-attack/articleshow/135840366.cms",
+    "domain": "Times of India, Delhi",
+    "date": "20261114",
+    "query": "feed"
+   }
+  ],
   "log": [
    "2026-11-13 Times of India, Delhi: 0 relevant",
    "2026-11-13 Times of India, Delhi: FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)",
    "2026-11-14 Times of India, Delhi: 0 relevant",
    "2026-11-14 Times of India, Delhi: 0 relevant",
-   "2026-11-14 Times of India, Delhi: 0 relevant"
+   "2026-11-14 Times of India, Delhi: 0 relevant",
+   "2026-11-15 Times of India, Delhi: 1 relevant"
   ]
  }
 }

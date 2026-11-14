@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T23:39",
+ "fetched": "2026-11-15T00:13",
  "data": {
   "spots": {
    "Hawa Mahal": {
@@ -40,16 +40,18 @@
    "Hawa Mahal": {
     "hospital": [
      {
-      "name": "Kesar Hospital Hisar",
-      "phone": "+919416955678",
-      "km": 0.7,
-      "src": "Overture"
-     },
-     {
       "name": "Amar Jain Hospital",
       "phone": "+919929597395",
       "km": 0.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Kesar Hospital Hisar",
+      "phone": "+919416955678",
+      "km": 0.7,
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -57,27 +59,31 @@
       "name": "Police Thana Manak Chowk",
       "phone": "+911412601366",
       "km": 0.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Police station (name not on map)",
       "phone": null,
       "km": 0.2,
-      "src": "OpenStreetMap node/14058331317"
+      "src": "OpenStreetMap node/14058331317",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Swami Laxmiram Pharmacy Chikitsalya",
-      "phone": "+911412564772",
-      "km": 0.8,
-      "src": "Overture"
+      "name": "Sanjay Medical Store",
+      "phone": "+911412363073",
+      "km": 1.8,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Pareek Medical and General Store",
-      "phone": "+919461617042",
-      "km": 1.4,
-      "src": "Overture"
+      "name": "Famous pharmacy: since 1856",
+      "phone": "+918078620592",
+      "km": 1.8,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -87,41 +93,47 @@
       "name": "Krishna Hospital",
       "phone": null,
       "km": 0.5,
-      "src": "OpenStreetMap node/7694995667"
+      "src": "OpenStreetMap node/7694995667",
+      "confirmed": true
      },
      {
       "name": "Government Hospital, Amer",
       "phone": null,
       "km": 0.7,
-      "src": "OpenStreetMap node/7279062516"
+      "src": "OpenStreetMap node/7279062516",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "Police Check Post",
-      "phone": null,
-      "km": 4.0,
-      "src": "Overture"
+      "name": "Police Chowki Samrat Gate",
+      "phone": "+911412670075",
+      "km": 5.8,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Police Station Brahmpuri",
-      "phone": "+911412672315",
-      "km": 5.2,
-      "src": "Overture"
+      "name": "Police chowki",
+      "phone": null,
+      "km": 5.8,
+      "src": "OpenStreetMap node/13333727901",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "davaindia GENERIC PHARMACY",
-      "phone": "07043902989",
-      "km": 6.3,
-      "src": "Overture"
+      "name": "Rama Medi Pharma",
+      "phone": null,
+      "km": 6.9,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Pareek Medical and General Store",
-      "phone": "+919461617042",
-      "km": 6.8,
-      "src": "Overture"
+      "name": "Medkart Pharmacy - Vidyadhar Nagar",
+      "phone": "07230836836",
+      "km": 7.5,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -131,13 +143,15 @@
       "name": "Solanki Hospital",
       "phone": "+918560999099",
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Gangori Hospital",
       "phone": "+911412329050",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -145,27 +159,31 @@
       "name": "Police station (name not on map)",
       "phone": null,
       "km": 0.2,
-      "src": "OpenStreetMap node/14058331317"
+      "src": "OpenStreetMap node/14058331317",
+      "confirmed": true
      },
      {
       "name": "Police Thana Manak Chowk",
       "phone": "+911412601366",
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Pareek Medical and General Store",
-      "phone": "+919461617042",
-      "km": 1.0,
-      "src": "Overture"
+      "name": "Deepak Medical Hall",
+      "phone": "+919887556630",
+      "km": 1.7,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Swami Laxmiram Pharmacy Chikitsalya",
-      "phone": "+911412564772",
-      "km": 1.0,
-      "src": "Overture"
+      "name": "AG Medical and Provision Store",
+      "phone": "+919571926674",
+      "km": 1.7,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -175,13 +193,15 @@
       "name": "SRK Group Of Hospital, Jaipur",
       "phone": "+918209280416",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Poddar Hospital",
       "phone": "+911412411655",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -189,27 +209,31 @@
       "name": "Police Station-Nahargarh Road",
       "phone": "+911412410464",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Police Station",
       "phone": null,
       "km": 0.6,
-      "src": "OpenStreetMap node/6955659885"
+      "src": "OpenStreetMap node/6955659885",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Pareek Medical and General Store",
-      "phone": "+919461617042",
-      "km": 0.5,
-      "src": "Overture"
+      "name": "Deepak Medical Hall",
+      "phone": "+919887556630",
+      "km": 1.5,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Medkart Pharmacy",
-      "phone": "07734880021",
-      "km": 1.3,
-      "src": "Overture"
+      "name": "Drug Centre",
+      "phone": "+911412202748",
+      "km": 1.7,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -219,13 +243,15 @@
       "name": "Solanki Hospital",
       "phone": "+918560999099",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Amar Jain Hospital",
       "phone": "+919929597395",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -233,27 +259,31 @@
       "name": "Police station (name not on map)",
       "phone": null,
       "km": 0.1,
-      "src": "OpenStreetMap node/14058331317"
+      "src": "OpenStreetMap node/14058331317",
+      "confirmed": true
      },
      {
       "name": "Police Thana Manak Chowk",
       "phone": "+911412601366",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Swami Laxmiram Pharmacy Chikitsalya",
-      "phone": "+911412564772",
-      "km": 0.9,
-      "src": "Overture"
+      "name": "Famous pharmacy: since 1856",
+      "phone": "+918078620592",
+      "km": 1.6,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Pareek Medical and General Store",
-      "phone": "+919461617042",
-      "km": 1.2,
-      "src": "Overture"
+      "name": "Sanjay Medical Store",
+      "phone": null,
+      "km": 1.6,
+      "src": "OpenStreetMap node/3806704620",
+      "confirmed": true
      }
     ]
    },
@@ -263,41 +293,47 @@
       "name": "Shivkripa Maternity And General Hospital",
       "phone": "+911412450777",
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "ESIC Model Hospital",
       "phone": "+911412228038",
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "Hasanpura Police Station",
-      "phone": null,
-      "km": 0.5,
-      "src": "Overture"
-     },
-     {
       "name": "Police Thana Sadar Jaipur",
       "phone": null,
       "km": 1.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Sodala Police Station",
+      "phone": null,
+      "km": 1.4,
+      "src": "OpenStreetMap node/6968230696",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "davaindia GENERIC PHARMACY",
-      "phone": "07861811652",
-      "km": 0.5,
-      "src": "Overture"
-     },
-     {
       "name": "Railway Hospital Pharmacy",
       "phone": "+912114274560",
       "km": 1.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Dawa Dost",
+      "phone": null,
+      "km": 1.5,
+      "src": "OpenStreetMap node/11725249801",
+      "confirmed": true
      }
     ]
    },
@@ -307,13 +343,15 @@
       "name": "EHCC Hospital Jaipur",
       "phone": null,
       "km": 1.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "ETERNAL MULTISPECIALITY HOSPITAL",
       "phone": null,
       "km": 1.2,
-      "src": "OpenStreetMap way/677227866"
+      "src": "OpenStreetMap way/677227866",
+      "confirmed": true
      }
     ],
     "police": [
@@ -321,27 +359,31 @@
       "name": "Sanganer Police Station",
       "phone": null,
       "km": 1.3,
-      "src": "OpenStreetMap way/862954955"
+      "src": "OpenStreetMap way/862954955",
+      "confirmed": true
      },
      {
-      "name": "Police Line",
-      "phone": null,
-      "km": 2.4,
-      "src": "Overture"
+      "name": "Police Chowki Rambari",
+      "phone": "+912942721677",
+      "km": 2.6,
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Apollo Pharmacy Jaipur Airport Departures",
-      "phone": "09773358622",
-      "km": 0.8,
-      "src": "Overture"
+      "name": "Vishnu Medical Store",
+      "phone": "+919829566127",
+      "km": 2.3,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Davaindia Generic Pharmacy",
-      "phone": "08799635209",
-      "km": 1.7,
-      "src": "Overture"
+      "name": "Medkart Pharmacy - Jagatpura",
+      "phone": "09828070506",
+      "km": 2.4,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -351,13 +393,15 @@
       "name": "Amar Jain Hospital",
       "phone": "+919929597395",
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Goyal Hospital",
       "phone": null,
       "km": 0.6,
-      "src": "OpenStreetMap node/7698578066"
+      "src": "OpenStreetMap node/7698578066",
+      "confirmed": true
      }
     ],
     "police": [
@@ -365,54 +409,58 @@
       "name": "Police Thana Manak Chowk",
       "phone": "+911412601366",
       "km": 0.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "policr thana manak chowk",
       "phone": null,
       "km": 0.2,
-      "src": "OpenStreetMap way/1257701014"
+      "src": "OpenStreetMap way/1257701014",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Swami Laxmiram Pharmacy Chikitsalya",
-      "phone": "+911412564772",
-      "km": 0.4,
-      "src": "Overture"
+      "name": "Famous pharmacy: since 1856",
+      "phone": "+918078620592",
+      "km": 1.6,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Medkart Pharmacy",
-      "phone": "07734880021",
-      "km": 1.6,
-      "src": "Overture"
+      "name": "Sanjay Medical Store",
+      "phone": "+911412363073",
+      "km": 1.7,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    }
   },
   "counts": {
-   "hospital": 1639,
-   "emergency_or_urgent_care_facility": 3,
-   "museum": 4,
-   "travel_service": 2,
-   "resort": 1,
-   "hotel": 7,
-   "arts_crafts_and_hobby_store": 2,
-   "food_and_beverage_store": 2,
    "monument": 5,
+   "food_and_beverage_store": 2,
    "null": 2,
    "community_and_government": 1,
-   "police_station": 118,
-   "market": 1,
-   "train_station": 1,
    "pharmacy_and_drug_store": 337,
+   "historic_site": 8,
+   "airport": 3,
    "fire_station": 4,
+   "fort": 1,
    "coffee_shop": 1,
    "restaurant": 1,
-   "historic_site": 8,
    "park": 1,
-   "fort": 1,
-   "airport": 3
+   "police_station": 118,
+   "train_station": 1,
+   "market": 1,
+   "hospital": 1639,
+   "hotel": 7,
+   "arts_crafts_and_hobby_store": 2,
+   "travel_service": 2,
+   "emergency_or_urgent_care_facility": 3,
+   "museum": 4,
+   "resort": 1
   },
   "missing_spots": [],
   "candidates": {}

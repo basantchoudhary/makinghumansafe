@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T23:42",
+ "fetched": "2026-11-15T00:16",
  "data": {
   "spots": {
    "Laxman Jhula": {
@@ -35,13 +35,15 @@
       "name": "Laxman Jhula Governement Hospital",
       "phone": null,
       "km": 0.3,
-      "src": "OpenStreetMap way/276374940"
+      "src": "OpenStreetMap way/276374940",
+      "confirmed": true
      },
      {
       "name": "Ayushwaan Multi Speciality Hospital",
       "phone": null,
       "km": 0.9,
-      "src": "OpenStreetMap node/13152055855"
+      "src": "OpenStreetMap node/13152055855",
+      "confirmed": true
      }
     ],
     "police": [
@@ -49,13 +51,15 @@
       "name": "Police Station-Laxman Jhula",
       "phone": null,
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Laxman Jhula police station",
       "phone": null,
       "km": 0.5,
-      "src": "OpenStreetMap way/102683530"
+      "src": "OpenStreetMap way/102683530",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -63,13 +67,15 @@
       "name": "Kandari Medical Store",
       "phone": "+918077520359",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Pooja medical store",
       "phone": "+911352436635",
       "km": 1.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -79,13 +85,15 @@
       "name": "Ayushwaan Multi Speciality Hospital",
       "phone": null,
       "km": 1.0,
-      "src": "OpenStreetMap node/13152055855"
+      "src": "OpenStreetMap node/13152055855",
+      "confirmed": true
      },
      {
       "name": "Laxman Jhula Governement Hospital",
       "phone": null,
       "km": 1.8,
-      "src": "OpenStreetMap way/276374940"
+      "src": "OpenStreetMap way/276374940",
+      "confirmed": true
      }
     ],
     "police": [
@@ -93,13 +101,15 @@
       "name": "Reporting Police Post Chowki, Ram Jhula",
       "phone": "+911352430228",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Police station (name not on map)",
       "phone": null,
       "km": 0.4,
-      "src": "OpenStreetMap node/3812555176"
+      "src": "OpenStreetMap node/3812555176",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -107,13 +117,15 @@
       "name": "Pooja medical store",
       "phone": "+911352436635",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Kandari Medical Store",
       "phone": "+918077520359",
       "km": 1.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -123,41 +135,47 @@
       "name": "Nirmal Ashram Hospital",
       "phone": "+918077763702",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "KMC Hospital Meerut",
       "phone": null,
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "Police Chowki",
-      "phone": "+911352430100",
-      "km": 0.1,
-      "src": "Overture"
+      "name": "Muni ki reti police thana",
+      "phone": null,
+      "km": 2.5,
+      "src": "OpenStreetMap node/12684189301",
+      "confirmed": true
      },
      {
-      "name": "Police Station Rishikesh",
-      "phone": "+911352430100",
-      "km": 0.7,
-      "src": "Overture"
+      "name": "Reporting Police Post Chowki, Ram Jhula",
+      "phone": "+911352430228",
+      "km": 2.6,
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Doon medical store, rishikesh",
-      "phone": "+919411331141",
-      "km": 0.4,
-      "src": "Overture"
+      "name": "Pooja medical store",
+      "phone": "+911352436635",
+      "km": 2.1,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "davaindia Generic Pharmacy",
-      "phone": "07861866031",
-      "km": 0.6,
-      "src": "Overture"
+      "name": "Kandari Medical Store",
+      "phone": "+918077520359",
+      "km": 3.8,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -167,27 +185,31 @@
       "name": "Ayushwaan Multi Speciality Hospital",
       "phone": null,
       "km": 1.3,
-      "src": "OpenStreetMap node/13152055855"
+      "src": "OpenStreetMap node/13152055855",
+      "confirmed": true
      },
      {
       "name": "Sri Krishna Sewa Ashram Hospital",
       "phone": null,
       "km": 1.7,
-      "src": "OpenStreetMap way/743251353"
+      "src": "OpenStreetMap way/743251353",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "Police Station",
-      "phone": "+919411112842",
-      "km": 0.5,
-      "src": "Overture"
-     },
-     {
       "name": "Reporting Police Post Chowki, Ram Jhula",
       "phone": "+911352430228",
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 0.5,
+      "src": "OpenStreetMap node/3812555176",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -195,13 +217,15 @@
       "name": "Pooja medical store",
       "phone": "+911352436635",
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "davaindia GENERIC PHARMACY",
-      "phone": "07861864939",
-      "km": 1.1,
-      "src": "Overture"
+      "name": "Kandari Medical Store",
+      "phone": "+918077520359",
+      "km": 1.7,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -211,41 +235,47 @@
       "name": "Holy Care Hospital",
       "phone": "+911353161803",
       "km": 1.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "AIIMS Trauma Center",
       "phone": "+911352462940",
       "km": 1.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "Police Chowki",
-      "phone": "+911352430100",
-      "km": 3.6,
-      "src": "Overture"
+      "name": "Bhadrakali Police Chowki",
+      "phone": "+911352430041",
+      "km": 5.3,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Police Station Rishikesh",
-      "phone": "+911352430100",
-      "km": 3.7,
-      "src": "Overture"
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 5.3,
+      "src": "OpenStreetMap node/3869767158",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
+      "name": "Pooja medical store",
+      "phone": "+911352436635",
+      "km": 5.6,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
       "name": "Goyal Pharmacy",
       "phone": "+917534900025",
       "km": 1.5,
-      "src": "Overture"
-     },
-     {
-      "name": "Goyal Pharmacy 24x7",
-      "phone": "+917535035500",
-      "km": 1.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -255,13 +285,15 @@
       "name": "Himalayan Institute Hospital Trust",
       "phone": null,
       "km": 1.4,
-      "src": "OpenStreetMap way/981252583"
+      "src": "OpenStreetMap way/981252583",
+      "confirmed": true
      },
      {
-      "name": "Himalayan Hospital",
-      "phone": "+911352471200",
-      "km": 1.5,
-      "src": "Overture"
+      "name": "Shed Hospital",
+      "phone": "+911352977080",
+      "km": 5.1,
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -269,42 +301,48 @@
       "name": "Police Station Doiwala",
       "phone": "+911352716230",
       "km": 5.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Police station (name not on map)",
       "phone": null,
       "km": 12.9,
-      "src": "OpenStreetMap node/3869767158"
+      "src": "OpenStreetMap node/3869767158",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
+      "name": "Apollo Pharmacy Doiwala Road Dehradun",
+      "phone": "07942812664",
+      "km": 5.7,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
       "name": "Apollo Pharmacy Dehradun Airport Departures",
       "phone": "07455001988",
       "km": 1.6,
-      "src": "Overture"
-     },
-     {
-      "name": "Apollo Pharmacy - Jauligrant Airport",
-      "phone": "07455001988",
-      "km": 1.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    }
   },
   "counts": {
    "hospital": 476,
-   "resort": 5,
+   "emergency_or_urgent_care_facility": 1,
    "travel_service": 6,
    "religious_organization": 3,
    "beach": 1,
+   "resort": 5,
    "hotel": 5,
    "hindu_place_of_worship": 1,
    "auto_dealer": 1,
    "cafe": 1,
-   "emergency_or_urgent_care_facility": 1,
+   "arts_and_entertainment": 2,
+   "null": 4,
    "police_station": 68,
    "campground": 6,
    "lodging": 2,
@@ -312,14 +350,12 @@
    "civic_organization": 1,
    "corporate_or_business_office": 2,
    "pharmacy_and_drug_store": 195,
-   "recreational_equipment_rental": 3,
-   "restaurant": 1,
-   "airport": 2,
    "fire_station": 4,
+   "airport": 2,
    "historic_site": 2,
    "place_of_learning": 1,
-   "arts_and_entertainment": 2,
-   "null": 4
+   "recreational_equipment_rental": 3,
+   "restaurant": 1
   },
   "missing_spots": [],
   "candidates": {}

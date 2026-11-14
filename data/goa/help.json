@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T23:34",
+ "fetched": "2026-11-15T00:10",
  "data": {
   "spots": {
    "Calangute Beach": {
@@ -46,13 +46,15 @@
       "name": "Mathew Braganza Hospital",
       "phone": "+918326716666",
       "km": 0.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Shri Ram Hospital",
       "phone": null,
       "km": 0.8,
-      "src": "OpenStreetMap node/4298569692"
+      "src": "OpenStreetMap node/4298569692",
+      "confirmed": true
      }
     ],
     "police": [
@@ -60,27 +62,31 @@
       "name": "Police station (name not on map)",
       "phone": null,
       "km": 0.6,
-      "src": "OpenStreetMap node/5459740022"
+      "src": "OpenStreetMap node/5459740022",
+      "confirmed": true
      },
      {
       "name": "Calangute Police Station.",
       "phone": "+918322278284",
       "km": 2.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Apollo Pharmacy Calangute",
-      "phone": "07942845496",
-      "km": 0.9,
-      "src": "Overture"
+      "name": "Shantadurga Pharmacy",
+      "phone": null,
+      "km": 3.9,
+      "src": "OpenStreetMap node/3701644756",
+      "confirmed": true
      },
      {
-      "name": "Atlas Medical Store",
-      "phone": "+917038985776",
-      "km": 1.3,
-      "src": "Overture"
+      "name": "M/s Akbar Medical Stores",
+      "phone": null,
+      "km": 4.3,
+      "src": "OpenStreetMap node/8426326606",
+      "confirmed": true
      }
     ]
    },
@@ -90,13 +96,15 @@
       "name": "Mathew Braganza Hospital",
       "phone": "+918326716666",
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Shri Ram Hospital",
       "phone": null,
       "km": 0.4,
-      "src": "OpenStreetMap node/4298569692"
+      "src": "OpenStreetMap node/4298569692",
+      "confirmed": true
      }
     ],
     "police": [
@@ -104,27 +112,31 @@
       "name": "Police station (name not on map)",
       "phone": null,
       "km": 0.5,
-      "src": "OpenStreetMap node/1688110368"
+      "src": "OpenStreetMap node/1688110368",
+      "confirmed": true
      },
      {
       "name": "Calangute Police Station.",
       "phone": "+918322278284",
       "km": 2.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Apollo Pharmacy Calangute",
-      "phone": "07942845496",
-      "km": 0.5,
-      "src": "Overture"
+      "name": "Shantadurga Pharmacy",
+      "phone": null,
+      "km": 3.9,
+      "src": "OpenStreetMap node/3701644756",
+      "confirmed": true
      },
      {
-      "name": "Atlas Medical Store",
-      "phone": "+917038985776",
-      "km": 0.9,
-      "src": "Overture"
+      "name": "M/s Akbar Medical Stores",
+      "phone": null,
+      "km": 4.3,
+      "src": "OpenStreetMap node/8426326606",
+      "confirmed": true
      }
     ]
    },
@@ -134,13 +146,15 @@
       "name": "St. Anthony's Hospital",
       "phone": "+918322274308",
       "km": 2.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Mathew Braganza Hospital",
       "phone": "+918326716666",
       "km": 4.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -148,13 +162,15 @@
       "name": "Anjuna Police Station",
       "phone": "+918322273233",
       "km": 1.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Chapora Coastal Security Police Station",
       "phone": null,
       "km": 3.3,
-      "src": "OpenStreetMap way/1349939200"
+      "src": "OpenStreetMap way/1349939200",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -162,13 +178,15 @@
       "name": "Siddheshwar Chemist and Druggist Medical Stores",
       "phone": "+919822127482",
       "km": 2.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Siddheshwar Medical Store",
       "phone": null,
       "km": 2.9,
-      "src": "OpenStreetMap node/2084208091"
+      "src": "OpenStreetMap node/2084208091",
+      "confirmed": true
      }
     ]
    },
@@ -178,13 +196,15 @@
       "name": "Victor Hospital",
       "phone": null,
       "km": 0.9,
-      "src": "OpenStreetMap way/430544182"
+      "src": "OpenStreetMap way/430544182",
+      "confirmed": true
      },
      {
       "name": "Government Hospital",
       "phone": "+918322643422",
       "km": 2.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -192,13 +212,15 @@
       "name": "Police Station-Canacona",
       "phone": "+918322633357",
       "km": 3.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Canacona Police Station",
       "phone": null,
       "km": 3.4,
-      "src": "OpenStreetMap way/430545520"
+      "src": "OpenStreetMap way/430545520",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -206,13 +228,15 @@
       "name": "Desai Chemist and Drugist",
       "phone": null,
       "km": 0.8,
-      "src": "OpenStreetMap node/4347571289"
+      "src": "OpenStreetMap node/4347571289",
+      "confirmed": true
      },
      {
       "name": "Yeshwant Medical Stores",
       "phone": "+917020683655",
       "km": 2.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -222,13 +246,15 @@
       "name": "Trimurti General Hospital",
       "phone": "+918530460933",
       "km": 1.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Dr. Correia Afonso Hospital",
       "phone": null,
       "km": 4.0,
-      "src": "OpenStreetMap node/4298328692"
+      "src": "OpenStreetMap node/4298328692",
+      "confirmed": true
      }
     ],
     "police": [
@@ -236,13 +262,15 @@
       "name": "Police Station Colva",
       "phone": "+918322703698",
       "km": 1.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Colva police station",
       "phone": null,
       "km": 1.4,
-      "src": "OpenStreetMap node/5289047122"
+      "src": "OpenStreetMap node/5289047122",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -250,13 +278,15 @@
       "name": "Sunshine Medical Store",
       "phone": null,
       "km": 1.0,
-      "src": "OpenStreetMap node/4329378090"
+      "src": "OpenStreetMap node/4329378090",
+      "confirmed": true
      },
      {
       "name": "Apollo Pharmacy Seraulim Goa",
       "phone": "08956751409",
       "km": 2.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -266,13 +296,15 @@
       "name": "Hospital Sawant",
       "phone": null,
       "km": 5.9,
-      "src": "OpenStreetMap node/7643338070"
+      "src": "OpenStreetMap node/7643338070",
+      "confirmed": true
      },
      {
       "name": "CHC, Tuem Pernem",
       "phone": null,
       "km": 9.6,
-      "src": "OpenStreetMap way/1158138145"
+      "src": "OpenStreetMap way/1158138145",
+      "confirmed": true
      }
     ],
     "police": [
@@ -280,13 +312,15 @@
       "name": "Arambol Police Out Post",
       "phone": "+918322242914",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Police Outpost Arambol",
       "phone": "+91 832 2242914",
       "km": 0.4,
-      "src": "OpenStreetMap way/1157573046"
+      "src": "OpenStreetMap way/1157573046",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -294,13 +328,15 @@
       "name": "Satpurush Medical Store",
       "phone": null,
       "km": 0.9,
-      "src": "OpenStreetMap node/1592216592"
+      "src": "OpenStreetMap node/1592216592",
+      "confirmed": true
      },
      {
       "name": "Medical store",
       "phone": null,
       "km": 0.9,
-      "src": "OpenStreetMap node/7146660186"
+      "src": "OpenStreetMap node/7146660186",
+      "confirmed": true
      }
     ]
    },
@@ -310,13 +346,15 @@
       "name": "Government Hospital, Castlerock",
       "phone": "8383251508",
       "km": 9.1,
-      "src": "OpenStreetMap node/7205430808"
+      "src": "OpenStreetMap node/7205430808",
+      "confirmed": true
      },
      {
-      "name": "Primary Health Centre Sanguem",
-      "phone": "+919011025042",
-      "km": 14.9,
-      "src": "Overture"
+      "name": "Sanguem Primary Health Centre",
+      "phone": null,
+      "km": 19.7,
+      "src": "OpenStreetMap way/760467188",
+      "confirmed": true
      }
     ],
     "police": [
@@ -324,13 +362,15 @@
       "name": "Mollem Police Out Post",
       "phone": null,
       "km": 11.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Sanguem Police Station",
       "phone": null,
       "km": 19.6,
-      "src": "OpenStreetMap way/777386804"
+      "src": "OpenStreetMap way/777386804",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -338,13 +378,15 @@
       "name": "Apollo Pharmacy Curchorem II Goa",
       "phone": "08956751407",
       "km": 22.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Apollo",
       "phone": null,
       "km": 22.8,
-      "src": "OpenStreetMap node/4269341290"
+      "src": "OpenStreetMap node/4269341290",
+      "confirmed": true
      }
     ]
    },
@@ -354,13 +396,15 @@
       "name": "Redkar Hospital and Research Center",
       "phone": "+919146885522",
       "km": 6.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Dr Lele's streerog prasuti hospital",
-      "phone": "+919765910766",
-      "km": 8.6,
-      "src": "Overture"
+      "name": "CHC, Tuem Pernem",
+      "phone": null,
+      "km": 9.4,
+      "src": "OpenStreetMap way/1158138145",
+      "confirmed": true
      }
     ],
     "police": [
@@ -368,13 +412,15 @@
       "name": "Manohar International Airport Police Station",
       "phone": null,
       "km": 1.5,
-      "src": "OpenStreetMap way/1178488195"
+      "src": "OpenStreetMap way/1178488195",
+      "confirmed": true
      },
      {
       "name": "Pernem Police Station",
       "phone": "+918322201233",
       "km": 7.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -382,13 +428,15 @@
       "name": "Apollo Pharmacy",
       "phone": null,
       "km": 1.2,
-      "src": "OpenStreetMap node/10960994652"
+      "src": "OpenStreetMap node/10960994652",
+      "confirmed": true
      },
      {
-      "name": "Apollo Pharmacy Bicholim II",
-      "phone": "08799917175",
-      "km": 13.1,
-      "src": "Overture"
+      "name": "Deepam Chemist And Druggist",
+      "phone": null,
+      "km": 16.1,
+      "src": "OpenStreetMap node/4558623400",
+      "confirmed": true
      }
     ]
    },
@@ -398,13 +446,15 @@
       "name": "VM Salgaoncar Hospital",
       "phone": null,
       "km": 1.1,
-      "src": "OpenStreetMap way/1550629880"
+      "src": "OpenStreetMap way/1550629880",
+      "confirmed": true
      },
      {
       "name": "Pai Hospital",
       "phone": "+918322513641",
       "km": 1.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -412,52 +462,56 @@
       "name": "Mormugao Police Station",
       "phone": null,
       "km": 4.3,
-      "src": "OpenStreetMap way/1338898152"
+      "src": "OpenStreetMap way/1338898152",
+      "confirmed": true
      },
      {
       "name": "Sada Police Station",
       "phone": null,
       "km": 4.9,
-      "src": "OpenStreetMap node/4272882590"
+      "src": "OpenStreetMap node/4272882590",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Vedh Medical Stores",
-      "phone": "+919823986260",
-      "km": 0.8,
-      "src": "Overture"
+      "name": "Medical emporium",
+      "phone": null,
+      "km": 2.3,
+      "src": "OpenStreetMap node/4818471721",
+      "confirmed": true
      },
      {
-      "name": "Gaia Pharmacy- Online Medical Store Goa (Chemist & Druggist)",
-      "phone": "+917775058199",
-      "km": 1.0,
-      "src": "Overture"
+      "name": "Apollo Pharmacy Vasco",
+      "phone": "07942814519",
+      "km": 2.6,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    }
   },
   "counts": {
+   "null": 10,
    "hospital": 585,
-   "public_transit_facility_or_service": 1,
-   "hotel": 40,
    "beach": 48,
    "resort": 27,
+   "taxi_or_ride_share_service": 1,
+   "hotel": 40,
+   "public_transit_facility_or_service": 1,
    "travel_service": 4,
    "bar": 1,
    "emergency_or_urgent_care_facility": 1,
-   "taxi_or_ride_share_service": 1,
-   "null": 10,
-   "pharmacy_and_drug_store": 389,
-   "airport": 7,
-   "restaurant": 4,
-   "recreational_equipment_rental": 1,
-   "fire_station": 5,
-   "park": 2,
    "police_station": 121,
+   "private_lodging": 5,
    "lodging": 5,
    "bed_and_breakfast": 1,
-   "private_lodging": 5
+   "pharmacy_and_drug_store": 389,
+   "airport": 7,
+   "park": 2,
+   "fire_station": 5,
+   "restaurant": 4,
+   "recreational_equipment_rental": 1
   },
   "missing_spots": [],
   "candidates": {}

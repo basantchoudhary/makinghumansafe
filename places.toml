@@ -208,3 +208,77 @@ spots = ["Malpe Beach", "St. Mary's Island", "Kaup Beach", "Delta Beach", "Sri K
 spot_alias = { "Sri Krishna Matha" = "Sri Krishna Matha Udupi - Paryaya Sri Puthige Math" }
 spot_coords = { "St. Mary's Island" = [13.3795, 74.673, "Wikidata Q4254076"], "Delta Beach" = [13.4458, 74.6939, "OpenStreetMap (Delta Beach, Kodibengre)"] }
 corpus_spots = ["malpe", "st mary", "kaup", "kodi bengre", "delta beach", "udupi", "kundapur", "charkikadu", "trasi", "padubidri", "maravanthe"]
+
+
+# ---- Water safety: waterfalls, rivers, backwaters and Kerala beaches (14 Nov 2026) ----
+[lonavala]
+name = "Lonavala and the Pune ghats"
+coastal = false
+activities = ["waterfall", "swimming", "road"]
+country = "IN"
+state = "Maharashtra"
+districts = ["Pune", "Raigad"]
+bbox = [73.25, 18.40, 73.95, 19.40]
+wikivoyage_page = "Lonavala"
+wikivoyage_sections = ["Stay safe", "Get around", "See"]
+alert_keywords = ["pune", "raigad", "lonavala", "maval", "mawal", "thane"]
+news_queries = ['"bhushi dam"', '"lonavala" drowned', '"devkund"', '"tamhini" waterfall']
+news_feeds = [["The Hindu, Maharashtra", "https://www.thehindu.com/news/national/maharashtra/feeder/default.rss"]]
+news_require = ["lonavala", "bhushi", "devkund", "tamhini", "kundamala", "indrayani", "malshej", "pawna", "pavana", "maval"]
+spots = ["Bhushi Dam", "Malshej Ghat", "Pawna Lake", "Devkund trail (Bhira)"]
+spot_coords = { "Bhushi Dam" = [18.72251, 73.39542, "OpenStreetMap way/958591197"], "Malshej Ghat" = [19.34171, 73.79089, "OpenStreetMap way/197893303 (MTDC resort at the ghat)"], "Pawna Lake" = [18.65941, 73.48661, "OpenStreetMap relation/1894403"], "Devkund trail (Bhira)" = [18.47522, 73.39404, "OpenStreetMap way/867015699"] }
+corpus_spots = ["bhushi", "lonavala", "devkund", "tamhini", "kundamala", "indrayani", "malshej", "kalu waterfall", "pawna"]
+
+[alappuzha]
+name = "Alappuzha backwaters"
+activities = ["water_sports", "swimming"]
+country = "IN"
+state = "Kerala"
+districts = ["Alappuzha"]
+bbox = [76.25, 9.35, 76.45, 9.70]
+incois_districts = ["ALAPPUZHA"]
+wikivoyage_page = "Alappuzha"
+wikivoyage_sections = ["Stay safe", "Get around", "Do"]
+alert_keywords = ["alappuzha", "kuttanad", "vembanad"]
+news_queries = ['"alappuzha" houseboat', '"houseboat" capsized kerala', '"punnamada"']
+news_feeds = [["The Hindu, Kerala", "https://www.thehindu.com/news/national/kerala/feeder/default.rss"]]
+news_require = ["alappuzha", "alleppey", "houseboat", "kuttanad", "vembanad", "punnamada", "marari"]
+spots = ["Alappuzha Beach", "Punnamada Lake", "Vembanad Lake", "Marari Beach"]
+spot_coords = { "Alappuzha Beach" = [9.48438, 76.3195, "OpenStreetMap way/1234415228"], "Punnamada Lake" = [9.50164, 76.35475, "OpenStreetMap way/133597341"], "Vembanad Lake" = [9.59492, 76.39421, "OpenStreetMap relation/20298114"], "Marari Beach" = [9.60318, 76.29799, "OpenStreetMap way/622418623"] }
+corpus_spots = ["alappuzha", "houseboat", "punnamada", "vembanad", "kuttanad", "marari"]
+
+[kozhikode]
+name = "Kozhikode"
+activities = ["waterfall", "swimming"]
+country = "IN"
+state = "Kerala"
+districts = ["Kozhikode"]
+bbox = [75.55, 11.15, 76.10, 11.60]
+incois_districts = ["KOZHIKODE"]
+wikivoyage_page = "Kozhikode"
+wikivoyage_sections = ["Stay safe", "Get around", "See"]
+alert_keywords = ["kozhikode", "calicut"]
+news_queries = ['"pathankayam"', '"kozhikode" drowned', '"thikkodi"']
+news_feeds = [["The Hindu, Kerala", "https://www.thehindu.com/news/national/kerala/feeder/default.rss"]]
+news_require = ["kozhikode", "calicut", "pathankayam", "thikkodi", "kappad", "kodenchery", "thusharagiri"]
+spots = ["Kozhikode Beach", "Kappad Beach", "Thikkodi (Kallakath Beach area)"]
+spot_coords = { "Kozhikode Beach" = [11.25551, 75.7697, "OpenStreetMap way/359831226"], "Kappad Beach" = [11.38457, 75.71935, "OpenStreetMap way/895460829"], "Thikkodi (Kallakath Beach area)" = [11.48964, 75.6281, "OpenStreetMap node/7726526637"] }
+corpus_spots = ["pathankayam", "thikkodi", "kallakath", "kozhikode", "kappad"]
+
+[varkala]
+name = "Varkala and Kovalam"
+activities = ["swimming", "water_sports", "scam"]
+country = "IN"
+state = "Kerala"
+districts = ["Thiruvananthapuram"]
+bbox = [76.60, 8.35, 77.05, 8.85]
+incois_districts = ["THIRUVANANTHAPURAM"]
+wikivoyage_page = "Varkala"
+wikivoyage_sections = ["Stay safe", "Get around", "Do"]
+alert_keywords = ["thiruvananthapuram", "trivandrum", "varkala", "kovalam"]
+news_queries = ['"varkala" drowned', '"kovalam" drowned', '"papanasam beach"']
+news_feeds = [["The Hindu, Thiruvananthapuram", "https://www.thehindu.com/news/cities/Thiruvananthapuram/feeder/default.rss"], ["The Hindu, Kerala", "https://www.thehindu.com/news/national/kerala/feeder/default.rss"]]
+news_require = ["varkala", "kovalam", "papanasam", "kappil", "edava", "vettakada", "vizhinjam"]
+spots = ["Varkala Beach", "Kovalam Beach", "Edava Beach", "Kappil Beach"]
+spot_coords = { "Varkala Beach" = [8.73326, 76.70531, "OpenStreetMap relation/5641401"], "Kovalam Beach" = [8.3951, 76.97299, "OpenStreetMap node/10861674944"], "Edava Beach" = [8.7656, 76.68395, "OpenStreetMap way/1434375822"], "Kappil Beach" = [8.77956, 76.67929, "OpenStreetMap node/334641675"] }
+corpus_spots = ["varkala", "papanasam", "kappil", "edava", "vettakada", "kovalam"]

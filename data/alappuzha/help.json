@@ -1,0 +1,244 @@
+{
+ "fetched": "2026-11-15T01:37",
+ "data": {
+  "spots": {
+   "Alappuzha Beach": {
+    "x": 76.31810403,
+    "y": 9.49163895
+   },
+   "Punnamada Lake": {
+    "x": 76.35334855,
+    "y": 9.50055978
+   },
+   "Marari Beach": {
+    "x": 76.30347532,
+    "y": 9.5692632
+   },
+   "Vembanad Lake": {
+    "x": 76.39421,
+    "y": 9.59492,
+    "located_by": "OpenStreetMap relation/20298114"
+   }
+  },
+  "near": {
+   "Alappuzha Beach": {
+    "hospital": [
+     {
+      "name": "Women & Children Hospital",
+      "phone": "+914772239690",
+      "km": 0.3,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Beach Hospital",
+      "phone": null,
+      "km": 0.4,
+      "src": "OpenStreetMap node/3951439190",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Armed Reserve Police Camp Alappuzha",
+      "phone": null,
+      "km": 0.6,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "PoliceControl Office",
+      "phone": null,
+      "km": 0.6,
+      "src": "OpenStreetMap node/3951446485",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Shaheen Medicals",
+      "phone": null,
+      "km": 0.9,
+      "src": "OpenStreetMap node/3990185250",
+      "confirmed": true
+     },
+     {
+      "name": "Chekas Medicals",
+      "phone": null,
+      "km": 0.9,
+      "src": "OpenStreetMap node/3990188976",
+      "confirmed": true
+     }
+    ]
+   },
+   "Punnamada Lake": {
+    "hospital": [
+     {
+      "name": "Urban Primary Health Centre, Nehrutrophy",
+      "phone": null,
+      "km": 1.2,
+      "src": "OpenStreetMap node/7730161985",
+      "confirmed": true
+     },
+     {
+      "name": "Sahrudaya Hospital",
+      "phone": "+914772247000",
+      "km": 1.4,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Kerala Police Control Room",
+      "phone": null,
+      "km": 1.0,
+      "src": "OpenStreetMap node/9048843703",
+      "confirmed": true
+     },
+     {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 1.8,
+      "src": "OpenStreetMap node/11744862770",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Sreeja Medicals",
+      "phone": "+919995076585",
+      "km": 0.7,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Neethi Medical Store",
+      "phone": null,
+      "km": 1.6,
+      "src": "OpenStreetMap node/7480513661",
+      "confirmed": true
+     }
+    ]
+   },
+   "Marari Beach": {
+    "hospital": [
+     {
+      "name": "St. Michael's Hospital",
+      "phone": null,
+      "km": 0.9,
+      "src": "OpenStreetMap node/6951426302",
+      "confirmed": true
+     },
+     {
+      "name": "Family Health Centre Kalavoor",
+      "phone": null,
+      "km": 1.9,
+      "src": "OpenStreetMap way/800754317",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Mannancherry police station official",
+      "phone": "+919497975247",
+      "km": 5.0,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Police Sub Inspector Office",
+      "phone": null,
+      "km": 5.0,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "durga medicals",
+      "phone": null,
+      "km": 3.4,
+      "src": "OpenStreetMap way/1172541741",
+      "confirmed": true
+     },
+     {
+      "name": "P.S. Medicals",
+      "phone": null,
+      "km": 5.1,
+      "src": "OpenStreetMap node/13593390706",
+      "confirmed": true
+     }
+    ]
+   },
+   "Vembanad Lake": {
+    "hospital": [
+     {
+      "name": "SH Medical Centre",
+      "phone": null,
+      "km": 3.9,
+      "src": "OpenStreetMap way/1432565567",
+      "confirmed": true
+     },
+     {
+      "name": "Community Health Centre Muhamma",
+      "phone": null,
+      "km": 4.5,
+      "src": "OpenStreetMap way/799552784",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station, Muhamma",
+      "phone": null,
+      "km": 4.0,
+      "src": "OpenStreetMap way/619498951",
+      "confirmed": true
+     },
+     {
+      "name": "Police Station, Kumarakom",
+      "phone": null,
+      "km": 4.7,
+      "src": "OpenStreetMap way/620931419",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Bhartiya Jan Aushadhi kendra",
+      "phone": null,
+      "km": 4.6,
+      "src": "OpenStreetMap node/8724684990",
+      "confirmed": true
+     },
+     {
+      "name": "Chirathara Medicals",
+      "phone": null,
+      "km": 4.7,
+      "src": "OpenStreetMap node/7494953065",
+      "confirmed": true
+     }
+    ]
+   }
+  },
+  "counts": {
+   "hospital": 1258,
+   "hotel": 8,
+   "emergency_or_urgent_care_facility": 2,
+   "beach": 4,
+   "resort": 4,
+   "null": 2,
+   "police_station": 191,
+   "lodging": 2,
+   "private_lodging": 1,
+   "bed_and_breakfast": 1,
+   "lake": 3,
+   "pharmacy_and_drug_store": 387,
+   "fire_station": 3,
+   "restaurant": 2
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

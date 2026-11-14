@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T23:42",
+ "fetched": "2026-11-15T00:17",
  "data": {
   "spots": {
    "Hidimba Devi Temple": {
@@ -39,13 +39,15 @@
       "name": "Civil Hospital",
       "phone": "+911902253385",
       "km": 0.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Civil Hospital, Manali",
       "phone": "1902253385",
       "km": 0.1,
-      "src": "OpenStreetMap node/3042955724"
+      "src": "OpenStreetMap node/3042955724",
+      "confirmed": true
      }
     ],
     "police": [
@@ -53,13 +55,15 @@
       "name": "Police Station Manali",
       "phone": "+911902252326",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Police Assistance",
       "phone": null,
       "km": 0.7,
-      "src": "OpenStreetMap node/2380691334"
+      "src": "OpenStreetMap node/2380691334",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -67,13 +71,15 @@
       "name": "New Saklani Medical Store",
       "phone": "+917018127574",
       "km": 14.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Chaudhary Medical Store",
       "phone": null,
       "km": 32.0,
-      "src": "OpenStreetMap node/8175909385"
+      "src": "OpenStreetMap node/8175909385",
+      "confirmed": true
      }
     ]
    },
@@ -83,13 +89,15 @@
       "name": "Dr. Behl's Hospital",
       "phone": null,
       "km": 0.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Lady Willingdon Hospital",
       "phone": "+911902252379",
       "km": 0.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -97,13 +105,15 @@
       "name": "Police Assistance",
       "phone": null,
       "km": 0.3,
-      "src": "OpenStreetMap node/2380691334"
+      "src": "OpenStreetMap node/2380691334",
+      "confirmed": true
      },
      {
       "name": "Police Station Manali",
       "phone": "+911902252326",
       "km": 0.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -111,13 +121,15 @@
       "name": "New Saklani Medical Store",
       "phone": "+917018127574",
       "km": 14.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Chaudhary Medical Store",
       "phone": null,
       "km": 32.4,
-      "src": "OpenStreetMap node/8175909385"
+      "src": "OpenStreetMap node/8175909385",
+      "confirmed": true
      }
     ]
    },
@@ -127,13 +139,15 @@
       "name": "Civil Hospital, Manali",
       "phone": null,
       "km": 8.3,
-      "src": "OpenStreetMap node/7007287760"
+      "src": "OpenStreetMap node/7007287760",
+      "confirmed": true
      },
      {
       "name": "Lady Willingdon Hospital",
       "phone": "+911902252379",
       "km": 8.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -141,13 +155,15 @@
       "name": "Police Assistance",
       "phone": null,
       "km": 8.4,
-      "src": "OpenStreetMap node/2380691334"
+      "src": "OpenStreetMap node/2380691334",
+      "confirmed": true
      },
      {
       "name": "Police Station Manali",
       "phone": "+911902252326",
       "km": 9.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -155,13 +171,15 @@
       "name": "New Saklani Medical Store",
       "phone": "+917018127574",
       "km": 22.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Bodh medical store",
       "phone": null,
       "km": 30.7,
-      "src": "OpenStreetMap node/12946022148"
+      "src": "OpenStreetMap node/12946022148",
+      "confirmed": true
      }
     ]
    },
@@ -171,13 +189,15 @@
       "name": "Civil Hospital, Manali",
       "phone": null,
       "km": 1.2,
-      "src": "OpenStreetMap node/7007287760"
+      "src": "OpenStreetMap node/7007287760",
+      "confirmed": true
      },
      {
       "name": "Lady Willingdon Hospital",
       "phone": "+911902252379",
       "km": 1.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -185,13 +205,15 @@
       "name": "Police Assistance",
       "phone": null,
       "km": 1.5,
-      "src": "OpenStreetMap node/2380691334"
+      "src": "OpenStreetMap node/2380691334",
+      "confirmed": true
      },
      {
       "name": "Police Station Manali",
       "phone": "+911902252326",
       "km": 2.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -199,13 +221,15 @@
       "name": "New Saklani Medical Store",
       "phone": "+917018127574",
       "km": 15.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Chaudhary Medical Store",
       "phone": null,
       "km": 33.4,
-      "src": "OpenStreetMap node/8175909385"
+      "src": "OpenStreetMap node/8175909385",
+      "confirmed": true
      }
     ]
    },
@@ -215,13 +239,15 @@
       "name": "Civil Hospital, Manali",
       "phone": null,
       "km": 2.2,
-      "src": "OpenStreetMap node/7007287760"
+      "src": "OpenStreetMap node/7007287760",
+      "confirmed": true
      },
      {
       "name": "Dr. Behl's Hospital",
       "phone": null,
       "km": 2.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -229,13 +255,15 @@
       "name": "Police Assistance",
       "phone": null,
       "km": 2.2,
-      "src": "OpenStreetMap node/2380691334"
+      "src": "OpenStreetMap node/2380691334",
+      "confirmed": true
      },
      {
       "name": "Police Station Manali",
       "phone": "+911902252326",
       "km": 3.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -243,13 +271,15 @@
       "name": "New Saklani Medical Store",
       "phone": "+917018127574",
       "km": 16.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Chaudhary Medical Store",
       "phone": null,
       "km": 34.8,
-      "src": "OpenStreetMap node/8175909385"
+      "src": "OpenStreetMap node/8175909385",
+      "confirmed": true
      }
     ]
    },
@@ -259,13 +289,15 @@
       "name": "Civil Hospital",
       "phone": "+911902253385",
       "km": 0.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Civil Hospital, Manali",
       "phone": "1902253385",
       "km": 0.1,
-      "src": "OpenStreetMap node/3042955724"
+      "src": "OpenStreetMap node/3042955724",
+      "confirmed": true
      }
     ],
     "police": [
@@ -273,13 +305,15 @@
       "name": "Police Station Manali",
       "phone": "+911902252326",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Police Assistance",
       "phone": null,
       "km": 0.7,
-      "src": "OpenStreetMap node/2380691334"
+      "src": "OpenStreetMap node/2380691334",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -287,13 +321,15 @@
       "name": "New Saklani Medical Store",
       "phone": "+917018127574",
       "km": 14.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Chaudhary Medical Store",
       "phone": null,
       "km": 32.0,
-      "src": "OpenStreetMap node/8175909385"
+      "src": "OpenStreetMap node/8175909385",
+      "confirmed": true
      }
     ]
    },
@@ -303,13 +339,15 @@
       "name": "Dr. Behl's Hospital",
       "phone": null,
       "km": 15.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Lady Willingdon Hospital",
       "phone": "+911902252379",
       "km": 15.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -317,27 +355,31 @@
       "name": "Police Assistance",
       "phone": null,
       "km": 14.9,
-      "src": "OpenStreetMap node/2380691334"
+      "src": "OpenStreetMap node/2380691334",
+      "confirmed": true
      },
      {
       "name": "Police Station Manali",
       "phone": "+911902252326",
       "km": 16.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "New Saklani Medical Store",
-      "phone": "+917018127574",
-      "km": 29.6,
-      "src": "Overture"
-     },
-     {
       "name": "Bodh medical store",
       "phone": null,
       "km": 30.1,
-      "src": "OpenStreetMap node/12946022148"
+      "src": "OpenStreetMap node/12946022148",
+      "confirmed": true
+     },
+     {
+      "name": "Pujara medical store",
+      "phone": null,
+      "km": 30.3,
+      "src": "OpenStreetMap node/12947772066",
+      "confirmed": true
      }
     ]
    }
@@ -351,10 +393,6 @@
    "social_or_community_service": 1,
    "sport_or_fitness_facility": 1,
    "hindu_place_of_worship": 2,
-   "pharmacy_and_drug_store": 16,
-   "historic_site": 7,
-   "restaurant": 1,
-   "shopping": 1,
    "geographic_entities": 1,
    "mountain": 3,
    "null": 2,
@@ -362,7 +400,11 @@
    "lodging": 5,
    "bed_and_breakfast": 2,
    "campground": 1,
-   "sports_and_recreation": 1
+   "sports_and_recreation": 1,
+   "pharmacy_and_drug_store": 16,
+   "historic_site": 7,
+   "restaurant": 1,
+   "shopping": 1
   },
   "missing_spots": [],
   "candidates": {}

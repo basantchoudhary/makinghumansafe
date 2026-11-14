@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T23:27",
+ "fetched": "2026-11-15T01:34",
  "data": {
   "spots": {
    "Malpe Beach": {
@@ -32,13 +32,15 @@
       "name": "Goretti Hospital",
       "phone": null,
       "km": 5.1,
-      "src": "OpenStreetMap node/1530684154"
+      "src": "OpenStreetMap node/1530684154",
+      "confirmed": true
      },
      {
       "name": "City Hospital",
       "phone": null,
       "km": 5.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -46,27 +48,31 @@
       "name": "Malpe Police Station",
       "phone": null,
       "km": 0.6,
-      "src": "OpenStreetMap node/11882976875"
+      "src": "OpenStreetMap node/11882976875",
+      "confirmed": true
      },
      {
-      "name": "Traffic Police Station Udupi",
+      "name": "Police station (name not on map)",
       "phone": null,
-      "km": 6.3,
-      "src": "OpenStreetMap node/1466678862"
+      "km": 3.5,
+      "src": "OpenStreetMap node/11882976913",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Apollo Pharmacy Santhekatte Udupi",
-      "phone": "07949290334",
-      "km": 5.0,
-      "src": "Overture"
-     },
-     {
       "name": "Apollo Pharmacy Ajjarakadu Udupi",
       "phone": "07949290331",
       "km": 5.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Radha Medicals",
+      "phone": "+918204292599",
+      "km": 5.7,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -76,13 +82,15 @@
       "name": "Dr. A. V. Baliga Memorial Hospital",
       "phone": "+918202535299",
       "km": 1.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Dr.A.V.Baliga Memorial Hospital",
       "phone": null,
       "km": 1.6,
-      "src": "OpenStreetMap node/6939067858"
+      "src": "OpenStreetMap node/6939067858",
+      "confirmed": true
      }
     ],
     "police": [
@@ -90,13 +98,15 @@
       "name": "Traffic Police Station Udupi",
       "phone": null,
       "km": 3.7,
-      "src": "OpenStreetMap node/1466678862"
+      "src": "OpenStreetMap node/1466678862",
+      "confirmed": true
      },
      {
       "name": "Udupi Town Police Station",
       "phone": "+918202520444",
       "km": 3.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -104,13 +114,15 @@
       "name": "Medplus",
       "phone": "08202521760",
       "km": 2.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Apollo Pharmacy Udupi Kunjibettu",
       "phone": "08204290546",
       "km": 2.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -120,13 +132,15 @@
       "name": "J M J Diagnova Hospital",
       "phone": null,
       "km": 0.2,
-      "src": "OpenStreetMap node/6939052533"
+      "src": "OpenStreetMap node/6939052533",
+      "confirmed": true
      },
      {
       "name": "City Hospital",
       "phone": null,
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -134,13 +148,15 @@
       "name": "Traffic Police Station Udupi",
       "phone": null,
       "km": 0.5,
-      "src": "OpenStreetMap node/1466678862"
+      "src": "OpenStreetMap node/1466678862",
+      "confirmed": true
      },
      {
       "name": "Udupi Town Police Station",
       "phone": "+918202520444",
       "km": 0.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -148,13 +164,15 @@
       "name": "Radha Medicals",
       "phone": null,
       "km": 0.2,
-      "src": "OpenStreetMap node/1474305069"
+      "src": "OpenStreetMap node/1474305069",
+      "confirmed": true
      },
      {
-      "name": "Apollo Pharmacy",
-      "phone": "08204293423",
+      "name": "Royal Chemists",
+      "phone": null,
       "km": 0.3,
-      "src": "Overture"
+      "src": "OpenStreetMap node/1474295269",
+      "confirmed": true
      }
     ]
    },
@@ -164,41 +182,47 @@
       "name": "Goretti Hospital",
       "phone": null,
       "km": 7.0,
-      "src": "OpenStreetMap node/1530684154"
+      "src": "OpenStreetMap node/1530684154",
+      "confirmed": true
      },
      {
       "name": "District Hospital",
       "phone": null,
       "km": 9.0,
-      "src": "OpenStreetMap node/1603383345"
+      "src": "OpenStreetMap node/1603383345",
+      "confirmed": true
      }
     ],
     "police": [
      {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 0.1,
+      "src": "OpenStreetMap node/11882976913",
+      "confirmed": true
+     },
+     {
       "name": "Malpe Police Station",
       "phone": null,
       "km": 3.9,
-      "src": "OpenStreetMap node/11882976875"
-     },
-     {
-      "name": "Traffic Police Station Udupi",
-      "phone": null,
-      "km": 9.7,
-      "src": "OpenStreetMap node/1466678862"
+      "src": "OpenStreetMap node/11882976875",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Apollo Pharmacy Santhekatte Udupi",
-      "phone": "07949290334",
-      "km": 7.1,
-      "src": "Overture"
-     },
-     {
       "name": "Apollo Pharmacy Ajjarakadu Udupi",
       "phone": "07949290331",
       "km": 8.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Radha Medicals",
+      "phone": "+918204292599",
+      "km": 9.0,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -208,41 +232,47 @@
       "name": "Pranav Hospital, Udupi",
       "phone": null,
       "km": 5.3,
-      "src": "OpenStreetMap node/6944419003"
+      "src": "OpenStreetMap node/6944419003",
+      "confirmed": true
      },
      {
       "name": "Mahesh Hospital",
       "phone": "+918202562056",
       "km": 5.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "Brahmavara Police Station",
-      "phone": "+918202561044",
-      "km": 5.5,
-      "src": "Overture"
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 7.6,
+      "src": "OpenStreetMap node/11882976913",
+      "confirmed": true
      },
      {
       "name": "Kota Police Station",
       "phone": null,
       "km": 9.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Apollo Pharmacy Santhekatte Udupi",
-      "phone": "07949290334",
-      "km": 8.3,
-      "src": "Overture"
-     },
-     {
       "name": "Radha Medicals",
       "phone": "+918204292599",
       "km": 12.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Medplus",
+      "phone": "08202521760",
+      "km": 13.0,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    }
@@ -250,7 +280,7 @@
   "counts": {
    "hospital": 128,
    "beach": 8,
-   "police_station": 22,
+   "police_station": 23,
    "pharmacy_and_drug_store": 55,
    "personal_or_beauty_service": 1,
    "college_university": 1

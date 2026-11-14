@@ -210,7 +210,8 @@ def place_page(key, cfg):
             if spot in hidden:
                 continue
             def cell(items):
-                return "<br>".join(f'{e(i["name"])} <b>{i["km"]} km</b>' + (f'<br><span class="src">{e(i["phone"])}</span>' if i.get("phone") else "")
+                return "<br>".join(f'{e(i["name"])} <b>{i["km"]} km</b>' + (' <span class="badge">listing not confirmed</span>' if i.get("confirmed") is False else "")
+                                   + (f'<br><span class="src">{e(i["phone"])}</span>' if i.get("phone") else "")
                                    for i in items[:1]) or '<span class="muted">none found</span>'
             rows.append(f'<tr><td><b>{e(spot)}</b></td><td>{cell(near["hospital"])}</td><td>{cell(near["police"])}</td><td>{cell(near["pharmacy"])}</td></tr>')
         out.append('<div class="tbl"><table><tr><th>Spot</th><th>Nearest hospital</th><th>Nearest police</th><th>Nearest pharmacy</th></tr>'
@@ -270,7 +271,10 @@ def place_page(key, cfg):
 
 ALIASES = {"goa": ["calangute", "baga", "anjuna", "palolem", "colva", "arambol", "dudhsagar", "panaji", "north goa", "south goa"],
            "rishikesh": ["ganga rafting", "laxman jhula", "uttarakhand"], "manali": ["solang", "kullu", "himachal", "atal tunnel"],
-           "hogenakkal": ["cauvery", "dharmapuri"], "hampi": ["vijayanagara"], "varanasi": ["banaras", "kashi", "ghats"],
+           "hogenakkal": ["cauvery", "dharmapuri"], "gokarna": ["om beach", "kudle", "half moon", "paradise beach", "kumta"],
+           "murudeshwar": ["murdeshwar", "netrani", "bhatkal"], "udupi": ["malpe", "st mary", "kaup", "delta beach", "manipal"],
+           "lonavala": ["bhushi", "devkund", "tamhini", "pawna", "malshej", "khandala", "pune"], "alappuzha": ["alleppey", "houseboat", "vembanad", "marari", "kuttanad"],
+           "kozhikode": ["calicut", "pathankayam", "kappad", "thikkodi"], "varkala": ["kovalam", "trivandrum", "thiruvananthapuram", "papanasam", "kappil"], "hampi": ["vijayanagara"], "varanasi": ["banaras", "kashi", "ghats"],
            "agra": ["taj mahal"], "delhi": ["new delhi", "paharganj", "connaught place"], "jaipur": ["amer", "pink city"]}
 
 
@@ -281,14 +285,14 @@ def index_page(places):
                     for k, c in places.items())
     index = json.dumps([{"k": k, "n": c["name"], "a": ALIASES.get(k, [])} for k, c in places.items()])
     chips = "".join(f'<a href="/{k}/">{e(label)}</a>' for k, label in
-                    [("goa", "Goa beaches"), ("rishikesh", "Rafting, Rishikesh"), ("manali", "Manali roads"), ("hogenakkal", "Hogenakkal falls")])
+                    [("gokarna", "Gokarna beaches"), ("goa", "Goa beaches"), ("lonavala", "Lonavala waterfalls"), ("alappuzha", "Alappuzha houseboats"), ("varkala", "Varkala cliffs and beach"), ("rishikesh", "Rafting, Rishikesh")])
     body = (doodles.hero_wait() +
             '<h1>Search a place. See what affects your safety there.</h1>'
             '<p class="muted">Past incidents, live alerts, help nearby, precautions and fair prices, with a source and a date for every fact.</p>'
             '<form class="search" onsubmit="go();return false"><input id="q" placeholder="Where are you going?" autocomplete="off" aria-label="Search a place">'
             '<button>Search</button></form><div id="results"></div>'
             f'<div class="chips">{chips}</div>'
-            f'<div class="note"><b>Early preview.</b> We are starting with India: {n} places now, and the west-coast beaches (Goa, Gokarna, Udupi, Murudeshwar) in depth next. '
+            f'<div class="note"><b>Early preview.</b> We are starting with India and with water safety first: beaches, waterfalls, rivers and boats. {n} places now; more every week. '
             'Every country is coming. <a href="/about/">How we check facts</a>.</div>'
             f'<h2 id="places">Places</h2><div class="cards">{cards}</div>'
             '<h2>Stay safe, in pictures</h2><p>One picture, a thousand words. <a href="/pictures/">See all</a>.</p>' + doodles.rip_current() +

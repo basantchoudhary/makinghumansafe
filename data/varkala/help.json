@@ -1,0 +1,238 @@
+{
+ "fetched": "2026-11-15T01:39",
+ "data": {
+  "spots": {
+   "Varkala Beach": {
+    "x": 76.70316707,
+    "y": 8.73555472
+   },
+   "Kovalam Beach": {
+    "x": 76.982086,
+    "y": 8.398068
+   },
+   "Edava Beach": {
+    "x": 76.683307,
+    "y": 8.766001
+   },
+   "Kappil Beach": {
+    "x": 76.72316533333391,
+    "y": 8.738941833336211
+   }
+  },
+  "near": {
+   "Varkala Beach": {
+    "hospital": [
+     {
+      "name": "Sivagiri sree narayana medical mission hospital varkala",
+      "phone": "+919400050200",
+      "km": 0.5,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Government Taluk Hospital Varkala",
+      "phone": null,
+      "km": 1.9,
+      "src": "OpenStreetMap way/1429899375",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Aid Post",
+      "phone": null,
+      "km": 0.1,
+      "src": "OpenStreetMap node/5315859199",
+      "confirmed": true
+     },
+     {
+      "name": "Police Station,Varkala",
+      "phone": null,
+      "km": 2.5,
+      "src": "OpenStreetMap node/1237552693",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Jan Aushadhi Medical Store",
+      "phone": "+918848806027",
+      "km": 2.0,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "S R Medicals",
+      "phone": null,
+      "km": 2.9,
+      "src": "OpenStreetMap node/7459750700",
+      "confirmed": true
+     }
+    ]
+   },
+   "Kovalam Beach": {
+    "hospital": [
+     {
+      "name": "Wellcare Hospital",
+      "phone": null,
+      "km": 0.3,
+      "src": "OpenStreetMap node/7730027728",
+      "confirmed": true
+     },
+     {
+      "name": "SJ Hospital",
+      "phone": null,
+      "km": 0.4,
+      "src": "OpenStreetMap node/7730027743",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Kovalam Police Station",
+      "phone": "+914712480255",
+      "km": 0.0,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Police Station ,Kovalam",
+      "phone": null,
+      "km": 0.9,
+      "src": "OpenStreetMap node/9794397166",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Aswas Cammunity Pharmacy Peringammala",
+      "phone": null,
+      "km": 4.7,
+      "src": "OpenStreetMap node/8421942566",
+      "confirmed": true
+     },
+     {
+      "name": "Ravi Memorial Medicals",
+      "phone": null,
+      "km": 5.4,
+      "src": "OpenStreetMap node/13971556347",
+      "confirmed": true
+     }
+    ]
+   },
+   "Edava Beach": {
+    "hospital": [
+     {
+      "name": "Family Health Centre Thonippara",
+      "phone": null,
+      "km": 2.9,
+      "src": "OpenStreetMap way/800040996",
+      "confirmed": true
+     },
+     {
+      "name": "Community Health Center Kalakkode",
+      "phone": null,
+      "km": 3.3,
+      "src": "OpenStreetMap way/799244139",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Aid Post",
+      "phone": null,
+      "km": 4.0,
+      "src": "OpenStreetMap node/5315859199",
+      "confirmed": true
+     },
+     {
+      "name": "Ayiroor Police Station",
+      "phone": "+914702666100",
+      "km": 5.1,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Kanjana Medicals",
+      "phone": null,
+      "km": 1.8,
+      "src": "OpenStreetMap node/7459750603",
+      "confirmed": true
+     },
+     {
+      "name": "S R Medicals",
+      "phone": null,
+      "km": 2.0,
+      "src": "OpenStreetMap node/7459750700",
+      "confirmed": true
+     }
+    ]
+   },
+   "Kappil Beach": {
+    "hospital": [
+     {
+      "name": "Surgery Clinic and Speciality Hospital",
+      "phone": "+914702605272",
+      "km": 0.6,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "NEW MANGALA MEDICAL CENTRE (NMMC)",
+      "phone": null,
+      "km": 0.6,
+      "src": "OpenStreetMap way/1427151740",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station,Varkala",
+      "phone": null,
+      "km": 0.6,
+      "src": "OpenStreetMap node/1237552693",
+      "confirmed": true
+     },
+     {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 0.6,
+      "src": "OpenStreetMap way/1435111878",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Jan Aushadhi Medical Store",
+      "phone": "+918848806027",
+      "km": 0.7,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Gulf Medicals",
+      "phone": null,
+      "km": 1.6,
+      "src": "OpenStreetMap node/8557816957",
+      "confirmed": true
+     }
+    ]
+   }
+  },
+  "counts": {
+   "hospital": 1689,
+   "hotel": 12,
+   "emergency_or_urgent_care_facility": 4,
+   "sport_or_fitness_facility": 2,
+   "beach": 9,
+   "police_station": 250,
+   "pharmacy_and_drug_store": 370,
+   "fire_station": 5,
+   "shopping": 2
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

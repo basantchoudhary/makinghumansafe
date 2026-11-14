@@ -180,11 +180,21 @@ def help_nearby(place, cfg):
             rows = con.execute(f"""SELECT name, phone, round(ST_Distance_Spheroid(ST_Point(x, y), ST_Point(?, ?)) / 1000, 1) km, src
                                    FROM p WHERE cat IN ({",".join("'" + c + "'" for c in cats)}) AND conf >= {minc}
                                    AND name IS NOT NULL
-                                   AND NOT regexp_matches(lower(name), 'homoeo|homeo|ayur|dental|dent |skin|hair|eye care|physio|veterinary|pet |clinic$')
+                                   AND NOT regexp_matches(lower(name), 'homoeo|homeo|ayur|dental|dent |skin|hair|eye care|physio|veterinary|pet |clinic$|nature ?care|naturo|siddha|unani|yoga|wellness|spa$|cosmetic|ivf|fertility')
                                    ORDER BY km LIMIT 15""", [pt["x"], pt["y"]]).fetchall()
             seen = set()  # the same hospital can come from both sources; keep the nearer record once
             rows = [r for r in rows if not (r[0].lower()[:18] in seen or seen.add(r[0].lower()[:18]))]
-            near[name][label] = [{"name": r[0], "phone": r[1], "km": r[2], "src": r[3]} for r in rows
+            # Overture business listings are sometimes placed in the wrong town (a Telangana hospital near Pawna Lake).
+            # An Overture listing counts as confirmed only if OSM has a same-type place within 1 km; unconfirmed
+            # listings rank as if 25 km further away and are marked on the page.
+            osm_pts = con.execute(f"""SELECT x, y FROM p WHERE src LIKE 'OpenStreetMap%' AND cat IN ({",".join("'" + c + "'" for c in cats)})""").fetchall()
+            def confirmed(r):
+                if r[3].startswith("OpenStreetMap"):
+                    return True
+                xy = con.execute("SELECT x, y FROM p WHERE name = ? LIMIT 1", [r[0]]).fetchone()
+                return any(abs(ox - xy[0]) < 0.01 and abs(oy - xy[1]) < 0.01 for ox, oy in osm_pts) if xy else False
+            rows = sorted(((*r, confirmed(r)) for r in rows), key=lambda r: r[2] + (0 if r[4] else 25))
+            near[name][label] = [{"name": r[0], "phone": r[1], "km": r[2], "src": r[3], "confirmed": r[4]} for r in rows
                                  if plausible(label, r[0], r[1], cfg.get("country", "IN"))][:2]
     counts = dict(con.execute("SELECT cat, count(*) FROM p WHERE conf >= 0.5 GROUP BY 1").fetchall())
     return save(place, "help", {"spots": spots, "near": near, "counts": counts,

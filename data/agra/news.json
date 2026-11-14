@@ -1,10 +1,17 @@
 {
- "fetched": "2026-11-14T19:10",
+ "fetched": "2026-11-15T01:30",
  "data": {
   "articles": [
    {
     "title": "Bus carrying 40 passengers goes up in flames on Yamuna Expressway in Mathura; all passengers safe",
     "url": "https://timesofindia.indiatimes.com/city/agra/passenger-bus-catches-fire-on-yamuna-expressway-after-short-circuit-40-passengers-safe/articleshow/135822953.cms",
+    "domain": "Times of India, Agra",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "2 from Guj on way to see Taj killed, 11 hurt as minibus rams truck on Agra-Lucknow e-way",
+    "url": "https://timesofindia.indiatimes.com/city/agra/2-from-guj-on-way-to-see-taj-killed-11-hurt-as-minibus-rams-truck-on-agra-lucknow-e-way/articleshow/135838216.cms",
     "domain": "Times of India, Agra",
     "date": "20261114",
     "query": "feed"
@@ -120,7 +127,8 @@
    "2026-11-13 Times of India, Agra: FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)",
    "2026-11-14 Times of India, Agra: 10 relevant",
    "2026-11-14 Times of India, Agra: 11 relevant",
-   "2026-11-14 Times of India, Agra: 11 relevant"
+   "2026-11-14 Times of India, Agra: 11 relevant",
+   "2026-11-15 Times of India, Agra: 10 relevant"
   ]
  }
 }

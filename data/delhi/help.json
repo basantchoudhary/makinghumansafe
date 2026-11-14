@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T23:36",
+ "fetched": "2026-11-15T00:11",
  "data": {
   "spots": {
    "India Gate": {
@@ -52,16 +52,18 @@
    "India Gate": {
     "hospital": [
      {
-      "name": "St. Stephens Hospital, Community Health Department",
+      "name": "NDMC Health Centre",
       "phone": null,
-      "km": 1.4,
-      "src": "Overture"
+      "km": 1.9,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "East West Medical Centre",
-      "phone": "+911124690429",
-      "km": 1.8,
-      "src": "Overture"
+      "name": "General Williams Hospital",
+      "phone": null,
+      "km": 1.9,
+      "src": "OpenStreetMap node/8151246349",
+      "confirmed": true
      }
     ],
     "police": [
@@ -69,27 +71,31 @@
       "name": "Police Station Tilak Marg",
       "phone": "+91-11-2338-5571;+91-11-2338-2100",
       "km": 0.8,
-      "src": "OpenStreetMap way/351603877"
+      "src": "OpenStreetMap way/351603877",
+      "confirmed": true
      },
      {
       "name": "Tilak Marg Police Station",
       "phone": "+911123385571",
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Apollo Pharmacy",
-      "phone": "01123388582",
-      "km": 0.7,
-      "src": "Overture"
+      "name": "Anand Drug Store",
+      "phone": "9310353839",
+      "km": 1.4,
+      "src": "OpenStreetMap node/10576036741",
+      "confirmed": true
      },
      {
-      "name": "Apollo Pharmacy Bhagwan Das Road",
-      "phone": "01123388582",
-      "km": 1.2,
-      "src": "Overture"
+      "name": "Bureau Of Pharma Psus Of India",
+      "phone": "+911123752476",
+      "km": 2.0,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -99,13 +105,15 @@
       "name": "Manoj Hospital ",
       "phone": null,
       "km": 0.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Kasturba Hospital",
       "phone": "+911123282914",
       "km": 0.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -113,27 +121,31 @@
       "name": "Cycle Market Police Post",
       "phone": null,
       "km": 0.5,
-      "src": "OpenStreetMap node/3249140375"
+      "src": "OpenStreetMap node/3249140375",
+      "confirmed": true
      },
      {
       "name": "Police station (name not on map)",
       "phone": null,
       "km": 0.7,
-      "src": "OpenStreetMap node/2722843601"
+      "src": "OpenStreetMap node/2722843601",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Skytech Medical Devices Pvt. Ltd.",
-      "phone": "011 2325 7149",
-      "km": 0.4,
-      "src": "Overture"
-     },
-     {
       "name": "V.S. Pharmaceuticals",
       "phone": "+911123863033",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Drug Point",
+      "phone": "+919999667884",
+      "km": 0.6,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -143,13 +155,15 @@
       "name": "Jaysons Hospital",
       "phone": "+919899790530",
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Aman Medical Centre",
       "phone": "011 2664 5113",
       "km": 0.5,
-      "src": "OpenStreetMap node/7138534304"
+      "src": "OpenStreetMap node/7138534304",
+      "confirmed": true
      }
     ],
     "police": [
@@ -157,27 +171,31 @@
       "name": "Police Post Mehrauli",
       "phone": null,
       "km": 0.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Mehrauli Police Station",
       "phone": "+911126643200",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Monika Helpline Pharmacy",
-      "phone": "+918081648739",
-      "km": 0.8,
-      "src": "Overture"
-     },
-     {
       "name": "Shri Banke Bihari Medical Store",
       "phone": null,
       "km": 0.8,
-      "src": "OpenStreetMap node/9104868773"
+      "src": "OpenStreetMap node/9104868773",
+      "confirmed": true
+     },
+     {
+      "name": "Pharmacy",
+      "phone": "+917827945690",
+      "km": 0.9,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -187,13 +205,15 @@
       "name": "Manoj Hospital ",
       "phone": null,
       "km": 0.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Sant Parmanand Hospital",
       "phone": "+911135386000",
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -201,13 +221,15 @@
       "name": "Cycle Market Police Post",
       "phone": null,
       "km": 0.1,
-      "src": "OpenStreetMap node/3249140375"
+      "src": "OpenStreetMap node/3249140375",
+      "confirmed": true
      },
      {
       "name": "Police Chowki Fawara Thana Kotwali",
       "phone": null,
       "km": 0.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -215,13 +237,15 @@
       "name": "Hero Pharmacy",
       "phone": "+919212521858",
       "km": 0.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "V.S. Pharmaceuticals",
       "phone": "+911123863033",
       "km": 0.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -231,13 +255,15 @@
       "name": "Ujala Cygnus Hospitals",
       "phone": null,
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Escorts Hospital & Research Centre",
       "phone": "+911292416096",
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -245,13 +271,15 @@
       "name": "Police Station Barakhamba Road",
       "phone": null,
       "km": 0.1,
-      "src": "OpenStreetMap node/11204948058"
+      "src": "OpenStreetMap node/11204948058",
+      "confirmed": true
      },
      {
       "name": "Police Post",
       "phone": null,
       "km": 0.7,
-      "src": "OpenStreetMap node/6148020512"
+      "src": "OpenStreetMap node/6148020512",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -259,13 +287,15 @@
       "name": "Bureau Of Pharma Psus Of India",
       "phone": "+911123752476",
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Apollo Hospital Enterprise",
       "phone": "+918179267988",
       "km": 0.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -275,13 +305,15 @@
       "name": "AD Medicare Hospital",
       "phone": null,
       "km": 0.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Krishna Cafe Hospitality Service",
       "phone": null,
       "km": 0.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -289,13 +321,15 @@
       "name": "Tourist Police Booth",
       "phone": null,
       "km": 0.4,
-      "src": "OpenStreetMap node/12237600451"
+      "src": "OpenStreetMap node/12237600451",
+      "confirmed": true
      },
      {
       "name": "New Delhi Railway Police Station",
       "phone": null,
       "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -303,13 +337,15 @@
       "name": "Kuhu Pharmacy",
       "phone": "+911145671000",
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Apollo Hospital Enterprise",
       "phone": "+918179267988",
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -319,13 +355,15 @@
       "name": "Northern Railway Central Hospital",
       "phone": "+911123367657",
       "km": 0.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Lady hardinge medical College gate no 5",
       "phone": null,
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -333,13 +371,15 @@
       "name": "Tourist Police Booth",
       "phone": null,
       "km": 0.7,
-      "src": "OpenStreetMap node/12237600451"
+      "src": "OpenStreetMap node/12237600451",
+      "confirmed": true
      },
      {
       "name": "New Delhi Railway Police Station",
       "phone": null,
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -347,29 +387,33 @@
       "name": "Kuhu Pharmacy",
       "phone": "+911145671000",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Apollo Hospital Enterprise",
       "phone": "+918179267988",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
    "Indira Gandhi International Airport": {
     "hospital": [
      {
-      "name": "Medanta Medical Centre T2 IGI Airport",
-      "phone": "01244141414",
-      "km": 0.4,
-      "src": "Overture"
-     },
-     {
       "name": "Grace Hospital",
       "phone": "+919313859291",
       "km": 2.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Station Medicare Center",
+      "phone": null,
+      "km": 2.3,
+      "src": "OpenStreetMap way/532890550",
+      "confirmed": true
      }
     ],
     "police": [
@@ -377,27 +421,31 @@
       "name": "Indira Gandhi International Airport Police Station",
       "phone": "+911125652325",
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Sector 23 Dwarka Police Station",
       "phone": null,
       "km": 2.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
-      "name": "Apollo Pharmacy IGI Acb Terminal 3",
-      "phone": "08826055866",
-      "km": 0.3,
-      "src": "Overture"
+      "name": "Good Life Pharmacy",
+      "phone": "+919717953737",
+      "km": 3.0,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Apollo Pharmacy T3 Domestic Arrivals IGI Airport",
-      "phone": "09311720051",
-      "km": 0.3,
-      "src": "Overture"
+      "name": "Apollo Pharmacy Sector 7 Dwarka",
+      "phone": "08826992235",
+      "km": 3.1,
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -407,27 +455,31 @@
       "name": "Maanmati Hospital",
       "phone": "+918130665547",
       "km": 0.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Sukhmani Hospital",
       "phone": "011 2619 4000",
       "km": 0.8,
-      "src": "OpenStreetMap node/7138534316"
+      "src": "OpenStreetMap node/7138534316",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "Police Station Hauz Khas",
-      "phone": "+911126867878",
-      "km": 1.4,
-      "src": "Overture"
+      "name": "Office of Assistant Commissioner of Police",
+      "phone": null,
+      "km": 1.5,
+      "src": "Overture",
+      "confirmed": true
      },
      {
-      "name": "Police Line South",
-      "phone": "+911126857726",
-      "km": 1.4,
-      "src": "Overture"
+      "name": "Asst. Commissioner of Police (Traffic)",
+      "phone": null,
+      "km": 1.5,
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -435,13 +487,15 @@
       "name": "R R Chemist",
       "phone": null,
       "km": 0.8,
-      "src": "OpenStreetMap node/13814217542"
+      "src": "OpenStreetMap node/13814217542",
+      "confirmed": true
      },
      {
       "name": "Apollo Pharmacy Green Park New Delhi",
       "phone": "09810178424",
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -451,13 +505,15 @@
       "name": "Tibetan Medical and Astro Institute",
       "phone": null,
       "km": 0.6,
-      "src": "OpenStreetMap way/266888510"
+      "src": "OpenStreetMap way/266888510",
+      "confirmed": true
      },
      {
       "name": "Hazrat Inayat Khan Health Centre",
       "phone": "+911124353006",
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -465,13 +521,15 @@
       "name": "Barakhamba Road Police Station",
       "phone": null,
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Nizamuddin Police Station",
       "phone": "+911124355758",
       "km": 0.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -479,55 +537,50 @@
       "name": "Luthra Chemist",
       "phone": "+91-11-4182-5113",
       "km": 0.4,
-      "src": "OpenStreetMap node/10299807155"
+      "src": "OpenStreetMap node/10299807155",
+      "confirmed": true
      },
      {
       "name": "Sammu Medical Store",
       "phone": "+919213843674",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    }
   },
   "counts": {
-   "real_estate_service": 10,
-   "fast_food_restaurant": 3,
-   "monument": 8,
-   "community_and_government": 2,
-   "surgery": 1,
-   "campus_building": 1,
    "food_and_beverage_store": 6,
-   "arts_and_entertainment": 1,
    "b2b_service": 1,
+   "real_estate_service": 10,
    "null": 20,
+   "fast_food_restaurant": 3,
    "shopping_mall": 9,
    "specialty_school": 3,
+   "community_and_government": 2,
    "travel_and_transportation": 2,
    "public_fountain": 1,
    "manufacturer": 2,
+   "monument": 8,
    "medical_service": 1,
+   "arts_and_entertainment": 1,
+   "surgery": 1,
+   "campus_building": 1,
    "hospital": 6444,
-   "emergency_or_urgent_care_facility": 20,
-   "fashion_and_apparel_store": 29,
-   "diagnostics_imaging_or_lab_service": 3,
-   "resort": 22,
-   "hotel": 37,
-   "vehicle_service": 1,
-   "cafe": 12,
-   "museum": 1,
-   "travel_service": 13,
-   "sport_or_fitness_facility": 2,
-   "music_venue": 1,
-   "social_or_community_service": 1,
-   "lounge": 1,
-   "food_and_drink": 1,
    "hindu_place_of_worship": 5,
+   "hotel": 37,
+   "travel_service": 13,
+   "emergency_or_urgent_care_facility": 20,
+   "resort": 22,
+   "cafe": 12,
    "animal_and_pet_store": 1,
    "professional_service": 7,
+   "diagnostics_imaging_or_lab_service": 3,
    "technical_service": 2,
    "public_transit_facility_or_service": 2,
    "educational_service": 2,
+   "fashion_and_apparel_store": 29,
    "shipping_or_delivery_service": 1,
    "bar": 2,
    "b2b_office_and_professional_service": 2,
@@ -535,40 +588,47 @@
    "auto_dealer": 1,
    "warehouse_club_store": 1,
    "movie_theater": 1,
+   "food_and_drink": 1,
+   "social_or_community_service": 1,
+   "lounge": 1,
+   "museum": 1,
+   "sport_or_fitness_facility": 2,
+   "music_venue": 1,
+   "vehicle_service": 1,
    "police_station": 894,
-   "muslim_place_of_worship": 5,
-   "high_school": 1,
-   "flowers_and_gifts_store": 1,
-   "sporting_goods_store": 2,
-   "train_station": 20,
-   "art_gallery": 1,
    "christian_place_of_worship": 3,
    "electronics_store": 4,
    "atm": 2,
    "bank_or_credit_union": 8,
    "wellness_service": 2,
+   "train_station": 20,
    "corporate_or_business_office": 4,
+   "sporting_goods_store": 2,
    "event_or_party_service": 2,
+   "flowers_and_gifts_store": 1,
    "lodging": 2,
    "parking": 2,
+   "muslim_place_of_worship": 5,
    "health_care": 1,
+   "art_gallery": 1,
+   "high_school": 1,
    "pharmacy_and_drug_store": 3107,
-   "airport": 9,
-   "historic_site": 15,
    "fire_station": 42,
-   "vehicle_dealer": 1,
-   "hardware_home_and_garden_store": 3,
-   "park": 4,
    "restaurant": 27,
-   "college_university": 2,
-   "shopping": 7,
-   "coffee_shop": 3,
    "place_of_worship": 1,
    "media_service": 1,
    "b2b_transportation_and_storage_service": 1,
+   "shopping": 7,
+   "coffee_shop": 3,
+   "hardware_home_and_garden_store": 3,
+   "park": 4,
+   "college_university": 2,
    "place_of_learning": 1,
+   "historic_site": 15,
    "telecommunications_service": 1,
-   "education": 1
+   "education": 1,
+   "airport": 9,
+   "vehicle_dealer": 1
   },
   "missing_spots": [],
   "candidates": {}

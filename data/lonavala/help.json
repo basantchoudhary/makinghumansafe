@@ -1,0 +1,255 @@
+{
+ "fetched": "2026-11-15T01:41",
+ "data": {
+  "spots": {
+   "Bhushi Dam": {
+    "x": 73.3965459,
+    "y": 18.72275222
+   },
+   "Malshej Ghat": {
+    "x": 73.77415473,
+    "y": 19.34079472
+   },
+   "Pawna Lake": {
+    "x": 73.49635979,
+    "y": 18.66381993
+   },
+   "Devkund trail (Bhira)": {
+    "x": 73.39404,
+    "y": 18.47522,
+    "located_by": "OpenStreetMap way/867015699"
+   }
+  },
+  "near": {
+   "Bhushi Dam": {
+    "hospital": [
+     {
+      "name": "Khandelwal Hospital and C. C. Centre",
+      "phone": null,
+      "km": 2.6,
+      "src": "OpenStreetMap node/7054578913",
+      "confirmed": true
+     },
+     {
+      "name": "Hospital",
+      "phone": null,
+      "km": 2.7,
+      "src": "OpenStreetMap node/5149232120",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Lonavala Police Station",
+      "phone": null,
+      "km": 3.0,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 3.5,
+      "src": "OpenStreetMap node/11545961639",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Maharashtra Medical",
+      "phone": null,
+      "km": 17.4,
+      "src": "OpenStreetMap node/13371314418",
+      "confirmed": true
+     },
+     {
+      "name": "Metro Chemist",
+      "phone": null,
+      "km": 17.5,
+      "src": "OpenStreetMap node/13371347601",
+      "confirmed": true
+     }
+    ]
+   },
+   "Malshej Ghat": {
+    "hospital": [
+     {
+      "name": "Dr.igwale Hospital Children",
+      "phone": null,
+      "km": 17.7,
+      "src": "OpenStreetMap node/5149338419",
+      "confirmed": true
+     },
+     {
+      "name": "Shri Dattkrupa Hospital",
+      "phone": null,
+      "km": 17.9,
+      "src": "OpenStreetMap node/5149316340",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Rajur Police Station",
+      "phone": "+912424251033",
+      "km": 22.3,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Otur Police Station",
+      "phone": null,
+      "km": 23.2,
+      "src": "OpenStreetMap node/10290761614",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Genericart Medicine Store",
+      "phone": "09518599989",
+      "km": 18.0,
+      "src": "Overture",
+      "confirmed": false
+     },
+     {
+      "name": "Shri Swami Samarth Institute Of Pharmacy, Malwadi, Bota.",
+      "phone": "+917588094031",
+      "km": 40.0,
+      "src": "Overture",
+      "confirmed": false
+     }
+    ]
+   },
+   "Pawna Lake": {
+    "hospital": [
+     {
+      "name": "Rural Hospital Kale Colony",
+      "phone": null,
+      "km": 2.6,
+      "src": "OpenStreetMap node/7226727415",
+      "confirmed": true
+     },
+     {
+      "name": "Hospital",
+      "phone": null,
+      "km": 12.5,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Madat Kendra",
+      "phone": null,
+      "km": 8.9,
+      "src": "OpenStreetMap node/2684638055",
+      "confirmed": true
+     },
+     {
+      "name": "Kamshet Police Station",
+      "phone": null,
+      "km": 12.8,
+      "src": "OpenStreetMap node/6975549707",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Maharashtra Medical",
+      "phone": null,
+      "km": 12.6,
+      "src": "OpenStreetMap node/13371314418",
+      "confirmed": true
+     },
+     {
+      "name": "Sanjivani Medical",
+      "phone": null,
+      "km": 12.7,
+      "src": "OpenStreetMap node/13371324939",
+      "confirmed": true
+     }
+    ]
+   },
+   "Devkund trail (Bhira)": {
+    "hospital": [
+     {
+      "name": "Government Hospital, Pali",
+      "phone": null,
+      "km": 19.4,
+      "src": "OpenStreetMap node/7226727378",
+      "confirmed": true
+     },
+     {
+      "name": "Government Civil Hospital",
+      "phone": null,
+      "km": 19.8,
+      "src": "OpenStreetMap node/7656617380",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Paud Police Station",
+      "phone": null,
+      "km": 24.0,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Mangaon Police Station",
+      "phone": "+912140263005",
+      "km": 28.5,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Apollo Pharmacy Lavasa",
+      "phone": "09673827368",
+      "km": 14.1,
+      "src": "Overture",
+      "confirmed": false
+     },
+     {
+      "name": "Pali Generic Plus Pharmacy",
+      "phone": "+917410778148",
+      "km": 19.1,
+      "src": "Overture",
+      "confirmed": false
+     }
+    ]
+   }
+  },
+  "counts": {
+   "hospital": 4273,
+   "resort": 3,
+   "travel_service": 3,
+   "hotel": 3,
+   "cafe": 1,
+   "waterfall": 1,
+   "music_venue": 1,
+   "emergency_or_urgent_care_facility": 6,
+   "public_transit_facility_or_service": 1,
+   "pharmacy_and_drug_store": 1214,
+   "park": 1,
+   "historic_site": 1,
+   "fire_station": 24,
+   "restaurant": 2,
+   "farm": 4,
+   "police_station": 364,
+   "campground": 48,
+   "lake": 7,
+   "corporate_or_business_office": 1,
+   "lodging": 1,
+   "null": 1,
+   "mountain": 1,
+   "arts_and_entertainment": 1,
+   "community_and_government": 1,
+   "real_estate_service": 1
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

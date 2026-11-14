@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T23:25",
+ "fetched": "2026-11-15T01:32",
  "data": {
   "spots": {
    "Om Beach": {
@@ -36,27 +36,31 @@
       "name": "Government Hospital, Gokarna",
       "phone": "08386-256136",
       "km": 3.5,
-      "src": "OpenStreetMap node/7205339614"
+      "src": "OpenStreetMap node/7205339614",
+      "confirmed": true
      },
      {
       "name": "Taluk Government Hospital",
       "phone": null,
       "km": 14.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 2.7,
+      "src": "OpenStreetMap node/13347906368",
+      "confirmed": true
+     },
+     {
       "name": "Ankola Police Station",
       "phone": "+918388230333",
       "km": 15.6,
-      "src": "Overture"
-     },
-     {
-      "name": "Police Station",
-      "phone": null,
-      "km": 29.9,
-      "src": "OpenStreetMap node/4376816582"
+      "src": "Overture",
+      "confirmed": false
      }
     ],
     "pharmacy": [
@@ -64,13 +68,15 @@
       "name": "Apollo Pharmacy Kumta",
       "phone": "07942814638",
       "km": 14.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Apollo Pharmacy Habbuwada Karwar",
       "phone": "07949290394",
       "km": 37.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -80,27 +86,31 @@
       "name": "Government Hospital, Gokarna",
       "phone": "08386-256136",
       "km": 1.5,
-      "src": "OpenStreetMap node/7205339614"
+      "src": "OpenStreetMap node/7205339614",
+      "confirmed": true
      },
      {
       "name": "Doctor Kamal Hospital and Research Centre",
       "phone": null,
       "km": 13.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 0.8,
+      "src": "OpenStreetMap node/13347906368",
+      "confirmed": true
+     },
+     {
       "name": "Ankola Police Station",
       "phone": "+918388230333",
       "km": 12.9,
-      "src": "Overture"
-     },
-     {
-      "name": "Police Station",
-      "phone": null,
-      "km": 32.5,
-      "src": "OpenStreetMap node/4376816582"
+      "src": "Overture",
+      "confirmed": false
      }
     ],
     "pharmacy": [
@@ -108,13 +118,15 @@
       "name": "Apollo Pharmacy Kumta",
       "phone": "07942814638",
       "km": 16.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Apollo Pharmacy Habbuwada Karwar",
       "phone": "07949290394",
       "km": 34.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -124,27 +136,31 @@
       "name": "Government Hospital, Gokarna",
       "phone": "08386-256136",
       "km": 3.6,
-      "src": "OpenStreetMap node/7205339614"
+      "src": "OpenStreetMap node/7205339614",
+      "confirmed": true
      },
      {
       "name": "Taluk Government Hospital",
       "phone": null,
       "km": 12.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 3.1,
+      "src": "OpenStreetMap node/13347906368",
+      "confirmed": true
+     },
+     {
       "name": "Ankola Police Station",
       "phone": "+918388230333",
       "km": 15.9,
-      "src": "Overture"
-     },
-     {
-      "name": "Police Station",
-      "phone": null,
-      "km": 29.1,
-      "src": "OpenStreetMap node/4376816582"
+      "src": "Overture",
+      "confirmed": false
      }
     ],
     "pharmacy": [
@@ -152,13 +168,15 @@
       "name": "Apollo Pharmacy Kumta",
       "phone": "07942814638",
       "km": 13.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Apollo Pharmacy Habbuwada Karwar",
       "phone": "07949290394",
       "km": 38.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -168,27 +186,31 @@
       "name": "Government Hospital, Gokarna",
       "phone": "08386-256136",
       "km": 3.5,
-      "src": "OpenStreetMap node/7205339614"
+      "src": "OpenStreetMap node/7205339614",
+      "confirmed": true
      },
      {
       "name": "Taluk Government Hospital",
       "phone": null,
       "km": 14.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 2.7,
+      "src": "OpenStreetMap node/13347906368",
+      "confirmed": true
+     },
+     {
       "name": "Ankola Police Station",
       "phone": "+918388230333",
       "km": 15.6,
-      "src": "Overture"
-     },
-     {
-      "name": "Police Station",
-      "phone": null,
-      "km": 29.9,
-      "src": "OpenStreetMap node/4376816582"
+      "src": "Overture",
+      "confirmed": false
      }
     ],
     "pharmacy": [
@@ -196,13 +218,15 @@
       "name": "Apollo Pharmacy Kumta",
       "phone": "07942814638",
       "km": 14.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Apollo Pharmacy Habbuwada Karwar",
       "phone": "07949290394",
       "km": 37.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -212,27 +236,31 @@
       "name": "Government Hospital, Gokarna",
       "phone": "08386-256136",
       "km": 2.7,
-      "src": "OpenStreetMap node/7205339614"
+      "src": "OpenStreetMap node/7205339614",
+      "confirmed": true
      },
      {
       "name": "Doctor Kamal Hospital and Research Centre",
       "phone": null,
       "km": 14.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 1.8,
+      "src": "OpenStreetMap node/13347906368",
+      "confirmed": true
+     },
+     {
       "name": "Ankola Police Station",
       "phone": "+918388230333",
       "km": 14.6,
-      "src": "Overture"
-     },
-     {
-      "name": "Police Station",
-      "phone": null,
-      "km": 30.9,
-      "src": "OpenStreetMap node/4376816582"
+      "src": "Overture",
+      "confirmed": false
      }
     ],
     "pharmacy": [
@@ -240,13 +268,15 @@
       "name": "Apollo Pharmacy Kumta",
       "phone": "07942814638",
       "km": 15.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Apollo Pharmacy Habbuwada Karwar",
       "phone": "07949290394",
       "km": 36.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -256,27 +286,31 @@
       "name": "Government Hospital, Gokarna",
       "phone": "08386-256136",
       "km": 1.3,
-      "src": "OpenStreetMap node/7205339614"
+      "src": "OpenStreetMap node/7205339614",
+      "confirmed": true
      },
      {
       "name": "Doctor Kamal Hospital and Research Centre",
       "phone": null,
       "km": 13.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
+      "name": "Police station (name not on map)",
+      "phone": null,
+      "km": 0.5,
+      "src": "OpenStreetMap node/13347906368",
+      "confirmed": true
+     },
+     {
       "name": "Ankola Police Station",
       "phone": "+918388230333",
       "km": 12.9,
-      "src": "Overture"
-     },
-     {
-      "name": "Police Station",
-      "phone": null,
-      "km": 32.4,
-      "src": "OpenStreetMap node/4376816582"
+      "src": "Overture",
+      "confirmed": false
      }
     ],
     "pharmacy": [
@@ -284,27 +318,29 @@
       "name": "Apollo Pharmacy Kumta",
       "phone": "07942814638",
       "km": 16.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Apollo Pharmacy Habbuwada Karwar",
       "phone": "07949290394",
       "km": 34.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    }
   },
   "counts": {
-   "null": 1,
    "hospital": 42,
    "beach": 9,
    "resort": 2,
    "travel_service": 1,
    "cafe": 1,
    "hotel": 3,
-   "pharmacy_and_drug_store": 19,
-   "police_station": 7
+   "null": 1,
+   "police_station": 8,
+   "pharmacy_and_drug_store": 19
   },
   "missing_spots": [],
   "candidates": {}

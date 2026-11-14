@@ -133,7 +133,7 @@ def nearest(helpd, kind):
     best = None
     beaches = {k: v for k, v in near.items() if any(w in k.lower() for w in ("beach", "island", "falls", "river", "ghat"))}
     for spot, n in (beaches or near).items():
-        for h in n.get(kind) or []:
+        for h in (n.get(kind) or [])[:1]:  # lists are already ranked (confirmed listings first)
             if not best or h["km"] < best[1]["km"]:
                 best = (spot, h)
     return best
@@ -245,7 +245,7 @@ b.forEach(x=>x.addEventListener('click',()=>pick(x.dataset.lens)));let s=null;tr
 
     # 6. What to do: the pictures that teach it
     acts = cfg.get("activities", [])
-    pics = [doodles.rip_current()] if "swimming" in acts else []
+    pics = [doodles.rip_current()] if "swimming" in acts and cfg.get("coastal", True) else []
     if cfg.get("coastal", True) and "swimming" in acts:
         pics.append(doodles.monsoon_sea())
     if "waterfall" in acts:

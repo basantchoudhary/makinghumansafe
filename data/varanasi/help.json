@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T23:41",
+ "fetched": "2026-11-15T00:14",
  "data": {
   "spots": {
    "Dashashwamedh Ghat": {
@@ -36,13 +36,15 @@
       "name": "Shree Ram Laxminarayan Marwari Hindu Hospital - Varanasi",
       "phone": null,
       "km": 0.4,
-      "src": "OpenStreetMap node/7027605951"
+      "src": "OpenStreetMap node/7027605951",
+      "confirmed": true
      },
      {
       "name": "Hindu Sewa Sadan Hospital",
       "phone": null,
       "km": 0.5,
-      "src": "OpenStreetMap node/7031768743"
+      "src": "OpenStreetMap node/7031768743",
+      "confirmed": true
      }
     ],
     "police": [
@@ -50,27 +52,31 @@
       "name": "Police Station-Rajendra Ghat",
       "phone": "+919454404348",
       "km": 0.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Water Police Varanasi",
       "phone": null,
       "km": 0.0,
-      "src": "OpenStreetMap node/7291037642"
+      "src": "OpenStreetMap node/7291037642",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
+      "name": "Abhishek Medical Store",
+      "phone": "+919807557886",
+      "km": 1.5,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
       "name": "Chakravarty Medical Store",
       "phone": "+919936441215",
       "km": 0.2,
-      "src": "Overture"
-     },
-     {
-      "name": "New National Medicals",
-      "phone": "+919335963143",
-      "km": 0.5,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -80,13 +86,15 @@
       "name": "Hindu Sewa Sadan Hospital",
       "phone": null,
       "km": 0.6,
-      "src": "OpenStreetMap node/7031768743"
+      "src": "OpenStreetMap node/7031768743",
+      "confirmed": true
      },
      {
       "name": "Shah Nursing Home",
       "phone": null,
       "km": 0.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
@@ -94,27 +102,31 @@
       "name": "Police Station-Chowk Varanasi",
       "phone": "+915422413777",
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Chowk Thana Varanasi",
       "phone": null,
       "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
+      "name": "Abhishek Medical Store",
+      "phone": "+919807557886",
+      "km": 2.1,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
       "name": "Chakravarty Medical Store",
       "phone": "+919936441215",
       "km": 0.5,
-      "src": "Overture"
-     },
-     {
-      "name": "New National Medicals",
-      "phone": "+919335963143",
-      "km": 0.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -124,13 +136,15 @@
       "name": "Alok Health Care Home",
       "phone": "+915422313187",
       "km": 0.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Netra Jyoti Hospital and Research Center",
       "phone": null,
       "km": 0.2,
-      "src": "OpenStreetMap node/7027732205"
+      "src": "OpenStreetMap node/7027732205",
+      "confirmed": true
      }
     ],
     "police": [
@@ -138,13 +152,15 @@
       "name": "Durgakund Police Chowki",
       "phone": "+919454404378",
       "km": 0.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Lanka Police Station (Sub Inspector)",
       "phone": "+919454404390",
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -152,13 +168,15 @@
       "name": "J.K. Medical Store",
       "phone": null,
       "km": 0.5,
-      "src": "OpenStreetMap node/8844170646"
+      "src": "OpenStreetMap node/8844170646",
+      "confirmed": true
      },
      {
       "name": "Abhishek Medical Store",
       "phone": "+919807557886",
       "km": 0.6,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ]
    },
@@ -168,13 +186,15 @@
       "name": "Hindu Sewa Sadan Hospital",
       "phone": null,
       "km": 0.2,
-      "src": "OpenStreetMap node/7031768743"
+      "src": "OpenStreetMap node/7031768743",
+      "confirmed": true
      },
      {
       "name": "Shree Ram Laxminarayan Marwari Hindu Hospital - Varanasi",
       "phone": null,
       "km": 0.3,
-      "src": "OpenStreetMap node/7027605951"
+      "src": "OpenStreetMap node/7027605951",
+      "confirmed": true
      }
     ],
     "police": [
@@ -182,43 +202,49 @@
       "name": "Police Station-Rajendra Ghat",
       "phone": "+919454404348",
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      },
      {
       "name": "Water Police Varanasi",
       "phone": null,
       "km": 0.3,
-      "src": "OpenStreetMap node/7291037642"
+      "src": "OpenStreetMap node/7291037642",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
+      "name": "Abhishek Medical Store",
+      "phone": "+919807557886",
+      "km": 1.8,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
       "name": "Chakravarty Medical Store",
       "phone": "+919936441215",
       "km": 0.2,
-      "src": "Overture"
-     },
-     {
-      "name": "New National Medicals",
-      "phone": "+919335963143",
-      "km": 0.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
    "Sarnath": {
     "hospital": [
      {
-      "name": "Vinayanjali Healthcare",
-      "phone": "+919838983379",
-      "km": 1.1,
-      "src": "Overture"
-     },
-     {
       "name": "Hari Bandhu Hospital",
       "phone": "+919415085373",
       "km": 1.4,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Real Reliance Hospital",
+      "phone": null,
+      "km": 1.6,
+      "src": "OpenStreetMap node/7018419913",
+      "confirmed": true
      }
     ],
     "police": [
@@ -226,13 +252,15 @@
       "name": "Police Thana Sarnath",
       "phone": null,
       "km": 1.2,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
-      "name": "Haldharpur Police Station",
+      "name": "police chauki",
       "phone": null,
-      "km": 3.0,
-      "src": "Overture"
+      "km": 6.3,
+      "src": "OpenStreetMap node/11690968965",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -240,13 +268,15 @@
       "name": "Samyak Pharmacy",
       "phone": "+919450553104",
       "km": 1.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "davaindia GENERIC PHARMACY",
       "phone": "07499679397",
       "km": 1.8,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -256,27 +286,31 @@
       "name": "Apex Hospital, Varanasi",
       "phone": null,
       "km": 0.1,
-      "src": "OpenStreetMap node/7498563307"
+      "src": "OpenStreetMap node/7498563307",
+      "confirmed": true
      },
      {
       "name": "Vijayanjali Hospital varanasi",
       "phone": "+919415088935",
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "Adarsh Thana Cantt",
-      "phone": null,
-      "km": 0.9,
-      "src": "Overture"
-     },
-     {
       "name": "Sigra Police Station",
       "phone": "+915422220255",
       "km": 1.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Sigra Thana",
+      "phone": null,
+      "km": 1.0,
+      "src": "OpenStreetMap way/956077552",
+      "confirmed": true
      }
     ],
     "pharmacy": [
@@ -284,34 +318,36 @@
       "name": "A Square pharma",
       "phone": "+918090216676",
       "km": 0.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Nidhi Medicals",
       "phone": "+917668002777",
       "km": 1.0,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    }
   },
   "counts": {
-   "null": 2,
-   "arts_and_entertainment": 1,
-   "buddhist_place_of_worship": 6,
-   "specialty_school": 1,
-   "community_center": 2,
    "hospital": 942,
    "hotel": 18,
+   "hindu_place_of_worship": 6,
    "cafe": 2,
    "religious_organization": 3,
-   "hindu_place_of_worship": 6,
    "resort": 8,
    "fashion_and_apparel_store": 1,
    "government_office": 1,
    "preschool": 3,
    "museum": 1,
    "shipping_or_delivery_service": 1,
+   "null": 2,
+   "arts_and_entertainment": 1,
+   "buddhist_place_of_worship": 6,
+   "specialty_school": 1,
+   "community_center": 2,
    "police_station": 81,
    "event_or_party_service": 1,
    "health_care": 2,

@@ -1,6 +1,31 @@
 {
  "incidents": [
   {
+   "date": "2026-11-14",
+   "place": "Agra-Lucknow expressway",
+   "place_code": null,
+   "lat": null,
+   "lon": null,
+   "area": null,
+   "category": "road",
+   "activity": "scooter/road",
+   "incident_type": "death",
+   "severity": "fatal",
+   "what_happened": "A minibus carrying tourists from Gujarat rammed into a truck, killing two people and injuring 11 others.",
+   "people_affected": 13,
+   "deaths": 2,
+   "visitor_type": "tourist",
+   "cause": "truck stopped suddenly",
+   "source_name": "Times of India, Agra",
+   "source_url": "https://timesofindia.indiatimes.com/city/agra/2-from-guj-on-way-to-see-taj-killed-11-hurt-as-minibus-rams-truck-on-agra-lucknow-e-way/articleshow/135838216.cms",
+   "source_date": "20261114",
+   "source_type": "news",
+   "confidence": "medium",
+   "quote": "at least two people were killed and 11 injured after a minibus carrying 30 passengers from surat, gujarat, who were on their way to visit taj mahal , rammed into a truck on agra-lucknow expressway in agra district around 4am on saturday.",
+   "evidence": "checked",
+   "evidence_reason": "place and incident type found in source, quote matches"
+  },
+  {
    "date": "2026-11-10",
    "place": "Ramleela Maidan gate, Rakabganj",
    "place_code": null,

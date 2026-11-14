@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T19:10",
+ "fetched": "2026-11-15T01:27",
  "data": {
   "articles": [
    {
@@ -54,6 +54,20 @@
    {
     "title": "St Cruz Teenager Succumbs to Injuries Five Days After Activa Crashes Into Coconut Tree",
     "url": "https://www.heraldgoa.in/goa/st-cruz-teenager-succumbs-to-injuries-five-days-after-activa-crashes-into-coconut-tree/495593/",
+    "domain": "Herald Goa",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "Who is Mohit Ulva? Everything About India’s New Under-19 Cricket Sensation",
+    "url": "https://www.heraldgoa.in/sports/who-is-mohit-ulva-everything-about-indias-new-under-19-cricket-sensation/495660/",
+    "domain": "Herald Goa",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "Bengaluru to Goa by Rail: New Vande Bharat Trades Speed for Stunning Western Ghats Views",
+    "url": "https://www.heraldgoa.in/goa/bengaluru-to-goa-by-rail-new-vande-bharat-trades-speed-for-stunning-western-ghats-views/495640/",
     "domain": "Herald Goa",
     "date": "20261114",
     "query": "feed"
@@ -308,7 +322,9 @@
    "2026-11-14 Times of India, Goa: 4 relevant",
    "2026-11-14 Herald Goa: 2 relevant",
    "2026-11-14 Times of India, Goa: 4 relevant",
-   "2026-11-14 Herald Goa: 2 relevant"
+   "2026-11-14 Herald Goa: 2 relevant",
+   "2026-11-15 Times of India, Goa: 1 relevant",
+   "2026-11-15 Herald Goa: 2 relevant"
   ]
  }
 }

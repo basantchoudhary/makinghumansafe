@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T23:45",
+ "fetched": "2026-11-15T01:42",
  "data": {
   "spots": {
    "Hogenakkal Falls": {
@@ -19,16 +19,18 @@
    "Hogenakkal Falls": {
     "hospital": [
      {
-      "name": "Sivam Siddha Hospital",
-      "phone": "+919385537483",
-      "km": 13.4,
-      "src": "Overture"
-     },
-     {
       "name": "Government Hospital, Pennagaram",
       "phone": null,
       "km": 13.8,
-      "src": "OpenStreetMap node/7262595349"
+      "src": "OpenStreetMap node/7262595349",
+      "confirmed": true
+     },
+     {
+      "name": "Thiagu Memorial Hospital",
+      "phone": null,
+      "km": 30.1,
+      "src": "OpenStreetMap node/7842133838",
+      "confirmed": true
      }
     ],
     "police": [
@@ -36,13 +38,15 @@
       "name": "Hogenakkal Police Station-Dharmapuri",
       "phone": null,
       "km": 0.3,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Eriyur Police Station",
       "phone": "+919494101063",
       "km": 12.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ],
     "pharmacy": [
@@ -50,57 +54,65 @@
       "name": "PMBJK Medicals Pennagaram",
       "phone": "+919788779920",
       "km": 11.9,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      },
      {
       "name": "Apollo Pharmacy Sampalli Mettur",
       "phone": "04298223130",
       "km": 34.7,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
    "Pennagaram": {
     "hospital": [
      {
-      "name": "Sivam Siddha Hospital",
-      "phone": "+919385537483",
-      "km": 0.3,
-      "src": "Overture"
-     },
-     {
       "name": "Government Hospital, Pennagaram",
       "phone": null,
       "km": 0.9,
-      "src": "OpenStreetMap node/7262595349"
+      "src": "OpenStreetMap node/7262595349",
+      "confirmed": true
+     },
+     {
+      "name": "Sugam Hospital",
+      "phone": null,
+      "km": 25.1,
+      "src": "OpenStreetMap node/7838884125",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "Hogenakkal Police Station-Dharmapuri",
+      "name": "Police station (name not on map)",
       "phone": null,
-      "km": 12.9,
-      "src": "Overture"
+      "km": 25.7,
+      "src": "OpenStreetMap node/13774340101",
+      "confirmed": true
      },
      {
-      "name": "Eriyur Police Station",
-      "phone": "+919494101063",
-      "km": 17.4,
-      "src": "Overture"
+      "name": "Palacode Police Station",
+      "phone": null,
+      "km": 27.1,
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
+      "name": "Apollo Pharmacy Karimangalam",
+      "phone": "07949221949",
+      "km": 38.5,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
       "name": "PMBJK Medicals Pennagaram",
       "phone": "+919788779920",
       "km": 16.7,
-      "src": "Overture"
-     },
-     {
-      "name": "Apollo Pharmacy",
-      "phone": "04348223368",
-      "km": 25.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    },
@@ -110,41 +122,47 @@
       "name": "Navina Hospital",
       "phone": null,
       "km": 0.1,
-      "src": "OpenStreetMap node/7838884163"
+      "src": "OpenStreetMap node/7838884163",
+      "confirmed": true
      },
      {
       "name": "D.N.V Hospital",
       "phone": null,
       "km": 0.2,
-      "src": "OpenStreetMap node/7838884135"
+      "src": "OpenStreetMap node/7838884135",
+      "confirmed": true
      }
     ],
     "police": [
      {
-      "name": "District Police Office",
-      "phone": null,
-      "km": 3.5,
-      "src": "Overture"
-     },
-     {
       "name": "Police station (name not on map)",
       "phone": null,
       "km": 7.0,
-      "src": "OpenStreetMap node/13774340101"
+      "src": "OpenStreetMap node/13774340101",
+      "confirmed": true
+     },
+     {
+      "name": "Karimangalam Police Station",
+      "phone": null,
+      "km": 19.2,
+      "src": "Overture",
+      "confirmed": true
      }
     ],
     "pharmacy": [
      {
+      "name": "Apollo Pharmacy Karimangalam",
+      "phone": "07949221949",
+      "km": 19.6,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
       "name": "Apollo Pharmacy Dharmapuri 3",
       "phone": "04342266368",
       "km": 0.1,
-      "src": "Overture"
-     },
-     {
-      "name": "Jersey Medicals",
-      "phone": "+918489089058",
-      "km": 1.1,
-      "src": "Overture"
+      "src": "Overture",
+      "confirmed": false
      }
     ]
    }
@@ -170,17 +188,6 @@
    "shipping_or_delivery_service": 1,
    "social_or_community_service": 1,
    "auto_dealer": 1,
-   "mountain": 1,
-   "null": 4,
-   "community_and_government": 2,
-   "medical_service": 1,
-   "elementary_school": 1,
-   "automotive_service": 2,
-   "manufacturer": 2,
-   "specialty_school": 3,
-   "natural_gas_utility_provider": 1,
-   "home_service": 1,
-   "travel_and_transportation": 1,
    "police_station": 27,
    "youth_organization": 1,
    "parking": 1,
@@ -206,7 +213,18 @@
    "restaurant": 2,
    "casual_eatery": 1,
    "courthouse": 1,
-   "personal_or_beauty_service": 2
+   "personal_or_beauty_service": 2,
+   "mountain": 1,
+   "null": 4,
+   "community_and_government": 2,
+   "medical_service": 1,
+   "elementary_school": 1,
+   "automotive_service": 2,
+   "manufacturer": 2,
+   "specialty_school": 3,
+   "natural_gas_utility_provider": 1,
+   "home_service": 1,
+   "travel_and_transportation": 1
   },
   "missing_spots": [],
   "candidates": {}

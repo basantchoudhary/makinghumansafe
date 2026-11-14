@@ -1,7 +1,28 @@
 {
- "fetched": "2026-11-14T19:10",
+ "fetched": "2026-11-15T01:30",
  "data": {
   "articles": [
+   {
+    "title": "Ravi Kishan inspects rly station, ghats to review Chhath preps",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/ravi-kishan-inspects-rly-station-ghats-to-review-chhath-preps/articleshow/135841149.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261115",
+    "query": "feed"
+   },
+   {
+    "title": "NDRF, fire teams deployed at ghats, ponds for Chhath Puja",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/ndrf-fire-teams-deployed-at-ghats-ponds-for-chhath-puja/articleshow/135841137.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261115",
+    "query": "feed"
+   },
+   {
+    "title": "Fire at mattress shop, no casualty",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/fire-at-mattress-shop-no-casualty/articleshow/135841123.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261115",
+    "query": "feed"
+   },
    {
     "title": "Firecracker scare sends pet parrot flying, sisters announce Rs 4,000 reward",
     "url": "https://timesofindia.indiatimes.com/city/varanasi/firecracker-scare-sends-pet-parrot-flying-sisters-announce-rs-4000-reward/articleshow/135815833.cms",
@@ -71,7 +92,8 @@
    "2026-11-13 Times of India, Varanasi: FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)",
    "2026-11-14 Times of India, Varanasi: 5 relevant",
    "2026-11-14 Times of India, Varanasi: 5 relevant",
-   "2026-11-14 Times of India, Varanasi: 5 relevant"
+   "2026-11-14 Times of India, Varanasi: 5 relevant",
+   "2026-11-15 Times of India, Varanasi: 6 relevant"
   ]
  }
 }

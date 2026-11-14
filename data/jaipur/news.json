@@ -1,10 +1,17 @@
 {
- "fetched": "2026-11-14T19:10",
+ "fetched": "2026-11-15T01:30",
  "data": {
   "articles": [
    {
     "title": "Civil society groups want Maharana Pratap statue, museum at original Haldighati battlefield",
     "url": "https://timesofindia.indiatimes.com/city/jaipur/civil-society-groups-want-maharana-pratap-statue-museum-at-original-haldighati-battlefield/articleshow/135813009.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "Bhilwara girl dies after injection, angry residents attack pharmacy",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/bhilwara-girl-dies-after-injection-angry-residents-attack-pharmacy/articleshow/135838672.cms",
     "domain": "Times of India, Jaipur",
     "date": "20261114",
     "query": "feed"
@@ -78,7 +85,8 @@
    "2026-11-13 Times of India, Jaipur: FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)",
    "2026-11-14 Times of India, Jaipur: 5 relevant",
    "2026-11-14 Times of India, Jaipur: 4 relevant",
-   "2026-11-14 Times of India, Jaipur: 4 relevant"
+   "2026-11-14 Times of India, Jaipur: 4 relevant",
+   "2026-11-15 Times of India, Jaipur: 1 relevant"
   ]
  }
 }
