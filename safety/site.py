@@ -20,18 +20,29 @@ def load(place, name):
     return json.loads(p.read_text()) if p.exists() else None
 
 
+FONT = '<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">'
+SITE_URL = "https://makinghumansafe.com"
 CSS = """
-:root{--ink:#1d2129;--muted:#5d6470;--line:#e3e6ea;--soft:#f6f7f9;--blue:#2a78d6;--amber:#a15c00;--amber-soft:#fff4e5;--green:#17795a;--green-soft:#e4f3ed}
-*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-.wrap{max-width:920px;margin:0 auto;padding:24px 16px 70px}
-header.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:22px}
-header.top a{color:var(--ink);text-decoration:none;font-weight:700}
-h1{font-size:2rem;margin:0 0 4px}h2{font-size:1.35rem;margin:40px 0 8px}h3{margin:18px 0 6px;font-size:1.05rem}
-.muted{color:var(--muted)}.small{font-size:.85rem}
+:root{--ink:#1d2129;--muted:#5d6470;--line:#e3e6ea;--soft:#f6f7f9;--blue:#2a78d6;--blue-soft:#e8f0fc;--red:#e34948;--red-soft:#fdecec;
+--amber:#a15c00;--amber-soft:#fff4e5;--green:#17795a;--green-soft:#e4f3ed;--hand:Caveat,"Comic Sans MS",cursive}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font:16.5px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px 40px}
+header.top{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;font-family:var(--hand);font-size:1.7rem;font-weight:700;line-height:1}
+header nav{display:flex;flex-wrap:wrap;gap:4px 16px;flex:1}
+header nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+header nav a:hover{color:var(--blue)}
+.mus{background:var(--red);color:#fff!important;border-radius:999px;padding:7px 16px;text-decoration:none;font-weight:700;white-space:nowrap}
+h1{font-size:2.1rem;line-height:1.2;margin:6px 0 6px}h2{font-size:1.4rem;margin:42px 0 8px}h3{margin:18px 0 6px;font-size:1.08rem}
+.hand{font-family:var(--hand)}
+.muted{color:var(--muted)}.small{font-size:.86rem}
 .note{background:var(--amber-soft);border:1px solid #f3d9b1;border-radius:10px;padding:10px 14px;margin:14px 0}
 .ok{background:var(--green-soft);border:1px solid #bfe3d4;border-radius:10px;padding:10px 14px;margin:14px 0}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
-.card{border:1px solid var(--line);border-radius:10px;padding:12px 14px}.card h3{margin:0 0 6px}
+.alert{background:var(--red-soft);border:1px solid #f5c2c2;border-radius:10px;padding:10px 14px;margin:14px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.card{border:1.5px solid var(--ink);border-radius:14px;padding:12px 14px;background:#fff;box-shadow:3px 3px 0 var(--ink)}
+.card h3{margin:0 0 4px;font-family:var(--hand);font-size:1.6rem}.card h3 a{color:var(--ink);text-decoration:none}
 .tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:10px 0}
 table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem}
 th,td{text-align:left;padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -40,18 +51,40 @@ th{background:var(--soft);font-size:.72rem;text-transform:uppercase;letter-spaci
 ul li{margin:4px 0}
 .badge{display:inline-block;border-radius:999px;padding:1px 9px;font-size:.75rem;font-weight:600;background:var(--soft);color:var(--muted)}
 .btn{display:inline-block;background:var(--ink);color:#fff;border-radius:8px;padding:8px 14px;text-decoration:none;font-weight:600}
-footer{margin-top:50px;border-top:1px solid var(--line);padding-top:12px;font-size:.82rem;color:var(--muted)}
+svg.doodle{width:100%;height:auto;display:block;margin:8px 0;font-family:var(--hand)}
+.search{display:flex;border:2px solid var(--ink);border-radius:999px;padding:4px 6px 4px 18px;background:#fff;box-shadow:3px 3px 0 var(--ink);max-width:680px}
+.search input{flex:1;border:0;outline:0;font:inherit;font-size:1.08rem;min-width:0;background:transparent}
+.search button{border:0;background:var(--ink);color:#fff;border-radius:999px;padding:8px 18px;font:inherit;font-weight:700;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.chips a{border:1.5px solid var(--ink);border-radius:999px;padding:3px 12px;text-decoration:none;color:var(--ink);background:var(--blue-soft);font-family:var(--hand);font-size:1.2rem}
+#results a{display:block;padding:6px 2px;border-bottom:1px solid var(--line);text-decoration:none;font-weight:600}
+.pic{border:1px solid var(--line);border-radius:14px;padding:6px 14px 12px;margin:18px 0}
+.pic p{margin:4px 0 0}
+footer{margin-top:56px;border-top:2px solid var(--ink);padding-top:14px;font-size:.88rem;color:var(--muted)}
+footer .sos{font-size:1rem;color:var(--ink)}
+footer a{color:var(--muted)}
+@media (max-width:640px){h1{font-size:1.7rem}.brand{font-size:1.45rem}header nav{order:3;flex-basis:100%}}
 """
 
+EMERGENCY = "112 India and Europe \u00b7 911 US and Canada \u00b7 000 Australia \u00b7 999 UK \u00b7 1906 LPG gas leak (India)"
 
-def page(title, body, desc):
+
+def page(title, body, desc, path="/"):
+    from safety import doodles
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)}</title>
-<meta name="description" content="{e(desc)}"><style>{CSS}</style></head><body><div class="wrap">
-<header class="top"><a href="../index.html">Safety Intelligence</a><span class="small muted">Is it safe, and what should I watch out for?</span></header>
+<meta name="description" content="{e(desc)}"><link rel="canonical" href="{SITE_URL}{path}">
+<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{SITE_URL}{path}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">{FONT}<style>{CSS}</style></head><body><div class="wrap">
+<header class="top"><a class="brand" href="/">{doodles.logo(38)}Making Human Safe</a>
+<nav><a href="/#places">Places</a><a href="/pictures/">Stay safe, in pictures</a><a href="/about/">About</a></nav>
+<a class="mus" href="/make-us-safe/">MakeUsSafe</a></header>
 {body}
-<footer>Information and precautions from open sources, not a guarantee of safety. In an emergency call 112.
-Built {datetime.date.today():%-d %b %Y}. Sources and licences are listed on each page.</footer>
+<footer><p class="sos"><b>In danger? Call your emergency number.</b> {EMERGENCY}</p>
+<p>We are not an emergency service. We show what is known, with sources; a place with no reports is not proven safe.
+<a href="/about/#disclaimer">Disclaimer</a> \u00b7 <a href="/about/#privacy">Privacy</a> \u00b7 <a href="/about/#sources">Sources</a> \u00b7
+<a href="https://github.com/basantchoudhary/makinghumansafe">Open code</a> \u00b7 Built {datetime.date.today():%-d %b %Y}.</p>
+<p class="hand" style="font-size:1.3rem;color:var(--ink)">Someone is waiting for you.</p></footer>
 </div></body></html>"""
 
 
@@ -226,18 +259,100 @@ def place_page(key, cfg):
                f'<li>News links: {e(", ".join(f[0] for f in cfg.get("news_feeds", [])))} RSS feeds, GDELT Project</li>'
                '<li>Fare figures: the news and government sources linked in the fares table</li></ul>')
     return page(f"{name}: safety, scams and fair fares", "\n".join(out),
-                f"Is {name} safe? Known scams, fair taxi fares, nearest hospitals and police, official alerts, with sources.")
+                f"Is {name} safe? Known scams, fair taxi fares, nearest hospitals and police, official alerts, with sources.", path=f"/{key}/")
+
+
+ALIASES = {"goa": ["calangute", "baga", "anjuna", "palolem", "colva", "arambol", "dudhsagar", "panaji", "north goa", "south goa"],
+           "rishikesh": ["ganga rafting", "laxman jhula", "uttarakhand"], "manali": ["solang", "kullu", "himachal", "atal tunnel"],
+           "hogenakkal": ["cauvery", "dharmapuri"], "hampi": ["vijayanagara"], "varanasi": ["banaras", "kashi", "ghats"],
+           "agra": ["taj mahal"], "delhi": ["new delhi", "paharganj", "connaught place"], "jaipur": ["amer", "pink city"]}
 
 
 def index_page(places):
-    cards = "".join(f'<div class="card"><h3><a href="{k}/index.html">{e(c["name"])}</a></h3><p class="muted">Scams, fair fares, help nearby, alerts</p></div>'
+    from safety import doodles
+    n = len(places)
+    cards = "".join(f'<div class="card"><h3><a href="/{k}/">{e(c["name"])}</a></h3><p class="muted small">Scams, fair fares, help nearby, alerts, incidents</p></div>'
                     for k, c in places.items())
-    body = ("<h1>Is it safe, and what should I watch out for?</h1>"
-            "<p>Known scams, fair prices, past incidents, official alerts and the nearest help for places people travel to, "
-            "with a source for every fact.</p>"
-            f'<h2>Places</h2><div class="cards">{cards}</div>'
-            '<div class="note">This is an early version covering a few places. More are being added.</div>')
-    return page("Safety Intelligence", body, "Travel safety, scams and fair fares with sources").replace('href="../index.html"', 'href="index.html"')
+    index = json.dumps([{"k": k, "n": c["name"], "a": ALIASES.get(k, [])} for k, c in places.items()])
+    chips = "".join(f'<a href="/{k}/">{e(label)}</a>' for k, label in
+                    [("goa", "Goa beaches"), ("rishikesh", "Rafting, Rishikesh"), ("manali", "Manali roads"), ("hogenakkal", "Hogenakkal falls")])
+    body = (doodles.hero_wait() +
+            '<h1>Search a place. See what affects your safety there.</h1>'
+            '<p class="muted">Past incidents, live alerts, help nearby, precautions and fair prices, with a source and a date for every fact.</p>'
+            '<form class="search" onsubmit="go();return false"><input id="q" placeholder="Where are you going?" autocomplete="off" aria-label="Search a place">'
+            '<button>Search</button></form><div id="results"></div>'
+            f'<div class="chips">{chips}</div>'
+            f'<div class="note"><b>Early preview.</b> We are starting with India: {n} places now, and the west-coast beaches (Goa, Gokarna, Udupi, Murudeshwar) in depth next. '
+            'Every country is coming. <a href="/about/">How we check facts</a>.</div>'
+            f'<h2 id="places">Places</h2><div class="cards">{cards}</div>'
+            '<h2>Stay safe, in pictures</h2><p>One picture, a thousand words. <a href="/pictures/">See all</a>.</p>' + doodles.rip_current() +
+            f"""<script>const P={index};
+function match(q){{q=q.trim().toLowerCase();if(q.length<2)return[];return P.filter(p=>p.n.toLowerCase().includes(q)||p.k.includes(q)||p.a.some(a=>a.includes(q)||q.includes(a)))}}
+function show(){{const r=match(document.getElementById('q').value);document.getElementById('results').innerHTML=r.map(p=>`<a href="/${{p.k}}/">${{p.n}}</a>`).join('')||(document.getElementById('q').value.trim().length>1?'<p class="muted">Not covered yet. We are adding places every week; tell us where you are going on the <a href="/about/#contact">About page</a>.</p>':'')}}
+function go(){{const r=match(document.getElementById('q').value);if(r.length)location.href='/'+r[0].k+'/';else show()}}
+document.getElementById('q').addEventListener('input',show);</script>""")
+    return page("Making Human Safe: search a place, see what affects your safety", body,
+                "Search a place and see what affects your safety there: past incidents, live alerts, help nearby, precautions and fair prices, with sources. Someone is waiting for you.", "/")
+
+
+def pictures_page():
+    from safety import doodles
+    import re
+    items = []
+    for name, fn in doodles.ALL:
+        if name in ("hero-wait", "make-us-safe"):
+            continue
+        s = fn()
+        label = re.search(r'aria-label="([^"]+)"', s).group(1)
+        items.append(f'<div class="pic" id="{name}">{s}<p>{e(label)}</p></div>')
+    body = ('<h1>Stay safe, in pictures</h1><p class="muted">Each picture teaches one thing. Share the one that matters for your next trip or your home.</p>'
+            + "".join(items))
+    return page("Stay safe, in pictures | Making Human Safe", body,
+                "Simple drawings that teach safety: rip currents, monsoon seas, waterfalls, boats and life jackets, gas leaks, falls at home, taxi scams, co-pilot reporting.", "/pictures/")
+
+
+def about_page():
+    body = """<h1>About Making Human Safe</h1>
+<p><b>Purpose:</b> before you go anywhere or do anything, at home, on the street, at the beach or abroad, see what has actually happened there,
+what is happening now, and what keeps you and your family safe. Every fact has a date and a source.</p>
+<h2 id="method">How we check facts</h2>
+<ol><li><b>Collect</b> public information: official alerts and statistics, news reports, and reports from people.</li>
+<li><b>Check</b> every fact. Each incident keeps its source link and a sentence copied word for word from it. Plain code confirms that sentence is really in the source before anything is published. AI may help read news; it never decides what is true.</li>
+<li><b>Connect</b> facts to places, spots, causes, seasons and the people they affect.</li>
+<li><b>Show only what affects you</b>, with the date it was last checked.</li></ol>
+<p>We never name victims. We never call a place "safe"; we say what is known. When we get something wrong, we correct it openly.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>Making Human Safe gathers public information (official alerts and statistics, news reports and reports from visitors) and shows it with its source and the date it was last checked.
+It may be incomplete, out of date or wrong, and conditions can change in minutes. <b>The absence of incidents or alerts does not mean a place or activity is safe.</b>
+Always follow official warnings, lifeguards, flags and local authorities. This site does not give medical, legal or emergency advice. Reports from visitors are labelled as reports until confirmed.
+We are not an emergency service: in danger, call your local emergency number.</p>
+<h2 id="privacy">Privacy</h2>
+<p>We do not use tracking cookies or advertising trackers. MakeUsSafe (coming soon) will work inside your browser, so we will not see your family details.
+We will store contact details only if you ask for alerts, and you will be able to delete them anytime.</p>
+<h2 id="sources">Sources and credits</h2>
+<p>Each source keeps its own licence and is credited on the pages that use it. Examples: Wikivoyage (CC BY-SA 4.0), Overture Maps and OpenStreetMap (map data),
+NDMA SACHET (India's official disaster alerts), and news publishers (short quotes with links). The code is open: <a href="https://github.com/basantchoudhary/makinghumansafe">github.com/basantchoudhary/makinghumansafe</a>.</p>
+<h2 id="contact">Contact and corrections</h2>
+<p>Found a mistake, or want a place covered? Open an issue on <a href="https://github.com/basantchoudhary/makinghumansafe/issues">GitHub</a>. An email address is coming soon.</p>"""
+    return page("About, method and disclaimer | Making Human Safe", body,
+                "How Making Human Safe checks every fact, our disclaimer, privacy and sources.", "/about/")
+
+
+def mus_page():
+    from safety import doodles
+    body = ('<h1>MakeUsSafe</h1><p>Tell us who is going, where and when, and what you will do. You will get a safety brief just for your family: '
+            'the top risks for your people at that place and time, live alerts, help nearby and a checklist.</p>'
+            + doodles.make_us_safe_steps() +
+            '<div class="note"><b>Coming soon.</b> Until then, search your destination on the <a href="/">home page</a>. '
+            'It will work inside your browser; your family details will never be sent to us.</div>')
+    return page("MakeUsSafe: a safety brief for your family | Making Human Safe", body,
+                "Tell us who is going, where, when and what you will do; get a safety brief for your family. Coming soon.", "/make-us-safe/")
+
+
+def favicon():
+    from safety import doodles
+    s = doodles.logo(64)
+    return s.replace('<svg class="logo"', '<svg xmlns="http://www.w3.org/2000/svg"', 1)
 
 
 def main():
@@ -247,6 +362,10 @@ def main():
         (SITE / key).mkdir(exist_ok=True)
         (SITE / key / "index.html").write_text(place_page(key, cfg))
     (SITE / "index.html").write_text(index_page(places))
+    for path, fn in (("pictures", pictures_page), ("about", about_page), ("make-us-safe", mus_page)):
+        (SITE / path).mkdir(exist_ok=True)
+        (SITE / path / "index.html").write_text(fn())
+    (SITE / "favicon.svg").write_text(favicon())
     print(f"built {len(places)} place page(s) into {SITE}")
 
 
