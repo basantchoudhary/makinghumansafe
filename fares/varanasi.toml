@@ -1,0 +1,41 @@
+# Hand-collected fare facts for Varanasi. Every entry has a source link and the date it was checked.
+# Nothing here is an estimate of ours. Where official figures conflict, all are listed.
+
+checked = "2026-11-13"
+summary = "We found no officially notified per-km fare for Varanasi's autos, e-rickshaws or taxis; e-rickshaws mostly run shared on traffic-police-assigned routes at a per-seat fare. On busy days drivers multiply this: Amar Ujala reported ₹30-40 per seat becoming up to ₹100 on the Godowlia to Kal Bhairav route over New Year 2025. Ask locals for the usual per-seat fare, agree whether a quote is per person or for the whole vehicle, and note the driver's name and phone number, which must be displayed in the vehicle."
+
+[[rule]]
+figure = "₹30 to ₹40 per passenger on ordinary days; up to ₹100 per passenger on a peak day"
+what = "Shared e-rickshaw, Godowlia crossing to Kal Bhairav temple, as reported by a newspaper (not an official fare); a Mumbai family of five was charged ₹500"
+source = "Amar Ujala"
+url = "https://www.amarujala.com/uttar-pradesh/varanasi/new-year-2025-boat-e-rickshaw-and-handcart-owners-cheated-tourists-in-kashi-2025-01-01"
+date = "January 2025"
+
+[[rule]]
+figure = "₹10 per passenger on ordinary days; up to ₹50 on a peak day"
+what = "Shared e-rickshaw, Girjaghar to Benia Park, as reported by a newspaper (not an official fare)"
+source = "Amar Ujala"
+url = "https://www.amarujala.com/uttar-pradesh/varanasi/new-year-2025-boat-e-rickshaw-and-handcart-owners-cheated-tourists-in-kashi-2025-01-01"
+date = "January 2025"
+
+[[rule]]
+figure = "₹50 for the full journey"
+what = "Urban ropeway, Varanasi Cantonment railway station to Godowlia; fare finalised by the administration (Varanasi Development Authority). Still under construction when reported, so check it is running."
+source = "ThePrint (PTI)"
+url = "https://theprint.in/india/varanasi-ropeway-fare-fixed-at-rs-50-for-cantonment-godowlia-route/2969019/"
+date = "June 2026"
+
+[[fact]]
+text = "Drivers of public vehicles in Varanasi must display their name, phone number and Aadhaar number in the vehicle, and traffic police have assigned routes to autos and e-rickshaws through barcodes (July 2025)."
+source = "Amar Ujala"
+url = "https://www.amarujala.com/uttar-pradesh/varanasi/drivers-of-public-vehicles-in-varanasi-have-to-write-their-details-on-vehicle-2025-07-12"
+
+[[fact]]
+text = "Only 4,500 autos in Varanasi hold permits but more than 11,000 are on the roads, and some drivers have stuck on fake QR codes (August 2026)."
+source = "Amar Ujala"
+url = "https://www.amarujala.com/uttar-pradesh/varanasi/qr-code-system-failed-varanasi-250-more-auto-rickshaws-than-permitted-plying-streets-2026-08-04"
+
+[[fact]]
+text = "India's Ministry of Tourism runs a free 24x7 tourist helpline, 1800111363 or short code 1363, in English, Hindi and ten foreign languages."
+source = "Consulate General of India, Edinburgh (Ministry of Tourism notice)"
+url = "https://www.cgiedinburgh.gov.in/page/24x7-tourist-infoline-for-travel-in-india/"

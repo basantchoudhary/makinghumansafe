@@ -1,0 +1,47 @@
+{"incidents": [
+  {
+    "date": "2025-02-19",
+    "place": "Tungabhadra River",
+    "activity": "swimming",
+    "incident_type": "drowning",
+    "what_happened": "A young doctor from Hyderabad on a trip with friends jumped into the Tungabhadra from a rock and was carried away by the current; her body was recovered the next day.",
+    "people_affected": 1,
+    "deaths": 1,
+    "visitor_type": "tourist",
+    "cause": "jumped into river with strong current",
+    "source_name": "Telangana Today",
+    "source_url": "https://telanganatoday.com/watch-picnic-turns-tragic-hyderabad-doctor-who-jumped-into-tungabhadra-river-found-dead",
+    "source_date": "2025-02-20",
+    "quote": "Ananya jumped into the river from an adjacent rock and a strong current carried her away, the police suspect."
+  },
+  {
+    "date": "2025-03-06",
+    "place": "Sanapur Lake",
+    "activity": "crime",
+    "incident_type": "assault",
+    "what_happened": "Three men attacked a group of tourists stargazing near Sanapur Lake, pushed the three men into the water and raped the two women; one male tourist drowned.",
+    "people_affected": 5,
+    "deaths": 1,
+    "visitor_type": "tourist",
+    "cause": null,
+    "source_name": "The News Minute",
+    "source_url": "https://www.thenewsminute.com/karnataka/karnataka-three-men-convicted-in-hampi-gangrape-murder",
+    "source_date": "2026-02-07",
+    "quote": "The three men pushed the three male tourists into the Sanapur lake and sexually assaulted the two women, the SP had said."
+  },
+  {
+    "date": "2025-12-24",
+    "place": "Mahanavami mound",
+    "activity": "trek",
+    "incident_type": "injury",
+    "what_happened": "A 52-year-old French tourist slipped and fell while climbing a hill near the Mahanavami mound and was rescued after about two days.",
+    "people_affected": 1,
+    "deaths": null,
+    "visitor_type": "tourist",
+    "cause": "slipped while climbing a hill",
+    "source_name": "ETV Bharat",
+    "source_url": "https://www.etvbharat.com/en/state/french-tourist-falls-off-hill-at-karnatakas-hampi-rescued-after-48-hours-enn25122605497",
+    "source_date": "2025-12-26",
+    "quote": "Bruno tried to climb the hill at around 6 pm on December 24 but slipped and fell."
+  }
+]}

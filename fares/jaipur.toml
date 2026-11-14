@@ -1,0 +1,32 @@
+# Hand-collected fare facts for Jaipur. Every entry has a source link and the date it was checked.
+# Nothing here is an estimate of ours. Where official figures conflict, all are listed.
+
+checked = "2026-11-13"
+summary = "Jaipur's last reported official auto fare is from July 2013 (₹15 for the first km, then ₹9 per km), and in April 2025 the transport department said it was revising fares for the first time in about 12 years; we found no published new rate, so the official fare is effectively unclear. With no current official rate to point to, tourists face whatever flat fare a driver quotes. Agree the fare before the ride or use an app, and report problems at the Tourist Assistance Force booths at the main monuments."
+
+[[rule]]
+figure = "₹15 for the first km, then ₹9 per km; waiting 50 paisa per minute"
+what = "Auto-rickshaw fare announced by the Rajasthan transport department (Transport Commissioner O P Yadav) after a meeting with auto unions; up from ₹14 for the first km. Reported as an announcement, not a gazette notification."
+source = "Rajasthan Direct"
+url = "https://news.rajasthandirect.com/new-hike-in-fares-for-autorickshaw-in-jaipur.html"
+date = "July 2013"
+
+[[fact]]
+text = "In April 2025 the transport department began a process at RTO Jaipur I to set new auto fares, which the paper says is being done after about 12 years; the article gives no new rates."
+source = "Rajasthan Patrika"
+url = "https://www.patrika.com/jaipur-news/rajastha-jaipur-govt-working-on-revising-auto-fares-after-12-years-rajasthan-transport-department-19533642"
+
+[[fact]]
+text = "Rajasthan's Tourist Assistance Force has booths at Jantar Mantar, Jal Mahal, Amer, Hawa Mahal and Albert Hall, and handled 236 complaints in 2022, 311 in 2023 and 541 in 2024."
+source = "Punjab Kesari (IANS)"
+url = "https://english.punjabkesari.com/states/2025/03/05/rajasthan-to-launch-tourist-friendly-mobile-app-for-essential-services"
+
+[[fact]]
+text = "Jaipur is divided into 6 zones for e-rickshaws, with zone-wise QR codes planned; RTO Jaipur I and II had 45,508 e-rickshaws registered (February 2025)."
+source = "Rajasthan Patrika"
+url = "https://patrika.com/en/special-news/jaipur-divided-into-six-zones-for-e-rickshaw-operation-via-qr-code-19383117"
+
+[[fact]]
+text = "India's Ministry of Tourism runs a free 24x7 tourist helpline, 1800111363 or short code 1363, in English, Hindi and ten foreign languages."
+source = "Consulate General of India, Edinburgh (Ministry of Tourism notice)"
+url = "https://www.cgiedinburgh.gov.in/page/24x7-tourist-infoline-for-travel-in-india/"

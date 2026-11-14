@@ -1,0 +1,290 @@
+{
+ "fetched": "2026-11-13T19:35",
+ "data": {
+  "spots": {
+   "Laxman Jhula": {
+    "x": 78.3299,
+    "y": 30.1264,
+    "located_by": "Wikidata Q2689560"
+   },
+   "Ram Jhula": {
+    "x": 78.31705,
+    "y": 30.11912
+   },
+   "Triveni Ghat": {
+    "x": 78.29952828,
+    "y": 30.10338505
+   },
+   "Parmarth Niketan": {
+    "x": 78.31167592,
+    "y": 30.11935157
+   },
+   "Shivpuri": {
+    "x": 78.26761867,
+    "y": 30.08692004
+   },
+   "Jolly Grant Airport": {
+    "x": 78.180277777778,
+    "y": 30.189722222222
+   }
+  },
+  "near": {
+   "Laxman Jhula": {
+    "hospital": [
+     {
+      "name": "Nirmal Ashram Hospital",
+      "phone": "+918077763702",
+      "km": 3.5
+     },
+     {
+      "name": "Puri Sanjivani Hospital",
+      "phone": "+911352430641",
+      "km": 3.8
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station-Laxman Jhula",
+      "phone": null,
+      "km": 0.5
+     },
+     {
+      "name": "Police Chowki Tapowan",
+      "phone": null,
+      "km": 0.7
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Kandari Medical Store",
+      "phone": "+918077520359",
+      "km": 0.6
+     },
+     {
+      "name": "Pooja medical store",
+      "phone": "+911352436635",
+      "km": 1.9
+     }
+    ]
+   },
+   "Ram Jhula": {
+    "hospital": [
+     {
+      "name": "Nirmal Ashram Hospital",
+      "phone": "+918077763702",
+      "km": 2.1
+     },
+     {
+      "name": "Panacea Hospital",
+      "phone": "+917895551369",
+      "km": 2.3
+     }
+    ],
+    "police": [
+     {
+      "name": "Reporting Police Post Chowki, Ram Jhula",
+      "phone": "+911352430228",
+      "km": 0.4
+     },
+     {
+      "name": "Police Station",
+      "phone": "+919411112842",
+      "km": 0.7
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Pooja medical store",
+      "phone": "+911352436635",
+      "km": 0.4
+     },
+     {
+      "name": "Kandari Medical Store",
+      "phone": "+918077520359",
+      "km": 1.4
+     }
+    ]
+   },
+   "Triveni Ghat": {
+    "hospital": [
+     {
+      "name": "Nirmal Ashram Hospital",
+      "phone": "+918077763702",
+      "km": 0.4
+     },
+     {
+      "name": "KMC Hospital Meerut",
+      "phone": null,
+      "km": 0.5
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Chowki",
+      "phone": "+911352430100",
+      "km": 0.1
+     },
+     {
+      "name": "Police Station Rishikesh",
+      "phone": "+911352430100",
+      "km": 0.7
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Doon medical store, rishikesh",
+      "phone": "+919411331141",
+      "km": 0.4
+     },
+     {
+      "name": "Tayal Medical Store",
+      "phone": "+919997921532",
+      "km": 0.9
+     }
+    ]
+   },
+   "Parmarth Niketan": {
+    "hospital": [
+     {
+      "name": "Nirmal Ashram Hospital",
+      "phone": "+918077763702",
+      "km": 1.8
+     },
+     {
+      "name": "Puri Sanjivani Hospital",
+      "phone": "+911352430641",
+      "km": 1.9
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station",
+      "phone": "+919411112842",
+      "km": 0.5
+     },
+     {
+      "name": "Reporting Police Post Chowki, Ram Jhula",
+      "phone": "+911352430228",
+      "km": 0.5
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Pooja medical store",
+      "phone": "+911352436635",
+      "km": 0.3
+     },
+     {
+      "name": "Kandari Medical Store",
+      "phone": "+918077520359",
+      "km": 1.7
+     }
+    ]
+   },
+   "Shivpuri": {
+    "hospital": [
+     {
+      "name": "Holy Care Hospital",
+      "phone": "+911353161803",
+      "km": 1.2
+     },
+     {
+      "name": "AIIMS Trauma Center",
+      "phone": "+911352462940",
+      "km": 1.9
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Chowki",
+      "phone": "+911352430100",
+      "km": 3.6
+     },
+     {
+      "name": "Police Station Rishikesh",
+      "phone": "+911352430100",
+      "km": 3.7
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Goyal Pharmacy",
+      "phone": "+917534900025",
+      "km": 1.5
+     },
+     {
+      "name": "Goyal Pharmacy 24x7",
+      "phone": "+917535035500",
+      "km": 1.5
+     }
+    ]
+   },
+   "Jolly Grant Airport": {
+    "hospital": [
+     {
+      "name": "Himalayan Hospital",
+      "phone": "+911352471200",
+      "km": 1.5
+     },
+     {
+      "name": "Ms hospital",
+      "phone": "+917895551369",
+      "km": 13.0
+     }
+    ],
+    "police": [
+     {
+      "name": "Bhadrakali Police Chowki",
+      "phone": "+911352430041",
+      "km": 13.0
+     },
+     {
+      "name": "Police Station Rishikesh",
+      "phone": "+911352430100",
+      "km": 14.3
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "RB Pharma",
+      "phone": "+919761213178",
+      "km": 3.2
+     },
+     {
+      "name": "Yash Medical Store",
+      "phone": "+919412435938",
+      "km": 12.5
+     }
+    ]
+   }
+  },
+  "counts": {
+   "recreational_equipment_rental": 3,
+   "pharmacy_and_drug_store": 26,
+   "restaurant": 1,
+   "airport": 2,
+   "fire_station": 1,
+   "historic_site": 2,
+   "place_of_learning": 1,
+   "campground": 6,
+   "police_station": 8,
+   "lodging": 2,
+   "christian_place_of_worship": 1,
+   "civic_organization": 1,
+   "corporate_or_business_office": 2,
+   "resort": 5,
+   "hospital": 32,
+   "travel_service": 6,
+   "religious_organization": 3,
+   "beach": 1,
+   "hotel": 5,
+   "hindu_place_of_worship": 1,
+   "auto_dealer": 1,
+   "cafe": 1,
+   "arts_and_entertainment": 2,
+   "null": 4
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

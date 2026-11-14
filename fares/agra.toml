@@ -1,0 +1,27 @@
+# Hand-collected fare facts for Agra. Every entry has a source link and the date it was checked.
+# Nothing here is an estimate of ours. Where official figures conflict, all are listed.
+
+checked = "2026-11-13"
+summary = "We could not find an officially notified per-km fare for Agra's autos, e-rickshaws or taxis, so fares are negotiated; the one official figure is the Taj Mahal golf cart (₹25 for Indian citizens, free with a foreigner's entry ticket). Because there is no meter fare, the risk is an inflated quote or a currency mix-up. Agree the fare in rupees before the ride, and note that only non-polluting vehicles may go within 500 m of the Taj."
+
+[[rule]]
+figure = "₹25 per person for Indian citizens; free with the foreigner's (and SAARC/BIMSTEC) Taj Mahal entry ticket"
+what = "Battery bus and golf cart from the Shilpgram (east gate) and Amrood ka Teela (west gate) parking to the Taj Mahal gate"
+source = "Taj Mahal official site (tajmahal.gov.in)"
+url = "https://tajmahal.gov.in/dos-and-donts.aspx"
+date = "date not shown"
+
+[[fact]]
+text = "No polluting vehicles are allowed within 500 m of the Taj Mahal. Parking is at Shilpgram for the east gate and Amrood ka Teela for the west gate, with battery buses and golf carts from parking to the gate. UP Police helpline is 112."
+source = "Taj Mahal official site (tajmahal.gov.in)"
+url = "https://tajmahal.gov.in/dos-and-donts.aspx"
+
+[[fact]]
+text = "In July 2026 an Agra taxi driver asked French tourists for ₹500 (an airport waiting charge) and accepted €50 instead; Agra Police traced him, recovered the 50 euros, returned it to the tourists and started proceedings. Always state and pay the fare in rupees."
+source = "Free Press Journal"
+url = "https://www.freepressjournal.in/amp/india/language-barrier-costs-french-tourist-as-agra-taxi-driver-charges-50-fare-instead-of-500-police-recover-money-video"
+
+[[fact]]
+text = "India's Ministry of Tourism runs a free 24x7 tourist helpline, 1800111363 or short code 1363, in English, Hindi and ten foreign languages."
+source = "Consulate General of India, Edinburgh (Ministry of Tourism notice)"
+url = "https://www.cgiedinburgh.gov.in/page/24x7-tourist-infoline-for-travel-in-india/"

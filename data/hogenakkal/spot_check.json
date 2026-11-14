@@ -1,0 +1,24 @@
+{
+ "Hogenakkal Falls": {
+  "verdict": "ok",
+  "km": 0.38,
+  "wikidata": "Q37729"
+ },
+ "Hogenakkal": {
+  "verdict": "far",
+  "km": 8.93,
+  "wikidata": "Q5877199",
+  "lat": 12.1212,
+  "lon": 77.7751
+ },
+ "Pennagaram": {
+  "verdict": "ok",
+  "km": 0.47,
+  "wikidata": "Q2716664"
+ },
+ "Dharmapuri": {
+  "verdict": "ok",
+  "km": 1.38,
+  "wikidata": "Q15152"
+ }
+}

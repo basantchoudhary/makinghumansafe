@@ -1,0 +1,50 @@
+# Hand-collected fare facts for Hampi. Every entry has a source link and the date it was checked.
+# Nothing here is an estimate of ours. Where official figures conflict, all are listed.
+
+checked = "2026-11-13"
+summary = "We found no official fixed fare for Hampi autos or coracles; every figure below is a traveller-reported price, and they vary widely (a full-day auto was quoted ₹1,500 to ₹2,000 in Nov 2023, and coracle rides from ₹150 to ₹750 per person depending on the spot and length). The common pattern is negotiated prices with no rate card, so first-time visitors pay the top of the range. Take the local bus from Hospet (₹17 in April 2023) and fix the price and ride length before boarding an auto or coracle."
+
+[[rule]]
+figure = "₹17 per person"
+what = "Local bus fare from Hospet to Hampi, as reported by travellers (not an official notice)"
+source = "Wikivoyage"
+url = "https://en.wikivoyage.org/wiki/Hampi"
+date = "April 2023"
+
+[[rule]]
+figure = "₹250"
+what = "Auto-rickshaw from Hospet to Hampi, traveller-reported price (no authority fixes it)"
+source = "Wikivoyage"
+url = "https://en.wikivoyage.org/wiki/Hampi"
+date = "date not shown"
+
+[[rule]]
+figure = "₹1,500 to ₹2,000 per day"
+what = "Full-day auto-rickshaw sightseeing in Hampi, depending on negotiation, traveller-reported"
+source = "Wikivoyage"
+url = "https://en.wikivoyage.org/wiki/Hampi"
+date = "November 2023"
+
+[[rule]]
+figure = "₹450 per person (30 min); ₹750 per person (1 hour)"
+what = "Coracle ride at Chakratirtha, in front of the Kodandarama temple, as paid by a travel blogger after negotiating with the helmsman"
+source = "Stories by Soumya (travel blog)"
+url = "https://www.storiesbysoumya.com/how-to-enjoy-a-coracle-ride-in-hampi"
+date = "January 2023"
+
+[[rule]]
+figure = "₹150 (short ride) / ₹200 per person (long ride)"
+what = "Coracle ride at Sanapur Lake (Gangavathi taluk, across the river from Hampi), traveller-reported"
+source = "Wikivoyage"
+url = "https://en.wikivoyage.org/wiki/Hampi"
+date = "January 2023"
+
+[[fact]]
+text = "The river ferry from Hampi to the Virupapura Gaddi / Hanumanahalli side costs ₹50 per crossing (it leaves when full), while going round by auto costs ₹1,200, so a driver offering the road route instead of the ferry is charging many times more."
+source = "Wikivoyage"
+url = "https://en.wikivoyage.org/wiki/Hampi"
+
+[[fact]]
+text = "Lower coracle prices of ₹150 for 30 minutes and ₹300 for 1 hour are seen online, against the ₹450 and ₹750 a blogger actually paid; the blogger notes the price depends on how well you bargain."
+source = "Stories by Soumya (travel blog)"
+url = "https://www.storiesbysoumya.com/how-to-enjoy-a-coracle-ride-in-hampi"

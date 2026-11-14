@@ -1,0 +1,80 @@
+# Activities and their precautions (the design's "precautions library").
+# Precautions are general safety advice, written once and reviewed; they are not claims about a place.
+# Place-specific facts come only from sourced records (incidents, rules, Wikivoyage).
+# reviewed = who reviewed and when; "pending" until the founder reviews.
+
+[swimming]
+label = "Swimming (sea, rivers and ghats)"
+incident_activities = ["swimming"]
+reviewed = "pending"
+precautions = [
+  "Swim only where lifeguards are on duty and inside the flagged area; a red flag means no swimming.",
+  "Rivers can look calm and still pull hard below the surface: at ghats, stay on the steps or hold the chains.",
+  "Don't swim after drinking, at night, or alone.",
+  "If caught in a current, don't fight it: swim parallel to the shore, then back in.",
+  "Keep children within arm's reach in the water.",
+]
+
+[water_sports]
+label = "Water sports (rafting, parasailing, boats, coracles)"
+incident_activities = ["water sports", "parasailing"]
+reviewed = "pending"
+precautions = [
+  "Use only licensed operators with a visible registration; ask for it.",
+  "Always wear a life jacket and a helmet for rafting, and check the harness and straps yourself before parasailing.",
+  "Don't go out in rough sea or strong wind, even if the operator says it's fine.",
+  "Agree the price and duration before you start.",
+]
+
+[waterfall]
+label = "Waterfalls and treks"
+incident_activities = ["waterfall", "trek"]
+reviewed = "pending"
+precautions = [
+  "Don't swim or climb on rocks near waterfalls, especially after rain: water rises fast and rocks are slippery.",
+  "Check whether the area is open; many falls close in the monsoon.",
+  "Go with a guide or a group, carry water, and tell someone your plan.",
+  "Know how far the nearest hospital is (see Help nearby).",
+]
+
+[road]
+label = "Scooters, bikes and roads"
+incident_activities = ["scooter/road"]
+reviewed = "pending"
+precautions = [
+  "Wear a helmet, every ride; it's the law and it saves lives.",
+  "Carry your driving licence; rent only from shops that ask for it.",
+  "Photograph the scooter before you take it, to avoid false damage claims.",
+  "Don't ride after drinking or on unlit roads at night.",
+]
+
+[nightlife]
+label = "Nightlife, clubs and bars"
+incident_activities = ["nightlife"]
+reviewed = "pending"
+precautions = [
+  "Watch your drink being made and never leave it unattended.",
+  "Check the bill and prices before ordering; ask for a printed menu.",
+  "Know the fire exits in crowded clubs.",
+  "Plan your ride home before you go out.",
+]
+
+[crime]
+label = "Theft, assault and harassment"
+incident_activities = ["crime"]
+reviewed = "pending"
+precautions = [
+  "Keep valuables out of sight in crowds, markets and on beaches.",
+  "Share your live location with someone you trust at night.",
+  "Call 112 in an emergency; 181 is the women's helpline.",
+]
+
+[scam]
+label = "Scams and overcharging"
+incident_activities = ["scam"]
+reviewed = "pending"
+precautions = [
+  "Use prepaid taxi counters or booked cabs; agree the fare before getting in.",
+  "Book trains and tickets only on official sites or counters.",
+  "Report overcharging to the National Consumer Helpline (1915).",
+]

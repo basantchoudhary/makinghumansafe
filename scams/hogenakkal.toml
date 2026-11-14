@@ -1,0 +1,16 @@
+# Scam patterns for Hogenakkal (the design's "scam pattern" record).
+# Every field is taken from the cited source text; "source_text" holds the exact sentences relied on,
+# so anyone can check the record against its source. Patterns name tricks, never people.
+# The source is thin and describes no scams, so this file holds rules only.
+
+source_default = "Wikivoyage, Hogenakkal, 'Stay safe' (CC BY-SA 4.0)"
+source_url_default = "https://en.wikivoyage.org/wiki/Hogenakkal#Stay_safe"
+
+# Rules from the same source (dangerous situations that are not scams)
+[[rule]]
+rule = "Do not swim in the river."
+source_text = "Do not swim in the river."
+
+[[rule]]
+rule = "Leave before daylight goes; interior roads are isolated, wild animals may be met, and night travel is not advised, especially with family."
+source_text = "Some of the interior roads are isolated and possibility of encounter with wild animals. Night travel is not advised especially with family in these areas."

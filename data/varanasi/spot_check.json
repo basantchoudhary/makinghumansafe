@@ -1,0 +1,36 @@
+{
+ "Dashashwamedh Ghat": {
+  "verdict": "far",
+  "km": 3.17,
+  "wikidata": "Q3630402",
+  "lat": 25.3072,
+  "lon": 83.0103
+ },
+ "Manikarnika Ghat": {
+  "verdict": "ok",
+  "km": 0.02,
+  "wikidata": "Q3630417"
+ },
+ "Assi Ghat": {
+  "verdict": "ok",
+  "km": 0.08,
+  "wikidata": "Q4808835"
+ },
+ "Kashi Vishwanath Temple": {
+  "verdict": "ok",
+  "km": 0.12,
+  "wikidata": "Q3675"
+ },
+ "Sarnath": {
+  "verdict": "far",
+  "km": 8.24,
+  "wikidata": "Q324394",
+  "lat": 25.3811,
+  "lon": 83.0214
+ },
+ "Varanasi Junction": {
+  "verdict": "ok",
+  "km": 0.11,
+  "wikidata": "Q3544938"
+ }
+}

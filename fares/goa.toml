@@ -1,0 +1,55 @@
+# Hand-collected fare facts for Goa. Every entry has a source link and the date it was checked.
+# Nothing here is an estimate of ours. Where official figures conflict, all are listed.
+
+checked = "2026-11-13"
+summary = "Goa's official taxi fares are contested: different government documents and statements give different per-km rates, and app-based fares (GoaMiles) are disputed by taxi unions. That confusion is why overcharging is common. Buy a prepaid slip at the airport counter, never from touts, and agree the fare before you get in."
+
+[[rule]]
+figure = "₹49 per km"
+what = "Rate the Goa Transport Director said was notified for passenger taxis, after a viral ₹4,148 Mopa-to-Benaulim fare"
+source = "The Goan"
+url = "https://www.thegoan.net/goa-news/taxi-ride-from-mopa-airport-to-benaulim-costs-rs-4148/93629.html"
+date = "May 2025"
+
+[[rule]]
+figure = "₹32 per km (weighted average)"
+what = "Weighted average of notified taxi fares across Goa, cited with the Goa Transport Aggregator Guidelines 2025"
+source = "ThePrint"
+url = "https://theprint.in/india/goa-transport-aggregator-guidelines-2025-notified-promises-benefits-to-drivers-affordable-rides/2636999"
+date = "May 2025"
+
+[[rule]]
+figure = "₹36 per km minimum"
+what = "Minimum fare for local taxi drivers in the draft aggregator guidelines"
+source = "Goemkarponn"
+url = "https://goemkarponn.com/goa-govt-issues-draft-guidelines-to-regulate-taxi-motorcycle-taxi-aggregators"
+date = "2025 (draft)"
+
+[[rule]]
+figure = "₹24 per km (cars up to 1,499 cc), ₹32 per km (SUVs and MUVs), after initial slabs"
+what = "Revised slab-based fare structure"
+source = "Team-BHP"
+url = "https://www.team-bhp.com/news/goa-taxis-set-get-costlier-revised-fare-structure"
+date = "date not shown"
+
+[[rule]]
+figure = "₹21 for the first km and ₹21 per km after"
+what = "Notification revising fares for yellow-and-black taxis"
+source = "The Goan"
+url = "https://www.thegoan.net/goa-news/revised-fares-notified-for-by-taxis/72704.html"
+date = "date unclear"
+
+[[fact]]
+text = "A prepaid taxi counter (Blue Cab) operates at Mopa (Manohar International) airport. Buy the fare slip at the arrivals counter, not from touts."
+source = "The Goan"
+url = "https://www.thegoan.net/goa-news/uturn-minister-hails-taximen-as-true-tourism-ambassadors/109149.html"
+
+[[fact]]
+text = "A uniform taxi fare system was announced as coming 'soon' by the transport minister in August 2026; check whether it is in force before you travel."
+source = "The Goan"
+url = "https://www.thegoan.net/goa-news/uniform-taxi-fare-system-soon-min/129739.html"
+
+[[fact]]
+text = "App-based taxi operators are exempt from installing digital fare meters (Rule 140, Goa Motor Vehicles Rules, amended), per a Goa Assembly answer."
+source = "Goa Legislative Assembly"
+url = "https://static.goavidhansabha.gov.in/goalpub/docs/question_docs/file_44a6d0db-3ac6-41a6-adf4-f66bfa1c2c4c.pdf"

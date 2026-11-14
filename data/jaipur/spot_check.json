@@ -1,0 +1,51 @@
+{
+ "Hawa Mahal": {
+  "verdict": "ok",
+  "km": 0.0,
+  "wikidata": "Q836531"
+ },
+ "Amer Fort": {
+  "verdict": "far",
+  "km": 2.11,
+  "wikidata": "Q456817",
+  "lat": 26.9859,
+  "lon": 75.8507
+ },
+ "Amber Fort": {
+  "verdict": "far",
+  "km": 9.6,
+  "wikidata": "Q456817",
+  "lat": 26.9859,
+  "lon": 75.8507
+ },
+ "City Palace": {
+  "verdict": "ok",
+  "km": 0.09,
+  "wikidata": "Q2723395"
+ },
+ "Nahargarh Fort": {
+  "verdict": "ok",
+  "km": 0.04,
+  "wikidata": "Q2723401"
+ },
+ "Jantar Mantar": {
+  "verdict": "ok",
+  "km": 0.06,
+  "wikidata": "Q12816495"
+ },
+ "Jaipur Junction": {
+  "verdict": "ok",
+  "km": 1.33,
+  "wikidata": "Q6124154"
+ },
+ "Jaipur International Airport": {
+  "verdict": "ok",
+  "km": 0.84,
+  "wikidata": "Q572387"
+ },
+ "Johari Bazaar": {
+  "verdict": "ok",
+  "km": 0.03,
+  "wikidata": "Q131081437"
+ }
+}

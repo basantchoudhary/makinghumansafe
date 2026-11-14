@@ -1,0 +1,51 @@
+# Scam patterns for Varanasi (the design's "scam pattern" record).
+# Every field is taken from the cited source text; "source_text" holds the exact sentences relied on,
+# so anyone can check the record against its source. Patterns name tricks, never people.
+
+source_default = "Wikivoyage, Varanasi, 'Stay safe' (CC BY-SA 4.0)"
+source_url_default = "https://en.wikivoyage.org/wiki/Varanasi#Stay_safe"
+
+[[scam]]
+name = "'Your hotel has burned down' driver"
+how_it_works = "Rickshaw and taxi drivers say your hotel has burned down, is flooded or closed, to take you to a hotel that pays them commission."
+how_to_avoid = "Don't believe it; insist, threaten to get out, and refuse to pay until you reach your hotel."
+places = []
+source_text = "Rickshaw and taxi scams are common in Varanasi, and the driver will inevitably tell you that the hotel that you wish to go to has burned down, is flooded, or closed. Don't believe him. Drivers receive commission from hotels for bringing in new guests, and this is one way to trick newcomers to going to these places. Don't get annoyed, but see the exchange as playful banter and part of the Varanasi experience. However, if the driver continuously refuses to follow your instructions, threaten to get out of the rickshaw. If after all this you still end up to a different place, just refuse to pay until you arrive at your hotel."
+
+[[scam]]
+name = "Commission handicraft stores"
+how_it_works = "When sightseeing, drivers try to take you to handicraft stores that pay them commission."
+how_to_avoid = "Insist on your own route, as with hotels."
+places = []
+source_text = "The same procedure will need to be followed when sight seeing, as drivers will inevitably try to take you to handicraft stores, from which they receive commission."
+
+[[scam]]
+name = "Fake hostel pickup"
+how_it_works = "Drivers overhear you calling your hostel for a pickup, and another driver turns up pretending to be from it, then takes you to a commission-charging hostel."
+how_to_avoid = "Be wary when calling for a pickup within earshot of other drivers."
+places = []
+source_text = "If calling for a pickup from a more respectable hostel, be wary that other taxi drivers may listen in to your phone conversation then tell another taxi driver who will pick you up pretending to be your hostel, then take you to a commission charging hostel."
+
+[[scam]]
+name = "Cremation wood 'donation'"
+how_it_works = "Touts posing as cremators or hospice volunteers explain the cremation process, then ask you to pay (usually ₹500) for wood to burn the body of someone who can't afford it."
+how_to_avoid = "Say you have no money or that you don't feel comfortable donating."
+places = ["Manikarnika Ghat"]
+source_text = "As you approach Manikarnika Ghat, you will be approached by touts posing as cremators or volunteers in a local hospice. These people will explain the cremation process and even lead you to a good viewpoint. They will then take advantage of your emotions by asking you to pay for some wood to burn the body of someone who can't afford it. They will usually insist on receiving ₹500; if you offer less, it will initially be declined. This is a scam. Either tell him you have no money or that you don't feel comfortable donating."
+
+# Rules from the same source (dangerous situations that are not scams)
+[[rule]]
+rule = "Violent crime is rare, but be careful in the lanes after dark."
+source_text = "Violent crime is rare, but still do be careful in the lanes after dark."
+
+[[rule]]
+rule = "Carry a light or phone in the alleys at night; sleeping cows and broken paving stones make them hard to navigate."
+source_text = "Carry a light or phone; power outages are now rare, but due to sleeping cows and broken paving stones, the alleys are hard enough to navigate in daylight, let alone in pitch dark."
+
+[[rule]]
+rule = "Packs of stray dogs can become aggressive at night."
+source_text = "Though generally well behaved, packs of stray dogs can become aggressive at night"
+
+[[rule]]
+rule = "Varanasi is one of the most polluted cities in the world; watch air quality data and consider a certified mask on longer stays."
+source_text = "Varanasi is one of the most polluted cities in the world. Many websites show air quality readings taken in the early morning, when pollution is at its lowest. Hourly air quality data is available here. Keep an eye on air quality data and consider wearing a (certified) mask, especially if you are spending an extended period of time in the city."

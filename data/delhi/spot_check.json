@@ -1,0 +1,62 @@
+{
+ "India Gate": {
+  "verdict": "far",
+  "km": 4.07,
+  "wikidata": "Q245347",
+  "lat": 28.6129,
+  "lon": 77.2293
+ },
+ "Red Fort": {
+  "verdict": "far",
+  "km": 14.4,
+  "wikidata": "Q45957",
+  "lat": 28.6558,
+  "lon": 77.2403
+ },
+ "Qutub Minar": {
+  "verdict": "ok",
+  "km": 0.03,
+  "wikidata": "Q187635"
+ },
+ "Chandni Chowk": {
+  "verdict": "far",
+  "km": 14.78,
+  "wikidata": "Q3236763",
+  "lat": 28.656,
+  "lon": 77.2339
+ },
+ "Connaught Place": {
+  "verdict": "ok",
+  "km": 0.57,
+  "wikidata": "Q2341950"
+ },
+ "Paharganj": {
+  "verdict": "far",
+  "km": 3.62,
+  "wikidata": "Q3270707",
+  "lat": 28.6414,
+  "lon": 77.2141
+ },
+ "New Delhi Railway Station": {
+  "verdict": "ok",
+  "km": 0.85,
+  "wikidata": "Q2742296"
+ },
+ "Indira Gandhi International Airport": {
+  "verdict": "far",
+  "km": 1.63,
+  "wikidata": "Q821275",
+  "lat": 28.5574,
+  "lon": 77.0833
+ },
+ "Hauz Khas Village": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ },
+ "Humayun's Tomb": {
+  "verdict": "ok",
+  "km": 0.02,
+  "wikidata": "Q189648"
+ }
+}

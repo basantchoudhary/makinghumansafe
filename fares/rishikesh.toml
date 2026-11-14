@@ -1,0 +1,55 @@
+# Hand-collected fare facts for Rishikesh. Every entry has a source link and the date it was checked.
+# Nothing here is an estimate of ours. Where official figures conflict, all are listed.
+
+checked = "2026-11-13"
+summary = "Uttarakhand's State Transport Authority fixes maximum fares for autos (₹60 for the first 2 km, then ₹18 per km) and per-km taxi rates, but we found no published fixed fare for the Dehradun airport or Haridwar to Rishikesh routes. Rafting prices were raised sharply in April 2026 (Shivpuri 16 km went from ₹350 to ₹1,020 per person), and reports give slightly different figures. Ask to see the per-km rate, agree the total before the ride, and pay rafting at a counter that issues a receipt."
+
+[[rule]]
+figure = "₹60 for the first 2 km, then ₹18 per km"
+what = "Maximum auto-rickshaw fare in Uttarakhand, fixed by the State Transport Authority; 50% extra from 10 pm to 5 am"
+source = "Transport Commissioner, Uttarakhand (STA notification)"
+url = "https://cdnbbsr.s3waas.gov.in/s3250413d2982f1f83aa62a3a323cd2a87/uploads/2025/03/20250301973875108.pdf"
+date = "July 2022"
+
+[[rule]]
+figure = "₹16 per km (plains, non-AC) / ₹18 per km (hills, non-AC)"
+what = "Maximum taxi/maxi cab fare for an ordinary vehicle (worth up to ₹8 lakh), fixed by the State Transport Authority; AC is ₹18 (plains) and ₹20 (hills) per km; deluxe vehicles ₹20–25 per km"
+source = "Transport Commissioner, Uttarakhand (STA notification)"
+url = "https://cdnbbsr.s3waas.gov.in/s3250413d2982f1f83aa62a3a323cd2a87/uploads/2025/03/20250301973875108.pdf"
+date = "July 2022"
+
+[[rule]]
+figure = "₹1,020 per person"
+what = "Rafting on the 16 km Shivpuri stretch, raised from ₹350 (rates attributed to rafting operators; no authority named)"
+source = "News24 Hindi"
+url = "https://hindi.news24online.com/photos/knowledge/rishikesh-river-rafting-price-hike-traffic-jam-updates-2026-1594419"
+date = "April 2026"
+
+[[rule]]
+figure = "₹1,500 per person"
+what = "Rafting on the 26 km Marine Drive stretch, raised from ₹600 (rates attributed to rafting operators)"
+source = "News24 Hindi"
+url = "https://hindi.news24online.com/photos/knowledge/rishikesh-river-rafting-price-hike-traffic-jam-updates-2026-1594419"
+date = "April 2026"
+
+[[rule]]
+figure = "₹2,500 per person"
+what = "Rafting on the 36 km Kaudiyala stretch, raised from ₹900; the 10 km Brahmpuri stretch went from ₹250 to ₹620"
+source = "News24 Hindi"
+url = "https://hindi.news24online.com/photos/knowledge/rishikesh-river-rafting-price-hike-traffic-jam-updates-2026-1594419"
+date = "April 2026"
+
+[[fact]]
+text = "A separate April 2026 report puts Shivpuri (16 km) rafting at about ₹1,000 per person and short stretches like Brahmpuri (9–10 km) at ₹500 to ₹800, slightly different from the ₹1,020 and ₹620 reported elsewhere."
+source = "Times Now Hindi"
+url = "https://www.timesnowhindi.com/travel/rishikesh-river-rafting-season-other-details-article-154188941"
+
+[[fact]]
+text = "In April 2023 Uttarakhand Tourism Secretary Sachin Kurve said the state waived the river rafting fee for three years on all rivers except the Ganga, so the Ganga at Rishikesh still carries the fee."
+source = "Drishti IAS"
+url = "https://www.drishtiias.com/state-pcs-current-affairs/river-rafting-fare-waived-on-all-rivers-except-the-ganges"
+
+[[fact]]
+text = "The 15 July 2022 STA notification superseded the 18 February 2020 one; the Uttarakhand transport department's documents page lists both as 'Maximum fare rates for different categories of vehicles fixed by State Transport Authority'."
+source = "Transport Department, Uttarakhand"
+url = "https://transport.uk.gov.in/documents/page/27"

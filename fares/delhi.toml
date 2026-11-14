@@ -1,0 +1,43 @@
+# Hand-collected fare facts for Delhi. Every entry has a source link and the date it was checked.
+# Nothing here is an estimate of ours. Where official figures conflict, all are listed.
+
+checked = "2026-11-13"
+summary = "Delhi's government-notified meter fares (January 2023, the latest revision found) are ₹30 for the first 1.5 km then ₹11 per km for autos, and ₹40 at meter-down then ₹17 per km (non-AC) or ₹20 per km (AC) for taxis; news reports differ on whether the taxi meter-down covers the first 1 km or 1.5 km. The common trap is airport touts who charge inflated flat fares or invent stories (one told a passenger Delhi had heavy protests) to steer tourists elsewhere. Insist on the meter, book only from the official prepaid booth or an app, and report problems to the Traffic Helpline 1095."
+
+[[rule]]
+figure = "₹30 for the first 1.5 km, then ₹11 per km"
+what = "Auto-rickshaw meter fare notified by the Delhi Transport Department in January 2023 (up from ₹25 and ₹9.50)"
+source = "ThePrint (PTI)"
+url = "https://theprint.in/india/delhi-government-raises-auto-taxi-fares-rs-11-per-km-for-autos-rs-20-for-ac-taxis-beyond-initial-charges/1309382"
+date = "January 2023"
+
+[[rule]]
+figure = "Night charge 25% of the fare (11 pm to 5 am); luggage ₹10 per large piece"
+what = "Auto-rickshaw extra charges in the same January 2023 Delhi Transport Department notification (the article's waiting charge is garbled as \"Rs 0.75 paisa per minute\", so it is left out)"
+source = "ThePrint (PTI)"
+url = "https://theprint.in/india/delhi-government-raises-auto-taxi-fares-rs-11-per-km-for-autos-rs-20-for-ac-taxis-beyond-initial-charges/1309382"
+date = "January 2023"
+
+[[rule]]
+figure = "₹40 for the first km, then ₹17 per km; waiting ₹1 per minute; luggage ₹15 per piece"
+what = "Non-AC black-and-yellow taxi fare in the January 2023 Delhi notification, as reported by ThePrint (ThePrint says the ₹40 covers the first 1 km; DTNext says 1.5 km)"
+source = "ThePrint (PTI)"
+url = "https://theprint.in/india/delhi-government-raises-auto-taxi-fares-rs-11-per-km-for-autos-rs-20-for-ac-taxis-beyond-initial-charges/1309382"
+date = "January 2023"
+
+[[rule]]
+figure = "₹40 meter-down for the initial 1.5 km (AC and non-AC), then ₹17 per km non-AC and ₹20 per km AC"
+what = "Taxi fare in the January 2023 Delhi notification, as reported by DTNext (differs from ThePrint on the meter-down distance: 1.5 km here, 1 km there)"
+source = "DTNext"
+url = "https://www.dtnext.in/news/national/delhi-govt-notifies-revised-fare-for-auto-and-taxis"
+date = "January 2023"
+
+[[fact]]
+text = "Delhi Traffic Police helpline is 011-25844444 / 1095, WhatsApp 8750871493, and grievances can be emailed to grievance.traffic@delhipolice.gov.in."
+source = "Delhi Traffic Police"
+url = "https://traffic.delhipolice.gov.in/en/node/1081"
+
+[[fact]]
+text = "Delhi Police arrested 264 touts at IGI Airport in 2023 and 540 in 2024, and warned against booking from non-prepaid taxi booths. In one case a foreign national was charged ₹2,500 for a taxi ride from the airport to Chittaranjan Park, about 15 km away."
+source = "The Tribune"
+url = "https://www.tribuneindia.com/news/delhi/540-touts-at-igi-airport-held-in-2024-police"

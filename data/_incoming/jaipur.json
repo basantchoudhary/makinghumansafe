@@ -1,0 +1,47 @@
+{"incidents": [
+  {
+    "date": "2024-12-20",
+    "place": "Jaipur-Ajmer highway, Bhankrota",
+    "activity": "scooter/road",
+    "incident_type": "fire",
+    "what_happened": "An LPG tanker crash on the Jaipur-Ajmer highway set off a fire that engulfed nearby vehicles, including a sleeper bus heading to Jaipur, killing at least seven people.",
+    "people_affected": null,
+    "deaths": 7,
+    "visitor_type": "unknown",
+    "cause": "gas tanker collision and fire",
+    "source_name": "The Tribune",
+    "source_url": "https://tribuneindia.com/news/7-dead-35-hurt-in-jaipur-fire-after-trucks-collide-outside-petrol-pump",
+    "source_date": "2024-12-20",
+    "quote": "An official said a sleeper bus headed for Jaipur from Rajsamand was behind the gas tanker when the accident occurred."
+  },
+  {
+    "date": "2026-04",
+    "place": "Amer Fort",
+    "activity": "crime",
+    "incident_type": "harassment",
+    "what_happened": "A Japanese woman tourist walking to a temple near Amer Fort was harassed by five men and escaped by running to the fort security guards.",
+    "people_affected": 1,
+    "deaths": null,
+    "visitor_type": "tourist",
+    "cause": null,
+    "source_name": "NewsX",
+    "source_url": "https://www.newsx.com/india/jaipur-fort-incident-japanese-tourist-harassed-by-five-men-cctv-footage-goes-viral-as-public-demands-justice-195025",
+    "source_date": "2026-04-07",
+    "quote": "She showed outstanding self-control when she escaped and ran to the fort security guards."
+  },
+  {
+    "date": "2026-09",
+    "place": "Maota Lake, Amer",
+    "activity": "crime",
+    "incident_type": "assault",
+    "what_happened": "A local tourist guide was stabbed during a dispute over vehicle entry near Maota Lake and Amer Fort and died in hospital.",
+    "people_affected": 1,
+    "deaths": 1,
+    "visitor_type": "local",
+    "cause": "dispute over vehicle entry",
+    "source_name": "India TV",
+    "source_url": "https://www.indiatvnews.com/rajasthan/bandh-called-in-amer-and-jaipur-in-rajasthan-to-protest-against-death-of-tourist-guide-manish-soni-2026-09-08-1053649",
+    "source_date": "2026-09-08",
+    "quote": "The seriously injured Manish was admitted to SMS Hospital where he died during treatment."
+  }
+]}

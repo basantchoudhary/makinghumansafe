@@ -1,0 +1,27 @@
+# Scam patterns for Manali (the design's "scam pattern" record).
+# Every field is taken from the cited source text; "source_text" holds the exact sentences relied on,
+# so anyone can check the record against its source. Patterns name tricks, never people.
+# The one scam record quotes the same page's "By private taxi" section.
+
+source_default = "Wikivoyage, Manali, 'Stay safe' (CC BY-SA 4.0)"
+source_url_default = "https://en.wikivoyage.org/wiki/Manali#Stay_safe"
+
+[[scam]]
+name = "Air-conditioning switched off or charged extra"
+how_it_works = "Private taxi operators turn off the air-conditioning for most of the hill journey, or demand extra pay to keep it on."
+how_to_avoid = "Confirm air-conditioning before booking."
+places = []
+source_text = "Many operators turn off air-conditioning during the majority of the hill journey, or demand to be paid extra if asked to. Best to confirm this prior to booking."
+
+# Rules from the same source (dangerous situations that are not scams)
+[[rule]]
+rule = "Don't change money on the illegal market; always get a receipt from the exchange dealer."
+source_text = "Don't exchange currency in illegal market. Always ask for receipt after doing currency trade with exchange dealer."
+
+[[rule]]
+rule = "Think carefully before paragliding: many pilots are untrained, accidents cause serious injuries, and blood availability is very limited."
+source_text = "A word of caution about paragliding in Manali. Many pilots of these parachutes are un-trained and obtain licences in the usual way any licence is obtained in India. Many a tourist visits the Lady Willingdon Mission Hospital with broken bones, sometimes protruding out, after accidents. Some para-gliders crash into innocent bystanders who end up with spinal injuries and paralysis. Serious, complicated cases with multiple organ injuries and heavy blood loss are stabilized to the extent possible and referred to either Chandigarh or Shimla. Sadly, some don't make it. Blood availability is very very limited in this hilly area. So think very carefully before deciding to paraglide in Manali."
+
+[[rule]]
+rule = "Women should avoid small lanes and by-lanes after dark and not wear jewellery on the streets."
+source_text = "Women should avoid going into small lanes and by-lanes after it is dark and make sure that you are not wearing any jewellery while walking on the streets."

@@ -1,0 +1,206 @@
+{
+ "fetched": "2026-11-13T19:37",
+ "data": {
+  "spots": {
+   "Virupaksha Temple": {
+    "x": 76.46293082,
+    "y": 15.33383017
+   },
+   "Vittala Temple": {
+    "x": 76.47518086,
+    "y": 15.34222973
+   },
+   "Matanga Hill": {
+    "x": 76.46825587,
+    "y": 15.33161457
+   },
+   "Hosapete Junction": {
+    "x": 76.38644070664569,
+    "y": 15.28671019300385
+   },
+   "Sanapur Lake": {
+    "x": 76.43210118,
+    "y": 15.35576026
+   }
+  },
+  "near": {
+   "Virupaksha Temple": {
+    "hospital": [
+     {
+      "name": "Railway Hospital",
+      "phone": "+918362344670",
+      "km": 9.8
+     },
+     {
+      "name": "Chirayu hospital hosapete",
+      "phone": "+916362567055",
+      "km": 10.4
+     }
+    ],
+    "police": [
+     {
+      "name": "Town Police Station",
+      "phone": null,
+      "km": 10.4
+     },
+     {
+      "name": "Chithabadgi Police Station Hospet",
+      "phone": "+918394230233",
+      "km": 10.7
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Ramdev Medical and General Stores",
+      "phone": "+919886095972",
+      "km": 11.1
+     }
+    ]
+   },
+   "Vittala Temple": {
+    "hospital": [
+     {
+      "name": "Railway Hospital",
+      "phone": "+918362344670",
+      "km": 11.5
+     },
+     {
+      "name": "Chirayu hospital hosapete",
+      "phone": "+916362567055",
+      "km": 12.0
+     }
+    ],
+    "police": [
+     {
+      "name": "Town Police Station",
+      "phone": null,
+      "km": 12.0
+     },
+     {
+      "name": "Chithabadgi Police Station Hospet",
+      "phone": "+918394230233",
+      "km": 12.3
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Ramdev Medical and General Stores",
+      "phone": "+919886095972",
+      "km": 12.7
+     }
+    ]
+   },
+   "Matanga Hill": {
+    "hospital": [
+     {
+      "name": "Railway Hospital",
+      "phone": "+918362344670",
+      "km": 10.2
+     },
+     {
+      "name": "Chirayu hospital hosapete",
+      "phone": "+916362567055",
+      "km": 10.7
+     }
+    ],
+    "police": [
+     {
+      "name": "Town Police Station",
+      "phone": null,
+      "km": 10.7
+     },
+     {
+      "name": "Chithabadgi Police Station Hospet",
+      "phone": "+918394230233",
+      "km": 11.0
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Ramdev Medical and General Stores",
+      "phone": "+919886095972",
+      "km": 11.4
+     }
+    ]
+   },
+   "Hosapete Junction": {
+    "hospital": [
+     {
+      "name": "Railway Hospital",
+      "phone": "+918362344670",
+      "km": 0.2
+     },
+     {
+      "name": "DrPremalatha,Malligi Hospital,Hospet.",
+      "phone": "+919483164683",
+      "km": 1.2
+     }
+    ],
+    "police": [
+     {
+      "name": "Chithabadgi Police Station Hospet",
+      "phone": "+918394230233",
+      "km": 1.2
+     },
+     {
+      "name": "Town Police Station",
+      "phone": null,
+      "km": 1.4
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Ramdev Medical and General Stores",
+      "phone": "+919886095972",
+      "km": 2.3
+     }
+    ]
+   },
+   "Sanapur Lake": {
+    "hospital": [
+     {
+      "name": "Railway Hospital",
+      "phone": "+918362344670",
+      "km": 9.1
+     },
+     {
+      "name": "Chirayu hospital hosapete",
+      "phone": "+916362567055",
+      "km": 10.1
+     }
+    ],
+    "police": [
+     {
+      "name": "Town Police Station",
+      "phone": null,
+      "km": 10.2
+     },
+     {
+      "name": "Chithabadgi Police Station Hospet",
+      "phone": "+918394230233",
+      "km": 10.2
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Ramdev Medical and General Stores",
+      "phone": "+919886095972",
+      "km": 11.1
+     }
+    ]
+   }
+  },
+  "counts": {
+   "train_station": 1,
+   "police_station": 2,
+   "lake": 1,
+   "parking": 1,
+   "hospital": 17,
+   "hindu_place_of_worship": 1,
+   "pharmacy_and_drug_store": 16,
+   "historic_site": 1
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

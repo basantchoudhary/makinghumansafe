@@ -1,0 +1,61 @@
+# Scam patterns for Jaipur (the design's "scam pattern" record).
+# Every field is taken from the cited source text; "source_text" holds the exact sentences relied on,
+# so anyone can check the record against its source. Patterns name tricks, never people.
+# Some quotes come from the same page's "By autorickshaw" section.
+
+source_default = "Wikivoyage, Jaipur, 'Stay safe' (CC BY-SA 4.0)"
+source_url_default = "https://en.wikivoyage.org/wiki/Jaipur#Stay_safe"
+
+[[scam]]
+name = "Day-hire auto 'surprise fees'"
+how_it_works = "On a day hire, the auto driver keeps asking for extra money for parking, petrol and other things, so an agreed ₹500 can end up near ₹1000."
+how_to_avoid = "Agree an 'all-in' price covering time, petrol, lunch and parking fees."
+places = ["Amber Fort", "Tiger Fort", "Jal Mahal"]
+source_text = "A common scam is drivers asking for extra money throughout the day for parking fees, petrol, and other things along the way. Always agree on an ‘all-in’ price that includes their time, petrol, lunch, and parking fees. It's not uncommon for people to agree to ₹500 and pay close to ₹1000 with all of the surprise fees."
+
+[[scam]]
+name = "'Just for photographs' drop short of the site"
+how_it_works = "The driver takes you near a site rather than to it, 'just for photographs'."
+how_to_avoid = "Agree beforehand that the driver will take you to the site itself."
+places = []
+source_text = "Lastly, make sure you and the driver agree that they will take you to the site and not close to it ‘just for photographs’."
+
+[[scam]]
+name = "Asking more than the agreed auto fare"
+how_it_works = "After the trip, some auto drivers try to make you pay more than the agreed amount."
+how_to_avoid = "Stick to the original amount, and refer any dispute to the police officers posted around the city."
+places = []
+source_text = "Some autorickshaw drivers will try to trick you into paying more than the agreed amount after the trip is over, but you should stick to the original amount decided. Police in Jaipur are very friendly, so in case you feel the autorickshaw driver is trying to misguide you or force you to hand over extra money, just refer the dispute to the police officers at various spots."
+
+[[scam]]
+name = "Commission shops and eateries"
+how_it_works = "Auto drivers steer you to shops and eating places, especially on the way to Amber Fort, that pay them commission and charge you more."
+how_to_avoid = "Bring your own list of places to eat and shop; buy souvenirs in the main shopping areas like Bapu Bazaar."
+places = ["Road to Amber Fort", "Bapu Bazaar"]
+source_text = "Also some autorickshaw drivers will tell you to buy artefacts and gifts from some shops especially some on the way to Amber Fort. These shops operate on commission to the auto driver and fleece you. If you want to buy souvenirs, get them in city's main shopping areas like Bapu Bazaar. Take along some of your own information about the eating and shopping places as the drivers have their fixed commissions at shops and eating outlets, so you might end up paying more for an item or eating at an undesirable place."
+
+[[scam]]
+name = "Auto driver's 'go for a beer' gem scam"
+how_it_works = "After a day hire, the auto driver suggests a beer and introduces you to the gem-scam ringleader."
+how_to_avoid = "Politely decline these invitations."
+places = []
+source_text = "Autorickshaw drivers have been known to work together with the gem scammers. If you hire an autorickshaw for the day, he may suggest that you 'go for a beer' afterwards, and if you accept you will be introduced to the main man on the scam attempt, usually a very charismatic person who is clearly much wealthier than his rickshaw-driving 'friend'. Use common sense: why would a rickshaw driver who earns ₹350 per day (minus petrol) want to take you to a bar where beers are ₹75? Politely decline these invitations as they are invariably more trouble than they are worth."
+
+[[scam]]
+name = "Friendly local's tea and gem resale scam"
+how_it_works = "A friendly local, sometimes a youth on a motorbike, wants to 'talk culture', invites you to tea, and later sells you fake gem stones for 'resale' at home."
+how_to_avoid = "Don't accept tea from strangers, be wary of invitations to secluded places, and politely refuse any offer."
+places = []
+source_text = "You may be approached by a local, sometimes youths on motorbikes, who claim that Westerners are unwilling to engage with the Indian people. \"Why don't tourists want to talk to me?\" or \"I am a student, I want to learn about your culture\" is a common opener. They may also try to make you feel guilty by claiming \"It is Indian culture to be help.\" If you engage them, the scam artist will invite the visitor to drink tea. Frequently, the tourist will only be told of the gem stones the next day or after dinner. Usually it is some sort of tax problem. The unwitting mark is then sold fake stones for resale in his/her home country. Even if stones are posted in front of your eyes, you are more likely to see Elvis than the gems again. As a general rule, do not accept tea from strangers, but in addition be wary of any who invite you to talk in secluded areas. The easiest is a simple and polite refusal of any offer, even if just a drink and chat."
+
+[[scam]]
+name = "Bump-and-pickpocket outside hotels"
+how_it_works = "Someone bumps into you outside your hotel to pick your pocket."
+how_to_avoid = "Check your pockets and valuables when someone bumps into you."
+places = ["Outside hotels"]
+source_text = "If you are a Westerner and a person outside your hotel bumps into you, then it's likely the person is trying to pickpocket you."
+
+# Rules from the same source (laws visitors break without knowing)
+[[rule]]
+rule = "Never agree to help anyone carry or smuggle items; smuggling is a serious offence."
+source_text = "There have been reports of smugglers trying to entice foreigners to assist in smuggling items. Under no circumstances accept: smuggling is a serious offence."

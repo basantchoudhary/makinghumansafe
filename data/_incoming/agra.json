@@ -1,0 +1,17 @@
+{"incidents": [
+  {
+    "date": "2025-04-03",
+    "place": "Shamshan Ghat Road, near Taj Mahal",
+    "activity": "crime",
+    "incident_type": "harassment",
+    "what_happened": "A Czech tourist visiting the Taj Mahal was harassed and touched inappropriately by a man on Shamshan Ghat Road, who was later arrested after a CCTV scan.",
+    "people_affected": 1,
+    "deaths": null,
+    "visitor_type": "tourist",
+    "cause": null,
+    "source_name": "Deccan Chronicle",
+    "source_url": "https://deccanchronicle.com/nation/man-held-for-harassing-czech-tourist-near-taj-mahal-1871458",
+    "source_date": "2025-04-07",
+    "quote": "The alleged incident occurred on April 3 and the arrest was made after a thorough investigation, they said."
+  }
+]}

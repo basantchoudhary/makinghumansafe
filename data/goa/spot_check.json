@@ -1,0 +1,47 @@
+{
+ "Calangute Beach": {
+  "verdict": "ok",
+  "km": 1.56,
+  "wikidata": "Q111052249"
+ },
+ "Baga Beach": {
+  "verdict": "ok",
+  "km": 1.52,
+  "wikidata": "Q26793786"
+ },
+ "Anjuna Beach": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ },
+ "Palolem Beach, Goa": {
+  "verdict": "ok",
+  "km": 0.42,
+  "wikidata": "Q2048357"
+ },
+ "Colva Beach": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ },
+ "Arambol Beach": {
+  "verdict": "ok",
+  "km": 0.24,
+  "wikidata": "Q26794355"
+ },
+ "Dudhsagar Falls": {
+  "verdict": "ok",
+  "km": 0.08,
+  "wikidata": "Q37545"
+ },
+ "Manohar International Airport": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ },
+ "Goa International Airport": {
+  "verdict": "ok",
+  "km": 0.78,
+  "wikidata": "Q1431173"
+ }
+}

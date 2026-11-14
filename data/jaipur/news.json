@@ -1,0 +1,83 @@
+{
+ "fetched": "2026-11-14T13:10",
+ "data": {
+  "articles": [
+   {
+    "title": "Civil society groups want Maharana Pratap statue, museum at original Haldighati battlefield",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/civil-society-groups-want-maharana-pratap-statue-museum-at-original-haldighati-battlefield/articleshow/135813009.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "Kota hosp ECG technician dies by suicide, note alleges workplace harassment",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/kota-hosp-ecg-technician-dies-by-suicide-note-alleges-workplace-harassment/articleshow/135812977.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261113",
+    "query": "feed"
+   },
+   {
+    "title": "26L ECI-deleted voters, with 3.2L marked dead, still on Raj SEC rolls: PUCL",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/26l-eci-deleted-voters-with-3-2l-marked-dead-still-on-raj-sec-rolls-pucl/articleshow/135812733.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261113",
+    "query": "feed"
+   },
+   {
+    "title": "Kukarkheda truck crash: Eyewitnesses claim stone attack on driver, cops cite overspeeding",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/kukarkheda-truck-crash-eyewitnesses-claim-stone-attack-on-driver-cops-cite-overspeeding/articleshow/135809469.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261113",
+    "query": "feed"
+   },
+   {
+    "title": "Speeding truck runs amok in Kukarkheda, kills two and injures three",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/speeding-truck-runs-amok-in-kukarkheda-kills-two-and-injures-three/articleshow/135809357.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261113",
+    "query": "feed"
+   },
+   {
+    "title": "Resident doc found dead in Jodhpur hostel",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/resident-doc-found-dead-in-jodhpur-hostel/articleshow/135779602.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261112",
+    "query": "feed"
+   },
+   {
+    "title": "Man killed in Sirohi over love marriage; pregnant wife, mother hurt, 5 held",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/man-killed-in-sirohi-over-love-marriage-pregnant-wife-mother-hurt-5-held/articleshow/135775942.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261112",
+    "query": "feed"
+   },
+   {
+    "title": "Jaipur revenge killing caught on camera: Assailants ram history-sheeter's Fortuner, chase him on foot and hack him to death with axe; 4 arrested",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/jaipur-revenge-killing-caught-on-camera-assailants-ram-history-sheeters-fortuner-chase-him-on-foot-and-hack-him-to-death-with-axe-4-arrested/articleshow/135766892.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261112",
+    "query": "feed"
+   },
+   {
+    "title": "3 siblings, cousin drown in Bikaner on Bhai Dooj",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/3-siblings-cousin-drown-in-bikaner-on-bhai-dooj/articleshow/135747557.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261112",
+    "query": "feed"
+   },
+   {
+    "title": "Video: Rivals ram SUV, chase history-sheeter, hack him to death with axe in Jaipur",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/rivals-ram-pickup-into-suv-hack-criminal-to-death-in-city/articleshow/135746097.cms",
+    "domain": "Times of India, Jaipur",
+    "date": "20261111",
+    "query": "feed"
+   }
+  ],
+  "log": [
+   "2026-11-13 Times of India, Jaipur: 5 relevant",
+   "2026-11-13 Times of India, Jaipur: FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)",
+   "2026-11-14 Times of India, Jaipur: 5 relevant",
+   "2026-11-14 Times of India, Jaipur: 4 relevant"
+  ]
+ }
+}

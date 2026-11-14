@@ -1,0 +1,36 @@
+# Scam patterns for Hampi (the design's "scam pattern" record).
+# Every field is taken from the cited source text; "source_text" holds the exact sentences relied on,
+# so anyone can check the record against its source. Patterns name tricks, never people.
+# The source describes no scams for Hampi, so this file holds rules only.
+
+source_default = "Wikivoyage, Hampi, 'Stay safe' (CC BY-SA 4.0)"
+source_url_default = "https://en.wikivoyage.org/wiki/Hampi#Stay_safe"
+
+# Rules from the same source (dangerous situations that are not scams)
+[[rule]]
+rule = "Watch out for monkeys; they snatch and run off with handbags, cameras and other loose belongings."
+source_text = "Visitors should be sure to watch out for monkeys. They are notorious for snatching and running away with visitors' handbags, cameras, and other loose belongings."
+
+[[rule]]
+rule = "Take extra care exploring rocky places, especially climbing over boulders."
+source_text = "Be extra careful when you choose to explore rocky places, especially when you are trying to climb over boulders."
+
+[[rule]]
+rule = "Avoid April and May (up to 43°C); in summer carry enough water to avoid dehydration."
+source_text = "Avoid travelling to Hampi during the months of April and May, as temperature can get as high as 43°C (110°F). If you are planning to visit it during summer, remember to carry sufficient water so as to avoid the risk of dehydration."
+
+[[rule]]
+rule = "The last ferry across the river leaves around 5PM."
+source_text = "Last boat around 5PM, so forget about coming back after watching the sunset on the hill."
+
+[[rule]]
+rule = "In moderate or heavy rain the dam gates open, the river rises, and you can be stranded on the other side."
+source_text = "During moderate/high rains, gates of Tungbhadra dam are opened which increases the water level and water flow in river. In that case, one might get stranded on the other side of river (Virupapur Gadde area)."
+
+[[rule]]
+rule = "Don't consume drugs or alcohol at the sacred site."
+source_text = "Out of deference to the sacred nature of the site, do not consume drugs and alcohol in the area."
+
+[[rule]]
+rule = "Don't scribble on, climb or sit on monuments."
+source_text = "Please do not scribble or climb or sit on any monuments."

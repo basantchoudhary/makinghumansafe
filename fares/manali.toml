@@ -1,0 +1,41 @@
+# Hand-collected fare facts for Manali. Every entry has a source link and the date it was checked.
+# Nothing here is an estimate of ours. Where official figures conflict, all are listed.
+
+checked = "2026-11-13"
+summary = "The only official figure we found is the Rohtang Pass permit: ₹500 permit fee plus ₹50 congestion charge per car, booked on the Himachal government portal. Manali taxi fares are set by the local taxi union, not the government, and we found the union card only as reproduced by a travel site; news reports describe drivers charging up to four times the standard rate, especially in snow. Book the Rohtang permit yourself on the official portal and ask to see the union rate card before agreeing a taxi fare."
+
+[[rule]]
+figure = "₹500 permit fee + ₹50 congestion charge per car/jeep or MUV"
+what = "Rohtang Pass tourism permit fees set on the Himachal Pradesh government permit portal (buses and heavy vehicles pay ₹100 congestion charge)"
+source = "Rohtang Permits portal, Government of Himachal Pradesh"
+url = "https://rohtangpermits.hp.gov.in/Home/InformatoryScreen"
+date = "date not shown"
+
+[[rule]]
+figure = "₹4,500 (Alto) to ₹7,500 (Crysta), permit included"
+what = "Manali to Rohtang Pass taxi fare on the Him-Aanchal taxi union card valid 15 April to 10 July 2026, as reproduced by a travel site (not confirmed with the union)"
+source = "Refuje (travel blog)"
+url = "https://refuje.com/blog/himachal-tourist-scams-guide"
+date = "June 2026"
+
+[[rule]]
+figure = "₹3,500 (Alto) to ₹5,500 (Crysta)"
+what = "Manali to Solang + Atal Tunnel + Sissu taxi fare on the same reproduced Him-Aanchal union card; local 4-hour sightseeing is ₹1,800 to ₹3,500 and Solang Valley ₹2,500 to ₹4,500"
+source = "Refuje (travel blog)"
+url = "https://refuje.com/blog/himachal-tourist-scams-guide"
+date = "June 2026"
+
+[[fact]]
+text = "The Rohtang tourism permit is valid for one day only (to and fro), is issued once per vehicle per season, and can be applied for only up to 2 days ahead."
+source = "Rohtang Permits portal, Government of Himachal Pradesh"
+url = "https://rohtangpermits.hp.gov.in/SpecialPermit/InformatoryScreen"
+
+[[fact]]
+text = "The Tribune reported tourists charged ₹5,000 for three people for a Solang Nala package and up to ₹5,000 for a 10 km 4x4 ride in snowfall, with taxi fares to Rohtang and Solang reaching four times the standard rate; Manali has no prepaid taxi or auto system."
+source = "The Tribune"
+url = "https://www.tribuneindia.com/news/himachal/touts-taxi-drivers-fleece-tourists-in-manali"
+
+[[fact]]
+text = "A June 2026 report attributed to The Tribune said taxi drivers were charging tourists up to ₹15,000 for all-inclusive adventure packages at Rohtang Pass and up to ₹20,000 for a 10 km 4x4 journey in heavy snowfall."
+source = "Newswav (from The Tribune)"
+url = "https://newswav.com/article/outrage-in-manali-over-exorbitant-taxi-fares-exploitation-of-tourists-A2606_QNlDoc"

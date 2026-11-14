@@ -1,0 +1,76 @@
+{
+ "fetched": "2026-11-14T13:10",
+ "data": {
+  "articles": [
+   {
+    "title": "Firecracker scare sends pet parrot flying, sisters announce Rs 4,000 reward",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/firecracker-scare-sends-pet-parrot-flying-sisters-announce-rs-4000-reward/articleshow/135815833.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "Krishna’s triumph over Kaliya Nag draws thousands to Tulsi Ghat",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/krishnas-triumph-over-kaliya-nag-draws-thousands-to-tulsi-ghat/articleshow/135815824.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "Army havildar’s celebratory firing injures two at  Ghazipur wedding",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/army-havildars-celebratory-firing-injures-two-at-ghazipur-wedding/articleshow/135815799.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261114",
+    "query": "feed"
+   },
+   {
+    "title": "Inactive CSC IDs misused in ₹3-cr cyber fraud; 2 held",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/inactive-csc-ids-misused-in-3-cr-cyber-fraud-2-held/articleshow/135780905.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261113",
+    "query": "feed"
+   },
+   {
+    "title": "23-year-old shot dead in busy Ghazipur market",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/23-year-old-shot-dead-in-busy-ghazipur-market/articleshow/135747348.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261112",
+    "query": "feed"
+   },
+   {
+    "title": "Monkey lands on helmet of biker, 2 killed",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/monkey-lands-on-helmet-of-biker-2-killed/articleshow/135747346.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261112",
+    "query": "feed"
+   },
+   {
+    "title": "Two girls killed after wall collapses on them",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/two-girls-killed-after-wall-collapses-on-them/articleshow/135747280.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261112",
+    "query": "feed"
+   },
+   {
+    "title": "Murder accused who surrendered at police station injured in encounter",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/murder-accused-who-surrendered-at-police-station-injured-in-encounter/articleshow/135747152.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261112",
+    "query": "feed"
+   },
+   {
+    "title": "3,881 lost, stolen mobile phones recovered in Varanasi zone in 100 days",
+    "url": "https://timesofindia.indiatimes.com/city/varanasi/3881-lost-stolen-mobile-phones-recovered-in-varanasi-zone-in-100-days/articleshow/135745324.cms",
+    "domain": "Times of India, Varanasi",
+    "date": "20261111",
+    "query": "feed"
+   }
+  ],
+  "log": [
+   "2026-11-13 Times of India, Varanasi: 6 relevant",
+   "2026-11-13 Times of India, Varanasi: FAILED (<urlopen error [Errno 8] nodename nor servname provided, or not known>)",
+   "2026-11-14 Times of India, Varanasi: 5 relevant",
+   "2026-11-14 Times of India, Varanasi: 5 relevant"
+  ]
+ }
+}

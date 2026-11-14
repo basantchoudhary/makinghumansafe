@@ -1,0 +1,27 @@
+{
+ "Virupaksha Temple": {
+  "verdict": "ok",
+  "km": 0.47,
+  "wikidata": "Q2502406"
+ },
+ "Vittala Temple": {
+  "verdict": "ok",
+  "km": 0.04,
+  "wikidata": "Q97440907"
+ },
+ "Matanga Hill": {
+  "verdict": "ok",
+  "km": 1.67,
+  "wikidata": "Q123416595"
+ },
+ "Hosapete Junction": {
+  "verdict": "ok",
+  "km": 0.07,
+  "wikidata": "Q24950624"
+ },
+ "Sanapur Lake": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ }
+}

@@ -1,0 +1,216 @@
+{
+ "fetched": "2026-11-13T19:36",
+ "data": {
+  "spots": {
+   "Hidimba Devi Temple": {
+    "x": 77.18855,
+    "y": 32.2398
+   },
+   "Mall Road": {
+    "x": 77.18898429508614,
+    "y": 32.243492541303056
+   },
+   "Solang Valley": {
+    "x": 77.1568441,
+    "y": 32.31618139
+   },
+   "Old Manali": {
+    "x": 77.177617735983,
+    "y": 32.2540386114
+   },
+   "Vashisht": {
+    "x": 77.18755811,
+    "y": 32.26562765
+   },
+   "Atal Tunnel": {
+    "x": 77.1883574,
+    "y": 32.2396896
+   },
+   "Rohtang Pass": {
+    "x": 77.2464,
+    "y": 32.3714,
+    "located_by": "Wikidata Q633415"
+   }
+  },
+  "near": {
+   "Hidimba Devi Temple": {
+    "hospital": [
+     {
+      "name": "Civil Hospital",
+      "phone": "+911902253385",
+      "km": 0.1
+     },
+     {
+      "name": "Manu Diagnostic Centre and Hospital",
+      "phone": "+919418083587",
+      "km": 0.2
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station Manali",
+      "phone": "+911902252326",
+      "km": 0.4
+     }
+    ],
+    "pharmacy": []
+   },
+   "Mall Road": {
+    "hospital": [
+     {
+      "name": "Dr. Behl's Hospital",
+      "phone": null,
+      "km": 0.2
+     },
+     {
+      "name": "Lady Willingdon Hospital",
+      "phone": "+911902252379",
+      "km": 0.2
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station Manali",
+      "phone": "+911902252326",
+      "km": 0.8
+     }
+    ],
+    "pharmacy": []
+   },
+   "Solang Valley": {
+    "hospital": [
+     {
+      "name": "Lady Willingdon Hospital",
+      "phone": "+911902252379",
+      "km": 8.4
+     },
+     {
+      "name": "Dr. Behl's Hospital",
+      "phone": null,
+      "km": 8.5
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station Manali",
+      "phone": "+911902252326",
+      "km": 9.2
+     }
+    ],
+    "pharmacy": []
+   },
+   "Old Manali": {
+    "hospital": [
+     {
+      "name": "Lady Willingdon Hospital",
+      "phone": "+911902252379",
+      "km": 1.4
+     },
+     {
+      "name": "Dr. Behl's Hospital",
+      "phone": null,
+      "km": 1.5
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station Manali",
+      "phone": "+911902252326",
+      "km": 2.1
+     }
+    ],
+    "pharmacy": []
+   },
+   "Vashisht": {
+    "hospital": [
+     {
+      "name": "Dr. Behl's Hospital",
+      "phone": null,
+      "km": 2.3
+     },
+     {
+      "name": "Lady Willingdon Hospital",
+      "phone": "+911902252379",
+      "km": 2.3
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station Manali",
+      "phone": "+911902252326",
+      "km": 3.2
+     }
+    ],
+    "pharmacy": []
+   },
+   "Atal Tunnel": {
+    "hospital": [
+     {
+      "name": "Civil Hospital",
+      "phone": "+911902253385",
+      "km": 0.1
+     },
+     {
+      "name": "Manu Diagnostic Centre and Hospital",
+      "phone": "+919418083587",
+      "km": 0.3
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station Manali",
+      "phone": "+911902252326",
+      "km": 0.4
+     }
+    ],
+    "pharmacy": []
+   },
+   "Rohtang Pass": {
+    "hospital": [
+     {
+      "name": "Dr. Behl's Hospital",
+      "phone": null,
+      "km": 15.0
+     },
+     {
+      "name": "Lady Willingdon Hospital",
+      "phone": "+911902252379",
+      "km": 15.0
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station Manali",
+      "phone": "+911902252326",
+      "km": 16.0
+     }
+    ],
+    "pharmacy": []
+   }
+  },
+  "counts": {
+   "lodging": 5,
+   "bed_and_breakfast": 2,
+   "campground": 1,
+   "sports_and_recreation": 1,
+   "police_station": 1,
+   "resort": 5,
+   "hotel": 10,
+   "travel_service": 6,
+   "cafe": 2,
+   "social_or_community_service": 1,
+   "hospital": 5,
+   "sport_or_fitness_facility": 1,
+   "hindu_place_of_worship": 2,
+   "geographic_entities": 1,
+   "mountain": 3,
+   "null": 2,
+   "historic_site": 7,
+   "restaurant": 1,
+   "shopping": 1,
+   "pharmacy_and_drug_store": 3
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

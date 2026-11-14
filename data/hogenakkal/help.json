@@ -1,0 +1,196 @@
+{
+ "fetched": "2026-11-13T19:37",
+ "data": {
+  "spots": {
+   "Hogenakkal Falls": {
+    "x": 77.77747071,
+    "y": 12.11969551
+   },
+   "Pennagaram": {
+    "x": 77.89732,
+    "y": 12.1333
+   },
+   "Dharmapuri": {
+    "x": 78.16162396502973,
+    "y": 12.135969009211342
+   }
+  },
+  "near": {
+   "Hogenakkal Falls": {
+    "hospital": [
+     {
+      "name": "Sivam Siddha Hospital",
+      "phone": "+919385537483",
+      "km": 13.4
+     },
+     {
+      "name": "Bandahalli Village General Hospital",
+      "phone": null,
+      "km": 24.6
+     }
+    ],
+    "police": [
+     {
+      "name": "Hogenakkal Police Station-Dharmapuri",
+      "phone": null,
+      "km": 0.3
+     },
+     {
+      "name": "Eriyur Police Station",
+      "phone": "+919494101063",
+      "km": 12.7
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "PMBJK Medicals Pennagaram",
+      "phone": "+919788779920",
+      "km": 11.9
+     },
+     {
+      "name": "Jersey Medicals",
+      "phone": "+918489089058",
+      "km": 42.3
+     }
+    ]
+   },
+   "Pennagaram": {
+    "hospital": [
+     {
+      "name": "Sivam Siddha Hospital",
+      "phone": "+919385537483",
+      "km": 0.3
+     },
+     {
+      "name": "Bandahalli Village General Hospital",
+      "phone": null,
+      "km": 12.0
+     }
+    ],
+    "police": [
+     {
+      "name": "Hogenakkal Police Station-Dharmapuri",
+      "phone": null,
+      "km": 12.9
+     },
+     {
+      "name": "Eriyur Police Station",
+      "phone": "+919494101063",
+      "km": 17.4
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "PMBJK Medicals Pennagaram",
+      "phone": "+919788779920",
+      "km": 16.7
+     },
+     {
+      "name": "Jersey Medicals",
+      "phone": "+918489089058",
+      "km": 29.2
+     }
+    ]
+   },
+   "Dharmapuri": {
+    "hospital": [
+     {
+      "name": "S D Hospital",
+      "phone": "+916380299499",
+      "km": 0.3
+     },
+     {
+      "name": "Sri Priya Hospital",
+      "phone": "+914342267700",
+      "km": 0.3
+     }
+    ],
+    "police": [
+     {
+      "name": "District Police Office",
+      "phone": null,
+      "km": 3.5
+     },
+     {
+      "name": "B2 Police Station",
+      "phone": null,
+      "km": 7.9
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Jersey Medicals",
+      "phone": "+918489089058",
+      "km": 1.1
+     },
+     {
+      "name": "Sugam Pharmacy",
+      "phone": "+914342266223",
+      "km": 2.7
+     }
+    ]
+   }
+  },
+  "counts": {
+   "fashion_and_apparel_store": 5,
+   "hospital": 44,
+   "preschool": 2,
+   "waterfall": 1,
+   "public_transit_facility_or_service": 2,
+   "hindu_place_of_worship": 5,
+   "professional_service": 2,
+   "b2b_office_and_professional_service": 1,
+   "religious_organization": 1,
+   "educational_service": 2,
+   "financial_service": 3,
+   "hotel": 1,
+   "movie_theater": 1,
+   "government_office": 3,
+   "diagnostics_imaging_or_lab_service": 1,
+   "sport_or_fitness_facility": 1,
+   "technical_service": 1,
+   "shipping_or_delivery_service": 1,
+   "social_or_community_service": 1,
+   "auto_dealer": 1,
+   "police_station": 4,
+   "youth_organization": 1,
+   "parking": 1,
+   "train_station": 2,
+   "high_school": 1,
+   "event_or_party_service": 2,
+   "bank_or_credit_union": 6,
+   "christian_place_of_worship": 1,
+   "corporate_or_business_office": 1,
+   "electronics_store": 8,
+   "lodging": 1,
+   "sporting_goods_store": 1,
+   "lake": 1,
+   "mountain": 1,
+   "null": 4,
+   "community_and_government": 2,
+   "medical_service": 1,
+   "elementary_school": 1,
+   "automotive_service": 2,
+   "manufacturer": 2,
+   "specialty_school": 3,
+   "natural_gas_utility_provider": 1,
+   "home_service": 1,
+   "travel_and_transportation": 1,
+   "pharmacy_and_drug_store": 9,
+   "shopping": 3,
+   "place_of_learning": 11,
+   "agricultural_service": 1,
+   "college_university": 9,
+   "hardware_home_and_garden_store": 5,
+   "vehicle_dealer": 7,
+   "stadium_arena": 1,
+   "education": 2,
+   "restaurant": 2,
+   "casual_eatery": 1,
+   "courthouse": 1,
+   "personal_or_beauty_service": 2
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

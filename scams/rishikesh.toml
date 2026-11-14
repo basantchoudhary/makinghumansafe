@@ -1,0 +1,44 @@
+# Scam patterns for Rishikesh (the design's "scam pattern" record).
+# Every field is taken from the cited source text; "source_text" holds the exact sentences relied on,
+# so anyone can check the record against its source. Patterns name tricks, never people.
+
+source_default = "Wikivoyage, Rishikesh, 'Stay safe' (CC BY-SA 4.0)"
+source_url_default = "https://en.wikivoyage.org/wiki/Rishikesh#Stay_safe"
+
+[[scam]]
+name = "Gem 'buyer abroad' hoax"
+how_it_works = "A gem store asks you to carry stones home to a 'buyer' in your own country who doesn't exist."
+how_to_avoid = "Decline and walk on."
+places = []
+source_text = "There is also a gem stone hoax going on in at least one gem store: They ask you to bring the stones to your own country to a \"buyer\" who doesn't exist."
+
+[[scam]]
+name = "Self-appointed local guides"
+how_it_works = "Local guides offering you their services are mostly con men."
+how_to_avoid = "Don't get involved with local guides who approach you."
+places = []
+source_text = "In general, try not getting involved with any local guide who is offering you services. They are mostly con men and goons."
+
+[[scam]]
+name = "Sadhus offering one-on-one tutoring"
+how_it_works = "Sadhus offer one-on-one tutoring with motives other than teaching."
+how_to_avoid = "Be wary of such offers."
+places = []
+source_text = "A holy city it may be, but Rishikesh draws more than its fair share of criminals and con men. Don't walk around alone at night and beware of the motives of sadhus offering one-on-one tutoring."
+
+# Rules from the same source (laws and dangers visitors meet without knowing)
+[[rule]]
+rule = "Don't accept unknown goods from strangers; illegal drug use is punishable by imprisonment."
+source_text = "Do not accept any unknown goods from a stranger. Use of illegal drugs remains frowned upon and punishable by imprisonment."
+
+[[rule]]
+rule = "Don't walk around alone at night; it is pitch dark after sundown, so bring a light."
+source_text = "Watch where you step: After sundown it is pitch dark, so bring a light."
+
+[[rule]]
+rule = "Food-stealing monkeys work the foot bridges; don't look them in the eye and don't carry food."
+source_text = "Watch out for the sometimes brash food stealing monkeys too. They mostly \"operate\" on and around the foot bridges, and if you look them in the eyes they become aggressive, but rarely/never attack unless you carry food."
+
+[[rule]]
+rule = "Oxen can be nervous after dark, especially on the narrow foot bridges; read their body language before passing."
+source_text = "Be alert if an ox is on your path: They are mostly harmless, but after dark they are sometimes nervous. Especially on the narrow foot bridges, you should try to read their body language before a close encounter."

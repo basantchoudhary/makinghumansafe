@@ -1,0 +1,105 @@
+# Scam patterns for Delhi (the design's "scam pattern" record).
+# Every field is taken from the cited source text; "source_text" holds the exact sentences relied on,
+# so anyone can check the record against its source. Patterns name tricks, never people.
+# Some quotes come from the same page's "By taxi" / "By auto rickshaw" sections.
+
+source_default = "Wikivoyage, Delhi, 'Stay safe' (CC BY-SA 4.0)"
+source_url_default = "https://en.wikivoyage.org/wiki/Delhi#Stay_safe"
+
+[[scam]]
+name = "Rigged taxi meters"
+how_it_works = "Taxis have meters, but the meters are often rigged, so the metered fare comes out higher than it should."
+how_to_avoid = "Agree on the price before the ride."
+places = []
+source_text = "While all are equipped with meters and should cost ₹15 for the first km ₹8.5 per km, the meters are often rigged and it's better to agree on the price in advance."
+
+[[scam]]
+name = "Non-official taxi to the wrong hotel or a 'tourist information centre'"
+how_it_works = "Non-official taxis take you to the wrong hotel or to a 'tourist information centre' that tries to sell you overpriced things."
+how_to_avoid = "Don't take non-official taxis; check the driver has official documentation."
+places = []
+source_text = "Don't take non-official taxis, they might take you to wrong hotels, or to a \"tourist information centre\", and try to sell you overpriced things. To be on the safe side, Check that whether the driver has their official documentation or not."
+
+[[scam]]
+name = "Demanding more than the agreed taxi fare"
+how_it_works = "At the end of a ride the taxi driver demands more money than was originally agreed."
+how_to_avoid = "Have the exact agreed fare ready in a pocket, take your belongings out first, hand over the money without asking for change and walk away."
+places = []
+source_text = "Taxi rides involving tourists in Delhi almost always involve minor scams. Most of the time, the driver will demand more money than originally agreed. During the ride, prepare a sum of money that is at least the agreed fare and put in your shirt pocket or comparable spot. At the destination, get your belongings out of the car first and leave the door open to slow the driver down if he follows you. Hand the money to the driver without stupidly asking for change and then immediately walk away as quickly as you can in the direction that would be most difficult for him to follow."
+
+[[scam]]
+name = "Auto rickshaw overquoting"
+how_it_works = "Auto drivers ignore the meter and haggle, often quoting far above a fair price."
+how_to_avoid = "Negotiate the price before getting in, and walk away if overquoted; another auto is usually easy to find. Complaints can go to the tourist police."
+places = []
+source_text = "Although by law the rickshaw drivers should charge according to the meter in their vehicle (₹25 for the first two km, ₹8/km after), this rate is unrealistically low and they will almost always try to haggle for price. Try to negotiate a price before entering the vehicle. As rules of thumb, expect even the shortest journey to cost ₹30-40/person regardless of the meter, but you should never need to pay over ₹150 for any trip within the city. If you're overquoted, don't be afraid to walk away. It's usually easy to find another one soon, usually with a driver who won't rip you off."
+
+[[scam]]
+name = "Extra money on a pre-paid auto coupon"
+how_it_works = "On a police-run pre-paid auto, the driver may claim more is owed even though the coupon covers the whole fare."
+how_to_avoid = "Hand over the coupon and pay nothing more."
+places = ["Pre-paid auto stands"]
+source_text = "When your journey is completed you hand the coupon to the auto driver and that's it. Nothing more to pay (despite what they may say)."
+
+[[scam]]
+name = "Unsolicited directions and travel advice"
+how_it_works = "Touts offer unasked-for directions or travel advice, and first-time visitors are easier targets."
+how_to_avoid = "Be on guard with unsolicited helpers, don't blindly rely on taxi and auto drivers' advice, and don't say it is your first time in India."
+places = []
+source_text = "Many first-time travellers to India find themselves falling victim to scams and touts, and unfortunately Delhi has a lot of both. Be on guard for anybody trying to help you by giving you unsolicited directions or travel advice. Do not blindly rely on the advice of taxi and auto drivers. If this is your first time to India, do not openly admit it, as this will make you more vulnerable to touts."
+
+[[scam]]
+name = "Pickpockets"
+how_it_works = "Pickpockets are everywhere in Delhi and go for wallets and accessible cash."
+how_to_avoid = "Keep cash, passport and cards in a money belt, carry only a few hours' cash in your wallet, and consider a decoy wallet."
+places = []
+source_text = "Carry your cash, passport, and cards in a secure money belt, with only enough cash for a few hours at a time in your wallet or other accessible place. Some recommend carrying an expendable wallet with a few ten rupee notes in it in an obvious place such as your hip pocket as a decoy to Delhi's ubiquitous pickpockets."
+
+[[scam]]
+name = "Tourist agency extra charges"
+how_it_works = "Some tourist agencies change travellers' plans or add extra commissions and fees."
+how_to_avoid = "Book flight tickets online yourself."
+places = []
+source_text = "Several tourist agencies have been known to swindle tourists, such as by changing their travel plans or charging them extra commissions and fees. You should book your flight tickets online, as all the airlines have online booking systems."
+
+[[scam]]
+name = "Fake 'ticket office for foreigners'"
+how_it_works = "Scammers near railway stations 'help' you to a 'ticket office for foreigners' some blocks away, where you are overcharged and pushed into cars and tours."
+how_to_avoid = "Book on the IRCTC website or at the Tourist Information Centre inside the transit hub; check reviews of the centre you are at."
+places = ["Railway stations"]
+source_text = "Be very careful, there are many scammers surrounding the railway stations looking for anyone on foot and out-of-place who will \"help\" you find a \"ticket office for foreigners\", usually in a nondescript building some blocks from a station, where you will be overcharged and cajoled into signing up for cars, tours, etc. When in doubt, look at reviews for the information centre you are at (for example, on Google Maps)."
+
+[[scam]]
+name = "Fake ticket check at the station entrance"
+how_it_works = "Scammers stand at the station entrance, block you and demand to see your tickets."
+how_to_avoid = "Walk in; you only need to pass a metal detector to enter a station."
+places = ["Railway stations"]
+source_text = "Some scammers will stand at the entrance to the station and physically try to block you from entering, demanding to see your tickets (never mind that you need to enter the station to buy tickets!). Remember - you should be able to enter any station just by going through a metal detector."
+
+[[scam]]
+name = "'Road blocked / hotel full' late-night taxi"
+how_it_works = "Late-night taxi drivers claim the road to your hotel is blocked or it is full, then take you to commission-paying hotels, a fake 'travel agent', or sell an overpriced car ride onward."
+how_to_avoid = "Be very wary of taxi drivers when arriving late; don't believe claims that the road is blocked or hotels are full (see the rule on arriving after midnight)."
+places = ["Airport", "Railway stations"]
+source_text = "If arriving late at night at the airport or railway station, be very wary of taxi drivers trying to scam tired and unprepared tourists. A common scam is to drive you an area where there are roadworks or a roadblock, and tell you that the path to your hotel is blocked off and it's not possible to take you there. They'll then suggest to take you to another hotel, where they receive a commission for bringing customers. They may take you to a number of hotels first which all say they are full up, so as to increase your desperation and make you pay more. There have been reports also, of bringing tourists to a \"travel agent\", who will feign ringing your booked hotel to confirm that either the way is blocked, or they are overbooked and there is no room available. If you've let on that you were only staying in Delhi for the night, they may also try to convince you, that there are no hotel rooms available anywhere, and sell you an extremely overpriced private car ride to your next destination."
+
+[[scam]]
+name = "Shortchanging"
+how_it_works = "People handling your cash, including airport taxi kiosk clerks and ticket sellers at sites and museums, shortchange you or claim you paid less."
+how_to_avoid = "Learn the money and pay the smallest sum at least equal to the price so you need no change; if disputed, write it off and walk away."
+places = ["Airport police taxi kiosk", "Historic sites", "Museums"]
+source_text = "Practically everyone who handles your cash in Delhi will shortchange you, including the clerks at the police taxi kiosk at the airport and ticket sellers at historic sites and museums. It will be your word against theirs, so the only protection is to just not need change. Learn the money as soon as possible. Count out the smallest sum you can produce that is at least the price you need to pay. If they claim you didn't pay what you actually paid, write the cash off, walk away, and go somewhere else."
+
+# Rules from the same source (dangerous situations that are not scams)
+[[rule]]
+rule = "Delhi is unsafe for women travellers: arriving at night, stay in the airport or station lounge or well-lit areas until daybreak; avoid public transport and going out at night; dress conservatively."
+source_text = "Delhi is very unsafe for women travellers, and is among the three most unsafe cities for women in India. It is considered as the 'rape capital of the world'. It is not uncommon in some areas to receive lewd remarks or even physical touching. If you are arriving into Delhi for the first time at night, stay in either the airport or station lounge, or well-lit areas until daybreak if you haven't booked a hotel yet. Never use public transport, or travel outside your hotel during the night, to avoid sexual harassment. Dress conservatively (preferably in Indian clothing so as to blend in)."
+
+[[rule]]
+rule = "Arriving after midnight, have accommodation pre-booked and arrange pick-up from the airport or station with your hotel, or at least keep its phone number."
+source_text = "If you're arriving after midnight, it is therefore highly advisable to have accommodation pre-booked and arrange pick-up from the airport or station with your hotel, or at least have the phone number with you, so that should you get lost or caught in a sticky situation you have someone reliable to call up."
+
+[[helpline]]
+number = "112"
+what = "Emergency (police, fire, ambulance, women and child helplines), Delhi"
+source_text = "In an emergency, dial 112. The number connects to police, fire, ambulance, women and child helplines."

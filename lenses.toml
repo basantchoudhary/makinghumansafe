@@ -1,0 +1,61 @@
+# Person lenses and helplines (general advice; reviewed = "pending" until the founder reviews).
+# Helpline numbers carry the official page to check them against; verified = false until checked.
+
+[lens.women]
+label = "Women"
+reviewed = "pending"
+tips = ["Share your live location with someone you trust when travelling at night.",
+        "Use the prepaid taxi counter or a booked cab; note the vehicle number before getting in.",
+        "Stay on lit, busy roads after dark; avoid empty beach stretches at night.",
+        "Call 112 in an emergency or 181 for the women's helpline."]
+
+[lens.teens]
+label = "Teens"
+reviewed = "pending"
+tips = ["Don't swim after drinking, at river mouths or outside the safe season.",
+        "Go in groups and tell someone where you're going and when you'll be back.",
+        "Wear a helmet on rented scooters."]
+
+[lens.kids]
+label = "Kids"
+reviewed = "pending"
+tips = ["Swim only at beaches with lifeguards, and only in flagged areas.",
+        "Keep children within arm's reach in the water.",
+        "Carry water and avoid the midday sun."]
+
+[lens.elderly]
+label = "Elderly"
+reviewed = "pending"
+tips = ["Know the nearest hospital to where you stay (see Help nearby).",
+        "Carry a list of medicines and an emergency contact.",
+        "Be wary of calls claiming to be police or officials asking for money: hang up and call 112."]
+
+[[helpline]]
+number = "112"
+what = "Emergency (police, fire, ambulance), all India"
+url = "https://112.gov.in/"
+verified = false
+
+[[helpline]]
+number = "1363"
+what = "India Tourism helpline for tourists"
+url = "https://tourism.gov.in/"
+verified = false
+
+[[helpline]]
+number = "181"
+what = "Women's helpline"
+url = "https://wcd.gov.in/"
+verified = false
+
+[[helpline]]
+number = "1930"
+what = "Cybercrime and online fraud"
+url = "https://cybercrime.gov.in/"
+verified = false
+
+[[helpline]]
+number = "1915"
+what = "National Consumer Helpline (overcharging, cheating)"
+url = "https://consumerhelpline.gov.in/"
+verified = false

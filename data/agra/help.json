@@ -1,0 +1,282 @@
+{
+ "fetched": "2026-11-13T19:32",
+ "data": {
+  "spots": {
+   "Taj Mahal": {
+    "x": 78.04354864,
+    "y": 27.1710817
+   },
+   "Agra Fort": {
+    "x": 78.02306676,
+    "y": 27.17761543
+   },
+   "Mehtab Bagh": {
+    "x": 78.03672,
+    "y": 27.19201
+   },
+   "Itmad-ud-Daulah": {
+    "x": 78.03098117,
+    "y": 27.19288679
+   },
+   "Agra Fort Railway Station": {
+    "x": 78.01903508843384,
+    "y": 27.182031335803373
+   },
+   "Kinari Bazaar": {
+    "x": 78.014974147081,
+    "y": 27.186311078304
+   }
+  },
+  "near": {
+   "Taj Mahal": {
+    "hospital": [
+     {
+      "name": "RK Hospital",
+      "phone": "+915624061810",
+      "km": 0.9
+     },
+     {
+      "name": "Dixit Hospital and Maternity Home",
+      "phone": "+917534000656",
+      "km": 1.0
+     }
+    ],
+    "police": [
+     {
+      "name": "Tajganj Police Station",
+      "phone": "+919454402763",
+      "km": 0.3
+     },
+     {
+      "name": "Tourist Police Station Agra",
+      "phone": "+919454402764",
+      "km": 2.1
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Rakesh Medical wholesale Kundol Agra",
+      "phone": "+919760097195",
+      "km": 1.6
+     },
+     {
+      "name": "Kushwaha Medical Store",
+      "phone": "+919837255302",
+      "km": 1.9
+     }
+    ]
+   },
+   "Agra Fort": {
+    "hospital": [
+     {
+      "name": "Dr. MB Hospital ",
+      "phone": "+919422597639",
+      "km": 1.2
+     },
+     {
+      "name": "New Apollo Children Hospital ",
+      "phone": "+918279533615",
+      "km": 1.2
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Chowki-Balu Ganj Agra",
+      "phone": "+919415366320",
+      "km": 1.2
+     },
+     {
+      "name": "Police Station Mahila Thana",
+      "phone": null,
+      "km": 1.3
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Universal Medical Store",
+      "phone": "+917417563682",
+      "km": 1.0
+     },
+     {
+      "name": "S. Medical Store Kacheri Ghat Agra",
+      "phone": "+919319848768",
+      "km": 1.2
+     }
+    ]
+   },
+   "Mehtab Bagh": {
+    "hospital": [
+     {
+      "name": "R.G. Hospital & Medical Research Institute",
+      "phone": "+919258101394",
+      "km": 0.7
+     },
+     {
+      "name": "Suresh Pathak Hospital - Shamsabad, Agra",
+      "phone": "+919548536492",
+      "km": 1.1
+     }
+    ],
+    "police": [
+     {
+      "name": "Thana Atmaduddoula Janpad Agra",
+      "phone": null,
+      "km": 0.4
+     },
+     {
+      "name": "Police Station-Etmad-Ud-Daula",
+      "phone": "+915622280009",
+      "km": 0.4
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Bharatiya Jan Aushadhi Kendra",
+      "phone": "+918979444363",
+      "km": 1.4
+     },
+     {
+      "name": "S. Medical Store Kacheri Ghat Agra",
+      "phone": "+919319848768",
+      "km": 1.5
+     }
+    ]
+   },
+   "Itmad-ud-Daulah": {
+    "hospital": [
+     {
+      "name": "Suresh Pathak Hospital - Shamsabad, Agra",
+      "phone": "+919548536492",
+      "km": 0.5
+     },
+     {
+      "name": "Suresh Pathak Hospital - Shamsabad, Agra",
+      "phone": "+919548536492",
+      "km": 0.8
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station-Etmad-Ud-Daula",
+      "phone": "+915622280009",
+      "km": 0.3
+     },
+     {
+      "name": "RPF Police Station",
+      "phone": null,
+      "km": 0.4
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "S. Medical Store Kacheri Ghat Agra",
+      "phone": "+919319848768",
+      "km": 1.0
+     },
+     {
+      "name": "Shree ram medical store",
+      "phone": null,
+      "km": 1.4
+     }
+    ]
+   },
+   "Agra Fort Railway Station": {
+    "hospital": [
+     {
+      "name": "Dr Amit Singhal - S.S Hospital",
+      "phone": "+917505024641",
+      "km": 0.9
+     },
+     {
+      "name": "Dr. MB Hospital ",
+      "phone": "+919422597639",
+      "km": 1.0
+     }
+    ],
+    "police": [
+     {
+      "name": "Thana Kotwali",
+      "phone": "+919454402745",
+      "km": 0.7
+     },
+     {
+      "name": "Police Chowki Seb Ka Bazar",
+      "phone": "+919412526773",
+      "km": 0.7
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Universal Medical Store",
+      "phone": "+917417563682",
+      "km": 0.3
+     },
+     {
+      "name": "Shree ram medical store",
+      "phone": null,
+      "km": 0.8
+     }
+    ]
+   },
+   "Kinari Bazaar": {
+    "hospital": [
+     {
+      "name": "Dr Amit Singhal - S.S Hospital",
+      "phone": "+917505024641",
+      "km": 0.3
+     },
+     {
+      "name": "Sn Medical College Area",
+      "phone": "+915622260353",
+      "km": 0.5
+     }
+    ],
+    "police": [
+     {
+      "name": "Thana Kotwali",
+      "phone": "+919454402745",
+      "km": 0.1
+     },
+     {
+      "name": "Police Chowki Seb Ka Bazar",
+      "phone": "+919412526773",
+      "km": 0.1
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Universal Medical Store",
+      "phone": "+917417563682",
+      "km": 0.3
+     },
+     {
+      "name": "Agra Life Line Pharmacy",
+      "phone": "+918077365286",
+      "km": 0.4
+     }
+    ]
+   }
+  },
+  "counts": {
+   "hospital": 371,
+   "travel_service": 26,
+   "museum": 1,
+   "hotel": 9,
+   "fashion_and_apparel_store": 1,
+   "rail_facility_or_service": 1,
+   "resort": 3,
+   "monument": 7,
+   "arts_and_entertainment": 2,
+   "community_and_government": 2,
+   "null": 1,
+   "rental_service": 1,
+   "police_station": 47,
+   "pharmacy_and_drug_store": 105,
+   "historic_site": 9,
+   "restaurant": 1,
+   "fire_station": 1
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

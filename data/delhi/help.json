@@ -1,0 +1,516 @@
+{
+ "fetched": "2026-11-13T19:31",
+ "data": {
+  "spots": {
+   "India Gate": {
+    "x": 77.2293,
+    "y": 28.6129,
+    "located_by": "Wikidata Q245347"
+   },
+   "Red Fort": {
+    "x": 77.2403,
+    "y": 28.6558,
+    "located_by": "Wikidata Q45957"
+   },
+   "Qutub Minar": {
+    "x": 77.18550267,
+    "y": 28.5244726
+   },
+   "Chandni Chowk": {
+    "x": 77.2339,
+    "y": 28.656,
+    "located_by": "Wikidata Q3236763"
+   },
+   "Connaught Place": {
+    "x": 77.224453,
+    "y": 28.62979
+   },
+   "Paharganj": {
+    "x": 77.2141,
+    "y": 28.6414,
+    "located_by": "Wikidata Q3270707"
+   },
+   "New Delhi Railway Station": {
+    "x": 77.2128669,
+    "y": 28.637943
+   },
+   "Indira Gandhi International Airport": {
+    "x": 77.0833,
+    "y": 28.5574,
+    "located_by": "Wikidata Q821275"
+   },
+   "Hauz Khas Village": {
+    "x": 77.1951126,
+    "y": 28.55410435
+   },
+   "Humayun's Tomb": {
+    "x": 77.25078117,
+    "y": 28.59328744
+   }
+  },
+  "near": {
+   "India Gate": {
+    "hospital": [
+     {
+      "name": "St. Stephens Hospital, Community Health Department",
+      "phone": null,
+      "km": 1.4
+     },
+     {
+      "name": "East West Medical Centre",
+      "phone": "+911124690429",
+      "km": 1.8
+     }
+    ],
+    "police": [
+     {
+      "name": "Tilak Marg Police Station",
+      "phone": "+911123385571",
+      "km": 0.9
+     },
+     {
+      "name": "Parliament Street Police Station",
+      "phone": null,
+      "km": 2.0
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "VM Medicare Pharmacy",
+      "phone": "+918377887733",
+      "km": 1.5
+     },
+     {
+      "name": "Bureau Of Pharma Psus Of India",
+      "phone": "+911123752476",
+      "km": 2.0
+     }
+    ]
+   },
+   "Red Fort": {
+    "hospital": [
+     {
+      "name": "Manoj Hospital ",
+      "phone": null,
+      "km": 0.8
+     },
+     {
+      "name": "Kasturba Hospital",
+      "phone": "+911123282914",
+      "km": 0.8
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Chowki Fawara Thana Kotwali",
+      "phone": null,
+      "km": 0.8
+     },
+     {
+      "name": "Police Station Kotwali",
+      "phone": "+911123953442",
+      "km": 0.9
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "V.S. Pharmaceuticals",
+      "phone": "+911123863033",
+      "km": 0.6
+     },
+     {
+      "name": "Drug Point",
+      "phone": "+919999667884",
+      "km": 0.6
+     }
+    ]
+   },
+   "Qutub Minar": {
+    "hospital": [
+     {
+      "name": "Jaysons Hospital",
+      "phone": "+919899790530",
+      "km": 0.5
+     },
+     {
+      "name": "Hospital",
+      "phone": "+919212397781",
+      "km": 0.6
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Post Mehrauli",
+      "phone": null,
+      "km": 0.2
+     },
+     {
+      "name": "Mehrauli Police Station",
+      "phone": "+911126643200",
+      "km": 0.6
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Monika Helpline Pharmacy",
+      "phone": "+918081648739",
+      "km": 0.8
+     },
+     {
+      "name": "Pharmacy",
+      "phone": "+917827945690",
+      "km": 0.9
+     }
+    ]
+   },
+   "Chandni Chowk": {
+    "hospital": [
+     {
+      "name": "Manoj Hospital ",
+      "phone": null,
+      "km": 0.7
+     },
+     {
+      "name": "Kasturba Hospital",
+      "phone": "+911123282914",
+      "km": 0.9
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Chowki Fawara Thana Kotwali",
+      "phone": null,
+      "km": 0.2
+     },
+     {
+      "name": "Police Station Kotwali",
+      "phone": "+911123953442",
+      "km": 0.4
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Hero Pharmacy",
+      "phone": "+919212521858",
+      "km": 0.0
+     },
+     {
+      "name": "V.S. Pharmaceuticals",
+      "phone": "+911123863033",
+      "km": 0.1
+     }
+    ]
+   },
+   "Connaught Place": {
+    "hospital": [
+     {
+      "name": "Ujala Cygnus Hospitals",
+      "phone": null,
+      "km": 0.3
+     },
+     {
+      "name": "Escorts Hospital & Research Centre",
+      "phone": "+911292416096",
+      "km": 0.3
+     }
+    ],
+    "police": [
+     {
+      "name": "Parliament Street Police Station",
+      "phone": null,
+      "km": 0.9
+     },
+     {
+      "name": "Delhi Police Headquarter",
+      "phone": null,
+      "km": 1.3
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Bureau Of Pharma Psus Of India",
+      "phone": "+911123752476",
+      "km": 0.5
+     },
+     {
+      "name": "Apollo Hospital Enterprise",
+      "phone": "+918179267988",
+      "km": 0.8
+     }
+    ]
+   },
+   "Paharganj": {
+    "hospital": [
+     {
+      "name": "AD Medicare Hospital",
+      "phone": null,
+      "km": 0.1
+     },
+     {
+      "name": "Krishna Cafe Hospitality Service",
+      "phone": null,
+      "km": 0.1
+     }
+    ],
+    "police": [
+     {
+      "name": "New Delhi Railway Police Station",
+      "phone": null,
+      "km": 0.5
+     },
+     {
+      "name": "Police Station Pahar Ganj",
+      "phone": "+911123524746",
+      "km": 0.7
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Kuhu Pharmacy",
+      "phone": "+911145671000",
+      "km": 0.3
+     },
+     {
+      "name": "Apollo Hospital Enterprise",
+      "phone": "+918179267988",
+      "km": 0.9
+     }
+    ]
+   },
+   "New Delhi Railway Station": {
+    "hospital": [
+     {
+      "name": "Northern Railway Central Hospital",
+      "phone": "+911123367657",
+      "km": 0.2
+     },
+     {
+      "name": "Lady hardinge medical College gate no 5",
+      "phone": null,
+      "km": 0.3
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station Pahar Ganj",
+      "phone": "+911123524746",
+      "km": 0.9
+     },
+     {
+      "name": "New Delhi Railway Police Station",
+      "phone": null,
+      "km": 0.9
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Kuhu Pharmacy",
+      "phone": "+911145671000",
+      "km": 0.4
+     },
+     {
+      "name": "Apollo Hospital Enterprise",
+      "phone": "+918179267988",
+      "km": 0.6
+     }
+    ]
+   },
+   "Indira Gandhi International Airport": {
+    "hospital": [
+     {
+      "name": "Grace Hospital",
+      "phone": "+919313859291",
+      "km": 2.2
+     },
+     {
+      "name": "Asian Multispeciality Hospital",
+      "phone": "+918470981765",
+      "km": 2.8
+     }
+    ],
+    "police": [
+     {
+      "name": "Indira Gandhi International Airport Police Station",
+      "phone": "+911125652325",
+      "km": 0.9
+     },
+     {
+      "name": "Sector 23 Dwarka Police Station",
+      "phone": null,
+      "km": 2.6
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Kaushik Medical Store",
+      "phone": "+919810225614",
+      "km": 1.2
+     },
+     {
+      "name": "Good Life Pharmacy",
+      "phone": "+919717953737",
+      "km": 3.0
+     }
+    ]
+   },
+   "Hauz Khas Village": {
+    "hospital": [
+     {
+      "name": "Maanmati Hospital",
+      "phone": "+918130665547",
+      "km": 0.8
+     },
+     {
+      "name": "Orthopedics and Spine Hospital",
+      "phone": "+918800570462",
+      "km": 0.9
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station Hauz Khas",
+      "phone": "+911126867878",
+      "km": 1.4
+     },
+     {
+      "name": "Police Line South",
+      "phone": "+911126857726",
+      "km": 1.4
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Cygnus Orthocare Pharmacy",
+      "phone": "+911141324036",
+      "km": 0.9
+     },
+     {
+      "name": "Vandana Pharmacy",
+      "phone": "+911141656747",
+      "km": 1.0
+     }
+    ]
+   },
+   "Humayun's Tomb": {
+    "hospital": [
+     {
+      "name": "Hazrat Inayat Khan Health Centre",
+      "phone": "+911124353006",
+      "km": 0.9
+     },
+     {
+      "name": "St. Stephens Hospital, Community Health Department",
+      "phone": null,
+      "km": 1.6
+     }
+    ],
+    "police": [
+     {
+      "name": "Barakhamba Road Police Station",
+      "phone": null,
+      "km": 0.6
+     },
+     {
+      "name": "Nizamuddin Police Station",
+      "phone": "+911124355758",
+      "km": 0.7
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Sammu Medical Store",
+      "phone": "+919213843674",
+      "km": 0.6
+     },
+     {
+      "name": "Rt PHARMA",
+      "phone": "+918800229059",
+      "km": 1.0
+     }
+    ]
+   }
+  },
+  "counts": {
+   "monument": 8,
+   "null": 20,
+   "specialty_school": 3,
+   "real_estate_service": 10,
+   "shopping_mall": 9,
+   "manufacturer": 2,
+   "travel_and_transportation": 2,
+   "food_and_beverage_store": 6,
+   "medical_service": 1,
+   "arts_and_entertainment": 1,
+   "b2b_service": 1,
+   "fast_food_restaurant": 3,
+   "community_and_government": 2,
+   "public_fountain": 1,
+   "surgery": 1,
+   "campus_building": 1,
+   "hospital": 3686,
+   "fashion_and_apparel_store": 29,
+   "travel_service": 13,
+   "cafe": 12,
+   "emergency_or_urgent_care_facility": 13,
+   "public_transit_facility_or_service": 2,
+   "hotel": 37,
+   "resort": 22,
+   "hindu_place_of_worship": 5,
+   "diagnostics_imaging_or_lab_service": 3,
+   "warehouse_club_store": 1,
+   "professional_service": 7,
+   "movie_theater": 1,
+   "technical_service": 2,
+   "social_or_community_service": 1,
+   "lounge": 1,
+   "animal_and_pet_store": 1,
+   "educational_service": 2,
+   "shipping_or_delivery_service": 1,
+   "bar": 2,
+   "b2b_office_and_professional_service": 2,
+   "personal_care_and_beauty_store": 1,
+   "auto_dealer": 1,
+   "vehicle_service": 1,
+   "museum": 1,
+   "sport_or_fitness_facility": 2,
+   "music_venue": 1,
+   "food_and_drink": 1,
+   "police_station": 458,
+   "train_station": 20,
+   "muslim_place_of_worship": 5,
+   "lodging": 2,
+   "event_or_party_service": 2,
+   "bank_or_credit_union": 8,
+   "electronics_store": 4,
+   "parking": 2,
+   "christian_place_of_worship": 3,
+   "health_care": 1,
+   "corporate_or_business_office": 4,
+   "sporting_goods_store": 2,
+   "art_gallery": 1,
+   "atm": 2,
+   "wellness_service": 2,
+   "flowers_and_gifts_store": 1,
+   "high_school": 1,
+   "pharmacy_and_drug_store": 1953,
+   "fire_station": 39,
+   "airport": 9,
+   "historic_site": 15,
+   "restaurant": 27,
+   "shopping": 7,
+   "telecommunications_service": 1,
+   "education": 1,
+   "coffee_shop": 3,
+   "place_of_worship": 1,
+   "media_service": 1,
+   "b2b_transportation_and_storage_service": 1,
+   "hardware_home_and_garden_store": 3,
+   "park": 4,
+   "college_university": 2,
+   "place_of_learning": 1,
+   "vehicle_dealer": 1
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

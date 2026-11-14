@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>in.dataagents.safety-intelligence</string>
+  <key>WorkingDirectory</key><string>__REPO__</string>
+  <key>ProgramArguments</key><array><string>__REPO__/scripts/refresh.sh</string></array>
+  <key>EnvironmentVariables</key><dict><key>PATH</key><string>/opt/homebrew/bin:/usr/bin:/bin</string></dict>
+  <key>StartCalendarInterval</key><array>
+    <dict><key>Hour</key><integer>1</integer><key>Minute</key><integer>10</integer></dict>
+    <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>10</integer></dict>
+    <dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>10</integer></dict>
+    <dict><key>Hour</key><integer>19</integer><key>Minute</key><integer>10</integer></dict>
+  </array>
+  <key>StandardOutPath</key><string>__REPO__/data/refresh.log</string>
+  <key>StandardErrorPath</key><string>__REPO__/data/refresh.log</string>
+  <key>LowPriorityIO</key><true/>
+  <key>Nice</key><integer>10</integer>
+</dict></plist>

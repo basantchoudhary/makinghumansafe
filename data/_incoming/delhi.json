@@ -1,0 +1,62 @@
+{"incidents": [
+  {
+    "date": "2025-02-15",
+    "place": "New Delhi Railway Station",
+    "activity": "other",
+    "incident_type": "death",
+    "what_happened": "A crowd crush on the platforms of New Delhi Railway Station during the Maha Kumbh travel rush killed 18 people.",
+    "people_affected": null,
+    "deaths": 18,
+    "visitor_type": "unknown",
+    "cause": "overcrowding of train passengers",
+    "source_name": "Business Today",
+    "source_url": "https://www.businesstoday.in/india/story/18-dead-several-injured-in-stampede-at-new-delhi-station-amid-maha-kumbh-rush-464791-2025-02-16",
+    "source_date": "2025-02-16",
+    "quote": "A stampede at New Delhi Railway Station claimed 18 lives, including 14 women, on Saturday night"
+  },
+  {
+    "date": "2025-03-11",
+    "place": "Mahipalpur",
+    "activity": "crime",
+    "incident_type": "assault",
+    "what_happened": "A British woman visiting Delhi alleged she was sexually assaulted at a hotel in Mahipalpur near the airport, and police arrested the main accused.",
+    "people_affected": 1,
+    "deaths": null,
+    "visitor_type": "tourist",
+    "cause": null,
+    "source_name": "ThePrint",
+    "source_url": "https://theprint.in/india/delhi-cops-arrest-man-for-rape-of-british-woman-hotel-staffer-held-for-molesting-her/2546420/",
+    "source_date": "2025-03-13",
+    "quote": "A British woman has alleged that she was sexually assaulted at a hotel in Delhi's Mahipalpur Tuesday"
+  },
+  {
+    "date": "2025-11-10",
+    "place": "Red Fort metro station",
+    "activity": "other",
+    "incident_type": "death",
+    "what_happened": "A car exploded at a traffic signal near the Red Fort metro station on a busy evening, killing at least eight people and injuring 24.",
+    "people_affected": 24,
+    "deaths": 8,
+    "visitor_type": "unknown",
+    "cause": "car explosion",
+    "source_name": "DT Next (PTI)",
+    "source_url": "https://www.dtnext.in/amp/story/news/national/delhi-blast-in-parked-car-near-red-fort-852620",
+    "source_date": "2025-11-10",
+    "quote": "Twenty-four people were injured in the blast that took place on a busy evening when the area was milling with people."
+  },
+  {
+    "date": "2026-06-03",
+    "place": "Flourish Stay B&B, Hauz Rani",
+    "activity": "other",
+    "incident_type": "fire",
+    "what_happened": "A fire at a budget B&B in Hauz Rani near Max Hospital killed 21 guests and others, including 11 foreign nationals.",
+    "people_affected": null,
+    "deaths": 21,
+    "visitor_type": "tourist",
+    "cause": "building fire; no fire safety certificate",
+    "source_name": "Deccan Chronicle",
+    "source_url": "https://deccanchronicle.com/nation/21-killed-in-south-delhi-hotel-fire-several-foreign-nationals-among-dead-1961040",
+    "source_date": "2026-06-03",
+    "quote": "the dead included 10 Indians and 11 foreign nationals, nine from African countries and two from Turkmenistan"
+  }
+]}

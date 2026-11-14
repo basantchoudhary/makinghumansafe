@@ -1,0 +1,65 @@
+# Scam patterns for Goa (the design's "scam pattern" record).
+# Every field is taken from the cited source text; "source_text" holds the exact sentences relied on,
+# so anyone can check the record against its source. Patterns name tricks, never people.
+
+source_default = "Wikivoyage, Goa, 'Stay safe' (CC BY-SA 4.0)"
+source_url_default = "https://en.wikivoyage.org/wiki/Goa#Stay_safe"
+
+[[scam]]
+name = "Taxi overcharging"
+how_it_works = "Taxi fares in Goa are contested: official per-km figures conflict, so visitors are often quoted far above the notified rate, especially at airports."
+how_to_avoid = "Buy a prepaid slip at the airport counter (not from touts) and agree the fare before getting in. See the fare facts for what the rules say."
+places = ["Airports", "Beach taxi stands"]
+fare_link = true
+source = "Fare sources listed under 'Taxi fares' (The Goan, ThePrint, Goemkarponn, Team-BHP)"
+source_url = "#fares"
+source_text = "See the fares table: figures from ₹21 to ₹49 per km, each linked to its source."
+
+[[scam]]
+name = "'Disco with girls' guide scam"
+how_it_works = "Guides offer to take visitors to a disco with attractive girls who will dance with them; the clubs take their money and get them into trouble."
+how_to_avoid = "Don't follow guides to cheap disco clubs."
+places = ["Calangute", "Baga", "Anjuna"]
+source_text = "Beware of guides offering to take you to a disco with lots of attractive girls, who will dance with you. This is a scam. Don't go to cheap disco clubs, which are mostly in Calangute, Baga and Anjuna. They steal your money and put you in trouble."
+
+[[scam]]
+name = "'Ear doctors'"
+how_it_works = "Men are approached by 'ear doctors' who 'produce' a tiny creature supposedly from the ear and then sell a 'cure'."
+how_to_avoid = "Decline and walk on."
+places = []
+source_text = "Beware the 'ear doctors', who are more likely to accost men than women and 'produce' some tiny revolting creature, supposedly from your ear, for which they then offer a 'cure'."
+
+[[scam]]
+name = "'Train is fully booked' travel agents"
+how_it_works = "Travel agents claim a train is fully booked so you hire a costlier car, which pays them a kickback."
+how_to_avoid = "Check availability yourself on the Indian Railways website."
+places = []
+source_text = "Don't trust travel agents who say that a train is fully booked. They want you to hire a car that costs more and provides them a kickback. A better thing to do is to check out the details yourself on the Indian Railways website."
+
+[[scam]]
+name = "'Free ride for a prize' offers"
+how_it_works = "Offers of a free ride in return for a 'prize'."
+how_to_avoid = "Decline."
+places = []
+source_text = "Any scam that offers a free ride in return for a \"prize\" will be guaranteed to disappoint."
+
+[[scam]]
+name = "Pickpockets and 'snack' strangers on trains"
+how_it_works = "On trains, pickpockets and strangers offering snacks or tea target travellers; shoes and valuables get stolen in non-AC coaches."
+how_to_avoid = "Keep valuables on you, don't take off your shoes in non-AC coaches, and decline food from strangers."
+places = ["Trains"]
+source_text = "While travelling by train, beware of pickpockets, strangers who offer you snacks or tea, and other such people who make trains in India a regular hunting ground. Do not take off your shoes in non-A/C coaches, or they might get stolen."
+
+# Rules from the same source (laws visitors break without knowing)
+[[rule]]
+rule = "Drinking alcohol in public places in Goa is illegal; drink only inside licensed premises such as a registered beach shack or bar. Offenders can be fined or jailed."
+source_text = "It is illegal to drink alcohol in public places in Goa. If you drink alcohol outside the limits of a licensed premises, you could be fined or given a prison sentence."
+
+[[rule]]
+rule = "The safe swimming period in Goa is November to early May; avoid river mouths, especially at low tide."
+source_text = "Avoid the mouths of all rivers (such as the Mandovi River at Miramar), especially at low tide when the flow of the water current out to sea is the strongest. And just don't get into the water at all in the off season. The safe swimming period in Goa is November to early May."
+
+[[helpline]]
+number = "108"
+what = "Medical emergencies (ambulance), Goa"
+source_text = "Goa now has a number — 108 for medical emergencies."

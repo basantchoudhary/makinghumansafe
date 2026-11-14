@@ -1,0 +1,48 @@
+# Hand-collected fare facts for Hogenakkal. Every entry has a source link and the date it was checked.
+# Nothing here is an estimate of ours. Where official figures conflict, all are listed.
+
+checked = "2026-11-13"
+summary = "The coracle fare at Hogenakkal is set by the government, but reports differ: older DT Next reports give ₹750 for four people, while 2025 and 2026 reports give ₹1,500 for a family of four or a round trip for five. The common overcharging pattern is oarsmen, especially unregistered ones, asking far above the fixed fare and taking longer routes. Settle the fare at the official counter before boarding and use only registered coracles. We found no sourced oil-massage rate."
+
+[[rule]]
+figure = "₹1,500 per coracle (family of four)"
+what = "Coracle ride fare at Hogenakkal; ₹200 of it is collected by the administration and the rest goes to the coracle operators"
+source = "DT Next"
+url = "https://www.dtnext.in/news/tamilnadu/hogenakkal-oarsmen-stare-at-parched-river"
+date = "July 2026"
+
+[[rule]]
+figure = "₹1,500 per coracle (round trip for five people)"
+what = "Official cap for a standard round trip on the Chinnar–Kothikal–Manalmedu circuit, as stated by registered operators"
+source = "DT Next"
+url = "https://www.dtnext.in/news/tamilnadu/unregistered-coracle-operators-putting-tourists-at-risk-in-hogenakkal-855078"
+date = "December 2025"
+
+[[rule]]
+figure = "₹750 per coracle (four persons)"
+what = "Government fixed charge for a coracle ride; ₹600 for the oarsmen and ₹150 to the administration (older figure, apparently since revised)"
+source = "DT Next"
+url = "https://www.dtnext.in/news/tamilnadu/prolonged-flooding-hits-hogenakkal-coracle-services-hard"
+date = "August 2022"
+
+[[rule]]
+figure = "₹750 per ride (four persons)"
+what = "Fare for a single coracle, which may carry only four persons; operator's share ₹600, rest to the government (older figure)"
+source = "DT Next"
+url = "https://www.dtnext.in/tamilnadu/2018/07/30/ban-on-coracle-ride-hits-operators-in-hogenakkal"
+date = "July 2018"
+
+[[fact]]
+text = "Registered operators say unregistered coracle operators overcharge tourists and take them beyond the permitted routes."
+source = "DT Next"
+url = "https://www.dtnext.in/news/tamilnadu/unregistered-coracle-operators-putting-tourists-at-risk-in-hogenakkal-855078"
+
+[[fact]]
+text = "On the Karnataka side of Hogenakkal, coracle riders were reported demanding ₹4,000 from tourists, against the ₹750 the Tamil Nadu government had set; the report says Karnataka had not fixed any coracle rate and tourists were threatened with being left midway in the water."
+source = "Mysooru News"
+url = "https://www.mysoorunews.com/?p=37834"
+
+[[fact]]
+text = "When rides resumed in 2015 under the Dharmapuri collector's supervision, life jackets were made mandatory, each coracle limited to four passengers or 400 kg, and children under 10 and people over 70 barred."
+source = "The News Minute"
+url = "https://www.thenewsminute.com/article/coracle-rides-are-back-hogenakkal-new-regulations-35382"

@@ -1,0 +1,35 @@
+# Scam patterns for Agra (the design's "scam pattern" record).
+# Every field is taken from the cited source text; "source_text" holds the exact sentences relied on,
+# so anyone can check the record against its source. Patterns name tricks, never people.
+# Some quotes come from the same page's "By taxi" / "By rickshaw" sections.
+
+source_default = "Wikivoyage, Agra, 'Stay safe' (CC BY-SA 4.0)"
+source_url_default = "https://en.wikivoyage.org/wiki/Agra#Stay_safe"
+
+[[scam]]
+name = "Station touts hiding the official taxi stand"
+how_it_works = "Locals at the railway station looking for gullible tourists won't help you find the government-authorised taxi stand."
+how_to_avoid = "Look for the government-authorised taxi stand yourself, or negotiate with a driver directly."
+places = ["Railway station"]
+source_text = "There is usually a government-authorised taxi stand; however, it may be hard to find, and the locals present at the station (looking for gullible tourists) will not help you find it."
+
+[[scam]]
+name = "Inflated first quotes"
+how_it_works = "Rickshaw fares and prices quoted to foreigners start far above the going rate; things are usually available at about 40% of the first quote."
+how_to_avoid = "Agree fares clearly in advance and bargain hard."
+places = []
+source_text = "Remember to agree on fares clearly in advance. Foreigners should bargain everywhere and bargain hard. Generally, things are available at 40% of the initially quoted fares."
+
+[[scam]]
+name = "Cheap replicas sold as goods"
+how_it_works = "Most items on sale are cheap replicas of originals and won't last."
+how_to_avoid = "Think twice before buying; don't buy the toys."
+places = []
+source_text = "If you decide to purchase anything, beware that most items are cheap replicas of original items and not likely to last long. The toys are really poorly put together so do not buy them!"
+
+[[scam]]
+name = "Carpet 'bait and switch'"
+how_it_works = "Some carpet dealers post a different carpet from the one you bought."
+how_to_avoid = "Carry what you buy yourself rather than having it posted."
+places = []
+source_text = "Some unscrupulous dealers of carpets use the classic 'bait and switch'. If you buy something, insist on carrying it yourself else what arrives in the post might not be what you bargained for."

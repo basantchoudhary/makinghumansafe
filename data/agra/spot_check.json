@@ -1,0 +1,32 @@
+{
+ "Taj Mahal": {
+  "verdict": "ok",
+  "km": 0.46,
+  "wikidata": "Q9141"
+ },
+ "Agra Fort": {
+  "verdict": "ok",
+  "km": 0.28,
+  "wikidata": "Q171857"
+ },
+ "Mehtab Bagh": {
+  "verdict": "ok",
+  "km": 1.46,
+  "wikidata": "Q12061618"
+ },
+ "Itmad-ud-Daulah": {
+  "verdict": "ok",
+  "km": 0.06,
+  "wikidata": "Q1318766"
+ },
+ "Agra Fort Railway Station": {
+  "verdict": "ok",
+  "km": 0.14,
+  "wikidata": "Q4693674"
+ },
+ "Kinari Bazaar": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ }
+}

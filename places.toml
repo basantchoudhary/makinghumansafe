@@ -1,0 +1,144 @@
+# Places covered. Each place has spots (popular points) located from Overture place records by name,
+# never typed in by hand. Help nearby is computed around each spot.
+
+[goa]
+name = "Goa"
+activities = ["swimming", "water_sports", "waterfall", "road", "nightlife", "crime", "scam"]            # activity cards shown (keys of activities.toml)
+country = "IN"
+state = "Goa"
+districts = ["North Goa", "South Goa"]            # incidents must be in one of these (model names it, rule checks it)
+bbox = [73.65, 14.88, 74.35, 15.82]          # west, south, east, north (whole state)
+wikivoyage_page = "Goa"
+wikivoyage_sections = ["Stay safe", "By taxi", "Emergency services"]
+alert_keywords = ["goa"]                       # NDMA SACHET alerts mentioning these
+news_queries = ['"goa" taxi tourists', '"goa" drowned beach', '"goa" tourists cheated', '"calangute"', '"baga"']
+# Local publisher RSS feeds (latest items only, so fetch often and keep history). Headlines + links only.
+news_feeds = [["Times of India, Goa", "https://timesofindia.indiatimes.com/rssfeeds/3012535.cms"],
+              ["Herald Goa", "https://www.heraldgoa.in/rss"]]
+spots = ["Calangute Beach", "Baga Beach", "Anjuna Beach", "Palolem Beach, Goa", "Colva Beach", "Arambol Beach", "Dudhsagar Falls", "Manohar International Airport", "Goa International Airport"]
+
+# ---- Tier 1c places (13 Nov 2026). Dudhsagar stays inside Goa (it is a Goa spot). ----
+# news_require: for feeds that cover a wider area, an item must also mention one of these.
+# Spots are matched to Overture names; misses are listed in data/<place>/help.json with candidates.
+
+[delhi]
+name = "Delhi"
+activities = ["road", "nightlife", "crime", "scam"]            # activity cards shown (keys of activities.toml)
+country = "IN"
+state = "Delhi"
+bbox = [76.84, 28.40, 77.35, 28.88]
+wikivoyage_page = "Delhi"
+wikivoyage_sections = ["Stay safe", "By taxi", "By auto rickshaw", "By cycle rickshaw"]
+alert_keywords = ["delhi"]
+news_queries = ['"delhi" tourist robbed', '"delhi" tourist cheated', '"paharganj" tourist', '"delhi" foreign tourist harassed']
+news_feeds = [["Times of India, Delhi", "https://timesofindia.indiatimes.com/rssfeeds/-2128839596.cms"]]
+news_require = ["tourist", "foreigner", "foreign national", "paharganj", "connaught", "chandni chowk", "india gate", "red fort", "qutub", "airport", "railway station", "auto", "cab", "taxi", "metro"]
+spots = ["India Gate", "Red Fort", "Qutub Minar", "Chandni Chowk", "Connaught Place", "Paharganj", "New Delhi Railway Station", "Indira Gandhi International Airport", "Hauz Khas Village", "Humayun's Tomb"]
+
+[agra]
+name = "Agra"
+activities = ["road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
+country = "IN"
+state = "Uttar Pradesh"
+districts = ["Agra"]            # incidents must be in one of these (model names it, rule checks it)
+bbox = [77.90, 27.10, 78.12, 27.25]
+wikivoyage_page = "Agra"
+wikivoyage_sections = ["Stay safe", "By rickshaw", "By taxi"]
+alert_keywords = ["agra"]
+news_queries = ['"agra" tourist cheated', '"taj mahal" tourist touts', '"agra" foreign tourist']
+news_feeds = [["Times of India, Agra", "https://timesofindia.indiatimes.com/rssfeeds/36768514.cms"]]
+spots = ["Taj Mahal", "Agra Fort", "Mehtab Bagh", "Itmad-ud-Daulah", "Agra Fort Railway Station", "Kinari Bazaar"]
+spot_alias = {"Kinari Bazaar" = "The Kinari Bazaar"}
+
+[jaipur]
+name = "Jaipur"
+activities = ["road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
+country = "IN"
+state = "Rajasthan"
+districts = ["Jaipur"]            # incidents must be in one of these (model names it, rule checks it)
+bbox = [75.70, 26.78, 75.95, 27.02]
+wikivoyage_page = "Jaipur"
+wikivoyage_sections = ["Stay safe", "By autorickshaw", "By cycle-rickshaw", "By taxi"]
+alert_keywords = ["jaipur"]
+news_queries = ['"jaipur" tourist cheated', '"jaipur" gem scam', '"jaipur" foreign tourist']
+news_feeds = [["Times of India, Jaipur", "https://timesofindia.indiatimes.com/rssfeeds/3012544.cms"]]
+spots = ["Hawa Mahal", "Amer Fort", "City Palace", "Nahargarh Fort", "Jantar Mantar", "Jaipur Junction", "Jaipur International Airport", "Johari Bazaar"]
+spot_alias = {"Jaipur Junction" = "Jaipur Junction Train Station"}
+
+[varanasi]
+name = "Varanasi"
+activities = ["swimming", "water_sports", "road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
+country = "IN"
+state = "Uttar Pradesh"
+districts = ["Varanasi"]            # incidents must be in one of these (model names it, rule checks it)
+bbox = [82.92, 25.24, 83.06, 25.40]
+wikivoyage_page = "Varanasi"
+wikivoyage_sections = ["Stay safe", "By rickshaw", "By car or taxi"]
+alert_keywords = ["varanasi"]
+news_queries = ['"varanasi" tourist cheated', '"varanasi" ghat drowned', '"varanasi" boat tourists']
+news_feeds = [["Times of India, Varanasi", "https://timesofindia.indiatimes.com/rssfeeds/3947071.cms"]]
+spots = ["Dashashwamedh Ghat", "Manikarnika Ghat", "Assi Ghat", "Kashi Vishwanath Temple", "Sarnath", "Varanasi Junction"]
+spot_alias = {"Varanasi Junction" = "Varanasi Junction railway station"}
+
+[rishikesh]
+name = "Rishikesh"
+activities = ["swimming", "water_sports", "waterfall", "road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
+country = "IN"
+state = "Uttarakhand"
+districts = ["Dehradun", "Tehri", "Pauri"]            # incidents must be in one of these (model names it, rule checks it)
+bbox = [78.15, 30.03, 78.42, 30.20]
+wikivoyage_page = "Rishikesh"
+wikivoyage_sections = ["Stay safe", "By rickshaw", "By taxi", "Outdoor activities"]
+alert_keywords = ["rishikesh", "dehradun", "tehri", "pauri"]
+news_queries = ['"rishikesh" drowned ganga', '"rishikesh" rafting accident', '"rishikesh" tourist']
+news_feeds = [["Times of India, Dehradun", "https://timesofindia.indiatimes.com/rssfeeds/36768551.cms"]]
+news_require = ["rishikesh", "rafting", "shivpuri", "laxman jhula", "ram jhula", "muni ki reti", "tapovan", "neelkanth"]
+spots = ["Laxman Jhula", "Ram Jhula", "Triveni Ghat", "Parmarth Niketan", "Shivpuri", "Jolly Grant Airport"]
+
+[manali]
+name = "Manali"
+activities = ["water_sports", "waterfall", "road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
+country = "IN"
+state = "Himachal Pradesh"
+districts = ["Kullu", "Lahaul"]            # incidents must be in one of these (model names it, rule checks it)
+bbox = [77.08, 32.18, 77.30, 32.42]
+wikivoyage_page = "Manali"
+wikivoyage_sections = ["Stay safe", "By private taxi"]
+alert_keywords = ["manali", "kullu", "lahaul"]
+news_queries = ['"manali" tourists accident', '"manali" paragliding', '"manali" tourist', '"solang" tourist']
+news_feeds = [["Times of India, Shimla", "https://timesofindia.indiatimes.com/rssfeeds/48264012.cms"]]
+news_require = ["manali", "kullu", "solang", "rohtang", "atal tunnel", "lahaul", "sissu", "paraglid", "beas"]
+spots = ["Hidimba Devi Temple", "Mall Road", "Solang Valley", "Old Manali", "Vashisht", "Atal Tunnel", "Rohtang Pass"]
+spot_alias = {"Mall Road" = "The Mall Road Manali", "Vashisht" = "Vashisht temple", "Atal Tunnel" = "Atal Tunnel Rohtang"}
+
+[hampi]
+name = "Hampi"
+activities = ["swimming", "water_sports", "waterfall", "road", "crime", "scam"]            # activity cards shown (keys of activities.toml)
+country = "IN"
+state = "Karnataka"
+districts = ["Vijayanagara", "Vijayanagar", "Ballari", "Bellary", "Koppal"]            # incidents must be in one of these (model names it, rule checks it)
+bbox = [76.35, 15.20, 76.55, 15.38]
+wikivoyage_page = "Hampi"
+wikivoyage_sections = ["Stay safe", "By auto rickshaw", "By boat", "Respect"]
+alert_keywords = ["hampi", "vijayanagara", "ballari", "bellary", "koppal"]
+news_queries = ['"hampi" tourist', '"hampi" drowned', '"hampi" tourists attacked']
+news_feeds = [["Times of India, Hubballi", "https://timesofindia.indiatimes.com/rssfeeds/3942695.cms"]]
+news_require = ["hampi", "hosapete", "hospet", "anegundi", "sanapur", "virupapur", "tungabhadra", "vijayanagara"]
+spots = ["Virupaksha Temple", "Vittala Temple", "Matanga Hill", "Hosapete Junction", "Sanapur Lake"]
+spot_alias = {"Virupaksha Temple" = "Virupaksha Temple Hampi", "Vittala Temple" = "Vijaya Vittala Temple", "Hosapete Junction" = "Hosapete Junction railway station"}
+
+[hogenakkal]
+name = "Hogenakkal"
+activities = ["swimming", "water_sports", "waterfall", "crime", "scam"]            # activity cards shown (keys of activities.toml)
+country = "IN"
+state = "Tamil Nadu"
+districts = ["Dharmapuri", "Krishnagiri", "Chamarajanagar"]            # incidents must be in one of these (model names it, rule checks it)
+bbox = [77.65, 11.95, 78.20, 12.25]
+wikivoyage_page = "Hogenakkal"
+wikivoyage_sections = ["Stay safe", "Get around", "Do"]
+alert_keywords = ["hogenakkal", "dharmapuri", "krishnagiri"]
+news_queries = ['"hogenakkal"', '"hogenakkal" drowned', '"hogenakkal" coracle']
+news_feeds = [["Times of India, Salem", "https://timesofindia.indiatimes.com/rssfeeds/48263967.cms"]]
+news_require = ["hogenakkal", "dharmapuri", "pennagaram", "cauvery", "coracle"]
+spots = ["Hogenakkal Falls", "Pennagaram", "Dharmapuri"]
+spot_alias = {"Pennagaram" = "Pennagaram Bus Station"}

@@ -1,0 +1,300 @@
+{
+ "fetched": "2026-11-13T19:34",
+ "data": {
+  "spots": {
+   "Dashashwamedh Ghat": {
+    "x": 83.0103,
+    "y": 25.3072,
+    "located_by": "Wikidata Q3630402"
+   },
+   "Manikarnika Ghat": {
+    "x": 83.01414995,
+    "y": 25.31107095
+   },
+   "Assi Ghat": {
+    "x": 83.00647716,
+    "y": 25.28928941
+   },
+   "Kashi Vishwanath Temple": {
+    "x": 83.00981065,
+    "y": 25.31000001
+   },
+   "Sarnath": {
+    "x": 83.0214,
+    "y": 25.3811,
+    "located_by": "Wikidata Q324394"
+   },
+   "Varanasi Junction": {
+    "x": 82.985811,
+    "y": 25.326486
+   }
+  },
+  "near": {
+   "Dashashwamedh Ghat": {
+    "hospital": [
+     {
+      "name": "Janta Sewa Hospital",
+      "phone": null,
+      "km": 1.1
+     },
+     {
+      "name": "Shah Nursing Home",
+      "phone": null,
+      "km": 1.1
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station-Rajendra Ghat",
+      "phone": "+919454404348",
+      "km": 0.0
+     },
+     {
+      "name": "Dashashwamedh Police Station",
+      "phone": "+915422412650",
+      "km": 0.6
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Chakravarty Medical Store",
+      "phone": "+919936441215",
+      "km": 0.2
+     },
+     {
+      "name": "New National Medicals",
+      "phone": "+919335963143",
+      "km": 0.5
+     }
+    ]
+   },
+   "Manikarnika Ghat": {
+    "hospital": [
+     {
+      "name": "Shah Nursing Home",
+      "phone": null,
+      "km": 0.7
+     },
+     {
+      "name": "Shri Shiv Prasad Gupt Divisional District Hospital",
+      "phone": "+915423291535",
+      "km": 1.1
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station-Chowk Varanasi",
+      "phone": "+915422413777",
+      "km": 0.4
+     },
+     {
+      "name": "Chowk Thana Varanasi",
+      "phone": null,
+      "km": 0.4
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Chakravarty Medical Store",
+      "phone": "+919936441215",
+      "km": 0.5
+     },
+     {
+      "name": "New National Medicals",
+      "phone": "+919335963143",
+      "km": 0.8
+     }
+    ]
+   },
+   "Assi Ghat": {
+    "hospital": [
+     {
+      "name": "Alok Health Care Home",
+      "phone": "+915422313187",
+      "km": 0.2
+     },
+     {
+      "name": "Oriana Best Multispeciality Hospital",
+      "phone": "+919517544488",
+      "km": 0.6
+     }
+    ],
+    "police": [
+     {
+      "name": "Durgakund Police Chowki",
+      "phone": "+919454404378",
+      "km": 0.8
+     },
+     {
+      "name": "Lanka Police Station (Sub Inspector)",
+      "phone": "+919454404390",
+      "km": 0.9
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Abhishek Medical Store",
+      "phone": "+919807557886",
+      "km": 0.6
+     },
+     {
+      "name": "Manas Medical Store",
+      "phone": "+919415816785",
+      "km": 0.8
+     }
+    ]
+   },
+   "Kashi Vishwanath Temple": {
+    "hospital": [
+     {
+      "name": "Shah Nursing Home",
+      "phone": null,
+      "km": 0.8
+     },
+     {
+      "name": "Tandon Multispeciality Hospital",
+      "phone": "+915422402240",
+      "km": 1.1
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Station-Rajendra Ghat",
+      "phone": "+919454404348",
+      "km": 0.3
+     },
+     {
+      "name": "Dashashwamedh Police Station",
+      "phone": "+915422412650",
+      "km": 0.4
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Chakravarty Medical Store",
+      "phone": "+919936441215",
+      "km": 0.2
+     },
+     {
+      "name": "New National Medicals",
+      "phone": "+919335963143",
+      "km": 0.4
+     }
+    ]
+   },
+   "Sarnath": {
+    "hospital": [
+     {
+      "name": "Vinayanjali Healthcare",
+      "phone": "+919838983379",
+      "km": 1.1
+     },
+     {
+      "name": "Hari Bandhu Hospital",
+      "phone": "+919415085373",
+      "km": 1.4
+     }
+    ],
+    "police": [
+     {
+      "name": "Police Thana Sarnath",
+      "phone": null,
+      "km": 1.2
+     },
+     {
+      "name": "Haldharpur Police Station",
+      "phone": null,
+      "km": 3.0
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Samyak Pharmacy",
+      "phone": "+919450553104",
+      "km": 1.8
+     },
+     {
+      "name": "Aid Pharmacy",
+      "phone": "+918009330004",
+      "km": 2.9
+     }
+    ]
+   },
+   "Varanasi Junction": {
+    "hospital": [
+     {
+      "name": "Vijayanjali Hospital varanasi",
+      "phone": "+919415088935",
+      "km": 0.3
+     },
+     {
+      "name": "Laxmi Medical and Surgical Care Centre",
+      "phone": "+919452991905",
+      "km": 0.4
+     }
+    ],
+    "police": [
+     {
+      "name": "Adarsh Thana Cantt",
+      "phone": null,
+      "km": 0.9
+     },
+     {
+      "name": "Sigra Police Station",
+      "phone": "+915422220255",
+      "km": 1.0
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "A Square pharma",
+      "phone": "+918090216676",
+      "km": 0.9
+     },
+     {
+      "name": "Nidhi Medicals",
+      "phone": "+917668002777",
+      "km": 1.0
+     }
+    ]
+   }
+  },
+  "counts": {
+   "hospital": 470,
+   "hotel": 18,
+   "hindu_place_of_worship": 6,
+   "cafe": 2,
+   "religious_organization": 3,
+   "resort": 8,
+   "fashion_and_apparel_store": 1,
+   "government_office": 1,
+   "preschool": 3,
+   "museum": 1,
+   "shipping_or_delivery_service": 1,
+   "null": 2,
+   "arts_and_entertainment": 1,
+   "buddhist_place_of_worship": 6,
+   "specialty_school": 1,
+   "community_center": 2,
+   "police_station": 31,
+   "event_or_party_service": 1,
+   "health_care": 2,
+   "sports_and_recreation": 1,
+   "train_station": 1,
+   "specialized_medical_facility": 1,
+   "lodging": 2,
+   "art_gallery": 1,
+   "pharmacy_and_drug_store": 87,
+   "historic_site": 5,
+   "family_service": 1,
+   "personal_or_beauty_service": 1,
+   "place_of_learning": 1,
+   "shopping": 1,
+   "casual_eatery": 1,
+   "restaurant": 2,
+   "park": 1
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

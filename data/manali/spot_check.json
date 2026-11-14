@@ -1,0 +1,46 @@
+{
+ "Hadimba Temple": {
+  "verdict": "far",
+  "km": 2.98,
+  "wikidata": "Q15223867",
+  "lat": 32.248,
+  "lon": 77.1805
+ },
+ "Hidimba Devi Temple": {
+  "verdict": "ok",
+  "km": 1.19,
+  "wikidata": "Q15223867"
+ },
+ "Mall Road": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ },
+ "Solang Valley": {
+  "verdict": "ok",
+  "km": 0.18,
+  "wikidata": "Q12069422"
+ },
+ "Old Manali": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ },
+ "Vashisht": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ },
+ "Atal Tunnel": {
+  "verdict": "no reference",
+  "km": null,
+  "wikidata": null
+ },
+ "Rohtang Pass": {
+  "verdict": "far",
+  "km": 16.5,
+  "wikidata": "Q633415",
+  "lat": 32.3714,
+  "lon": 77.2464
+ }
+}
