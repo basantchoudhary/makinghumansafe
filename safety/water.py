@@ -172,6 +172,15 @@ def block(key, cfg, alerts, helpd, incois=None, notices=None):
                '<p class="src">How this is decided: Danger if an official sea warning or an INCOIS red warning is in force; High in the monsoon, with a weather warning or an INCOIS orange alert; High also when an official swimming ban is in force; Take care with an INCOIS yellow watch, '
                'past incidents here, or in May; otherwise Low. We never say "safe".</p>')
 
+    # 2b. The calm-sea trap (from our wave backtest)
+    bt = ROOT / "data" / "_research" / "wave_backtest.json"
+    if bt.exists() and cfg.get("coastal", True):
+        sm = json.loads(bt.read_text())["summary"]
+        out.append(f'<div class="note"><b>A calm sea is not a safe sea.</b> We checked the waves on the day of {sm["incidents_tested"]} beach drownings in India: '
+                   f'those days were no rougher than usual (only {round(sm["share_top_quarter_wave"] * 100)}% were among the roughest days). '
+                   'Most people drowned on ordinary-looking days, pulled by rip currents or a sudden wave. '
+                   '<a href="https://github.com/basantchoudhary/makinghumansafe/blob/main/data/_research/wave_backtest.json">How we checked</a></div>')
+
     # 3. Live alerts
     out.append('<h2 id="live">Live now</h2>')
     colors = {"red": "alert", "orange": "alert", "yellow": "note"}
