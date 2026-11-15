@@ -56,7 +56,7 @@ def score(f):
     s += 4 if f.get("value") is not None else 0
     s += 3 if re.search("death|fatal|killed", (f.get("metric") or "") + " " + (f.get("statement") or ""), re.I) else 0
     s += 1 if (f.get("unit") or "") == "%" else 0
-    s += 2 if OFFICIAL.search(f.get("source_name") or "") else 0
+    s += 2 if re.match(r"https?://(?:[a-z0-9-]+\.)*(?:gov\.in|nic\.in)", f.get("source_url") or "", re.I) else 0
     return (s, period_key(f.get("period")))
 
 
@@ -435,6 +435,8 @@ def render(place, topic, place_name):
     cfgs = tomllib.loads((_pl.Path(__file__).resolve().parent.parent / "places.toml").read_text())
     incs = road_mod.incidents_for(cfgs[place]) if topic == "road" and place in cfgs else []
     out.append(themes.render(place, topic, fs, incs, score))
+    from safety import checklist
+    out.append(checklist.render(place, topic, fs, incs))
     if syn.get("insights"):
         out.append('<details><summary><b>Connections across the findings</b> (3 insights)</summary><div class="insights">' + "".join(
             f'<div class="insight"><span class="num">{i}</span><p>{e(x["text"])}</p><p class="src">From: '
