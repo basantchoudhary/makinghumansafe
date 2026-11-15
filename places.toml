@@ -296,6 +296,7 @@ bbox = [77.45, 12.80, 77.80, 13.15]
 help_pad_deg = 0.05
 road_stats = "data/_road/bengaluru_stats.json"
 blackspots = "data/_road/bengaluru_blackspots.json"
+road_findings = "data/_road/bengaluru_findings.json"
 wikivoyage_page = "Bangalore"
 wikivoyage_sections = ["Stay safe", "Get around", "By auto rickshaw"]
 alert_keywords = ["bengaluru", "bangalore"]

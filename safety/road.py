@@ -73,7 +73,12 @@ def block(key, cfg):
         s.append(f"Our checked news records here: {len(incs)} road incident{'s' if len(incs) != 1 else ''}"
                  + (f", mostly {VEH.get(vehs.most_common(1)[0][0], vehs.most_common(1)[0][0])} riders" if vehs else "") + ".")
     s.append("Wear a helmet (rider and pillion), never use the phone while driving, and slow down in rain: potholes hide under water.")
-    out.append(f'<div class="summary"><p>{" ".join(s)}</p><p class="hand" style="font-size:1.35rem;margin:6px 0 0">Someone is waiting for you.</p></div>')
+    if not cfg.get("road_findings"):  # pages with a story use its narration instead of this short summary
+        out.append(f'<div class="summary"><p>{" ".join(s)}</p><p class="hand" style="font-size:1.35rem;margin:6px 0 0">Someone is waiting for you.</p></div>')
+
+    # 1b. The story: mind map, narration, right-now line (from an official report's findings)
+    if cfg.get("road_findings"):
+        out.append(story(cfg, stats))
 
     # 2. Trend chart
     if stats:
@@ -119,4 +124,70 @@ def block(key, cfg):
                "<li><b>Night:</b> dip high beams, watch for unlit parked vehicles, and don't drive tired.</li>"
                "<li><b>Junctions and exits:</b> expect late lane changes and two-wheelers filtering between lanes.</li>"
                "<li><b>Crash ahead?</b> Park well off the road with hazard lights, call 112, and don't move an injured person unless there is fire or traffic danger.</li></ul>")
+    return "\n".join(out)
+
+
+def mind_map(F, cur, w=980, h=620):
+    """Hand-drawn mind map: one centre fact, five branches, each with 2-3 short facts from the official report."""
+    from safety.doodles import WOBBLE, p, t, person, palm
+    cx, cy = w / 2, h / 2
+    inner = p(f"M{cx - 150},{cy - 48} h300 v96 h-300 z", fill="#fdecec", w=2.6)
+    txt = t(cx, cy - 8, f"{cur} killed, Jan to Oct 2026", 30, 700, "middle") + t(cx, cy + 26, "about 3 every day in Bengaluru", 22, 400, "middle")
+    branches = [
+        ("WHEN", 170, 95, "#e8f0fc", [f"{F['night_6pm_2am_pct']}% of deaths: 6 pm to 2 am", f"worst day: {F['peak_day']}", "weekends peak"]),
+        ("WHO", w - 170, 95, "#fff4e5", [f"{F['motorcyclist_pct']}% two-wheeler riders", f"{F['pedestrian_pct']}% people walking", f"over {F['men_pct_over']}% men; {F['age_20_29_pct']}% aged 20 to 29"]),
+        ("WHERE", 150, h - 150, "#e4f3ed", ["North: over one-third of deaths", "Yelahanka, Devanahalli, Kengeri,", "Whitefield, K R Puram"]),
+        ("WHY", w - 160, h - 150, "#f3e8fd", [f"{F['speeding_pct']}% of vehicles over the limit", f"only {F['helmet_correct_pct']}% helmets worn right", f"{F['hit_and_run_pct']}% hit-and-run"]),
+        ("YOU CAN", cx, h - 40, "#ffffff", [f"clasp the helmet; rear seat belts ({F['seatbelt_rear_pct']}% wear them)", "", ""]),
+    ]
+    for name, x, y, fill, lines in branches:
+        if name == "YOU CAN":
+            inner += p(f"M{cx},{cy + 48} L{cx},{y - 52}", w=2.2)
+            inner += p(f"M{x - 340},{y - 50} h680 v44 h-680 z", fill="#e4f3ed", w=2.2)
+            txt += t(x, y - 20, f"YOU CAN: clasp your helmet, belt up in the back seat ({F['seatbelt_rear_pct']}% do), slow down at night", 18, 700, "middle")
+            continue
+        inner += p(f"M{cx + (-150 if x < cx else 150)},{cy + (-30 if y < cy else 30)} Q{(cx + x) / 2},{(cy + y) / 2 + (-30 if y < cy else 30)} {x + (110 if x < cx else -110)},{y}", w=2.2)
+        inner += p(f"M{x - 135},{y - 62} h270 v124 h-270 z", fill=fill, w=2.2)
+        txt += t(x, y - 34, name, 24, 700, "middle")
+        for k, ln in enumerate(lines):
+            txt += t(x, y - 6 + k * 24, ln, 17, 400, "middle")
+    return (f'<svg class="doodle" viewBox="0 0 {w} {h}" role="img" aria-label="Mind map of road deaths in Bengaluru: {cur} killed January to October 2026. '
+            f'When: {F["night_6pm_2am_pct"]}% between 6 pm and 2 am, worst on Sundays. Who: {F["motorcyclist_pct"]}% two-wheeler riders, {F["pedestrian_pct"]}% pedestrians, mostly young men. '
+            f'Where: North division, Yelahanka, Devanahalli, Kengeri, Whitefield, K R Puram. Why: speeding, helmets not worn correctly, hit-and-run. '
+            f'You can: clasp your helmet, belt up in the back, slow down at night.">{WOBBLE}<g filter="url(#wob)">{inner}</g>{txt}</svg>')
+
+
+def story(cfg, stats):
+    """'A day on the roads': mind map, narration and a 'right now' line, from an official report's findings."""
+    fp = ROOT / cfg["road_findings"]
+    if not fp.exists():
+        return ""
+    src = json.loads(fp.read_text()); F = src["findings"]
+    cur = [y for y in stats["years"] if y["killed"]][-1]["killed"] if stats else F["deaths_2023"]
+    nar = (f"Every day, about three people die on Bengaluru's roads. This year, {cur} people were killed by October, more than in any full year since 2021. "
+           f"Most were riding a two-wheeler ({F['motorcyclist_pct']} in every 100) or walking ({F['pedestrian_pct']} in every 100), and most were young men. "
+           f"Danger peaks after dark: {F['night_6pm_2am_pct']} of every 100 deaths happen between 6 in the evening and 2 at night, and Sunday is the worst day. "
+           f"Three things kill most: speed (about a third of vehicles drive over the limit), helmets that are not clasped (only {F['helmet_correct_pct']} in 100 riders wear one correctly), "
+           f"and drivers who flee: {F['hit_and_run_pct']} in every 100 deaths are hit-and-run. "
+           f"In cars, almost nobody in the back wears a seat belt: {F['seatbelt_rear_pct']} in 100. Clasp your helmet, belt up in every seat, and slow down at night.")
+    out = ['<h2 id="road-story">A day on Bengaluru\'s roads</h2>', mind_map(F, cur),
+           f'<div class="summary"><p>{e(nar)}</p><p class="hand" style="font-size:1.35rem;margin:6px 0 0">Someone is waiting for you.</p></div>',
+           # "Right now": chosen in the browser from the visitor's local time (nothing is sent anywhere)
+           '<div id="now-line" class="alert" hidden></div>'
+           f"""<script>(function(){{const d=new Date(),h=d.getHours(),wd=d.getDay(),el=document.getElementById('now-line'),m=[];
+if(h>=18||h<2)m.push('<b>Right now is the most dangerous time.</b> {F["night_6pm_2am_pct"]}% of Bengaluru\\'s road deaths happen between 6 pm and 2 am. Slow down, dip high beams, watch for people walking.');
+if(wd===0||wd===6)m.push('<b>It\\'s the weekend.</b> Road deaths peak on weekends, especially Sunday.');
+if(h>=14&&h<16)m.push('<b>Afternoon:</b> the hours when the fewest riders wear their helmet correctly ({F["helmet_2_4pm_pct"]}%). Clasp it.');
+if(m.length){{el.innerHTML=m.join('<br>');el.hidden=false;}}}})();</script>""",
+           '<h3>What the official report found</h3><ul>'
+           f"<li><b>When:</b> {F['night_6pm_2am_pct']}% of deaths between 6 pm and 2 am; weekends peak, especially Sunday.</li>"
+           f"<li><b>Who:</b> {F['motorcyclist_pct']}% two-wheeler riders, {F['pedestrian_pct']}% pedestrians; over {F['men_pct_over']}% men; {F['age_20_29_pct']}% aged 20 to 29.</li>"
+           f"<li><b>Where:</b> North division has over a third of deaths. Most deaths around Yelahanka, Devanahalli, Kengeri, Whitefield and K R Puram. "
+           f"Highest-risk spots: {e(', '.join(F['top_locations']))}.</li>"
+           f"<li><b>Why:</b> {F['speeding_pct']}% of vehicles over the speed limit ({F['expressway_speeding_pct']}% on expressways); only {F['helmet_correct_pct']}% wear helmets correctly; "
+           f"seat belts {F['seatbelt_all_pct']}% overall and {F['seatbelt_rear_pct']}% in the back; child seats {F['child_restraint_pct']}%; {F['hit_and_run_pct']}% of deaths hit-and-run; "
+           f"{F['single_vehicle_deaths']} deaths with no other vehicle involved, mostly two-wheelers hitting a fixed object.</li>"
+           f"<li><b>Attitudes:</b> only {F['know_speed_limit_pct']}% of drivers knew the city's speed limits, and {F['comfortable_speeding_pct']}% felt comfortable speeding.</li></ul>"
+           f'<p class="src">Source: <a href="{e(src["source_url"])}">{e(src["source"])}</a>, {e(src["page"])}; figures are for {src["year"]}. '
+           f"The 2026 total is from Bengaluru Traffic Police's yearly statistics. Checked {e(src['checked'])}.</p>"]
     return "\n".join(out)
