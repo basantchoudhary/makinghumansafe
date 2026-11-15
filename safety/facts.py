@@ -47,7 +47,7 @@ MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", 
 def canonical_metric(f):
     """Standard names for core measures, so the same measure from different sources can be compared (fixed rules)."""
     m, u = (f.get("metric") or "").lower(), (f.get("unit") or "").lower()
-    if u in ("%", "percent") or "share" in m or "rate" in m or "per" in m:
+    if u in ("%", "percent") or re.search(r"share|rate|per_|record|increase|decrease|change|average|_day", m):  # derived measures keep their names
         return f.get("metric")
     if re.search(r"child|school|near|within|zone|junction|spot|corridor|night|day|age|male|female|men|women|helmet|hit_and_run|single|"
                  r"weekend|month|hour|division|station|ward|road_|highway|expressway|ring|drunk|speed", m):

@@ -8,6 +8,8 @@ Chhotu (child), and Palm (the open-hand guide who says "wait").
 Each public function returns an <svg> string with a written description (aria-label + <title>).
 """
 
+import re
+
 INK = "#1d2129"
 SEA, SAND, LEAF, WARN, SKY, PAPER, SUN, ROSE, LILAC = ("#cfe3fb", "#fbe7b5", "#d4efe2", "#e34948", "#eef5fe",
                                                         "#ffffff", "#ffd36b", "#fde2e2", "#e6e0f8")
@@ -35,9 +37,19 @@ def dot(x, y, r=1.8):
     return f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" fill="{INK}"/>'
 
 
-def t(x, y, s, size=20, weight=400, anchor="start", color=INK):
-    return (f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{weight}" text-anchor="{anchor}" '
-            f'style="fill:{color}">{s}</text>')
+READABLE = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif"
+
+
+def t(x, y, s, size=20, weight=400, anchor="start", color=INK, hand=None):
+    """Text inside drawings. Handwriting only for big, short labels (size 22+ and under 30 characters);
+    everything people must read uses a plain upright font, slightly smaller so it fits the same space."""
+    plain_len = len(re.sub(r"<[^>]+>|&[a-z#0-9]+;", "x", str(s)))
+    use_hand = hand if hand is not None else (size >= 22 and plain_len <= 30)
+    if use_hand:
+        return (f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{weight}" text-anchor="{anchor}" '
+                f'style="fill:{color}">{s}</text>')
+    return (f'<text x="{x}" y="{y}" font-size="{round(size * 0.8, 1)}" font-weight="{max(weight, 500) if weight >= 700 else 400}" '
+            f'text-anchor="{anchor}" style="fill:{color};font-family:{READABLE}">{s}</text>')
 
 
 def arrow(x1, y1, x2, y2, color=INK, w=2.4):

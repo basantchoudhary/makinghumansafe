@@ -42,7 +42,7 @@ h1{font-size:2.1rem;line-height:1.2;margin:6px 0 6px}h2{font-size:1.4rem;margin:
 .alert{background:var(--red-soft);border:1px solid #f5c2c2;border-radius:10px;padding:10px 14px;margin:14px 0}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
 .card{border:1.5px solid var(--ink);border-radius:14px;padding:12px 14px;background:#fff;box-shadow:3px 3px 0 var(--ink)}
-.card h3{margin:0 0 4px;font-family:var(--hand);font-size:1.6rem}.card h3 a{color:var(--ink);text-decoration:none}
+.card h3{margin:0 0 4px;font-size:1.15rem;font-weight:700}.card h3 a{color:var(--ink);text-decoration:none}
 .tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:10px 0}
 table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem}
 th,td{text-align:left;padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -56,14 +56,14 @@ svg.doodle{width:100%;height:auto;display:block;margin:8px 0;font-family:var(--h
 .search input{flex:1;border:0;outline:0;font:inherit;font-size:1.08rem;min-width:0;background:transparent}
 .search button{border:0;background:var(--ink);color:#fff;border-radius:999px;padding:8px 18px;font:inherit;font-weight:700;cursor:pointer}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
-.chips a{border:1.5px solid var(--ink);border-radius:999px;padding:3px 12px;text-decoration:none;color:var(--ink);background:var(--blue-soft);font-family:var(--hand);font-size:1.2rem}
+.chips a{border:1.5px solid var(--ink);border-radius:999px;padding:3px 12px;text-decoration:none;color:var(--ink);background:var(--blue-soft);font-size:.95rem;font-weight:600}
 #results a{display:block;padding:6px 2px;border-bottom:1px solid var(--line);text-decoration:none;font-weight:600}
 .pic{border:1px solid var(--line);border-radius:14px;padding:6px 14px 12px;margin:18px 0}
 .pic p{margin:4px 0 0}
 footer{margin-top:56px;border-top:2px solid var(--ink);padding-top:14px;font-size:.88rem;color:var(--muted)}
 footer .sos{font-size:1rem;color:var(--ink)}
 footer a{color:var(--muted)}
-""" + __import__("safety.water", fromlist=["CSS"]).CSS + """
+""" + __import__("safety.water", fromlist=["CSS"]).CSS + __import__("safety.story", fromlist=["CSS"]).CSS + """
 @media (max-width:640px){h1{font-size:1.7rem}.brand{font-size:1.45rem}header nav{order:3;flex-basis:100%}}
 """
 
