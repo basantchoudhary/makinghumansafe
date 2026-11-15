@@ -95,10 +95,15 @@ def place_page(key, cfg):
     fares = tomllib.loads(fares_p.read_text()) if fares_p.exists() else None
     name = cfg["name"]
     water = any(a in cfg.get("activities", []) for a in ("swimming", "waterfall"))
-    out = [f"<h1>{e(name)}: {'water safety, incidents and help' if water else 'safety, scams and fair fares'}</h1>",
-           f'<p class="muted">{"What has happened in the water here, what is happening now, and what to do, with a source for every fact." if water else "What to watch out for, what taxis should cost, and where help is, with a source for every fact."}</p>',
+    roadcity = bool(cfg.get("road_stats") or cfg.get("blackspots"))
+    out = [f"<h1>{e(name)}: {'water safety, incidents and help' if water else ('road safety, black spots and help' if roadcity else 'safety, scams and fair fares')}</h1>",
+           f'<p class="muted">{"What has happened in the water here, what is happening now, and what to do, with a source for every fact." if water else ("How many people die on the roads here, where the black spots are, and what to do, with a source for every fact." if roadcity else "What to watch out for, what taxis should cost, and where help is, with a source for every fact.")}</p>',
            '<div class="note"><b>Coverage:</b> built from open sources (travel guides, news, official alerts, open maps). '
            'Many incidents go unreported, so an absence of reports is not proof of safety.</div>']
+    if cfg.get("road_stats") or cfg.get("blackspots"):
+        from safety import road
+        out.append(road.block(key, cfg))
+        out.append('<h2 id="more">More about ' + e(name) + ': help nearby, scams and fares</h2>')
     if water:
         from safety import water as wmod
         out.append(wmod.block(key, cfg, alerts, helpd, load(key, "incois"), load(key, "notices")))
@@ -275,7 +280,7 @@ ALIASES = {"goa": ["calangute", "baga", "anjuna", "palolem", "colva", "arambol",
            "murudeshwar": ["murdeshwar", "netrani", "bhatkal"], "udupi": ["malpe", "st mary", "kaup", "delta beach", "manipal"],
            "lonavala": ["bhushi", "devkund", "tamhini", "pawna", "malshej", "khandala", "pune"], "alappuzha": ["alleppey", "houseboat", "vembanad", "marari", "kuttanad"],
            "kozhikode": ["calicut", "pathankayam", "kappad", "thikkodi"], "varkala": ["kovalam", "trivandrum", "thiruvananthapuram", "papanasam", "kappil"], "hampi": ["vijayanagara"], "varanasi": ["banaras", "kashi", "ghats"],
-           "agra": ["taj mahal"], "delhi": ["new delhi", "paharganj", "connaught place"], "jaipur": ["amer", "pink city"]}
+           "agra": ["taj mahal"], "bengaluru": ["bangalore", "blr", "nice road", "silk board", "hebbal", "electronic city", "whitefield", "koramangala", "outer ring road"], "delhi": ["new delhi", "paharganj", "connaught place"], "jaipur": ["amer", "pink city"]}
 
 
 def index_page(places):
@@ -285,7 +290,7 @@ def index_page(places):
                     for k, c in places.items())
     index = json.dumps([{"k": k, "n": c["name"], "a": ALIASES.get(k, [])} for k, c in places.items()])
     chips = "".join(f'<a href="/{k}/">{e(label)}</a>' for k, label in
-                    [("routes/bengaluru-nice-road-art-of-living", "Long drive: NICE Road to Art of Living"), ("gokarna", "Gokarna beaches"), ("goa", "Goa beaches"), ("lonavala", "Lonavala waterfalls"), ("alappuzha", "Alappuzha houseboats"), ("varkala", "Varkala cliffs and beach"), ("rishikesh", "Rafting, Rishikesh")])
+                    [("routes/bengaluru-nice-road-art-of-living", "Long drive: NICE Road to Art of Living"), ("bengaluru", "Bengaluru roads"), ("gokarna", "Gokarna beaches"), ("goa", "Goa beaches"), ("lonavala", "Lonavala waterfalls"), ("alappuzha", "Alappuzha houseboats"), ("varkala", "Varkala cliffs and beach"), ("rishikesh", "Rafting, Rishikesh")])
     body = (doodles.hero_wait() +
             '<h1>Search a place. See what affects your safety there.</h1>'
             '<p class="muted">Past incidents, live alerts, help nearby, precautions and fair prices, with a source and a date for every fact.</p>'

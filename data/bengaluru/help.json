@@ -1,0 +1,366 @@
+{
+ "fetched": "2026-11-15T12:44",
+ "data": {
+  "spots": {
+   "Kempegowda International Airport": {
+    "x": 77.5986565,
+    "y": 13.0977234
+   },
+   "Hebbal Flyover": {
+    "x": 77.59018735,
+    "y": 13.04273426
+   },
+   "Electronic City": {
+    "x": 77.651887,
+    "y": 12.853928
+   },
+   "Silk Board Junction": {
+    "x": 77.62297,
+    "y": 12.91725,
+    "located_by": "OpenStreetMap (junction)"
+   },
+   "Majestic Bus Station": {
+    "x": 77.57204,
+    "y": 12.97735,
+    "located_by": "OpenStreetMap (Kempegowda Bus Station)"
+   }
+  },
+  "near": {
+   "Kempegowda International Airport": {
+    "hospital": [
+     {
+      "name": "Ashwini Hospital",
+      "phone": null,
+      "km": 0.1,
+      "src": "OpenStreetMap node/12056743550",
+      "confirmed": true
+     },
+     {
+      "name": "Shushrusha Hospital",
+      "phone": "+919620429063",
+      "km": 0.2,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Yelahanka Traffic Police Station",
+      "phone": "+918022842608",
+      "km": 0.6,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Yelahanka Police Station",
+      "phone": null,
+      "km": 0.6,
+      "src": "OpenStreetMap way/774716173",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Medplus",
+      "phone": "08022960767",
+      "km": 0.2,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Apollo Pharmacy",
+      "phone": null,
+      "km": 0.2,
+      "src": "OpenStreetMap node/12049247036",
+      "confirmed": true
+     }
+    ]
+   },
+   "Hebbal Flyover": {
+    "hospital": [
+     {
+      "name": "Classroom 2 Bangalore Baptist Hospital",
+      "phone": "080 2202 4700",
+      "km": 0.8,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Baptist Hospital",
+      "phone": "080 2333 0321",
+      "km": 0.8,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Hebbal Police Station",
+      "phone": "+918023330907",
+      "km": 0.5,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "R T Nagar Traffic Police station",
+      "phone": null,
+      "km": 1.0,
+      "src": "OpenStreetMap way/963352879",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Apollo Pharmacy",
+      "phone": "08042083724",
+      "km": 0.7,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Medplus",
+      "phone": "08041557180",
+      "km": 0.8,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ]
+   },
+   "Electronic City": {
+    "hospital": [
+     {
+      "name": "Sri Laxmi Hospitals-ER",
+      "phone": "+918028521044",
+      "km": 0.5,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Sri krishna hospital",
+      "phone": "+918023489977",
+      "km": 0.5,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Electronic City Police Station - L & O",
+      "phone": "+919480801623",
+      "km": 1.7,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Electronic City Traffic Police Station",
+      "phone": "+919341277357",
+      "km": 1.9,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Ganesh Medicals",
+      "phone": null,
+      "km": 0.3,
+      "src": "OpenStreetMap node/2291228531",
+      "confirmed": true
+     },
+     {
+      "name": "Good Health Pharma",
+      "phone": null,
+      "km": 0.3,
+      "src": "OpenStreetMap node/3633415014",
+      "confirmed": true
+     }
+    ]
+   },
+   "Silk Board Junction": {
+    "hospital": [
+     {
+      "name": "Aswad Hospitals",
+      "phone": "+918025979549",
+      "km": 0.3,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Aswad Hospital",
+      "phone": null,
+      "km": 0.3,
+      "src": "OpenStreetMap node/1474819060",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Madivala Police Station",
+      "phone": "+918022942568",
+      "km": 0.5,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Madiwala Traffic Police Station",
+      "phone": "+91 80 2294 2568",
+      "km": 0.5,
+      "src": "OpenStreetMap way/348457970",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Sudharsan Medicals",
+      "phone": null,
+      "km": 0.8,
+      "src": "OpenStreetMap node/7164351231",
+      "confirmed": true
+     },
+     {
+      "name": "Sri Lakshmi Venkateswara Medicals",
+      "phone": null,
+      "km": 0.9,
+      "src": "OpenStreetMap node/12285338812",
+      "confirmed": true
+     }
+    ]
+   },
+   "Majestic Bus Station": {
+    "hospital": [
+     {
+      "name": "RK Eshwar Hospital",
+      "phone": "+918067165555",
+      "km": 0.4,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Sreenivasa Hospital",
+      "phone": "+919741348444",
+      "km": 0.5,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Chikkapete Police Station",
+      "phone": null,
+      "km": 0.8,
+      "src": "OpenStreetMap node/2016154125",
+      "confirmed": true
+     },
+     {
+      "name": "Seshadripuram Police Station",
+      "phone": "+918022942586",
+      "km": 0.9,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Gururaja Pharmacy",
+      "phone": "080 2235 0038",
+      "km": 0.2,
+      "src": "OpenStreetMap node/4446378097",
+      "confirmed": true
+     },
+     {
+      "name": "Gururāja Medicals",
+      "phone": "+9180 2225 6783;+918022911966;+917259440612",
+      "km": 0.4,
+      "src": "OpenStreetMap node/11592710084",
+      "confirmed": true
+     }
+    ]
+   }
+  },
+  "counts": {
+   "hospital": 3451,
+   "religious_organization": 1,
+   "emergency_or_urgent_care_facility": 6,
+   "dental_clinic": 4,
+   "hindu_place_of_worship": 4,
+   "resort": 11,
+   "preschool": 12,
+   "hotel": 11,
+   "apartment": 1,
+   "financial_service": 1,
+   "diagnostics_imaging_or_lab_service": 8,
+   "sport_or_fitness_facility": 3,
+   "library": 2,
+   "b2b_office_and_professional_service": 2,
+   "fashion_and_apparel_store": 10,
+   "bar": 1,
+   "professional_service": 4,
+   "technical_service": 7,
+   "shipping_or_delivery_service": 1,
+   "government_office": 2,
+   "tutoring_service": 1,
+   "cafe": 2,
+   "public_transit_facility_or_service": 1,
+   "educational_service": 1,
+   "bridge": 2,
+   "auto_dealer": 2,
+   "vehicle_service": 1,
+   "pharmacy_and_drug_store": 2272,
+   "place_of_learning": 15,
+   "vehicle_dealer": 3,
+   "personal_or_beauty_service": 6,
+   "shopping": 9,
+   "books_music_and_video_store": 1,
+   "fire_station": 10,
+   "stadium_arena": 1,
+   "airport": 2,
+   "laundry_service": 2,
+   "historic_site": 5,
+   "restaurant": 18,
+   "family_service": 1,
+   "specialty_store": 3,
+   "musical_instrument_and_pro_audio_store": 1,
+   "hardware_home_and_garden_store": 2,
+   "printing_service": 2,
+   "non_alcoholic_beverage_venue": 2,
+   "park": 2,
+   "casual_eatery": 3,
+   "farm": 1,
+   "education": 2,
+   "b2b_transportation_and_storage_service": 1,
+   "real_estate_service": 7,
+   "null": 41,
+   "specialty_school": 5,
+   "arts_and_entertainment": 1,
+   "fast_food_restaurant": 1,
+   "reproductive_perinatal_and_womens_care": 4,
+   "home_service": 5,
+   "food_and_beverage_store": 2,
+   "dance_club": 1,
+   "animal_or_pet_service": 1,
+   "community_and_government": 1,
+   "elementary_school": 1,
+   "condominium": 1,
+   "automotive_service": 3,
+   "travel_and_transportation": 1,
+   "manufacturer": 1,
+   "police_station": 337,
+   "bank_or_credit_union": 7,
+   "lodging": 25,
+   "government_department": 1,
+   "gym": 4,
+   "sport_league": 1,
+   "electronics_store": 10,
+   "event_or_party_service": 5,
+   "corporate_or_business_office": 2,
+   "wellness_service": 5,
+   "atm": 1,
+   "health_care": 1,
+   "christian_place_of_worship": 3,
+   "civic_organization": 1,
+   "sporting_goods_store": 2
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

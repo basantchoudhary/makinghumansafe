@@ -7,3 +7,4 @@ data/refresh.log
 # not redistributed in the public repo until permission arrives (letters drafted 15 Nov 2026).
 data/_road/bengaluru_blackspots.json
 data/*/incois.json
+data/_road/bengaluru_stats.json

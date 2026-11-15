@@ -282,3 +282,25 @@ news_require = ["varkala", "kovalam", "papanasam", "kappil", "edava", "vettakada
 spots = ["Varkala Beach", "Kovalam Beach", "Edava Beach", "Kappil Beach"]
 spot_coords = { "Varkala Beach" = [8.73326, 76.70531, "OpenStreetMap relation/5641401"], "Kovalam Beach" = [8.3951, 76.97299, "OpenStreetMap node/10861674944"], "Edava Beach" = [8.7656, 76.68395, "OpenStreetMap way/1434375822"], "Kappil Beach" = [8.77956, 76.67929, "OpenStreetMap node/334641675"] }
 corpus_spots = ["varkala", "papanasam", "kappil", "edava", "vettakada", "kovalam"]
+
+# ---- Road safety: city pages (15 Nov 2026) ----
+[bengaluru]
+name = "Bengaluru"
+coastal = false
+activities = ["road", "nightlife", "crime", "scam"]
+country = "IN"
+state = "Karnataka"
+districts = ["Bengaluru Urban"]
+road_districts = ["Bengaluru Urban"]
+bbox = [77.45, 12.80, 77.80, 13.15]
+help_pad_deg = 0.05
+road_stats = "data/_road/bengaluru_stats.json"
+blackspots = "data/_road/bengaluru_blackspots.json"
+wikivoyage_page = "Bangalore"
+wikivoyage_sections = ["Stay safe", "Get around", "By auto rickshaw"]
+alert_keywords = ["bengaluru", "bangalore"]
+news_queries = ['"bengaluru" accident killed', '"bengaluru" pothole', '"nice road" accident']
+news_feeds = [["The Hindu, Bengaluru", "https://www.thehindu.com/news/cities/bangalore/feeder/default.rss"]]
+news_require = ["accident", "crash", "pothole", "killed", "died", "collided", "rammed", "run over", "skid", "toppled", "hit-and-run"]
+spots = ["Kempegowda International Airport", "Silk Board Junction", "Hebbal Flyover", "Electronic City", "Majestic Bus Station"]
+spot_coords = { "Kempegowda International Airport" = [13.19864, 77.70683, "OpenStreetMap (airport)"], "Silk Board Junction" = [12.91725, 77.62297, "OpenStreetMap (junction)"], "Hebbal Flyover" = [13.0358, 77.5971, "OpenStreetMap (flyover)"], "Electronic City" = [12.8568, 77.66324, "OpenStreetMap"], "Majestic Bus Station" = [12.97735, 77.57204, "OpenStreetMap (Kempegowda Bus Station)"] }

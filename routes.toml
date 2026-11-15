@@ -1,5 +1,6 @@
 # Long-drive briefs. from/to/via are [lat, lon] located on OpenStreetMap (ids noted).
 [bengaluru-nice-road-art-of-living]
+city = "bengaluru"
 from_name = "Electronic City"
 from = [12.8568, 77.66324]        # OSM: Electronic City, Hosur Road
 to_name = "Art of Living, Udayapura"
