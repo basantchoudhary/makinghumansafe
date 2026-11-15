@@ -1,0 +1,11 @@
+# Documents the document reader turns into checked facts. One entry per report or page.
+# The reader works for any place and topic; adding a city means adding its documents here.
+
+[btp-bigrs-2023]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "Bengaluru Traffic Police with BIGRS, Road Safety Report 2023"
+url = "https://btp.karnataka.gov.in/uploads/BIGRS_2023_BTP_RoadSafetyReport_Final.pdf"
+type = "pdf"
+period = "2023"

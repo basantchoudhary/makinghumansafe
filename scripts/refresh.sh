@@ -10,7 +10,10 @@ for p in $(python3 -c "import tomllib;print(' '.join(tomllib.load(open('places.t
   python3 -m safety.extract "$p" 30 | tail -1
   python3 -m safety.verify "$p"
 done
-python3 -m safety.site
+# Fact store: official tables -> facts (no AI); documents in docs.toml -> checked facts (AI proposes, code checks; cached)
+.venv/bin/python -m safety.adapters
+for d in $(python3 -c "import tomllib;print(' '.join(tomllib.load(open('docs.toml','rb'))))"); do .venv/bin/python -m safety.docreader "$d" | tail -1; done
+.venv/bin/python -m safety.site
 # Publish: upload site/ to Cloudflare Pages (project makinghumansafe).
 # The token comes from .env (CLOUDFLARE_API_TOKEN) or, if empty, from this machine's wrangler login,
 # renewed automatically by scripts/cf_token.py. CLOUDFLARE_ACCOUNT_ID is read from .env.

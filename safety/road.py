@@ -73,12 +73,16 @@ def block(key, cfg):
         s.append(f"Our checked news records here: {len(incs)} road incident{'s' if len(incs) != 1 else ''}"
                  + (f", mostly {VEH.get(vehs.most_common(1)[0][0], vehs.most_common(1)[0][0])} riders" if vehs else "") + ".")
     s.append("Wear a helmet (rider and pillion), never use the phone while driving, and slow down in rain: potholes hide under water.")
-    if not cfg.get("road_findings"):  # pages with a story use its narration instead of this short summary
+    if False:  # the story's narration replaces this short summary
         out.append(f'<div class="summary"><p>{" ".join(s)}</p><p class="hand" style="font-size:1.35rem;margin:6px 0 0">Someone is waiting for you.</p></div>')
 
     # 1b. The story: mind map, narration, right-now line (from an official report's findings)
-    if cfg.get("road_findings"):
-        out.append(story(cfg, stats))
+    from safety import story as story_gen
+    generated = story_gen.render(key, "road", name)
+    if generated:
+        out.append(generated)  # produced by the machine from the fact store
+    elif cfg.get("road_findings"):
+        out.append(story(cfg, stats))  # older hand-made path, kept only as a fallback
 
     # 2. Trend chart
     if stats:
