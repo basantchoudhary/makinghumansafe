@@ -285,7 +285,7 @@ def index_page(places):
                     for k, c in places.items())
     index = json.dumps([{"k": k, "n": c["name"], "a": ALIASES.get(k, [])} for k, c in places.items()])
     chips = "".join(f'<a href="/{k}/">{e(label)}</a>' for k, label in
-                    [("gokarna", "Gokarna beaches"), ("goa", "Goa beaches"), ("lonavala", "Lonavala waterfalls"), ("alappuzha", "Alappuzha houseboats"), ("varkala", "Varkala cliffs and beach"), ("rishikesh", "Rafting, Rishikesh")])
+                    [("routes/bengaluru-nice-road-art-of-living", "Long drive: NICE Road to Art of Living"), ("gokarna", "Gokarna beaches"), ("goa", "Goa beaches"), ("lonavala", "Lonavala waterfalls"), ("alappuzha", "Alappuzha houseboats"), ("varkala", "Varkala cliffs and beach"), ("rishikesh", "Rafting, Rishikesh")])
     body = (doodles.hero_wait() +
             '<h1>Search a place. See what affects your safety there.</h1>'
             '<p class="muted">Past incidents, live alerts, help nearby, precautions and fair prices, with a source and a date for every fact.</p>'
@@ -384,6 +384,16 @@ def main():
         "When and where people drown in India, from checked incidents: May and June are worst, most victims are groups of young friends, and most drownings happen on calm days. Open data.",
         "/insights/drowning-india/"))
     (d / "water-incidents-india.csv").write_text(csv_text)
+    from safety import routes
+    for slug, r in routes.load_routes().items():
+        f = ROOT / "data" / "_road" / f"route_{slug}.json"
+        if f.exists():
+            rd = SITE / "routes" / slug
+            rd.mkdir(parents=True, exist_ok=True)
+            data = json.loads(f.read_text())
+            (rd / "index.html").write_text(page(f"{r['from_name']} to {r['to_name']}: long-drive safety brief | Making Human Safe", routes.page_body(slug, r, data),
+                f"Driving from {r['from_name']} to {r['to_name']} ({data['km']} km): official black spots on the route, hospitals and police along the way, and a pre-drive checklist.",
+                f"/routes/{slug}/"))
     print(f"built {len(places)} place page(s) into {SITE}")
 
 

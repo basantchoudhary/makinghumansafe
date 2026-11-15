@@ -1,0 +1,7 @@
+# Long-drive briefs. from/to/via are [lat, lon] located on OpenStreetMap (ids noted).
+[bengaluru-nice-road-art-of-living]
+from_name = "Electronic City"
+from = [12.8568, 77.66324]        # OSM: Electronic City, Hosur Road
+to_name = "Art of Living, Udayapura"
+to = [12.82588, 77.50875]         # OSM: Vishalakshi Mantap, Art of Living
+blackspot_files = ["data/_road/bengaluru_blackspots.json"]
