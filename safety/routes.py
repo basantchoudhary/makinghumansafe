@@ -147,7 +147,10 @@ def page_body(slug, r, data):
         s.append("<b>Longest stretch without a hospital close to the road:</b> " + "; ".join(f"km {a} to km {b}" for a, b in gaps) + ". Know where you would go.")
     out.append('<div class="summary"><p>' + "</p><p>".join(s) + '</p><p class="hand" style="font-size:1.35rem;margin:6px 0 0">Someone is waiting for you.</p></div>')
     if data["blackspots"]:
-        out.append("<h2>Official black spots on the way</h2><ul>" + "".join(
+        out.append("<h2>Official black spots on the way</h2>"
+                   '<p class="note"><b>What is a black spot?</b> A stretch of road of about 500 m where, over three years, there were at least 5 crashes '
+                   "in which someone died or was badly injured, or at least 10 deaths (the road ministry's rule). Slow down, stay in your lane and watch for "
+                   "vehicles merging or crossing. The list only shows where crashes already happened often; a road without black spots is not proven safe.</p><ul>" + "".join(
             f'<li>km {b["at_km"]}: <b>{e(b["location"])}</b> ({e(b["station"])})</li>' for b in data["blackspots"]) + "</ul>")
     out.append("<h2>Before you leave</h2><ul>"
                "<li><b>Pick a co-pilot.</b> The driver never touches the phone; the co-pilot navigates and reports hazards in Google Maps.</li>"
