@@ -96,8 +96,18 @@ def fetch(doc_id, d):
         from pypdf import PdfReader
         return [(i + 1, p.extract_text() or "") for i, p in enumerate(PdfReader(str(raw)).pages)]
     if d["type"] == "html":
-        dom = subprocess.run(["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "--headless", "--disable-gpu",
-                              "--virtual-time-budget=8000", "--dump-dom", d["url"]], capture_output=True, text=True, timeout=90).stdout
+        # Plain fetch first (fast); a real browser only if the article text loads by JavaScript; a timeout skips the page.
+        dom = ""
+        try:
+            dom = urllib.request.urlopen(urllib.request.Request(d["url"], headers=UA), timeout=40).read().decode("utf-8", "replace")
+        except Exception:
+            pass
+        if len(re.sub(r"<[^>]+>", " ", re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", dom, flags=re.S)).split()) < 300:
+            try:
+                dom = subprocess.run(["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "--headless", "--disable-gpu",
+                                      "--virtual-time-budget=8000", "--dump-dom", d["url"]], capture_output=True, text=True, timeout=90).stdout
+            except subprocess.TimeoutExpired:
+                print(f"  {doc_id}: page did not load (skipped this run)")
         txt = re.sub(r"<[^>]+>", " ", re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", dom, flags=re.S))
         return [(1, txt)]
     raise ValueError(d["type"])

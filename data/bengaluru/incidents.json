@@ -1,5 +1,31 @@
 {
- "incidents": [],
+ "incidents": [
+  {
+   "date": "2026-11-13",
+   "place": "Hesaraghatta",
+   "place_code": null,
+   "lat": null,
+   "lon": null,
+   "area": null,
+   "category": "road",
+   "activity": "scooter/road",
+   "incident_type": "injury",
+   "severity": "serious",
+   "what_happened": "A nine-year-old girl suffered serious head injuries after a bike hit her while she was crossing the road.",
+   "people_affected": 3,
+   "deaths": 0,
+   "visitor_type": "local",
+   "cause": "bike collision",
+   "source_name": "Times of India, Bengaluru",
+   "source_url": "https://timesofindia.indiatimes.com/city/bengaluru/student-killed-as-truck-hits-bike-in-tumakuru-friend-injured/articleshow/135860987.cms",
+   "source_date": "20261115",
+   "source_type": "news",
+   "confidence": "medium",
+   "quote": "a nine-year-old girl suffered serious head injuries after a bike hit her while she was crossing the road at hesaraghatta, north bengaluru, friday morning.",
+   "evidence": "checked",
+   "evidence_reason": "place and incident type found in source, quote matches"
+  }
+ ],
  "aggregates": [],
  "rules": []
 }

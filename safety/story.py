@@ -421,6 +421,12 @@ def render(place, topic, place_name):
                    + "".join(f'<figure class="pic1"><figcaption>{e(pc["title"])}</figcaption>{pc["svg"]}</figure>' for pc in pics.get(key, []))
                    + (f'<p class="src">From: ' + "; ".join(f'<a href="{e(u)}">{e(n)}</a>' for n, u in a.get("sources", [])) + "</p>" if a.get("sources") else "")
                    + "</section>")
+    # Theme sections (potholes, pedestrians, helmets...): every checked fact and incident on each subject
+    from safety import themes, road as road_mod, store as _st
+    import tomllib, pathlib as _pl
+    cfgs = tomllib.loads((_pl.Path(__file__).resolve().parent.parent / "places.toml").read_text())
+    incs = road_mod.incidents_for(cfgs[place]) if topic == "road" and place in cfgs else []
+    out.append(themes.render(place, topic, fs, incs, score))
     if syn.get("insights"):
         out.append('<details><summary><b>Connections across the findings</b> (3 insights)</summary><div class="insights">' + "".join(
             f'<div class="insight"><span class="num">{i}</span><p>{e(x["text"])}</p><p class="src">From: '

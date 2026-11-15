@@ -116,7 +116,14 @@ def block(key, cfg):
             f'<li><a href="/routes/{slug}/">{e(r["from_name"])} to {e(r["to_name"])}</a>: black spots on the way, hospitals and police along the route</li>' for slug, r in rs) + "</ul>")
 
     # 5. Checked incidents
-    out.append('<h2 id="road-incidents">Road incidents in our checked records</h2>')
+    total = None
+    if stats:
+        ys = [y for y in stats["years"] if y.get("killed")]
+        total = ys[-1]["killed"] if ys else None
+    out.append('<h2 id="road-incidents">Examples we checked, one by one</h2>'
+               f'<p class="muted">These are individual crashes we read and checked against their news report. They are examples, not a count'
+               + (f': the official total is {total} deaths this year.' if total else '.') +
+               " The list grows as our news reader checks every reported crash, four times a day.</p>")
     if incs:
         out.append('<div class="tbl"><table><tr><th>Date</th><th>Where</th><th>What happened</th><th>Vehicle</th><th>Deaths</th><th>Source</th></tr>' + "".join(
             f'<tr><td style="white-space:nowrap">{e(r["date"])}</td><td><b>{e(r.get("spot") or "")}</b></td><td>{e(r["what_happened"])}</td>'

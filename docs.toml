@@ -63,3 +63,76 @@ title = "WRI India via The News Minute: are school kids safe on Bengaluru roads?
 url = "https://www.thenewsminute.com/amp/story/karnataka/are-school-kids-safe-bengaluru-roads-dataset-hints-risks-157737"
 type = "html"
 period = "2019"
+
+# ---- Potholes and civic negligence (registered 15 Nov 2026) ----
+[theprint-civic-negligence-2023]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "ThePrint: civic negligence killed 20 in Bengaluru in 2023, highest for the 4th year (NCRB)"
+url = "https://theprint.in/india/civic-negligence-killed-20-in-bengaluru-in-2023-highest-4th-yr-in-row-indore-was-2nd-with-2-deaths/2755488"
+type = "html"
+period = "2023"
+
+[asianet-civic-failures-2024]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "Asianet Newsable: Bengaluru records highest civic-failure fatalities for the sixth year (NCRB 2024)"
+url = "https://newsable.asianetnews.com/gallery/karnataka-news/bengaluru-indias-silicon-city-records-highest-fatalities-sixth-consecutive-year-civic-failures-gq0fb09"
+type = "html"
+period = "2024"
+
+[tnm-pothole-deaths-coverup]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "The News Minute investigation: 13 pothole deaths in Bengaluru and no compensation"
+url = "https://www.thenewsminute.com/karnataka/tnm-investigation-bbmp-and-cops-cover-13-pothole-deaths-bengaluru-170088"
+type = "html"
+period = "2024"
+
+[livelaw-hc-potholes-2026]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "LiveLaw: 10,202 potholes repaired since April, says BBMP; Karnataka High Court seeks details"
+url = "https://www.livelaw.in/high-court/karnataka-high-court/karnataka-high-court-pothole-crisis-bbmp-claims-potholes-545776"
+type = "html"
+period = "2026"
+
+[siasat-hc-gba-report]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "Siasat: Bengaluru pothole case, High Court seeks detailed report from GBA"
+url = "https://www.siasat.com/bengaluru-pothole-case-hc-seeks-detailed-report-from-gba-3524712/amp/"
+type = "html"
+period = "2026"
+
+[southfirst-civic-negligence]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "The South First: Brand Bengaluru's fatal reality, highest deaths due to civic negligence"
+url = "https://thesouthfirst.com/karnataka/brand-bengalurus-fatal-reality-highest-deaths-due-to-civic-negligence-poor-infra/"
+type = "html"
+period = "2024"
+
+[dh-outer-bengaluru-potholes]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "Deccan Herald: outer Bengaluru in worst shape, dataset shows reality of pothole conditions"
+url = "https://www.deccanherald.com/india/karnataka/bengaluru/outer-bengaluru-in-worst-shape-as-dataset-showsreality-of-pothole-conditions-3739487"
+type = "html"
+period = "2026"
+
+[cm-pothole-accountability]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "Citizen Matters: pothole deaths, no accountability for officials"
+url = "https://citizenmatters.in/bbmp-engineers-accountability-for-pothole-road-deaths-injuries/"
+type = "html"
+period = "2022"

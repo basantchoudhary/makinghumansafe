@@ -302,7 +302,7 @@ wikivoyage_page = "Bangalore"
 wikivoyage_sections = ["Stay safe", "Get around", "By auto rickshaw"]
 alert_keywords = ["bengaluru", "bangalore"]
 news_queries = ['"bengaluru" accident killed', '"bengaluru" pothole', '"nice road" accident']
-news_feeds = [["The Hindu, Bengaluru", "https://www.thehindu.com/news/cities/bangalore/feeder/default.rss"]]
+news_feeds = [["The Hindu, Bengaluru", "https://www.thehindu.com/news/cities/bangalore/feeder/default.rss"], ["Times of India, Bengaluru", "https://timesofindia.indiatimes.com/rssfeeds/-2128833038.cms"]]
 news_require = ["accident", "crash", "pothole", "killed", "died", "collided", "rammed", "run over", "skid", "toppled", "hit-and-run"]
 spots = ["Kempegowda International Airport", "Silk Board Junction", "Hebbal Flyover", "Electronic City", "Majestic Bus Station"]
 spot_coords = { "Kempegowda International Airport" = [13.19864, 77.70683, "OpenStreetMap (airport)"], "Silk Board Junction" = [12.91725, 77.62297, "OpenStreetMap (junction)"], "Hebbal Flyover" = [13.0358, 77.5971, "OpenStreetMap (flyover)"], "Electronic City" = [12.8568, 77.66324, "OpenStreetMap"], "Majestic Bus Station" = [12.97735, 77.57204, "OpenStreetMap (Kempegowda Bus Station)"] }

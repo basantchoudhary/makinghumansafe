@@ -41,12 +41,40 @@ def yearly_deaths(place, topic, path, partial_label=None):
     return out
 
 
+def checked_incidents(place, topic, cfg):
+    """Our checked incident lists become summary facts per incident type (count, years, places, deaths)."""
+    import collections
+    from safety import road
+    rows = road.incidents_for(cfg) if topic == "road" else []
+    out = []
+    by = collections.defaultdict(list)
+    for r in rows:
+        by[r.get("incident_type") or "other"].append(r)
+    names = {"pothole": "pothole crashes", "night_driving": "night-time crashes", "two_wheeler": "two-wheeler crashes",
+             "drunk_driving": "drink-driving crashes", "bus_crash": "bus crashes", "crash_black_spot": "crashes at black spots",
+             "crash_ghat_road": "ghat-road crashes", "pedestrian": "pedestrian deaths", "other": "other road incidents"}
+    for typ, rs in by.items():
+        deaths = sum(r.get("deaths") or 0 for r in rs)
+        yrs = sorted({r["date"][:4] for r in rs})
+        spots = ", ".join(sorted({r.get("spot") or "" for r in rs})[:5])
+        out.append({"place": place, "topic": topic, "dimension": "where", "metric": f"checked_incidents_{typ}", "value": len(rs),
+                    "unit": "incidents", "period": f"{yrs[0]}-{yrs[-1]}" if len(yrs) > 1 else yrs[0],
+                    "statement": f"Our checked news records hold {len(rs)} {names.get(typ, typ.replace('_', ' '))} here ({yrs[0]} to {yrs[-1]}), "
+                                 f"{deaths} deaths, at {spots}.",
+                    "quote": "", "source_id": "mhs-incidents", "source_name": "Making Human Safe checked incident list",
+                    "source_url": "https://github.com/basantchoudhary/makinghumansafe/tree/main/data/_corpus",
+                    "source_page": "each record links to its news source", "method": "computed from checked incidents (no AI)", "status": "checked"})
+    return out
+
+
 def run():
     places = tomllib.loads((ROOT / "places.toml").read_text())
     n = 0
     for key, cfg in places.items():
         if cfg.get("road_stats") and (ROOT / cfg["road_stats"]).exists():
             n += facts.upsert(yearly_deaths(key, "road", cfg["road_stats"], cfg.get("road_stats_partial")))
+        if cfg.get("road_stats") or cfg.get("blackspots"):
+            n += facts.upsert(checked_incidents(key, "road", cfg))
     print(f"adapters: {n} facts written")
 
 
