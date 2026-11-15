@@ -9,3 +9,57 @@ title = "Bengaluru Traffic Police with BIGRS, Road Safety Report 2023"
 url = "https://btp.karnataka.gov.in/uploads/BIGRS_2023_BTP_RoadSafetyReport_Final.pdf"
 type = "pdf"
 period = "2023"
+
+[hans-bengaluru-trend-2026]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "The Hans India: road accidents in Bengaluru surge 70% in five years (27 Oct 2026)"
+url = "https://www.thehansindia.com/news/cities/bengaluru/road-accidents-in-bengaluru-surge-70-in-five-years-1136229"
+type = "html"
+period = "2026"
+
+[dh-pedestrians-2024]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "Deccan Herald: Bengaluru records second-highest pedestrian deaths among million-plus cities in 2024"
+url = "https://www.deccanherald.com/india/karnataka/bengaluru/bengaluru-records-second-highest-pedestrian-deaths-among-million-plus-cities-in-2024-4071330"
+type = "html"
+period = "2024"
+
+[dh-speeding-campaign-2026]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "Deccan Herald: Bengaluru sees drop in speeding and road fatalities (2 Mar 2026)"
+url = "https://www.deccanherald.com/india/karnataka/bengaluru/slow-and-steady-bengaluru-sees-drop-in-speeding-and-road-fatalities-3917697"
+type = "html"
+period = "2026"
+
+[cm-risk-factors-2024]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "Citizen Matters: key risk factors behind road crashes in Bengaluru (7 Nov 2024)"
+url = "https://citizenmatters.in/?p=73092"
+type = "html"
+period = "2024"
+
+[tnm-blackspot-visits-2025]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "The News Minute: TNM visits Bengaluru's deadliest roads for pedestrians (17 Mar 2025)"
+url = "https://www.thenewsminute.com/karnataka/bengalurus-black-spots-tnm-visits-the-citys-deadliest-roads-for-pedestrians"
+type = "html"
+period = "2025"
+
+[wri-schools-2021]
+place = "bengaluru"
+place_name = "Bengaluru"
+topic = "road"
+title = "WRI India via The News Minute: are school kids safe on Bengaluru roads? (17 Nov 2021)"
+url = "https://www.thenewsminute.com/amp/story/karnataka/are-school-kids-safe-bengaluru-roads-dataset-hints-risks-157737"
+type = "html"
+period = "2019"

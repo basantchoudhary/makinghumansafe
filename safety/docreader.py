@@ -48,6 +48,17 @@ def numbers(s):
 HOURS = {"12 am": 0, "midnight": 0, "noon": 12, "12 pm": 12}
 
 
+WORDNUM = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10,
+           "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16, "seventeen": 17,
+           "eighteen": 18, "nineteen": 19, "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50, "sixty": 60, "seventy": 70,
+           "eighty": 80, "ninety": 90, "hundred": 100}
+
+
+def quote_numbers(q):
+    """Numbers in a quote, counting number words ('Eleven' = 11) as well as digits."""
+    return numbers(q) | {float(v) for w, v in WORDNUM.items() if re.search(rf"\b{w}\b", (q or "").lower())}
+
+
 def check(f, chunk):
     """Return '' if the finding passes every rule, else the reason it fails."""
     if f.get("dimension") not in facts.DIMENSIONS:
@@ -55,7 +66,8 @@ def check(f, chunk):
     q = norm(f.get("quote"))
     if len(q) < 20 or q not in norm(chunk):
         return "quote not found word for word"
-    qn = numbers(f.get("quote"))
+    qn = quote_numbers(f.get("quote"))
+    years = {float(y) for y in re.findall(r"(?:19|20)\d\d", str(f.get("period") or ""))}
     if f.get("value") is not None:
         try:
             v = float(f["value"])
@@ -63,7 +75,7 @@ def check(f, chunk):
             return "value is not a number"
         if not any(abs(v - x) < 1e-6 for x in qn):
             return f"value {f['value']} not in quote"
-    extra = {x for x in numbers(f.get("statement")) if not any(abs(x - y) < 1e-6 for y in qn)}
+    extra = {x for x in numbers(f.get("statement")) if not any(abs(x - y) < 1e-6 for y in qn) and x not in years}  # the fact's own year is allowed
     if extra:
         return f"statement has numbers not in quote: {sorted(extra)}"
     w = f.get("window")
