@@ -63,7 +63,7 @@ svg.doodle{width:100%;height:auto;display:block;margin:8px 0;font-family:var(--h
 footer{margin-top:56px;border-top:2px solid var(--ink);padding-top:14px;font-size:.88rem;color:var(--muted)}
 footer .sos{font-size:1rem;color:var(--ink)}
 footer a{color:var(--muted)}
-""" + __import__("safety.water", fromlist=["CSS"]).CSS + __import__("safety.story", fromlist=["CSS"]).CSS + __import__("safety.themes", fromlist=["CSS"]).CSS + """
+""" + __import__("safety.water", fromlist=["CSS"]).CSS + __import__("safety.story", fromlist=["CSS"]).CSS + __import__("safety.themes", fromlist=["CSS"]).CSS + __import__("safety.lessons", fromlist=["CSS"]).CSS + """
 @media (max-width:640px){h1{font-size:1.7rem}.brand{font-size:1.45rem}header nav{order:3;flex-basis:100%}}
 """
 

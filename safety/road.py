@@ -134,7 +134,9 @@ def block(key, cfg):
                " The list grows as our news reader checks every reported crash, four times a day.</p>")
     if incs:
         head = '<div class="tbl"><table><tr><th>Date</th><th>Where</th><th>What happened</th><th>Vehicle</th><th>Deaths</th><th>Source</th></tr>'
-        row = lambda r: (f'<tr><td style="white-space:nowrap">{e(r["date"])}</td><td><b>{e(r.get("spot") or "")}</b></td><td>{e(r["what_happened"])}</td>'
+        from safety import lessons
+        out.append(lessons.render(incs, "road"))
+        row = lambda r: (f'<tr><td style="white-space:nowrap">{e(r["date"])}</td><td><b>{e(r.get("spot") or "")}</b></td><td>{e(r["what_happened"])}<br>{lessons.tags_html(r)}</td>'
                          f'<td>{e(VEH.get(r.get("vehicle"), r.get("vehicle") or ""))}</td><td>{r.get("deaths") if r.get("deaths") is not None else "missing"}</td>'
                          f'<td><a href="{e(r["source_url"])}">{e(r.get("source_name") or "source")}</a></td></tr>')
         out.append(head + "".join(row(r) for r in incs[:15]) + "</table></div>")
