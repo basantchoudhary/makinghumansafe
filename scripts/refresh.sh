@@ -12,10 +12,12 @@ for p in $(python3 -c "import tomllib;print(' '.join(tomllib.load(open('places.t
 done
 python3 -m safety.site
 # Publish: upload site/ to Cloudflare Pages (project makinghumansafe).
-# Needs CLOUDFLARE_API_TOKEN (Pages: Edit) and CLOUDFLARE_ACCOUNT_ID in .env (never committed).
+# The token comes from .env (CLOUDFLARE_API_TOKEN) or, if empty, from this machine's wrangler login,
+# renewed automatically by scripts/cf_token.py. CLOUDFLARE_ACCOUNT_ID is read from .env.
 set -a; [ -f .env ] && . ./.env; set +a
+CLOUDFLARE_API_TOKEN=$(python3 scripts/cf_token.py) && export CLOUDFLARE_API_TOKEN
 if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
   npx -y wrangler@3.114.0 pages deploy site --project-name makinghumansafe --branch main --commit-dirty=true 2>&1 | grep -E "Deployment complete|ERROR" | tail -1
 else
-  echo "skip publish: no CLOUDFLARE_API_TOKEN in .env"
+  echo "skip publish: no Cloudflare login (run: npx wrangler login)"
 fi
