@@ -99,6 +99,11 @@ def block(key, cfg):
                    + "".join(f"<details><summary><b>{e(d)}</b> ({len(v)})</summary><ul>" + "".join(f'<li>{e(b["location"])} <span class="src">({e(b["station"])})</span></li>' for b in v) + "</ul></details>"
                              for d, v in sorted(by_div.items()))
                    + f'<p class="src">Source: <a href="{e(bs["source_url"])}">{e(bs["source"])}</a>, checked {e(bs["checked"])}.</p>')
+        nb_p = ROOT / cfg.get("blackspots_new", "")
+        if cfg.get("blackspots_new") and nb_p.exists():
+            nb = json.loads(nb_p.read_text())
+            out.append('<div class="alert"><b>Newer list reported:</b> the traffic police\'s 2023 to 2025 list adds six black spots (East division is now the worst): '
+                       + "; ".join(e(x["location"]) for x in nb["spots"]) + f'. <span class="src">{e(nb["note"])} <a href="{e(nb["source_url"])}">{e(nb["source"])}</a>.</span></div>')
 
     # 4. Route briefs starting or ending here
     rs = [(slug, r) for slug, r in routes.load_routes().items() if r.get("city") == key]
@@ -164,7 +169,10 @@ def story(cfg, stats):
         return ""
     src = json.loads(fp.read_text()); F = src["findings"]
     cur = [y for y in stats["years"] if y["killed"]][-1]["killed"] if stats else F["deaths_2023"]
-    nar = (f"Every day, about three people die on Bengaluru's roads. This year, {cur} people were killed by October, more than in any full year since 2021. "
+    full = [y for y in stats["years"] if y["killed"] and y is not [y for y in stats["years"] if y["killed"]][-1]] if stats else []
+    prev_hi = next((y for y in reversed(full) if y["killed"] >= cur), None)
+    record = (f"the highest since {prev_hi['year']} ({prev_hi['killed']} that year), with two months still to go" if prev_hi else "the highest on record")
+    nar = (f"Every day, about three people die on Bengaluru's roads. This year, {cur} people were killed by October, {record}. "
            f"Most were riding a two-wheeler ({F['motorcyclist_pct']} in every 100) or walking ({F['pedestrian_pct']} in every 100), and most were young men. "
            f"Danger peaks after dark: {F['night_6pm_2am_pct']} of every 100 deaths happen between 6 in the evening and 2 at night, and Sunday is the worst day. "
            f"Three things kill most: speed (about a third of vehicles drive over the limit), helmets that are not clasped (only {F['helmet_correct_pct']} in 100 riders wear one correctly), "
@@ -179,6 +187,10 @@ if(h>=18||h<2)m.push('<b>Right now is the most dangerous time.</b> {F["night_6pm
 if(wd===0||wd===6)m.push('<b>It\\'s the weekend.</b> Road deaths peak on weekends, especially Sunday.');
 if(h>=14&&h<16)m.push('<b>Afternoon:</b> the hours when the fewest riders wear their helmet correctly ({F["helmet_2_4pm_pct"]}%). Clasp it.');
 if(m.length){{el.innerHTML=m.join('<br>');el.hidden=false;}}}})();</script>""",
+           (f'<p class="src"><b>Note:</b> {e(F["record_note"]["text"])} (<a href="{e(F["record_note"]["url"])}">{e(F["record_note"]["source"])}</a>)</p>' if F.get("record_note") else "")
+           + ('<details><summary><b>Why numbers differ between sources</b></summary><p class="small">Different agencies count differently (city limits, when a death is counted, date of update). '
+              + " ".join(f"For {n['year']}: " + "; ".join(f"{e(a)} {b}" for a, b in n["figures"]) + "." for n in F.get("numbers_differ", []))
+              + " We use the traffic police's own yearly table for totals.</p></details>" if F.get("numbers_differ") else ""),
            '<h3>What the official report found</h3><ul>'
            f"<li><b>When:</b> {F['night_6pm_2am_pct']}% of deaths between 6 pm and 2 am; weekends peak, especially Sunday.</li>"
            f"<li><b>Who:</b> {F['motorcyclist_pct']}% two-wheeler riders, {F['pedestrian_pct']}% pedestrians; over {F['men_pct_over']}% men; {F['age_20_29_pct']}% aged 20 to 29.</li>"

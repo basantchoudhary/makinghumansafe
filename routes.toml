@@ -6,3 +6,4 @@ from = [12.8568, 77.66324]        # OSM: Electronic City, Hosur Road
 to_name = "Art of Living, Udayapura"
 to = [12.82588, 77.50875]         # OSM: Vishalakshi Mantap, Art of Living
 blackspot_files = ["data/_road/bengaluru_blackspots.json"]
+reported_blackspot_files = ["data/_road/bengaluru_blackspots_2025_reported.json"]

@@ -84,6 +84,16 @@ def fetch(slug, r):
             off, at = along(line, (b["lat"], b["lon"]))
             if off <= 0.3:
                 spots.append({**b, "at_km": round(at, 1), "source": bs["source"], "source_url": bs["source_url"]})
+    for f in r.get("reported_blackspot_files", []):  # newer lists known only from reports; approximate locations
+        bs = json.loads((ROOT / f).read_text())
+        for b in bs["spots"]:
+            if b.get("lat") is None:
+                continue
+            off, at = along(line, (b["lat"], b["lon"]))
+            if off <= 0.4:
+                spots.append({**b, "station": "added 2025, reported; location approximate", "at_km": round(at, 1), "reported": True,
+                              "source": bs["source"], "source_url": bs["source_url"]})
+    spots.sort(key=lambda b: b["at_km"])
     out = {"km": round(route["distance"] / 1000, 1), "minutes": round(route["duration"] / 60), "line": line,
            "roads": [(n, round(k, 1)) for n, k in roads if k > 0.3], "help": sorted(help_, key=lambda h: h["at_km"]),
            "blackspots": spots, "blackspots_checked": sum(len(json.loads((ROOT / f).read_text())["spots"]) for f in r.get("blackspot_files", []))}
@@ -138,7 +148,9 @@ def page_body(slug, r, data):
            f'<p class="muted">{data["km"]} km by {roads}. Checked against official black spots and mapped hospitals and police along the way.</p>',
            map_svg(r, data)]
     s = []
-    s.append(f"<b>Black spots:</b> {len(data['blackspots'])} of the {data['blackspots_checked']} official Bengaluru black spots lie on this route."
+    rep = sum(1 for b in data["blackspots"] if b.get("reported"))
+    s.append(f"<b>Black spots:</b> {len(data['blackspots']) - rep} of the {data['blackspots_checked']} official Bengaluru black spots lie on this route"
+             + (f", plus {rep} added in 2025 (newer list, reported)." if rep else ".")
              + (" " if data["blackspots"] else " That list covers city roads; it does not cover NICE Road, so this is not proof the road is safe."))
     if hosp:
         s.append(f"<b>Hospitals:</b> {len(hosp)} within 3 km of the road; first at km {hosp[0]['at_km']} ({e(hosp[0]['name'])}), last at km {hosp[-1]['at_km']} ({e(hosp[-1]['name'])}).")
@@ -151,7 +163,8 @@ def page_body(slug, r, data):
                    '<p class="note"><b>What is a black spot?</b> A stretch of road of about 500 m where, over three years, there were at least 5 crashes '
                    "in which someone died or was badly injured, or at least 10 deaths (the road ministry's rule). Slow down, stay in your lane and watch for "
                    "vehicles merging or crossing. The list only shows where crashes already happened often; a road without black spots is not proven safe.</p><ul>" + "".join(
-            f'<li>km {b["at_km"]}: <b>{e(b["location"])}</b> ({e(b["station"])})</li>' for b in data["blackspots"]) + "</ul>")
+            f'<li>km {b["at_km"]}: <b>{e(b["location"])}</b> ({e(b["station"])})'
+            + (f' <span class="badge">newer list, reported by <a href="{e(b["source_url"])}">Deccan Herald</a></span>' if b.get("reported") else "") + '</li>' for b in data["blackspots"]) + "</ul>")
     out.append("<h2>Before you leave</h2><ul>"
                "<li><b>Pick a co-pilot.</b> The driver never touches the phone; the co-pilot navigates and reports hazards in Google Maps.</li>"
                "<li><b>Tyres:</b> check pressure and look for cracks; tyre age is the 4-digit code on the side (week and year).</li>"

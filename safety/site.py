@@ -123,11 +123,12 @@ def place_page(key, cfg):
     from safety.store import load as load_store, summarise
     store = load_store(key)
     checked = [i for i in store["incidents"] if i.get("evidence") == "checked"]
-    out.append('<h2 id="activities">Activities: what has happened, and what to do</h2>')
-    out.append(f'<p class="src">Incidents are counted only when the source article was opened and found to name the place and the event '
-               f'({len(checked)} of {len(store["incidents"])} stored incidents passed this check). Many incidents are never reported.</p>')
-    out.append('<div class="cards">')
-    for akey, act in ACTIVITIES.items():
+    if not roadcity:
+        out.append('<h2 id="activities">Activities: what has happened, and what to do</h2>')
+        out.append(f'<p class="src">Incidents are counted only when the source article was opened and found to name the place and the event '
+                   f'({len(checked)} of {len(store["incidents"])} stored incidents passed this check). Many incidents are never reported.</p>')
+        out.append('<div class="cards">')
+    for akey, act in (ACTIVITIES.items() if not roadcity else []):
         if akey not in cfg.get("activities", ACTIVITIES):
             continue
         rows = [i for i in checked if i["activity"] in act["incident_activities"]]
@@ -143,8 +144,9 @@ def place_page(key, cfg):
             facts = '<p class="muted">No checked incidents in our records yet.</p>'
         tips = "".join(f"<li>{e(t)}</li>" for t in act["precautions"])
         out.append(f'<div class="card"><h3>{e(act["label"])}</h3>{facts}<ul class="small">{tips}</ul>'
-                   f'<p class="src">General advice; review {e(act["reviewed"])}.</p></div>')
-    out.append("</div>")
+                   '<p class="src">General advice.</p></div>')
+    if not roadcity:
+        out.append("</div>")
 
     # Scam patterns (structured, each quoting its source)
     scams_p = ROOT / "scams" / f"{key}.toml"
@@ -244,6 +246,9 @@ def place_page(key, cfg):
     # News
     out.append('<h2 id="news">Recent news</h2>')
     arts = (news or {}).get("data", {}).get("articles", []) if news else []
+    if roadcity:
+        RW = ("accident", "crash", "pothole", "collid", "rammed", "run over", "hit-and-run", "skid", "toppled", "road", "traffic", "bike", "lorry", "bus")
+        arts = [a for a in arts if any(w in (a.get("title") or "").lower() for w in RW)]
     if arts:
         out.append(f'<p class="src">Safety-related headlines from local papers ({e(", ".join(f[0] for f in cfg.get("news_feeds", [])))}) and GDELT. Links only; read the original for details. '
                    'Not every article is about safety, and many incidents are never reported.</p><ul>'
@@ -253,17 +258,18 @@ def place_page(key, cfg):
         out.append('<p class="muted">News reading for this place is still being set up.</p>')
 
     # Lenses
-    out.append('<h2 id="lenses">If you are travelling with…</h2><div class="cards">')
-    for lens, tips in LENSES.items():
-        out.append(f'<div class="card"><h3>{e(lens)}</h3><ul>' + "".join(f"<li>{e(t)}</li>" for t in tips) + "</ul></div>")
-    out.append("</div>")
+    if not roadcity:
+        out.append('<h2 id="lenses">If you are travelling with…</h2><div class="cards">')
+        for lens, tips in LENSES.items():
+            out.append(f'<div class="card"><h3>{e(lens)}</h3><ul>' + "".join(f"<li>{e(t)}</li>" for t in tips) + "</ul></div>")
+        out.append("</div>")
 
     # Helplines and report
     out.append('<h2 id="helplines">Helplines (India)</h2><div class="tbl"><table><tr><th>Number</th><th>For</th></tr>'
                + "".join(f"<tr><td><b>{n}</b></td><td>{e(d)}</td></tr>" for n, d in HELPLINES) + "</table></div>")
     out.append('<h2 id="report">Report a fare or a scam</h2><p>Paid a taxi fare, met a scam, or found something here out of date? '
                'Tell us in 30 seconds: <b>where</b>, <b>what happened or what you paid</b>, and <b>when</b>. No names, please.</p>'
-               '<p><span class="badge">Report form coming soon</span></p>')
+               '<p>For now, report it as an issue on <a href="https://github.com/basantchoudhary/makinghumansafe/issues">GitHub</a>; a simple form is being built.</p>')
     out.append('<h2>Sources and licences</h2><ul class="small">'
                '<li>Wikivoyage, CC BY-SA 4.0 (quoted sections are share-alike)</li>'
                '<li>Overture Maps places, CDLA-Permissive-2.0</li>'

@@ -1859,6 +1859,17 @@
    "source_url": "https://btp.karnataka.gov.in/216/black-spots/en"
   },
   {
+   "location": "Near T John College, NICE Road",
+   "lat": 12.85104,
+   "lon": 77.5884,
+   "located_by": "approximate: OpenStreetMap \"T John College, Bannerghatta Road, Doddakammanahalli, Bengal\"",
+   "station": "added 2025, reported; location approximate",
+   "at_km": 8.8,
+   "reported": true,
+   "source": "Deccan Herald, 9 Feb 2026, reporting Bengaluru Traffic Police's 2023-25 black spot list",
+   "source_url": "https://www.deccanherald.com/india/karnataka/bengaluru/64-accident-black-spots-in-bengaluru-here-is-the-full-list-of-stretches-identified-by-traffic-police-3891968"
+  },
+  {
    "n": 25,
    "division": "South",
    "station": "Thalaghatapura",

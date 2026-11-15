@@ -297,6 +297,7 @@ help_pad_deg = 0.05
 road_stats = "data/_road/bengaluru_stats.json"
 blackspots = "data/_road/bengaluru_blackspots.json"
 road_findings = "data/_road/bengaluru_findings.json"
+blackspots_new = "data/_road/bengaluru_blackspots_2025_reported.json"
 wikivoyage_page = "Bangalore"
 wikivoyage_sections = ["Stay safe", "Get around", "By auto rickshaw"]
 alert_keywords = ["bengaluru", "bangalore"]
