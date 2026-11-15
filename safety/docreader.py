@@ -87,7 +87,7 @@ def check(f, chunk):
     return ""
 
 
-def fetch(doc_id, d):
+def fetch(doc_id, d, browser=False):
     DOCS.mkdir(parents=True, exist_ok=True)
     raw = DOCS / f"{doc_id}.{d['type']}"
     if not raw.exists():
@@ -98,11 +98,12 @@ def fetch(doc_id, d):
     if d["type"] == "html":
         # Plain fetch first (fast); a real browser only if the article text loads by JavaScript; a timeout skips the page.
         dom = ""
-        try:
-            dom = urllib.request.urlopen(urllib.request.Request(d["url"], headers=UA), timeout=40).read().decode("utf-8", "replace")
-        except Exception:
-            pass
-        if len(re.sub(r"<[^>]+>", " ", re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", dom, flags=re.S)).split()) < 300:
+        if not browser:
+            try:
+                dom = urllib.request.urlopen(urllib.request.Request(d["url"], headers=UA), timeout=40).read().decode("utf-8", "replace")
+            except Exception:
+                pass
+        if browser or len(re.sub(r"<[^>]+>", " ", re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", dom, flags=re.S)).split()) < 300:
             try:
                 dom = subprocess.run(["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "--headless", "--disable-gpu",
                                       "--virtual-time-budget=8000", "--dump-dom", d["url"]], capture_output=True, text=True, timeout=90).stdout
@@ -129,7 +130,10 @@ def chunks(pages, size=7000):
 def run(doc_id):
     reg = tomllib.loads((ROOT / "docs.toml").read_text())
     d = reg[doc_id]
-    pages = fetch(doc_id, d)
+    return run_with(doc_id, d, fetch(doc_id, d))
+
+
+def run_with(doc_id, d, pages):
     ok, bad = [], []
     cache_p = DOCS / f"{doc_id}.proposals.json"  # AI proposals are cached: re-checking never re-pays for AI calls
     cache = json.loads(cache_p.read_text()) if cache_p.exists() else {}
@@ -147,7 +151,17 @@ def run(doc_id):
                    "status": "checked" if not why else f"rejected: {why}"}
             (ok if not why else bad).append(rec)
         print(f"  pages {pr}: {len(got)} proposed, {sum(1 for f in got if not check(f, text))} passed", flush=True)
-    facts.upsert(ok + bad)
+    proposed = len(ok) + len(bad)
+    if d["type"] == "html" and proposed and len(ok) / proposed < 0.5 and not getattr(run, "_retry", False):
+        # Most quotes not found in the plain page: the article text probably loads by JavaScript. Re-read in a browser
+        # and re-check the same cached proposals (no new AI calls).
+        print(f"  {doc_id}: only {len(ok)}/{proposed} quotes found in the plain page; re-reading in a browser")
+        run._retry = True
+        try:
+            return run_with(doc_id, d, fetch(doc_id, d, browser=True))
+        finally:
+            run._retry = False
+    facts.replace_source(doc_id, d["place"], d["topic"], ok + bad)
     print(f"{doc_id}: {len(ok)} checked facts, {len(bad)} rejected")
     for b in bad[:8]:
         print("   rejected:", b["status"], "|", (b.get("statement") or "")[:80])

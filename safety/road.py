@@ -12,14 +12,22 @@ VEH = {"two_wheeler": "two-wheeler", "car": "car", "bus": "bus", "truck": "truck
 
 
 def incidents_for(cfg):
-    if not CORPUS.exists():
+    """Checked road incidents for a place from EVERY incident list in data/_corpus (deduplicated by date and spot)."""
+    import glob
+    files = sorted(glob.glob(str(ROOT / "data" / "_corpus" / "*.json")))
+    if not files:
         return []
     keys = [k.lower() for k in cfg.get("road_corpus_spots", [])]
     dists = {d.lower() for d in cfg.get("road_districts", cfg.get("districts", []))}
-    out = []
-    for r in json.loads(CORPUS.read_text())["incidents"]:
+    out, seen = [], set()
+    rows = [r for f in files for r in json.loads(pathlib.Path(f).read_text()).get("incidents", [])]
+    for r in rows:
         if r.get("activity") != "road" or r.get("evidence") != "checked":
             continue
+        k = (r["date"], (r.get("spot") or "").lower()[:20])
+        if k in seen:
+            continue
+        seen.add(k)
         text = " ".join(str(r.get(k) or "") for k in ("spot", "district", "what_happened")).lower()
         if (r.get("district") or "").lower() in dists or (keys and any(k in text for k in keys)):
             out.append(r)
@@ -125,11 +133,14 @@ def block(key, cfg):
                + (f': the official total is {total} deaths this year.' if total else '.') +
                " The list grows as our news reader checks every reported crash, four times a day.</p>")
     if incs:
-        out.append('<div class="tbl"><table><tr><th>Date</th><th>Where</th><th>What happened</th><th>Vehicle</th><th>Deaths</th><th>Source</th></tr>' + "".join(
-            f'<tr><td style="white-space:nowrap">{e(r["date"])}</td><td><b>{e(r.get("spot") or "")}</b></td><td>{e(r["what_happened"])}</td>'
-            f'<td>{e(VEH.get(r.get("vehicle"), r.get("vehicle") or ""))}</td><td>{r.get("deaths") if r.get("deaths") is not None else "missing"}</td>'
-            f'<td><a href="{e(r["source_url"])}">{e(r.get("source_name") or "source")}</a></td></tr>' for r in incs) + "</table></div>"
-            '<p class="src">A small, checked sample from news (each linked article contains the quoted sentence). Official totals above cover all reported crashes.</p>')
+        head = '<div class="tbl"><table><tr><th>Date</th><th>Where</th><th>What happened</th><th>Vehicle</th><th>Deaths</th><th>Source</th></tr>'
+        row = lambda r: (f'<tr><td style="white-space:nowrap">{e(r["date"])}</td><td><b>{e(r.get("spot") or "")}</b></td><td>{e(r["what_happened"])}</td>'
+                         f'<td>{e(VEH.get(r.get("vehicle"), r.get("vehicle") or ""))}</td><td>{r.get("deaths") if r.get("deaths") is not None else "missing"}</td>'
+                         f'<td><a href="{e(r["source_url"])}">{e(r.get("source_name") or "source")}</a></td></tr>')
+        out.append(head + "".join(row(r) for r in incs[:15]) + "</table></div>")
+        if len(incs) > 15:
+            out.append(f'<details><summary>All {len(incs)} checked crashes</summary>' + head + "".join(row(r) for r in incs[15:]) + "</table></div></details>")
+        out.append('<p class="src">Each linked article contains the quoted sentence, checked by our code. Official totals above cover all reported crashes.</p>')
     else:
         out.append('<p class="muted">No checked road incidents in our records yet. Official totals above cover all reported crashes.</p>')
 

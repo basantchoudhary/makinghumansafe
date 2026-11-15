@@ -96,6 +96,14 @@ def upsert(facts):
     return n
 
 
+def replace_source(source_id, place, topic, new):
+    """Re-reading a source replaces all its earlier facts for this place and topic (no stale facts pile up)."""
+    con = connect()
+    con.execute("DELETE FROM facts WHERE source_id = ? AND place = ? AND topic = ?", [source_id, place, topic])
+    con.close()
+    return upsert(new)
+
+
 def for_story(place, topic):
     """Checked facts for one place and topic, newest period first."""
     con = connect()

@@ -43,7 +43,7 @@ def yearly_deaths(place, topic, path, partial_label=None):
 
 def checked_incidents(place, topic, cfg):
     """Our checked incident lists become summary facts per incident type (count, years, places, deaths)."""
-    import collections
+    import collections, re
     from safety import road
     rows = road.incidents_for(cfg) if topic == "road" else []
     out = []
@@ -52,18 +52,45 @@ def checked_incidents(place, topic, cfg):
         by[r.get("incident_type") or "other"].append(r)
     names = {"pothole": "pothole crashes", "night_driving": "night-time crashes", "two_wheeler": "two-wheeler crashes",
              "drunk_driving": "drink-driving crashes", "bus_crash": "bus crashes", "crash_black_spot": "crashes at black spots",
-             "crash_ghat_road": "ghat-road crashes", "pedestrian": "pedestrian deaths", "other": "other road incidents"}
+             "crash_ghat_road": "ghat-road crashes", "pedestrian": "pedestrian deaths", "other": "other crashes (mostly hit-and-run)"}
     for typ, rs in by.items():
         deaths = sum(r.get("deaths") or 0 for r in rs)
         yrs = sorted({r["date"][:4] for r in rs})
-        spots = ", ".join(sorted({r.get("spot") or "" for r in rs})[:5])
+        spots = ", ".join(sorted({(r.get("spot") or "").strip() for r in rs if (r.get("spot") or "").strip()})[:5])
         out.append({"place": place, "topic": topic, "dimension": "where", "metric": f"checked_incidents_{typ}", "value": len(rs),
                     "unit": "incidents", "period": f"{yrs[0]}-{yrs[-1]}" if len(yrs) > 1 else yrs[0],
-                    "statement": f"Our checked news records hold {len(rs)} {names.get(typ, typ.replace('_', ' '))} here ({yrs[0]} to {yrs[-1]}), "
-                                 f"{deaths} deaths, at {spots}.",
+                    "statement": f"Our checked news records hold {len(rs)} {names.get(typ, typ.replace('_', ' '))} here "
+                                 f"({'in ' + yrs[0] if len(yrs) == 1 else yrs[0] + ' to ' + yrs[-1]}), {deaths} deaths"
+                                 + (f", including at {spots}." if spots else "."),
                     "quote": "", "source_id": "mhs-incidents", "source_name": "Making Human Safe checked incident list",
                     "source_url": "https://github.com/basantchoudhary/makinghumansafe/tree/main/data/_corpus",
                     "source_page": "each record links to its news source", "method": "computed from checked incidents (no AI)", "status": "checked"})
+    if rows:
+        base = {"place": place, "topic": topic, "quote": "", "source_id": "mhs-incidents", "source_name": "Making Human Safe checked incident list",
+                "source_url": "https://github.com/basantchoudhary/makinghumansafe/tree/main/data/_corpus", "source_page": "each record links to its news source",
+                "method": "computed from checked incidents (no AI)", "status": "checked"}
+        yrs = sorted({r["date"][:4] for r in rows}); per = f"{yrs[0]}-{yrs[-1]}" if len(yrs) > 1 else yrs[0]
+        n = len(rows)
+        veh = collections.Counter(r.get("vehicle") for r in rows if r.get("vehicle"))
+        vname = {"two_wheeler": "on two-wheelers", "pedestrian": "walking", "car": "in cars", "truck": "in lorries", "auto": "in autos", "bus": "in buses"}
+        if veh:
+            parts = ", ".join(f"{c} {vname.get(v, v)}" for v, c in veh.most_common(4))
+            out.append({**base, "dimension": "who", "metric": "checked_victims_by_vehicle", "value": n, "unit": "crashes", "period": per,
+                        "statement": f"In our {n} checked crash reports ({per}), the victims were: {parts}."})
+        ROADS = [("Ballari Road and the airport road", r"ballari|bellary|airport road|yelahanka|kogilu|hebbal|sadahalli|devanahalli|chikkajala"),
+                 ("Outer Ring Road", r"outer ring|\borr\b|silk board|marathahalli|kr puram|k\.r\. puram|tin factory|hebbal"),
+                 ("Mysuru Road", r"mysuru road|mysore road|kengeri|nayandahalli"), ("Tumakuru Road", r"tumakuru road|tumkur road|peenya|yeshwanthpur|8th mile"),
+                 ("NICE Road", r"nice road|peripheral"), ("Hosur Road and Electronic City", r"hosur road|electronic city|bommasandra|hebbagodi|attibele|chandapura"),
+                 ("Old Madras Road", r"old madras road"), ("Whitefield and Varthur", r"whitefield|varthur|itpl"), ("Kanakapura Road", r"kanakapura")]
+        rc = []
+        for name, rx in ROADS:
+            c = sum(1 for r in rows if re.search(rx, " ".join(str(r.get(k) or "") for k in ("spot", "what_happened")), re.I))
+            if c:
+                rc.append((name, c))
+        rc.sort(key=lambda x: -x[1])
+        if rc:
+            out.append({**base, "dimension": "where", "metric": "checked_crashes_by_road", "value": rc[0][1], "unit": "crashes", "period": per,
+                        "statement": f"In our {n} checked crash reports ({per}), the roads that come up most: " + ", ".join(f"{a} ({b})" for a, b in rc[:5]) + "."})
     return out
 
 
@@ -72,9 +99,10 @@ def run():
     n = 0
     for key, cfg in places.items():
         if cfg.get("road_stats") and (ROOT / cfg["road_stats"]).exists():
-            n += facts.upsert(yearly_deaths(key, "road", cfg["road_stats"], cfg.get("road_stats_partial")))
+            yd = yearly_deaths(key, "road", cfg["road_stats"], cfg.get("road_stats_partial"))
+            n += facts.replace_source(yd[0]["source_id"], key, "road", yd)
         if cfg.get("road_stats") or cfg.get("blackspots"):
-            n += facts.upsert(checked_incidents(key, "road", cfg))
+            n += facts.replace_source("mhs-incidents", key, "road", checked_incidents(key, "road", cfg))
     print(f"adapters: {n} facts written")
 
 
