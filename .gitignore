@@ -3,3 +3,7 @@ __pycache__/
 .env
 data/_pages/
 data/refresh.log
+# Data from sources whose reuse permission is pending: kept on this machine and used to build pages,
+# not redistributed in the public repo until permission arrives (letters drafted 15 Nov 2026).
+data/_road/bengaluru_blackspots.json
+data/*/incois.json
