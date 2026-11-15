@@ -412,6 +412,11 @@ def render(place, topic, place_name):
         out.append(chain_map(place_name, topic, qc))
     # 2. The story, one question at a time: a plain answer and one picture that proves it
     pics = visuals.by_question(fs, place, topic)
+    from safety import lessons as _lessons, road as _road
+    import tomllib as _tl, pathlib as _pl2
+    _cfgs = _tl.loads((_pl2.Path(__file__).resolve().parent.parent / "places.toml").read_text())
+    _incs = _road.incidents_for(_cfgs[place]) if topic == "road" and place in _cfgs else []
+    top_lessons = _lessons.summary(_incs, topic)[:3] if _incs else []
     for key, question, _ in QUESTIONS:
         if key not in qc and key not in pics:
             continue
@@ -420,6 +425,9 @@ def render(place, topic, place_name):
                    + (f'<p class="ans">{e(a.get("answer", ""))}</p>' if a.get("answer") else "")
                    + "".join(f'<figure class="pic1"><figcaption>{e(pc["title"])}</figcaption>{pc["svg"]}</figure>' for pc in pics.get(key, []))
                    + (f'<p class="src">From: ' + "; ".join(f'<a href="{e(u)}">{e(n)}</a>' for n, u in a.get("sources", [])) + "</p>" if a.get("sources") else "")
+                   + (("<p><b>The three lessons that repeat most in our checked crashes:</b></p><ol>" + "".join(
+                       f'<li><b>{e(x["you"])}</b> <span class="muted small">({e(x["label"].lower())}: {x["crashes"]} of {len(_incs)} crashes)</span></li>'
+                       for x in top_lessons) + '</ol><p class="small"><a href="#lessons">All lessons, with what the city should fix</a></p>') if key == "do" and top_lessons else "")
                    + "</section>")
     # Theme sections (potholes, pedestrians, helmets...): every checked fact and incident on each subject
     from safety import themes, road as road_mod, store as _st
