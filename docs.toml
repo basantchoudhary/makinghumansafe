@@ -136,3 +136,77 @@ title = "Citizen Matters: pothole deaths, no accountability for officials"
 url = "https://citizenmatters.in/bbmp-engineers-accountability-for-pothole-road-deaths-injuries/"
 type = "html"
 period = "2022"
+
+# ---- Mumbai (second city) ----
+
+[mumbai-btp-report-2023]
+place = "mumbai"
+place_name = "Mumbai"
+topic = "road"
+title = "Mumbai Traffic Police with BIGRS, Mumbai Road Safety Annual Report (government-hosted copy)"
+url = "https://cdnbbsr.s3waas.gov.in/s3d827f12e35eae370ba9c65b7f6026695/uploads/2025/02/202502212128182597.pdf"
+type = "pdf"
+period = "2023"
+
+[opencity-mumbai-pedestrians-2023]
+place = "mumbai"
+place_name = "Mumbai"
+topic = "road"
+title = "OpenCity: No City for Pedestrians, analysing Mumbai's road crash deaths in 2023"
+url = "https://opencity.in/no-city-for-pedestrians-analysing-mumbais-road-crash-deaths-in-2023/"
+type = "html"
+period = "2023"
+
+[theprint-mumbai-hitrun-2023]
+place = "mumbai"
+place_name = "Mumbai"
+topic = "road"
+title = "ThePrint: hit-and-run cases 38% of all fatal crashes on Mumbai roads in 2023"
+url = "https://theprint.in/india/hit-and-run-cases-38-pc-of-all-fatal-crashes-on-mumbai-roads-in-2023-report/2507784"
+type = "html"
+period = "2023"
+
+[csrjournal-mumbai-374]
+place = "mumbai"
+place_name = "Mumbai"
+topic = "road"
+title = "The CSR Journal: Mumbai reported 374 deaths in 351 road accidents in 2023"
+url = "https://thecsrjournal.in/mumbai-reported-374-deaths-351-road-accidents-2023-report/"
+type = "html"
+period = "2023"
+
+[mumbailive-384-2023]
+place = "mumbai"
+place_name = "Mumbai"
+topic = "road"
+title = "Mumbai Live: Mumbai sees 33.7% rise in road accidents, 384 deaths reported in 2023"
+url = "https://www.mumbailive.com/en/civic/mumbai-sees-33.7-rise-in-road-accidents-384-deaths-reported-in-2023-90295"
+type = "html"
+period = "2023"
+
+[mumbailive-2025-jan-sep]
+place = "mumbai"
+place_name = "Mumbai"
+topic = "road"
+title = "Mumbai Live: Mumbai records highest accidents, 1,878 cases January to September 2025"
+url = "https://www.mumbailive.com/en/civic/mumbai-records-highest-accidents-with-1878-cases-between-january-september-2025-90845"
+type = "html"
+period = "2025"
+
+[fpj-mumbai-2022-drop]
+place = "mumbai"
+place_name = "Mumbai"
+topic = "road"
+title = "Free Press Journal: Mumbai saw 30% drop in road accident deaths in 2022, say traffic police"
+url = "https://www.freepressjournal.in/mumbai/mumbai-city-saw-30-per-cent-drop-in-road-accident-deaths-in-2022-say-traffic-police"
+type = "html"
+period = "2022"
+
+[fpj-mumbai-164]
+place = "mumbai"
+place_name = "Mumbai"
+topic = "road"
+title = "Free Press Journal: Mumbai traffic measures reduce fatalities to 164 in city this year"
+url = "https://www.freepressjournal.in/mumbai/mumbai-traffic-measures-reduce-fatalities-to-164-in-city-this-year"
+type = "html"
+period = ""

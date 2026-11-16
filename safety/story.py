@@ -42,10 +42,28 @@ def period_key(p):
     return (int(y[-1]) if y else 0, max(ms) if ms else 12)
 
 
+def _wider_for(place_name):
+    """Words that mean 'somewhere else or bigger than this place': the place's own state, the country, our other
+    places, and '<Name> Rural/district' patterns. Built from places.toml, so it works for every city."""
+    import tomllib, pathlib
+    cfgs = tomllib.loads((pathlib.Path(__file__).resolve().parent.parent / "places.toml").read_text())
+    names = {c["name"].split(" ")[0] for c in cfgs.values() if c["name"].lower() != place_name.lower()}
+    states = {c.get("state", "") for c in cfgs.values() if c.get("state")}
+    words = sorted({w for w in names | states if w and w.lower() not in place_name.lower()})
+    return re.compile(r"\b(india|indian|national|nationally|nationwide|countrywide|the state|statewide|" + "|".join(re.escape(w.lower()) for w in words)
+                      + r")\b|\b[A-Z][a-z]+ (?:Rural|district)\b", re.I)
+
+
+_WIDER_CACHE = {}
+
+
 def about_place(f, place_name):
-    """A fact about a wider area (the state, the country) is context, not this place's story."""
+    """A fact about a wider or different area (the state, the country, another city) is context, not this place's story."""
     st = f.get("statement") or ""
-    return not (WIDER.search(st) and place_name.lower() not in st.lower())
+    if place_name.lower() in st.lower():
+        return True
+    rx = _WIDER_CACHE.setdefault(place_name, _wider_for(place_name))
+    return not rx.search(st)
 
 
 OFFICIAL = re.compile(r"police|government|ministry|ncrb|morth|official", re.I)
@@ -367,6 +385,17 @@ def chain_map(place_name, topic, chain, w=1000, h=420):
     return f'<svg class="doodle" viewBox="0 0 {w} {h}" role="img" aria-label="{e(lab)}">{WOBBLE}<g filter="url(#wob)">{inner}</g>{txt}</svg>'
 
 
+def local_conflicts(fs):
+    """Numbers differ: same standard measure and period, different values, among facts ABOUT this place only."""
+    groups = {}
+    for f in fs:
+        if f.get("value") is not None and f["metric"] in ("deaths_total", "injuries_total", "fatal_crashes_total", "pedestrian_deaths_total",
+                                                           "motorcyclist_deaths_total") or (f.get("unit") == "%" and f["metric"].startswith("deaths_share")):
+            groups.setdefault((f["metric"], f["period"]), {}).setdefault(f["value"], (f["source_name"], f["source_url"]))
+    return [{"metric": m, "period": p, "figures": [{"v": v, "s": s_, "u": u} for v, (s_, u) in vals.items()]}
+            for (m, p), vals in groups.items() if len(vals) > 1]
+
+
 def now_rules(fs):
     rules = []
     for f in fs:
@@ -459,7 +488,7 @@ def render(place, topic, place_name):
             out.append(f'<div class="ok"><b>What you can do:</b> {e(tip)}</div>')
 
     # Numbers differ, and 5. all findings (folded)
-    cf = facts.conflicts(place, topic)
+    cf = local_conflicts(fs)
     if cf:
         out.append('<details><summary><b>Why numbers differ between sources</b></summary><p class="small">Agencies count differently (city limits, '
                    'when a death is counted, date of update). ' + " ".join(

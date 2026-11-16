@@ -101,7 +101,7 @@ def run():
         if cfg.get("road_stats") and (ROOT / cfg["road_stats"]).exists():
             yd = yearly_deaths(key, "road", cfg["road_stats"], cfg.get("road_stats_partial"))
             n += facts.replace_source(yd[0]["source_id"], key, "road", yd)
-        if cfg.get("road_stats") or cfg.get("blackspots"):
+        if cfg.get("road_stats") or cfg.get("blackspots") or "road_city" in cfg.get("topics", []):
             n += facts.replace_source("mhs-incidents", key, "road", checked_incidents(key, "road", cfg))
     print(f"adapters: {n} facts written")
 

@@ -52,8 +52,16 @@ def canonical_metric(f):
     if re.search(r"child|school|near|within|zone|junction|spot|corridor|night|day|age|male|female|men|women|helmet|hit_and_run|single|"
                  r"weekend|month|hour|division|station|ward|road_|highway|expressway|ring|drunk|speed", m):
         return f.get("metric")  # a qualified measure (a group, place or time) is never merged with a citywide total
-    if re.search(r"child|school|near |within|junction|black spot|corridor|aged |students|elderly", (f.get("statement") or "").lower()):
-        return f.get("metric")  # the qualifier is in the sentence, not the name
+    if re.search(r"child|school|near |within|junction|black spot|corridor|aged |students|elderly|occupant|every day|per day|daily|each day|"
+                 r"seat ?belt|helmet|two-wheeler|four-wheeler|three-wheeler|cars?\b|bikers?|riders?|males?|females?|women|men\b|"
+                 r"pothole|negligence|civic|drunk|drink|hit-and-run|speed|night|weekend",
+                 (f.get("statement") or "").lower()):
+        q = re.search(r"pothole|negligence|civic|drunk|drink|hit-and-run|speed|night|weekend|occupant|every day|per day|daily|child|school|"
+                      r"two-wheeler|four-wheeler|three-wheeler|pedestrian|helmet|seat ?belt|women|men\b|males?|aged", (f.get("statement") or "").lower())
+        m0 = f.get("metric") or ""
+        if q and re.fullmatch(r"(?:\w+_)?(?:deaths|injuries|fatal_crashes)_total", m0):
+            return m0 + "_" + re.sub(r"\W+", "_", q.group(0)).strip("_")  # a qualified count is never a citywide total
+        return m0  # the qualifier is in the sentence, not the name
     who = "pedestrian" if "pedestrian" in m else "motorcyclist" if re.search("motorcycl|two_wheel|biker|rider", m) else ""
     if re.search("injur", m):
         return f"{who + '_' if who else ''}injuries_total"
@@ -68,8 +76,11 @@ def canonical_period(f):
     """'2026' plus months named in the statement or quote ('between January and September') becomes '2026 Jan-Sep'."""
     p = str(f.get("period") or "")
     yr = re.findall(r"(?:19|20)\d\d", p)
-    txt = ((f.get("statement") or "") + " " + (f.get("quote") or "")).lower()
-    ms = [i for i, mo in enumerate(MONTHS) if re.search(rf"\b{mo}[a-z]*\b", txt)]
+    txt = (f.get("statement") or "").lower()  # month ranges only from the statement, and only when written as a range
+    rng = re.search(r"\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+(?:to|and|-|–|through|till|until)\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*", txt)
+    ms = [MONTHS.index(rng.group(1)), MONTHS.index(rng.group(2))] if rng else []
+    if re.search(r"first (?:nine|six|three) months", txt):
+        ms = [0, {"nine": 8, "six": 5, "three": 2}[re.search(r"first (nine|six|three)", txt).group(1)]]
     if len(yr) == 1 and len(ms) >= 2:
         return f"{yr[0]} {MONTHS[min(ms)].title()}-{MONTHS[max(ms)].title()}"
     return p

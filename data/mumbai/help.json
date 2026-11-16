@@ -1,0 +1,347 @@
+{
+ "fetched": "2026-11-16T01:12",
+ "data": {
+  "spots": {
+   "Chhatrapati Shivaji Maharaj Terminus": {
+    "x": 72.83514534067282,
+    "y": 18.94577525804114
+   },
+   "Bandra-Worli Sea Link": {
+    "x": 72.824119,
+    "y": 19.04308
+   },
+   "Andheri": {
+    "x": 72.8617,
+    "y": 19.12269
+   },
+   "Ghatkopar": {
+    "x": 72.91626,
+    "y": 19.09826
+   }
+  },
+  "near": {
+   "Chhatrapati Shivaji Maharaj Terminus": {
+    "hospital": [
+     {
+      "name": "Gokuldas Tejpal Hospital",
+      "phone": "+912222621465",
+      "km": 0.4,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Kama Albaism Hospital",
+      "phone": null,
+      "km": 0.4,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "MRA Marg Police Station",
+      "phone": null,
+      "km": 0.1,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "WRWM+77H C P Office Mumbai Police Head Quarter-3",
+      "phone": null,
+      "km": 0.2,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Medical Education & Drugs Department, Maharashtra",
+      "phone": "+912222617414",
+      "km": 0.3,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Aziziya Medical and General Store",
+      "phone": "+912223438275",
+      "km": 0.5,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ]
+   },
+   "Bandra-Worli Sea Link": {
+    "hospital": [
+     {
+      "name": "Lilavati Hospital and Research Centre",
+      "phone": "+912269301000",
+      "km": 1.0,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Lilavati Hospital",
+      "phone": "+91226666666",
+      "km": 1.0,
+      "src": "OpenStreetMap way/31144296",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Mount Mary Police Chouki",
+      "phone": null,
+      "km": 1.0,
+      "src": "OpenStreetMap node/5258276335",
+      "confirmed": true
+     },
+     {
+      "name": "Bandra Reclamation Police Station",
+      "phone": null,
+      "km": 1.0,
+      "src": "OpenStreetMap way/1428230096",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Shree Maruti Medical and General Stores",
+      "phone": "+919819711538",
+      "km": 0.4,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "National Chemist",
+      "phone": null,
+      "km": 0.5,
+      "src": "OpenStreetMap node/12927277235",
+      "confirmed": true
+     }
+    ]
+   },
+   "Andheri": {
+    "hospital": [
+     {
+      "name": "Dr.Sakhalkar's Maternity and Nursing Home",
+      "phone": null,
+      "km": 0.2,
+      "src": "OpenStreetMap node/7049800769",
+      "confirmed": true
+     },
+     {
+      "name": "Shakuntala Memorial Hospital",
+      "phone": "+912228344548",
+      "km": 0.5,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Marol Police Camp",
+      "phone": "+912229250320",
+      "km": 2.2,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Meghwadi Police Station",
+      "phone": "+912228210860",
+      "km": 1.0,
+      "src": "Overture",
+      "confirmed": false
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Vinod Medical Systems",
+      "phone": null,
+      "km": 0.9,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Ambika Medical & Gener",
+      "phone": null,
+      "km": 1.1,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ]
+   },
+   "Ghatkopar": {
+    "hospital": [
+     {
+      "name": "Aditya Hospital",
+      "phone": "+917715940917",
+      "km": 0.1,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Ramvadi Hospital",
+      "phone": "+917715940917",
+      "km": 0.1,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "police": [
+     {
+      "name": "Tilak Nagar Police Station",
+      "phone": "+911125409290",
+      "km": 1.7,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Ghatkopar Police Station",
+      "phone": "+912225153543",
+      "km": 2.1,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ],
+    "pharmacy": [
+     {
+      "name": "Apollo Pharmacy Mumbai Bulk Sales",
+      "phone": "07710090108",
+      "km": 0.7,
+      "src": "Overture",
+      "confirmed": true
+     },
+     {
+      "name": "Suncity Medical and General Stores",
+      "phone": "+918689801311",
+      "km": 0.8,
+      "src": "Overture",
+      "confirmed": true
+     }
+    ]
+   }
+  },
+  "counts": {
+   "fast_food_restaurant": 12,
+   "null": 53,
+   "specialty_school": 24,
+   "outpatient_care_facility": 8,
+   "manufacturer": 10,
+   "community_and_government": 3,
+   "campus_building": 5,
+   "real_estate_service": 22,
+   "automotive_service": 20,
+   "shopping_mall": 7,
+   "food_and_beverage_store": 4,
+   "elementary_school": 6,
+   "b2b_service": 3,
+   "home_service": 6,
+   "medical_service": 2,
+   "arts_and_entertainment": 3,
+   "travel_and_transportation": 4,
+   "community_center": 2,
+   "rental_service": 4,
+   "animal_or_pet_service": 3,
+   "surgery": 1,
+   "swimming_pool": 1,
+   "hospital": 3807,
+   "beach": 3,
+   "financial_service": 11,
+   "diagnostics_imaging_or_lab_service": 38,
+   "hotel": 36,
+   "dental_clinic": 16,
+   "social_or_community_service": 11,
+   "event_venue": 4,
+   "animal_and_pet_store": 2,
+   "religious_organization": 4,
+   "tutoring_service": 11,
+   "resort": 23,
+   "emergency_or_urgent_care_facility": 20,
+   "bridge": 4,
+   "sport_or_fitness_facility": 4,
+   "complementary_and_alternative_medicine": 6,
+   "arts_crafts_and_hobby_store": 2,
+   "fashion_and_apparel_store": 39,
+   "cafe": 13,
+   "preschool": 10,
+   "music_venue": 1,
+   "hindu_place_of_worship": 16,
+   "bar": 6,
+   "government_office": 6,
+   "professional_service": 13,
+   "shipping_or_delivery_service": 3,
+   "brewery": 1,
+   "auto_dealer": 8,
+   "educational_service": 9,
+   "b2b_office_and_professional_service": 4,
+   "technical_service": 13,
+   "personal_care_and_beauty_store": 1,
+   "public_transit_facility_or_service": 5,
+   "travel_service": 2,
+   "astrological_advising": 1,
+   "wholesaler": 1,
+   "food_truck_stand": 1,
+   "movie_theater": 1,
+   "office_supply_store": 1,
+   "police_station": 425,
+   "health_care": 5,
+   "bank_or_credit_union": 57,
+   "atm": 5,
+   "event_or_party_service": 5,
+   "lodging": 18,
+   "gym": 17,
+   "corporate_or_business_office": 11,
+   "high_school": 2,
+   "specialized_health_care": 13,
+   "legal_service": 3,
+   "embassy": 3,
+   "train_station": 11,
+   "wellness_service": 14,
+   "electronics_store": 11,
+   "christian_place_of_worship": 2,
+   "parking": 3,
+   "flowers_and_gifts_store": 3,
+   "sport_league": 3,
+   "vision_or_eye_care_clinic": 6,
+   "civic_organization": 2,
+   "toys_and_games_store": 1,
+   "private_lodging": 4,
+   "specialized_medical_facility": 1,
+   "sports_and_recreation": 1,
+   "pharmacy_and_drug_store": 1179,
+   "place_of_learning": 17,
+   "restaurant": 45,
+   "historic_site": 30,
+   "fire_station": 49,
+   "park": 3,
+   "personal_or_beauty_service": 18,
+   "supplier_or_distributor": 5,
+   "specialty_store": 9,
+   "coffee_shop": 5,
+   "laundry_service": 3,
+   "vehicle_dealer": 7,
+   "airport": 2,
+   "family_service": 8,
+   "shopping": 14,
+   "non_alcoholic_beverage_venue": 2,
+   "education": 14,
+   "college_university": 6,
+   "hardware_home_and_garden_store": 12,
+   "stadium_arena": 4,
+   "media_service": 6,
+   "fitness_studio": 2,
+   "musical_instrument_and_pro_audio_store": 1,
+   "casual_eatery": 9,
+   "printing_service": 1,
+   "building_or_construction_service": 2,
+   "telecommunications_service": 1,
+   "courthouse": 1,
+   "recreational_equipment_rental": 1,
+   "vehicle_parts_store": 1,
+   "books_music_and_video_store": 1,
+   "sport_or_recreation_club": 1
+  },
+  "missing_spots": [],
+  "candidates": {}
+ }
+}

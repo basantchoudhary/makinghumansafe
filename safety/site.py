@@ -95,12 +95,12 @@ def place_page(key, cfg):
     fares = tomllib.loads(fares_p.read_text()) if fares_p.exists() else None
     name = cfg["name"]
     water = any(a in cfg.get("activities", []) for a in ("swimming", "waterfall"))
-    roadcity = bool(cfg.get("road_stats") or cfg.get("blackspots"))
+    roadcity = bool(cfg.get("road_stats") or cfg.get("blackspots") or "road_city" in cfg.get("topics", []))
     out = [f"<h1>{e(name)}: {'water safety, incidents and help' if water else ('road safety, black spots and help' if roadcity else 'safety, scams and fair fares')}</h1>",
            f'<p class="muted">{"What has happened in the water here, what is happening now, and what to do, with a source for every fact." if water else ("How many people die on the roads here, where the black spots are, and what to do, with a source for every fact." if roadcity else "What to watch out for, what taxis should cost, and where help is, with a source for every fact.")}</p>',
            '<div class="note"><b>Coverage:</b> built from open sources (travel guides, news, official alerts, open maps). '
            'Many incidents go unreported, so an absence of reports is not proof of safety.</div>']
-    if cfg.get("road_stats") or cfg.get("blackspots"):
+    if roadcity:
         from safety import road
         out.append(road.block(key, cfg))
         out.append('<h2 id="more">More about ' + e(name) + ': help nearby, scams and fares</h2>')

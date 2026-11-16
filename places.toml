@@ -306,3 +306,24 @@ news_feeds = [["The Hindu, Bengaluru", "https://www.thehindu.com/news/cities/ban
 news_require = ["accident", "crash", "pothole", "killed", "died", "collided", "rammed", "run over", "skid", "toppled", "hit-and-run"]
 spots = ["Kempegowda International Airport", "Silk Board Junction", "Hebbal Flyover", "Electronic City", "Majestic Bus Station"]
 spot_coords = { "Kempegowda International Airport" = [13.19864, 77.70683, "OpenStreetMap (airport)"], "Silk Board Junction" = [12.91725, 77.62297, "OpenStreetMap (junction)"], "Hebbal Flyover" = [13.0358, 77.5971, "OpenStreetMap (flyover)"], "Electronic City" = [12.8568, 77.66324, "OpenStreetMap"], "Majestic Bus Station" = [12.97735, 77.57204, "OpenStreetMap (Kempegowda Bus Station)"] }
+
+# ---- Second road city: built only from config and sources (16 Nov 2026) ----
+[mumbai]
+name = "Mumbai"
+coastal = false
+topics = ["road_city"]
+activities = ["road", "nightlife", "crime", "scam"]
+country = "IN"
+state = "Maharashtra"
+districts = ["Mumbai City", "Mumbai Suburban"]
+road_districts = ["Mumbai City", "Mumbai Suburban", "Mumbai"]
+bbox = [72.77, 18.89, 72.99, 19.27]
+help_pad_deg = 0.03
+wikivoyage_page = "Mumbai"
+wikivoyage_sections = ["Stay safe", "Get around"]
+alert_keywords = ["mumbai"]
+news_queries = ['"mumbai" accident killed']
+news_feeds = [["Times of India, Mumbai", "https://timesofindia.indiatimes.com/rssfeeds/-2128838597.cms"]]
+news_require = ["accident", "crash", "pothole", "killed", "died", "collided", "rammed", "run over", "skid", "hit-and-run"]
+spots = ["Chhatrapati Shivaji Maharaj Terminus", "Bandra-Worli Sea Link", "Andheri", "Ghatkopar"]
+spot_coords = { "Chhatrapati Shivaji Maharaj Terminus" = [18.94, 72.8355, "OpenStreetMap (CSMT)"], "Bandra-Worli Sea Link" = [19.0369, 72.8178, "OpenStreetMap"], "Andheri" = [19.1197, 72.8468, "OpenStreetMap"], "Ghatkopar" = [19.0856, 72.9081, "OpenStreetMap"] }
